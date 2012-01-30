@@ -79,10 +79,13 @@ G_DEFINE_TYPE (GkdSecretService, gkd_secret_service, G_TYPE_OBJECT);
  * INTERNAL
  */
 
-static gchar*
-default_path (void)
+static gchar* default_path(void)
 {
-	return g_build_filename (g_get_home_dir (), ".mate2", "keyrings", "default", NULL);
+	#if GLIB_CHECK_VERSION(2, 6, 0)
+		return g_build_filename(g_get_user_config_dir(), "mate", "keyrings", "default", NULL);
+	#else // glib version < 2.6.0
+		return g_build_filename(g_get_home_dir(), ".config", "mate", "keyrings", "default", NULL);
+	#endif
 }
 
 static void

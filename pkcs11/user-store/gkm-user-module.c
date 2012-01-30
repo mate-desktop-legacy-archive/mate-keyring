@@ -265,7 +265,14 @@ gkm_user_module_constructor (GType type, guint n_props, GObjectConstructParam *p
 	g_return_val_if_fail (self, NULL);
 
 	if (!self->directory)
-		self->directory = g_build_filename (g_get_home_dir (), ".mate2", "keyrings", NULL);
+	{
+		#if GLIB_CHECK_VERSION(2, 6, 0)
+			self->directory = g_build_filename(g_get_user_config_dir(), "mate", "keyrings", NULL);
+		#else // glib version < 2.6.0
+			self->directory = g_build_filename(g_get_home_dir(), ".config", "mate", "keyrings", NULL);
+		#endif
+	}
+
 	self->storage = gkm_user_storage_new (GKM_MODULE (self), self->directory);
 
 	return G_OBJECT (self);
