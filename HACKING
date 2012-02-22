@@ -1,15 +1,8 @@
 
 HACKING MATE KEYRING
 
-Patches should be submitted to bugzilla:
-http://bugzilla.gnome.org/enter_bug.cgi?product=mate-keyring
-
-The mate-keyring mailing list is:
-mate-keyring-list@gnome.org
-
-An overview of the architecture and graphical outline can be found here:
-
-http://live.gnome.org/MateKeyring/Architecture
+Patches should be submitted to github:
+https://github.com/mate-dekstop/mate-keyring/issues
 
 Mate Keyring is made up of several distinct parts working on concert with
 each other. These parts generally live in different directories:

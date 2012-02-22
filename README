@@ -8,3 +8,5 @@ disk, but forgotten when the session ends.
 
 The library libmate-keyring is used by applications to integrate with
 the mate keyring system. 
+
+mate-keyring is a fork of gnome-keyring.
