@@ -78,7 +78,7 @@ typedef struct {
 } ItemInfo;
 
 #define KEYRING_FILE_HEADER "MateKeyring\n\r\0\n"
-#define KEYRING_FILE_HEADER_LEN 16
+#define KEYRING_FILE_HEADER_LEN 15
 
 /* -----------------------------------------------------------------------------
  * BUFFER UTILITY FUNCTIONS
