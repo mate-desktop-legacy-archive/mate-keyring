@@ -81,7 +81,7 @@ G_DEFINE_TYPE (GkmDataFile, gkm_data_file, G_TYPE_OBJECT);
 typedef GkmDataResult (*BlockFunc) (guint block, EggBuffer *buffer, GkmSecret *login, gpointer user_data);
 
 #define FILE_HEADER ((const guchar*)"Mate Keyring Store 2\n\r\0")
-#define FILE_HEADER_LEN 24
+#define FILE_HEADER_LEN 23
 
 #define FILE_BLOCK_INDEX    0x49445832  /* ie: "IDX2" */
 #define FILE_BLOCK_PRIVATE  0x50525632  /* ie: "PRV2" */
