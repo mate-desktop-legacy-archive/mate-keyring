@@ -51,7 +51,7 @@
 
 	* mai.po: added Maithili translation.
 	* LINGUAS: Added Maithili (mai) to the list of Languages.
-
+	
 2009-03-16  Petr Kovar  <pknbe@volny.cz>
 
 	* cs.po: Updated Czech translation by Lucas Lommer.
@@ -122,7 +122,7 @@
 2009-03-09  Rajesh Ranjan <rranjan@redhat.com>
 
 	* hi.po: Updated Hindi Translation.
-
+	
 2009-03-03  Duarte Loreto <happyguy_pt@hotmail.com>
 
 	* pt.po: Updated Portuguese translation.
@@ -205,7 +205,7 @@
 	* ro.po: Updated Romanian translation
 	by Adi Roiban <adi@roiban.ro>
 
-2009-02-17  Gabor Kelemen  <kelemeng@gnome.hu>
+2009-02-17  Gabor Kelemen  <kelemeng@mate.hu>
 
 	* hu.po: Translation updated.
 
@@ -260,7 +260,7 @@
 2009-02-14  Stef Walter  <stef@memberwebs.com>
 
 	* POTFILES.in: Added egg/egg-oid.c
-
+	
 2009-02-13  Jani Monoses  <jani@ubuntu.com>
 
 	* ro.po: Updated Romanian translation
@@ -305,8 +305,8 @@
 	daemon/pk/gkr-pk-storage.c
 	daemon/pkix/gkr-pkix-parser.c
 	daemon/pkix/gkr-pkix-serialize.c
-
-2009-02-07  Gabor Kelemen  <kelemeng@gnome.hu>
+	
+2009-02-07  Gabor Kelemen  <kelemeng@mate.hu>
 
 	* hu.po: Translation updated.
 
@@ -327,7 +327,7 @@
 
 2009-01-31  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
-	* es.po: Updated Spanish translation.
+	* es.po: Updated Spanish translation.                          
 
 2009-01-27  Stef Walter  <stef@memberwebs.com>
 
@@ -335,7 +335,7 @@
 	gcr/gcr-certificate-basics-widget.c
 	gcr/gcr-certificate-basics-widget.glade
 	gcr/gcr-certificate-details-widget.c
-
+	
 2009-01-27  Christian Kirbach  <Christian.Kirbach@googlemail.com>
 
 	* de.po: Updated German translation.
@@ -353,9 +353,9 @@
 	* POTFILES.in: Removed daemon/ssh/gkr-ssh-storage.c
 	* POTFILES.in: Added gcr/gcr-importer.c
 
-2009-01-20  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
+2009-01-20  Jorge Gonzalez  <jorgegonz@svn.gnome.org>  
 
-	* es.po: Updated Spanish translation.
+	* es.po: Updated Spanish translation.   
 
 === mate-keyring 2.25.5 ===
 
@@ -377,12 +377,12 @@
 
 2009-01-10  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
-	* es.po: Updated Spanish translation.
+	* es.po: Updated Spanish translation.  
 
 2009-01-08  Stef Walter  <stef@memberwebs.com>
 
 	* POTFILES.in: Added daemon/pkcs11/gkr-pkcs11-auth.c
-
+	
 2009-01-08  Daniel Nylander  <po@danielnylander.se>
 
 	* sv.po: Updated Swedish translation.
@@ -403,7 +403,7 @@
 	pkcs11/ssh-store/gck-ssh-private-key.c
 	* POTFILES.skip: (added)
 
-2009-01-04  Gabor Kelemen  <kelemeng@gnome.hu>
+2009-01-04  Gabor Kelemen  <kelemeng@mate.hu>
 
 	* hu.po: Translation updated.
 
@@ -425,17 +425,17 @@
 
 === mate-keyring 2.25.2 ===
 
-2008-12-04  Gabor Kelemen  <kelemeng@gnome.hu>
+2008-12-04  Gabor Kelemen  <kelemeng@mate.hu>
 
 	* hu.po: Translation updated.
 
 === mate-keyring 2.25.1 ===
 
-2008-10-29  Priit Laes  <plaes at svn dot gnome dot org>
+2008-10-29  Priit Laes  <plaes at svn dot mate dot org>
 
 	* et.po: Translation updated by Ivar Smolin
 
-2008-10-19  Djihed Afifi <djihed@gmail.com>
+2008-10-19  Djihed Afifi <djihed@gmail.com> 
 
 	* ar.po: Updated Arabic Translation by Anas Afif Emad.
 
@@ -450,18 +450,18 @@
 	* nb.po: Updated Norwegian bokmål translation.
 
 2008-09-28  Nickolay V. Shmyrev  <nshmyrev@yandex.ru>
-
+    
 	* ru.po: Added Russian translation by Lebedev Roman.
 
 2008-09-25  Jovan Naumovski  <jovan@lugola.net>
-
+ 
  	* mk.po: Updated Macedonian translation.
 
 2008-09-23  Laurent Dhima  <laurenti@alblinux.net>
 
 	* sq.po: Updated Albanian Translation.
 
-2008-09-22  Priit Laes  <plaes at svn dot gnome dot org>
+2008-09-22  Priit Laes  <plaes at svn dot mate dot org>
 
 	* et.po: Translation updated by Ivar Smolin
 
@@ -501,7 +501,7 @@
         * zh_HK.po: Updated Traditional Chinese translation(Hong Kong).
         * zh_TW.po: Updated Traditional Chinese translation(Taiwan).
 
-2008-09-18  Djihed Afifi <djihed@gmail.com>
+2008-09-18  Djihed Afifi <djihed@gmail.com> 
 
 	* ar.po: Updated Arabic Translation by Anas Afif Emad.
 
@@ -517,7 +517,7 @@
 
 	* ca.po: Updated Catalan translation by Joan Duran.
 
-2008-09-15  Djihed Afifi <djihed@gmail.com>
+2008-09-15  Djihed Afifi <djihed@gmail.com> 
 
 	* ar.po: Updated Arabic Translation by .
 
@@ -533,7 +533,7 @@
 
 	* fi.po: Updated Finnish translation.
 
-2008-09-14  Gabor Kelemen  <kelemeng@gnome.hu>
+2008-09-14  Gabor Kelemen  <kelemeng@mate.hu>
 
 	* hu.po: Translation updated.
 
@@ -556,7 +556,7 @@
 2008-09-09 Baris Cicek <baris@teamforce.name.tr>
 
 	* tr.po: Updated Turkish translation
-
+	
 2008-09-08  Robert Sedak  <robert.sedak@sk.t-com.hr>
 
 	* hr.po: Updated Croatian translation.
@@ -634,7 +634,7 @@
 
         * LINGUAS, sr@latin.po, sr@Latn.po: Conversion from sr@Latn to sr@latin.
 
-2008-08-25  Priit Laes  <plaes at svn dot gnome dot org>
+2008-08-25  Priit Laes  <plaes at svn dot mate dot org>
 
 	* et.po: Translation updated by Ivar Smolin
 
@@ -675,13 +675,13 @@
 
 2008-08-17  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
-	* es.po: Updated Spanish translation
+	* es.po: Updated Spanish translation  
 
 2008-08-17  Ignacio Casal Quinteiro  <nacho.resa@gmail.com>
 
 	 gl.po: Updated Galician translation
 
-2008-08-17  Priit Laes  <plaes at svn dot gnome dot org>
+2008-08-17  Priit Laes  <plaes at svn dot mate dot org>
 
 	* et.po: Translation updated by Ivar Smolin
 
@@ -721,11 +721,11 @@
 
 	* he.po: Updated Hebrew translation.
 
-2008-08-6  Djihed Afifi <djihed@gmail.com>
+2008-08-6  Djihed Afifi <djihed@gmail.com> 
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
-2008-08-05  Priit Laes  <plaes at svn dot gnome dot org>
+2008-08-05  Priit Laes  <plaes at svn dot mate dot org>
 
 	* et.po: Translation updated by Ivar Smolin
 
@@ -747,7 +747,7 @@
 
 	* pt.po: Updated Portuguese translation.
 
-2008-07-29  Djihed Afifi <djihed@gmail.com>
+2008-07-29  Djihed Afifi <djihed@gmail.com> 
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
@@ -765,9 +765,9 @@
 
 === mate-keyring 2.23.5 ===
 
-2008-07-20  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
+2008-07-20  Jorge Gonzalez  <jorgegonz@svn.gnome.org> 
 
-	* es.po: Updated Spanish translation
+	* es.po: Updated Spanish translation  
 
 2008-07-20  Yair Hershkovitz  <yairhr@gmail.com>
 
@@ -793,7 +793,7 @@
 2008-07-14  Stef Walter  <stef@memberwebs.com>
 
 	* POTFILES.in: Added gp11/gp11-misc.c
-
+	
 2008-07-14  Daniel Nylander  <po@danielnylander.se>
 
 	* sv.po: Updated Swedish translation.
@@ -805,7 +805,7 @@
 2008-07-09  Stef Walter  <stef@memberwebs.com>
 
 	* POTFILES.in: Added pk/gkr-pk-import.c
-
+	
 2008-07-09  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
@@ -813,26 +813,26 @@
 2008-07-07  Stef Walter  <stef@memberwebs.com>
 
 	* POTFILES.in: Added pk/gkr-pk-object.c pk/gkr-pk-object-storage.c
-
+	
 2008-07-07  Stef Walter  <stef@memberwebs.com>
 
 	* POTFILES.in: Updated
-
+	
 2008-07-02  Yannig Marchegay <yannig@marchegay.org>
 
 	* oc.po: Updated Occitan translation.
 
-2008-06-11  Djihed Afifi <djihed@gmail.com>
+2008-06-11  Djihed Afifi <djihed@gmail.com> 
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
 === mate-keyring 2.22.2 ===
 
-2008-05-22  Djihed Afifi <djihed@gmail.com>
+2008-05-22  Djihed Afifi <djihed@gmail.com> 
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
-2008-05-19  Djihed Afifi <djihed@gmail.com>
+2008-05-19  Djihed Afifi <djihed@gmail.com> 
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
@@ -886,7 +886,7 @@
 
 	* it.po: Updated Italian translation.
 
-2008-03-05  Priit Laes  <plaes at svn dot gnome dot org>
+2008-03-05  Priit Laes  <plaes at svn dot mate dot org>
 
 	* et.po: Translation updated by Ivar Smolin
 
@@ -932,7 +932,7 @@
 
 	* nl.po: Translation updated by Daniel van Eeden.
 
-2008-02-23  Gabor Kelemen  <kelemeng@gnome.hu>
+2008-02-23  Gabor Kelemen  <kelemeng@mate.hu>
 
 	* hu.po: Translation updated
 
@@ -940,7 +940,7 @@
 
 	* pt_BR: Updated Brazilian Portuguese translation by Hugo Doria.
 
-2008-02-21  Gabor Kelemen  <kelemeng@gnome.hu>
+2008-02-21  Gabor Kelemen  <kelemeng@mate.hu>
 
 	* hu.po: Translation updated by Balint Laza
 
@@ -948,7 +948,7 @@
 
 	* mk.po: Updated Macedonian translation.
 
-2008-02-19  Priit Laes  <plaes at svn dot gnome dot org>
+2008-02-19  Priit Laes  <plaes at svn dot mate dot org>
 
 	* et.po: Translation updated by Ivar Smolin
 
@@ -1088,7 +1088,7 @@
 
 	* th.po: Updated Thai translation.
 
-2008-02-01  Priit Laes  <plaes at svn dot gnome dot org>
+2008-02-01  Priit Laes  <plaes at svn dot mate dot org>
 
 	* et.po: Translation updated by Ivar Smolin
 
@@ -1124,7 +1124,7 @@
 
 === mate-keyring 2.21.5 ===
 
-2008-01-14  Priit Laes  <plaes at svn dot gnome dot org>
+2008-01-14  Priit Laes  <plaes at svn dot mate dot org>
 
 	* et.po: Translation updated by Ivar Smolin
 
@@ -1152,11 +1152,11 @@
 
 	* oc.po: Updated Occitan translation.
 
-2007-12-31  Priit Laes  <plaes at svn dot gnome dot org>
+2007-12-31  Priit Laes  <plaes at svn dot mate dot org>
 
 	* et.po: Translation updated by Ivar Smolin
 
-2007-12-31  Priit Laes  <plaes at svn dot gnome dot org>
+2007-12-31  Priit Laes  <plaes at svn dot mate dot org>
 
 	* et.po: Translation updated by Ivar Smolin
 
@@ -1190,7 +1190,7 @@
 
 	* sv.po: Updated Swedish translation.
 
-2007-12-11  Urbančič Matej <gnomeju@svn.gnome.org>
+2007-12-11  Urbančič Matej <mateju@svn.gnome.org>
 
 	* sl.po: Updated Slovenian translation.
 
@@ -1222,7 +1222,7 @@
 
 	* he.po, LINGUAS: Added Hebrew translation.
 
-2007-11-27  Urbančič Matej <gnomeju@svn.gnome.org>
+2007-11-27  Urbančič Matej <mateju@svn.gnome.org>
 
 	* sl.po: Updated Slovenian translation.
 
@@ -1230,7 +1230,7 @@
 
 	* es.po: Updated Spanish translation
 
-2007-11-14  Matej Urbančič  <gnomeju@svn.gnome.org>
+2007-11-14  Matej Urbančič  <mateju@svn.gnome.org>
 
 	* sl.po: Updated Slovenian translation.
 
@@ -1257,7 +1257,7 @@
 
 === mate-keyring 2.20.1 ===
 
-2007-10-15  Matej Urbančič  <gnomeju@svn.gnome.org>
+2007-10-15  Matej Urbančič  <mateju@svn.gnome.org>
 
 	* sl.po: Updated Slovenian translation.
 
@@ -1318,7 +1318,7 @@
 
 	* mk.po: Updated Macedonian translation.
 
-2007-09-04 Gabor Kelemen  <kelemeng@gnome.hu>
+2007-09-04 Gabor Kelemen  <kelemeng@mate.hu>
 
 	* hu.po: Translation updated.
 
@@ -1380,7 +1380,7 @@
 
 	* be@latin.po: Updated Belarusian Latin translation.
 
-2007-08-02  Hendrik Brandt  <heb@gnome-de.org>
+2007-08-02  Hendrik Brandt  <heb@mate-de.org>
 
 	* de.po: Updated German translation.
 
@@ -1457,7 +1457,7 @@
 	* te.po: Added Telugu translation done by
 	Bharat Kumar <jonnalagaddabharat@gmail.com>.
 
-2007-07-16 Gabor Kelemen  <kelemeng@gnome.hu>
+2007-07-16 Gabor Kelemen  <kelemeng@mate.hu>
 
 	* hu.po: Translation updated.
 
@@ -1693,7 +1693,7 @@
 
 	* ta.po: Updated Tamil translation.
 
-2006-08-31  Gabor Kelemen  <kelemeng@gnome.hu>
+2006-08-31  Gabor Kelemen  <kelemeng@mate.hu>
 
 	* hu.po: Translation updated.
 
@@ -1719,7 +1719,7 @@
 	* LINGUAS: Added an entry for Marathi(mr).
 	* mr.po: Added the file and Updated Marathi translation.
 
-2006-08-22  Wouter Bolsterlee  <uws+gnome@xs4all.nl>
+2006-08-22  Wouter Bolsterlee  <uws+mate@xs4all.nl>
 
 	* po/*: Fix "unkown" typo in all .po files and run
 	"make update-po" to update all translations (to avoid
@@ -1732,11 +1732,11 @@
 	* mg.po: Added Malagasy translation.
 	* LINGUAS: Added 'mg'.
 
-2006-08-18  Wouter Bolsterlee  <uws+gnome@xs4all.nl>
+2006-08-18  Wouter Bolsterlee  <uws+mate@xs4all.nl>
 
 	* nl.po: Translation updated by Wouter Bolsterlee.
 
-2006-08-17  Satoru SATOH <ss@gnome.gr.jp>
+2006-08-17  Satoru SATOH <ss@mate.gr.jp>
 
 	* ja.po: Updated Japanese translation.
 
@@ -1748,7 +1748,7 @@
 
 	* ru.po: Updated Russian translation
 
-2006-08-16  Gabor Kelemen  <kelemeng@gnome.hu>
+2006-08-16  Gabor Kelemen  <kelemeng@mate.hu>
 
 	* hu.po: Translation updated.
 
@@ -1861,7 +1861,7 @@
 
 	* vi.po: Updated Vietnamese translation.
 
-2006-05-25  Gabor Kelemen  <kelemeng@gnome.hu>
+2006-05-25  Gabor Kelemen  <kelemeng@mate.hu>
 
 	* hu.po: Translation updated.
 
@@ -2005,7 +2005,7 @@
 
 	* sv.po: Updated Swedish translation.
 
-2006-03-05  Mugurel Tudor  <mugurelu@gnome.ro>
+2006-03-05  Mugurel Tudor  <mugurelu@mate.ro>
 
 	* ro.po: Updated Romanian translation
 
@@ -2068,7 +2068,7 @@
 
 	* pt.po: Updated Portuguese translation.
 
-2006-02-15  Gabor Kelemen  <kelemeng@gnome.hu>
+2006-02-15  Gabor Kelemen  <kelemeng@mate.hu>
 
 	* hu.po: Hungarian translation updated by Mate ORY.
 
@@ -2107,7 +2107,7 @@
 
 	* fi.po: Updated Finnish translation.
 
-2005-11-19  Takeshi AIHANA <aihana@gnome.gr.jp>
+2005-11-19  Takeshi AIHANA <aihana@mate.gr.jp>
 
 	* ja.po: Updated Japanese translation.
 
@@ -2161,7 +2161,7 @@
 
 === mate-keyring 0.4.4 ===
 
-2005-08-23  Gabor Kelemen  <kelemeng@gnome.hu>
+2005-08-23  Gabor Kelemen  <kelemeng@mate.hu>
 
 	* hu.po: Hungarian translation updated.
 
@@ -2224,7 +2224,7 @@
 
 	* zh_CN.po: Updated Simplified Chinese translation.
 
-2005-03-30  Takeshi AIHANA <aihana@gnome.gr.jp>
+2005-03-30  Takeshi AIHANA <aihana@mate.gr.jp>
 
 	* ja.po: Updated Japanese translation.
 
@@ -2325,7 +2325,7 @@
 
 	* eu.po: Added Basque translation.
 
-2004-05-20  Andras Timar  <timar@gnome.hu>
+2004-05-20  Andras Timar  <timar@mate.hu>
 
 	* hu.po: Updated Hungarian translation.
 
@@ -2368,7 +2368,7 @@
 	* zh_TW.po: New traditional Chinese translation from
 	Woodman Tuen <woodman@culturecom.com.hk>.
 
-2004-03-19  Andras Timar  <timar@gnome.hu>
+2004-03-19  Andras Timar  <timar@mate.hu>
 
 	* hu.po: Added Hungarian translation.
 
@@ -2386,7 +2386,7 @@
 2004-03-11  Dmitry G. Mastrukov  <dmitry@taurussoft.org>
 
 	* ru.po: Added Russian translation
-	from Russian team <gnome-cyr@gnome.org>.
+	from Russian team <mate-cyr@gnome.org>.
 
 2004-03-10  Gustavo Maciel Dias Vieira  <gdvieira@zaz.com.br>
 
@@ -2457,7 +2457,7 @@
 
 	* no.po: Updated Norwegian translation.
 
-2004-01-31  Takeshi AIHANA <aihana@gnome.gr.jp>
+2004-01-31  Takeshi AIHANA <aihana@mate.gr.jp>
 
 	* ja.po: Updated Japanese translation.
 
@@ -2511,7 +2511,7 @@
 
 	* ko.po: Added Korean translation.
 
-2004-01-14  Christian Neumair  <chris@gnome-de.org>
+2004-01-14  Christian Neumair  <chris@mate-de.org>
 
 	* de.po: Added German translation.
 
@@ -2558,7 +2558,7 @@
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
-2003-12-29  Takeshi AIHANA <aihana@gnome.gr.jp>
+2003-12-29  Takeshi AIHANA <aihana@mate.gr.jp>
 
 	* ja.po: Updated Japanese translation.
 
@@ -2588,7 +2588,7 @@
 
 	* sv.po: Added Swedish translation.
 
-2003-12-15  Takeshi AIHANA <aihana@gnome.gr.jp>
+2003-12-15  Takeshi AIHANA <aihana@mate.gr.jp>
 
 	* ja.po: Added Japanese translation.
 

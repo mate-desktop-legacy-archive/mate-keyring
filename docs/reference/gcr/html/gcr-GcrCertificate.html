@@ -92,9 +92,9 @@ GcrCertificateIface is implemented by
 <div class="refsect1" title="Description">
 <a name="gcr-GcrCertificate.description"></a><h2>Description</h2>
 <p>
-This is an interface that represents an X509 certificate. Objects can
+This is an interface that represents an X509 certificate. Objects can 
 implement this interface to make a certificate usable with the GCR
-library.
+library. 
 </p>
 <p>
 You can use <a class="link" href="gcr-gcr-simple-certificate.html#GcrSimpleCertificate"><span class="type">GcrSimpleCertificate</span></a> to simply load a certificate.
@@ -165,7 +165,7 @@ Gets the raw DER data for an X509 certificate.
 <a name="gcr-certificate-get-issuer-cn"></a><h3>gcr_certificate_get_issuer_cn ()</h3>
 <pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              gcr_certificate_get_issuer_cn       (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>);</pre>
 <p>
-Get the common name of the issuer of this certificate.
+Get the common name of the issuer of this certificate. 
 </p>
 <p>
 The string returned should be freed by the caller when no longer
@@ -192,8 +192,8 @@ required.
 <a name="gcr-certificate-get-issuer-dn"></a><h3>gcr_certificate_get_issuer_dn ()</h3>
 <pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              gcr_certificate_get_issuer_dn       (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>);</pre>
 <p>
-Get the full issuer DN of the certificate as a (mostly)
-readable string.
+Get the full issuer DN of the certificate as a (mostly) 
+readable string. 
 </p>
 <p>
 The string returned should be freed by the caller when no longer
@@ -221,11 +221,11 @@ required.
 <pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              gcr_certificate_get_issuer_part     (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *part</code></em>);</pre>
 <p>
-Get a part of the DN of the issuer of this certificate.
+Get a part of the DN of the issuer of this certificate. 
 </p>
 <p>
 Examples of a <em class="parameter"><code>part</code></em> might be the 'OU' (organizational unit)
-or the 'CN' (common name). Only the value of that part
+or the 'CN' (common name). Only the value of that part 
 of the DN is returned.
 </p>
 <p>
@@ -258,7 +258,7 @@ required.
 <a name="gcr-certificate-get-subject-cn"></a><h3>gcr_certificate_get_subject_cn ()</h3>
 <pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              gcr_certificate_get_subject_cn      (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>);</pre>
 <p>
-Get the common name of the subject of this certificate.
+Get the common name of the subject of this certificate. 
 </p>
 <p>
 The string returned should be freed by the caller when no longer
@@ -285,8 +285,8 @@ required.
 <a name="gcr-certificate-get-subject-dn"></a><h3>gcr_certificate_get_subject_dn ()</h3>
 <pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              gcr_certificate_get_subject_dn      (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>);</pre>
 <p>
-Get the full subject DN of the certificate as a (mostly)
-readable string.
+Get the full subject DN of the certificate as a (mostly) 
+readable string. 
 </p>
 <p>
 The string returned should be freed by the caller when no longer
@@ -314,11 +314,11 @@ required.
 <pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              gcr_certificate_get_subject_part    (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *part</code></em>);</pre>
 <p>
-Get a part of the DN of the subject of this certificate.
+Get a part of the DN of the subject of this certificate. 
 </p>
 <p>
 Examples of a <em class="parameter"><code>part</code></em> might be the 'OU' (organizational unit)
-or the 'CN' (common name). Only the value of that part
+or the 'CN' (common name). Only the value of that part 
 of the DN is returned.
 </p>
 <p>
@@ -354,7 +354,7 @@ required.
 Get the issued date of this certificate.
 </p>
 <p>
-The <a href="http://library.gnome.org/devel/glib/unstable/glib-Date-and-Time-Functions.html#GDate"><span class="type">GDate</span></a> returned should be freed by the caller using
+The <a href="http://library.gnome.org/devel/glib/unstable/glib-Date-and-Time-Functions.html#GDate"><span class="type">GDate</span></a> returned should be freed by the caller using 
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Date-and-Time-Functions.html#g-date-free"><code class="function">g_date_free()</code></a> when no longer required.
 </p>
 <div class="variablelist"><table border="0">
@@ -381,7 +381,7 @@ The <a href="http://library.gnome.org/devel/glib/unstable/glib-Date-and-Time-Fun
 Get the expiry date of this certificate.
 </p>
 <p>
-The <a href="http://library.gnome.org/devel/glib/unstable/glib-Date-and-Time-Functions.html#GDate"><span class="type">GDate</span></a> returned should be freed by the caller using
+The <a href="http://library.gnome.org/devel/glib/unstable/glib-Date-and-Time-Functions.html#GDate"><span class="type">GDate</span></a> returned should be freed by the caller using 
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Date-and-Time-Functions.html#g-date-free"><code class="function">g_date_free()</code></a> when no longer required.
 </p>
 <div class="variablelist"><table border="0">
@@ -466,7 +466,7 @@ it is no longer required.
 <a name="gcr-certificate-get-key-size"></a><h3>gcr_certificate_get_key_size ()</h3>
 <pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>               gcr_certificate_get_key_size        (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>);</pre>
 <p>
-Get the key size in bits of the public key represented
+Get the key size in bits of the public key represented 
 by this certificate.
 </p>
 <div class="variablelist"><table border="0">
@@ -522,7 +522,7 @@ it is no longer required.
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> the raw binary fingerprint.
+<td> the raw binary fingerprint.  
 </td>
 </tr>
 </tbody>
@@ -534,7 +534,7 @@ it is no longer required.
 <pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              gcr_certificate_get_fingerprint_hex (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Data-Checksums.html#GChecksumType"><span class="type">GChecksumType</span></a> type</code></em>);</pre>
 <p>
-Calculate the fingerprint for this certificate, and return it
+Calculate the fingerprint for this certificate, and return it 
 as a hex string.
 </p>
 <p>
@@ -560,7 +560,7 @@ it is no longer required.
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> an allocated hex string which contains the fingerprint.
+<td> an allocated hex string which contains the fingerprint.  
 </td>
 </tr>
 </tbody>

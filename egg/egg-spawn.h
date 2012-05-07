@@ -25,9 +25,7 @@
 
 #include <glib-object.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+G_BEGIN_DECLS
 
 typedef struct _EggSpawnCallbacks {
 	gboolean (*standard_input) (int fd, gpointer user_data);
@@ -62,8 +60,6 @@ gssize              egg_spawn_write_input          (int fd, gconstpointer data, 
 
 gssize              egg_spawn_read_output          (int fd, gpointer data, gsize n_data);
 
-#ifdef __cplusplus
-}
-#endif
+G_END_DECLS
 
 #endif /*EGG_SPAWN_H_*/

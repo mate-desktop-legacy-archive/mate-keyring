@@ -7,8 +7,8 @@ https://github.com/mate-dekstop/mate-keyring/issues
 Mate Keyring is made up of several distinct parts working on concert with
 each other. These parts generally live in different directories:
 
-daemon
-   The main daemon startup code and mate-keyring password protocol operations.
+daemon 
+   The main daemon startup code and mate-keyring password protocol operations. 
 
 daemon/control
    Binary protocol for controling and initializing the daemon.
@@ -27,60 +27,145 @@ daemon/ssh-agent
 
 egg
    Code that either: a) Really should be implemented elsewhere (eg: glib) but isn't.
-   b) Code that needs to be shared between loosely coupled mate-keyring components.
+   b) Code that needs to be shared between loosely coupled mate-keyring components.  
+
+gck
+   A public library for accessing PKCS#11 modules.
 
 gcr
    A public library for bits of crypto UI and parsing etc...
-
-gp11
-   A public library for accessing PKCS#11 modules.
-
-pam
+   
+pam 
    The PAM module that unlocks the login keyring when the user logs in.
-
+   
 pkcs11
    The various bits of the PKCS#11 implementation.
 
 pkcs11/gck
    A base library for implementing our internal PKCS#11 modules.
-
+   
 pkcs11/roots-store
    A PKCS#11 module that exposes Root CA certificates from a directory like /etc/ssl/certs
-
+   
 pkcs11/rpc-layer
    A PKCS#11 module that calls into the daemon. This is the module that apps actually use.
-
+   
 pkcs11/ssh-store
    A PKCS#11 module which exposes objects in ~/.ssh directory.
-
+   
 pkcs11/user-store
    A PKCS#11 module for general storage of certificates and keys.
 
 pkcs11/wrap-layer
    A PKCS#11 module that combines slots from multiple PKCS#11 modules into one module.
 
-testsing
+testing
    Test tools and unit tests.
+
+tool
+   The mate-keyring command line tool.
 
 ui
    Prompting the user, asking for passwords.
 
---------------------------------------------------------------------------------
-                            USE OF WORKER THREADS
 
-Mate Keyring uses threads in a limited manner, as state machines, (ie: execution
-stacks). Only one thread runs at any given time, each thread hands off execution
-to another thread.
+----------------------------------------------------------------------------------
+  CODING STYLE
+----------------------------------------------------------------------------------
 
-The *only* use of threading and/or synchronization primitives should be in:
+Our coding style is very similar to the linux coding style:
 
-   common/gkr-async.c
+  http://lxr.linux.no/linux/Documentation/CodingStyle
 
-Worker threads are created by using gkr_async_worker_start(). Each worker needs
-to call gkr_async_yield() regularly, to give other threads a chance to run.
+Summary below. Differences from Linux coding style are marked with a plus
+instead of an asterisk:
 
-If a thread needs perform a blocking syscall, or do something that takes a long
-time (like create a key) it can use the gkr_async_begin_concurrent() and
-gkr_async_end_concurrent() functions. While running 'concurrent' no global
-functions and/or data should be accessed.
+ + Space between function name and parentheses.
 
+		my_function_call (arg1, arg2);
+
+ * Braces on the same line as conditional with spaces around braces:
+
+		if (test) {
+			do_y ();
+			do_z ();
+		}
+
+		switch (value) {
+		case CONSTANT:
+			do_z ();
+			break;
+		default:
+			break;
+		}
+
+ * Braces around functions on a separate line from function name,
+   return value on a separate line:
+
+		static void
+		my_special_function (int arg)
+		{
+			/* body of function */
+		}
+
+ * Don't use braces unnecessarily:
+
+		if (test)
+			do_this_thing ();
+
+ * But use braces here, when one section has more than a line:
+
+		if (test) {
+			do_this_thing ();
+		} else {
+			do_other_thing ();
+			smile_nicely ();
+		}
+
+ * Use of tabs for 8 char indent.
+
+	------->if (test) {
+	------->------->Value;
+	------->------->Value;
+	------->}
+
+ * No trailing whitespace on lines. Git will warn you about this.
+   Please enforce it like so (in mate-keyring checkout):
+
+	$ cp -ipv .git/hooks/pre-commit.sample .git/hooks/pre-commit
+
+ * The '*' in a pointer declaraction belongs with the variable name:
+
+	char *name;
+
+ + Extra long wrapped lines should wrap to function opening brace
+   using spaces past indentation point.
+
+	------>my_function_call ("this is a very long argument here",
+	------>                  "wrapped argument is indented with spaces");
+
+ * Function names are in lower case with _ separators.
+
+	this_is_a_long_function_name ();
+
+ * Constants are all in upper case with _ separators.
+
+	THIS_IS_A_CONSTANT
+
+ + Structures should be typedefed to avoid saying 'struct' and names
+   are CamelCase:
+
+        ThisIsAStruct
+
+ * One line comments should look like:
+
+	/* This is a one line comment */
+
+ * Multi line comments should look like:
+
+	/*
+	 * This is a multiline comment.
+	 * And it has a useless second line.
+	 */
+
+When in doubt adapt to the style of the code around your patch.

@@ -21,11 +21,13 @@ INCLUDES=	\
 	$(GOBJECT_CFLAGS)				\
 	$(GTHREAD_CFLAGS)				\
 	$(GIO_CFLAGS)					\
-	$(GLIB_CFLAGS)
+	$(GLIB_CFLAGS) 					\
+	-DGCK_API_SUBJECT_TO_CHANGE
 
 mate_keyring_daemon_SOURCES = \
 	gkd-glue.c gkd-glue.h \
 	gkd-main.c gkd-main.h \
+	gkd-capability.c gkd-capability.h \
 	gkd-pkcs11.c gkd-pkcs11.h \
 	gkd-util.c gkd-util.h
 
@@ -43,7 +45,7 @@ mate_keyring_daemon_LDADD = \
 	$(top_builddir)/pkcs11/ssh-store/libgkm-ssh-store.la \
 	$(top_builddir)/pkcs11/user-store/libgkm-user-store.la \
 	$(top_builddir)/pkcs11/gkm/libgkm.la \
-	$(top_builddir)/gp11/libmategp11.la \
+	$(top_builddir)/gck/libmategck.la \
 	$(top_builddir)/egg/libegg-dbus.la \
 	$(DAEMON_LIBS) \
 	$(GOBJECT_LIBS) \
@@ -76,5 +78,14 @@ EXTRA_DIST = \
 CLEANFILES = \
 	$(service_DATA) \
 	$(desktop_DATA)
+
+# The daemon is installed as setuid so as to obtain specialized
+# capabilities, then immediately drops permissions. In other words,
+# it does *not* run as setuid.
+# If installing as non-root, chown+chmod will not succeed but
+# the build will continue.
+install-exec-hook:
+	chown root $(bindir)/mate-keyring-daemon || true
+	chmod u+s $(bindir)/mate-keyring-daemon || true
 
 @INTLTOOL_DESKTOP_RULE@

@@ -18,18 +18,6 @@
   <functions>
     <function name="GcrImportDialogPrivate" link="gcr-gcr-import-dialog.html#GcrImportDialogPrivate"/>
     <function name="GcrImportDialog" link="gcr-gcr-import-dialog.html#GcrImportDialog"/>
-    <function name="GcrCertificateDetailsWidgetPrivate" link="gcr-gcr-certificate-details-widget.html#GcrCertificateDetailsWidgetPrivate"/>
-    <function name="GcrCertificateDetailsWidget" link="gcr-gcr-certificate-details-widget.html#GcrCertificateDetailsWidget-struct"/>
-    <function name="gcr_certificate_details_widget_new ()" link="gcr-gcr-certificate-details-widget.html#gcr-certificate-details-widget-new"/>
-    <function name="gcr_certificate_details_widget_get_certificate ()" link="gcr-gcr-certificate-details-widget.html#gcr-certificate-details-widget-get-certificate"/>
-    <function name="gcr_certificate_details_widget_set_certificate ()" link="gcr-gcr-certificate-details-widget.html#gcr-certificate-details-widget-set-certificate"/>
-    <function name="The &quot;certificate&quot; property" link="gcr-gcr-certificate-details-widget.html#GcrCertificateDetailsWidget--certificate"/>
-    <function name="GcrCertificateBasicsWidgetPrivate" link="gcr-gcr-certificate-basics-widget.html#GcrCertificateBasicsWidgetPrivate"/>
-    <function name="GcrCertificateBasicsWidget" link="gcr-gcr-certificate-basics-widget.html#GcrCertificateBasicsWidget-struct"/>
-    <function name="gcr_certificate_basics_widget_new ()" link="gcr-gcr-certificate-basics-widget.html#gcr-certificate-basics-widget-new"/>
-    <function name="gcr_certificate_basics_widget_get_certificate ()" link="gcr-gcr-certificate-basics-widget.html#gcr-certificate-basics-widget-get-certificate"/>
-    <function name="gcr_certificate_basics_widget_set_certificate ()" link="gcr-gcr-certificate-basics-widget.html#gcr-certificate-basics-widget-set-certificate"/>
-    <function name="The &quot;certificate&quot; property" link="gcr-gcr-certificate-basics-widget.html#GcrCertificateBasicsWidget--certificate"/>
     <function name="GcrParsedItem" link="gcr-gcr-parser.html#GcrParsedItem"/>
     <function name="GcrParserPrivate" link="gcr-gcr-parser.html#GcrParserPrivate"/>
     <function name="GcrParser" link="gcr-gcr-parser.html#GcrParser-struct"/>
@@ -78,8 +66,6 @@
     <function name="GcrImporterPrivate" link="gcr-gcr-importer.html#GcrImporterPrivate"/>
     <function name="GcrImporter" link="gcr-gcr-importer.html#GcrImporter-struct"/>
     <function name="gcr_importer_new ()" link="gcr-gcr-importer.html#gcr-importer-new"/>
-    <function name="gcr_importer_get_parser ()" link="gcr-gcr-importer.html#gcr-importer-get-parser"/>
-    <function name="gcr_importer_set_parser ()" link="gcr-gcr-importer.html#gcr-importer-set-parser"/>
     <function name="gcr_importer_get_slot ()" link="gcr-gcr-importer.html#gcr-importer-get-slot"/>
     <function name="gcr_importer_set_slot ()" link="gcr-gcr-importer.html#gcr-importer-set-slot"/>
     <function name="gcr_importer_get_prompt_behavior ()" link="gcr-gcr-importer.html#gcr-importer-get-prompt-behavior"/>
@@ -87,10 +73,10 @@
     <function name="gcr_importer_import ()" link="gcr-gcr-importer.html#gcr-importer-import"/>
     <function name="gcr_importer_import_async ()" link="gcr-gcr-importer.html#gcr-importer-import-async"/>
     <function name="gcr_importer_import_finish ()" link="gcr-gcr-importer.html#gcr-importer-import-finish"/>
-    <function name="The &quot;parser&quot; property" link="gcr-gcr-importer.html#GcrImporter--parser"/>
     <function name="The &quot;prompt-behavior&quot; property" link="gcr-gcr-importer.html#GcrImporter--prompt-behavior"/>
     <function name="The &quot;slot&quot; property" link="gcr-gcr-importer.html#GcrImporter--slot"/>
     <function name="The &quot;imported&quot; signal" link="gcr-gcr-importer.html#GcrImporter-imported"/>
+    <function name="The &quot;queued&quot; signal" link="gcr-gcr-importer.html#GcrImporter-queued"/>
     <function name="GcrSimpleCertificatePrivate" link="gcr-gcr-simple-certificate.html#GcrSimpleCertificatePrivate"/>
     <function name="GcrSimpleCertificate" link="gcr-gcr-simple-certificate.html#GcrSimpleCertificate-struct"/>
     <function name="gcr_simple_certificate_new ()" link="gcr-gcr-simple-certificate.html#gcr-simple-certificate-new"/>

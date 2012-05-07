@@ -20,17 +20,13 @@
 #ifndef __GCR_UNLOCK_OPTIONS_H__
 #define __GCR_UNLOCK_OPTIONS_H__
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+G_BEGIN_DECLS
 
 #define GCR_UNLOCK_OPTION_ALWAYS    "always"
 #define GCR_UNLOCK_OPTION_SESSION   "session"
 #define GCR_UNLOCK_OPTION_TIMEOUT   "timeout"
 #define GCR_UNLOCK_OPTION_IDLE      "idle"
 
-#ifdef __cplusplus
-}
-#endif
+G_END_DECLS
 
 #endif /* __GCR_UNLOCK_OPTIONS_H__ */

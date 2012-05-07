@@ -1,8 +1,148 @@
-<!-- ##### SIGNAL GcrImporter::queued ##### -->
+<!-- ##### STRUCT GcrCertificateBasicsWidget ##### -->
 <para>
 
 </para>
 
-@gcrimporter: the object which received the signal.
-@arg1: 
+
+<!-- ##### ARG GcrCertificateBasicsWidget:certificate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT GcrCertificateBasicsWidgetPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT GcrCertificateDetailsWidget ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG GcrCertificateDetailsWidget:certificate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT GcrCertificateDetailsWidgetPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG GcrCertificateIface:description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG GcrCertificateIface:expiry ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG GcrCertificateIface:icon ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG GcrCertificateIface:issuer ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG GcrCertificateIface:label ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG GcrCertificateIface:markup ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG GcrCertificateIface:subject ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG GcrImporter:parser ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION gcr_certificate_basics_widget_get_certificate ##### -->
+<para>
+
+</para>
+
+@basics: 
+@Returns: 
+
+<!-- ##### FUNCTION gcr_certificate_basics_widget_new ##### -->
+<para>
+
+</para>
+
+@cert: 
+@Returns: 
+
+<!-- ##### FUNCTION gcr_certificate_basics_widget_set_certificate ##### -->
+<para>
+
+</para>
+
+@basics: 
+@cert: 
+
+<!-- ##### FUNCTION gcr_certificate_details_widget_get_certificate ##### -->
+<para>
+
+</para>
+
+@details: 
+@Returns: 
+
+<!-- ##### FUNCTION gcr_certificate_details_widget_new ##### -->
+<para>
+
+</para>
+
+@cert: 
+@Returns: 
+
+<!-- ##### FUNCTION gcr_certificate_details_widget_set_certificate ##### -->
+<para>
+
+</para>
+
+@details: 
+@cert: 
+
+<!-- ##### FUNCTION gcr_importer_get_parser ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+<!-- ##### FUNCTION gcr_importer_set_parser ##### -->
+<para>
+
+</para>
+
+@self: 
+@parser: 
 

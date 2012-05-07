@@ -49,10 +49,13 @@ GcrImporter
 @gcrimporter: the object which received the signal.
 @arg1: 
 
-<!-- ##### ARG GcrImporter:parser ##### -->
+<!-- ##### SIGNAL GcrImporter::queued ##### -->
 <para>
 
 </para>
+
+@gcrimporter: the object which received the signal.
+@arg1: 
 
 <!-- ##### ARG GcrImporter:prompt-behavior ##### -->
 <para>
@@ -71,24 +74,6 @@ GcrImporter
 
 @void: 
 @Returns: 
-
-
-<!-- ##### FUNCTION gcr_importer_get_parser ##### -->
-<para>
-
-</para>
-
-@self: 
-@Returns: 
-
-
-<!-- ##### FUNCTION gcr_importer_set_parser ##### -->
-<para>
-
-</para>
-
-@self: 
-@parser: 
 
 
 <!-- ##### FUNCTION gcr_importer_get_slot ##### -->
@@ -133,7 +118,6 @@ GcrImporter
 </para>
 
 @self: 
-@input: 
 @cancel: 
 @error: 
 @Returns: 
@@ -145,7 +129,6 @@ GcrImporter
 </para>
 
 @self: 
-@input: 
 @cancel: 
 @callback: 
 @user_data: 

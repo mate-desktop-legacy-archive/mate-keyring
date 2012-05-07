@@ -1,22 +1,22 @@
-/*
+/* 
  * mate-keyring
- *
+ * 
  * Copyright (C) 2008 Stefan Walter
- *
- * This program is free software; you can redistribute it and/or modify
+ * 
+ * This program is free software; you can redistribute it and/or modify 
  * it under the terms of the GNU Lesser General Public License as
  * published by the Free Software Foundation; either version 2.1 of
  * the License, or (at your option) any later version.
- *
+ *  
  * This program is distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * Lesser General Public License for more details.
- *
+ *  
  * You should have received a copy of the GNU Lesser General Public
  * License along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
+ * 02111-1307, USA.  
  */
 
 #ifndef __GCR_IMPORT_DIALOG_H__
@@ -24,13 +24,11 @@
 
 #include "gcr.h"
 
-#include "gp11/gp11.h"
+#include "gck/gck.h"
 
 #include <gtk/gtk.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+G_BEGIN_DECLS
 
 #define GCR_TYPE_IMPORT_DIALOG               (_gcr_import_dialog_get_type ())
 #define GCR_IMPORT_DIALOG(obj)               (G_TYPE_CHECK_INSTANCE_CAST ((obj), GCR_TYPE_IMPORT_DIALOG, GcrImportDialog))
@@ -59,10 +57,10 @@ GcrImportDialog*    _gcr_import_dialog_new                    (void);
 gboolean            _gcr_import_dialog_run                    (GcrImportDialog *self,
                                                                GtkWindow *parent);
 
-GP11Slot*           _gcr_import_dialog_get_selected_slot      (GcrImportDialog *self);
+GckSlot*            _gcr_import_dialog_get_selected_slot      (GcrImportDialog *self);
 
 void                _gcr_import_dialog_set_selected_slot      (GcrImportDialog *self,
-                                                               GP11Slot *slot);
+                                                               GckSlot *slot);
 
 void                _gcr_import_dialog_show_selected_slot     (GcrImportDialog *self);
 
@@ -87,8 +85,6 @@ const gchar*        _gcr_import_dialog_get_secondary_text     (GcrImportDialog *
 void                _gcr_import_dialog_set_secondary_text     (GcrImportDialog *self,
                                                                const gchar *text);
 
-#ifdef __cplusplus
-}
-#endif
+G_END_DECLS
 
 #endif /* __GCR_IMPORT_DIALOG_H__ */

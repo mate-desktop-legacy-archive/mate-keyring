@@ -28,9 +28,7 @@
 
 #include "gkm-file-tracker.h"
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+G_BEGIN_DECLS
 
 #define GKM_TYPE_FILE_TRACKER             (gkm_file_tracker_get_type ())
 #define GKM_FILE_TRACKER(obj)             (G_TYPE_CHECK_INSTANCE_CAST ((obj), GKM_TYPE_FILE_TRACKER, GkmFileTracker))
@@ -59,8 +57,6 @@ GkmFileTracker*          gkm_file_tracker_new                  (const gchar *dir
 void                     gkm_file_tracker_refresh              (GkmFileTracker *self,
                                                                 gboolean force_all);
 
-#ifdef __cplusplus
-}
-#endif
+G_END_DECLS
 
 #endif /* __GKM_FILE_TRACKER_H__ */

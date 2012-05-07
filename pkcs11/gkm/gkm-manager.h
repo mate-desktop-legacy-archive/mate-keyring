@@ -46,9 +46,7 @@
  * manager will go away.
  */
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+G_BEGIN_DECLS
 
 #include <glib-object.h>
 
@@ -144,8 +142,6 @@ CK_RV                   gkm_manager_find_handles                (GkmManager *sel
                                                                  CK_ULONG count,
                                                                  GArray *found);
 
-#ifdef __cplusplus
-}
-#endif
+G_END_DECLS
 
 #endif /* __GKM_MANAGER_H__ */

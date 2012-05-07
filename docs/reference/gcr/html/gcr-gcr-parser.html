@@ -61,8 +61,7 @@
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *password</code></em>);
 const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*        <a class="link" href="gcr-gcr-parser.html#gcr-parser-get-parsed-label" title="gcr_parser_get_parsed_label ()">gcr_parser_get_parsed_label</a>         (<em class="parameter"><code><a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="type">GcrParser</span></a> *self</code></em>);
 const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*        <a class="link" href="gcr-gcr-parser.html#gcr-parser-get-parsed-description" title="gcr_parser_get_parsed_description ()">gcr_parser_get_parsed_description</a>   (<em class="parameter"><code><a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="type">GcrParser</span></a> *self</code></em>);
-struct <a href="http://library.gnome.org/devel/gp11/unstable/gp11-GP11Attributes.html#GP11Attributes"><span class="returnvalue">_GP11Attributes</span></a>* <a class="link" href="gcr-gcr-parser.html#gcr-parser-get-parsed-attributes" title="gcr_parser_get_parsed_attributes ()">gcr_parser_get_parsed_attributes</a>
-                                                        (<em class="parameter"><code><a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="type">GcrParser</span></a> *self</code></em>);
+struct <a href="http://library.gnome.org/devel/gck/unstable/gck-GckAttributes.html#GckAttributes"><span class="returnvalue">_GckAttributes</span></a>* <a class="link" href="gcr-gcr-parser.html#gcr-parser-get-parsed-attributes" title="gcr_parser_get_parsed_attributes ()">gcr_parser_get_parsed_attributes</a> (<em class="parameter"><code><a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="type">GcrParser</span></a> *self</code></em>);
 </pre>
 </div>
 <div class="refsect1" title="Object Hierarchy">
@@ -75,7 +74,7 @@ struct <a href="http://library.gnome.org/devel/gp11/unstable/gp11-GP11Attributes
 <div class="refsect1" title="Properties">
 <a name="gcr-gcr-parser.properties"></a><h2>Properties</h2>
 <pre class="synopsis">
-  "<a class="link" href="gcr-gcr-parser.html#GcrParser--parsed-attributes" title='The "parsed-attributes" property'>parsed-attributes</a>"        <a href="http://library.gnome.org/devel/gp11/unstable/gp11-GP11Attributes.html#GP11Attributes"><span class="type">GP11Attributes</span></a>*       : Read
+  "<a class="link" href="gcr-gcr-parser.html#GcrParser--parsed-attributes" title='The "parsed-attributes" property'>parsed-attributes</a>"        <a href="http://library.gnome.org/devel/gck/unstable/gck-GckAttributes.html#GckAttributes"><span class="type">GckAttributes</span></a>*        : Read
   "<a class="link" href="gcr-gcr-parser.html#GcrParser--parsed-description" title='The "parsed-description" property'>parsed-description</a>"       <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read
   "<a class="link" href="gcr-gcr-parser.html#GcrParser--parsed-label" title='The "parsed-label" property'>parsed-label</a>"             <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read
 </pre>
@@ -323,8 +322,7 @@ struct <a href="http://library.gnome.org/devel/gp11/unstable/gp11-GP11Attributes
 <hr>
 <div class="refsect2" title="gcr_parser_get_parsed_attributes ()">
 <a name="gcr-parser-get-parsed-attributes"></a><h3>gcr_parser_get_parsed_attributes ()</h3>
-<pre class="programlisting">struct <a href="http://library.gnome.org/devel/gp11/unstable/gp11-GP11Attributes.html#GP11Attributes"><span class="returnvalue">_GP11Attributes</span></a>* gcr_parser_get_parsed_attributes
-                                                        (<em class="parameter"><code><a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="type">GcrParser</span></a> *self</code></em>);</pre>
+<pre class="programlisting">struct <a href="http://library.gnome.org/devel/gck/unstable/gck-GckAttributes.html#GckAttributes"><span class="returnvalue">_GckAttributes</span></a>* gcr_parser_get_parsed_attributes (<em class="parameter"><code><a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="type">GcrParser</span></a> *self</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -348,7 +346,7 @@ struct <a href="http://library.gnome.org/devel/gp11/unstable/gp11-GP11Attributes
 <a name="gcr-gcr-parser.property-details"></a><h2>Property Details</h2>
 <div class="refsect2" title='The "parsed-attributes" property'>
 <a name="GcrParser--parsed-attributes"></a><h3>The <code class="literal">"parsed-attributes"</code> property</h3>
-<pre class="programlisting">  "parsed-attributes"        <a href="http://library.gnome.org/devel/gp11/unstable/gp11-GP11Attributes.html#GP11Attributes"><span class="type">GP11Attributes</span></a>*       : Read</pre>
+<pre class="programlisting">  "parsed-attributes"        <a href="http://library.gnome.org/devel/gck/unstable/gck-GckAttributes.html#GckAttributes"><span class="type">GckAttributes</span></a>*        : Read</pre>
 <p>Parsed PKCS#11 attributes.</p>
 </div>
 <hr>

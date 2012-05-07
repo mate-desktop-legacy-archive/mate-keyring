@@ -1,6 +1,6 @@
 AC_INIT(daemon/gkd-main.c)
 
-AM_INIT_AUTOMAKE(mate-keyring, 1.2.1)
+AM_INIT_AUTOMAKE(mate-keyring, 1.3.0)
 AM_CONFIG_HEADER(config.h)
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
@@ -13,15 +13,15 @@ dnl  2. If any interfaces have been added, removed, or changed since the last up
 dnl  3. If any interfaces have been added since the last public release, then increment age.
 dnl  4. If any interfaces have been removed or changed since the last public release, then set age to 0.
 
-# GP11 package versioning
-GP11_MAJOR=0
-GP11_MINOR=0
-GP11_MICRO=0
+# GCK package versioning
+GCK_MAJOR=0
+GCK_MINOR=0
+GCK_MICRO=0
 
-# GP11 libtool versioning
-GP11_CURRENT=0
-GP11_REVISION=0
-GP11_AGE=0
+# GCK libtool versioning
+GCK_CURRENT=0
+GCK_REVISION=0
+GCK_AGE=0
 
 # GCR package versioning
 GCR_MAJOR_GTK2=0
@@ -44,7 +44,6 @@ AM_SANITY_CHECK
 AM_MAINTAINER_MODE
 
 AC_GNU_SOURCE
-AC_C_CONST
 AC_ISC_POSIX
 AC_PROG_CC
 AC_PROG_CPP
@@ -180,7 +179,7 @@ AC_CHECK_FUNCS(getpeereid, AC_DEFINE(HAVE_GETPEEREID, 1, [Have getpeereid functi
 AC_CHECK_FUNCS(flock, AC_DEFINE(HAVE_FLOCK,1,[Have flock]))
 
 # --------------------------------------------------------------------
-# Check for timegm
+# Check for timegm 
 #
 
 AC_CHECK_FUNCS(timegm, AC_DEFINE(HAVE_TIMEGM,1,[Have timegm]))
@@ -223,7 +222,7 @@ AC_CHECK_FUNCS(mlock)
 
 # --------------------------------------------------------------------
 # socket()
-#
+#	
 
 AC_CHECK_LIB(socket, socket)
 
@@ -242,7 +241,7 @@ fi
 
 # --------------------------------------------------------------------
 # DBus Checks
-#
+# 
 
 DBUS_REQUIRED=1.0
 PKG_CHECK_MODULES([DBUS], dbus-1 >= 1.0)
@@ -428,8 +427,23 @@ DAEMON_LIBS="$DAEMON_LIBS"
 
 AC_PATH_PROG(ASN1PARSER, asn1Parser, no)
 if test "$ASN1PARSER" = "no" ; then
-	AC_MSG_ERROR(asn1Parser tool is not installed)
+	AC_MSG_ERROR([asn1Parser tool is not installed, try libtasn1 or a related package])
 fi
+
+# -------------------------------------------------------------------
+# libcap2
+#
+
+AC_CHECK_LIB([cap], [cap_get_proc], have_libcap="yes", have_libcap="no")
+
+if test $have_libcap = yes; then
+   AC_DEFINE(HAVE_LIBCAP, 1, [Have libcap2 package, libcap library])
+   DAEMON_LIBS="$DAEMON_LIBS -lcap"
+else
+   AC_MSG_WARN([libcap2 (or development headers) is not installed])
+fi
+
+libcap_status=$have_libcap
 
 # --------------------------------------------------------------------
 # Debug mode
@@ -566,13 +580,13 @@ if test "$enable_valgrind" = "run"; then
 	if test "$VALGRIND" = "no" ; then
 		AC_MSG_ERROR(valgrind tool is not installed)
 	fi
-
+	
 	VALGRIND_ARG="--log-file=/tmp/gkr-valgrind.log.%p"
 	VALGRIND_RUN="$VALGRIND $VALGRIND_ARG "
 
 	AC_DEFINE_UNQUOTED(VALGRIND, "$VALGRIND", [Path to valgrind executable])
 	AC_DEFINE_UNQUOTED(VALGRIND_ARG, "$VALGRIND_ARG", [Valgrind arguments])
-
+	
 	enable_valgrind="yes"
 	valgrind_status="run"
 fi
@@ -619,9 +633,9 @@ fi
 
 # ----------------------------------------------------------------------
 
-GP11_LT_RELEASE=$GP11_CURRENT:$GP11_REVISION:$GP11_AGE
-AC_SUBST(GP11_LT_RELEASE)
-AC_SUBST(GP11_MAJOR)
+GCK_LT_RELEASE=$GCK_CURRENT:$GCK_REVISION:$GCK_AGE
+AC_SUBST(GCK_LT_RELEASE)
+AC_SUBST(GCK_MAJOR)
 
 GCR_LT_RELEASE=$GCR_CURRENT:$GCR_REVISION:$GCR_AGE
 AC_SUBST(GCR_LT_RELEASE)
@@ -668,15 +682,15 @@ daemon/ssh-agent/Makefile
 docs/Makefile
 docs/reference/Makefile
 docs/reference/gcr/Makefile
-docs/reference/gp11/Makefile
+docs/reference/gck/Makefile
 egg/Makefile
 egg/tests/Makefile
+gck/mate-gck.pc
+gck/Makefile
+gck/tests/Makefile
 gcr/mate-gcr.pc
 gcr/Makefile
 gcr/tests/Makefile
-gp11/mate-gp11.pc
-gp11/Makefile
-gp11/tests/Makefile
 pam/Makefile
 pkcs11/Makefile
 pkcs11/gkm/Makefile
@@ -706,7 +720,8 @@ ui/tests/Makefile
 
 echo
 echo "OPTIONAL DEPENDENCIES"
-echo "  PAM:           $pam_status"
+echo "  PAM:                  $pam_status"
+echo "  Linux capabilities:   $libcap_status"
 echo
 echo "CONFIGURATION"
 echo "  SSH Agent:            $ssh_status"

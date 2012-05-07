@@ -49,6 +49,7 @@ static void initialize_tests (void) {
 	g_test_add("/hex/hex_encode", int, NULL, NULL, test_hex_encode, NULL);
 	g_test_add("/hex/hex_encode_spaces", int, NULL, NULL, test_hex_encode_spaces, NULL);
 	g_test_add("/hex/hex_decode", int, NULL, NULL, test_hex_decode, NULL);
+	g_test_add("/hex/hex_decode_fail", int, NULL, NULL, test_hex_decode_fail, NULL);
 	g_test_add("/oid/oid_tests", int, NULL, NULL, test_oid_tests, NULL);
 	g_test_add("/padding/zero_padding", int, NULL, NULL, test_zero_padding, NULL);
 	g_test_add("/padding/zero_padding_no_data", int, NULL, NULL, test_zero_padding_no_data, NULL);

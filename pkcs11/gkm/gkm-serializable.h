@@ -26,9 +26,7 @@
 
 #include "gkm-types.h"
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+G_BEGIN_DECLS
 
 #define GKM_TYPE_SERIALIZABLE                 (gkm_serializable_get_type())
 #define GKM_SERIALIZABLE(obj)                 (G_TYPE_CHECK_INSTANCE_CAST ((obj), GKM_TYPE_SERIALIZABLE, GkmSerializable))
@@ -60,8 +58,6 @@ gboolean                gkm_serializable_save                             (GkmSe
                                                                            guchar** data,
                                                                            gsize *n_data);
 
-#ifdef __cplusplus
-}
-#endif
+G_END_DECLS
 
 #endif /* __GKM_SERIALIZABLE_H__ */

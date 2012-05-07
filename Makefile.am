@@ -12,8 +12,8 @@ endif
 
 SUBDIRS = \
 	. \
-	gp11 \
 	egg \
+	gck \
 	gcr \
 	ui \
 	pkcs11 \
@@ -35,7 +35,8 @@ EXTRA_DIST = \
 DISTCHECK_CONFIGURE_FLAGS = \
 	--enable-gtk-doc \
 	--enable-tests \
-	--disable-debug
+	--disable-debug \
+	--disable-gcov
 
 DISTCLEANFILES = \
 	intltool-extract \
@@ -63,12 +64,10 @@ install-pam:
 	@echo "WARNING: install-pam is no longer used, use the --with-pam-dir configure option instead"
 
 if WITH_COVERAGE
-check-am:
-	$(LCOV) --directory . --zerocounters
-
-coverage: check
+coverage:
 	mkdir -p testing/coverage
 	$(LCOV) --directory . --capture --output-file testing/coverage.info
 	$(GENHTML) --output-directory testing/coverage testing/coverage.info
+	$(LCOV) --directory . --zerocounters
 	@echo "file://$(abs_top_builddir)/testing/coverage/index.html"
 endif

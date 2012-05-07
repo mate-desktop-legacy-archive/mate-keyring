@@ -391,18 +391,10 @@ gkm_secret_module_constructor (GType type, guint n_props, GObjectConstructParam 
 
 	g_return_val_if_fail (self, NULL);
 
-	if (!self->directory)
-	{
-		#if GLIB_CHECK_VERSION(2, 6, 0)
-			self->directory = g_build_filename(g_get_user_config_dir(), "mate", "keyrings", NULL);
-		#else // glib version < 2.6.0
-			self->directory = g_build_filename(g_get_home_dir(), ".config", "mate", "keyrings", NULL);
-		#endif
-
+	if (!self->directory) {
+		self->directory = g_build_filename (g_get_home_dir (), ".mate2", "keyrings", NULL);
 		if (g_mkdir_with_parents (self->directory, S_IRWXU) < 0)
-		{
 			g_warning ("unable to create keyring dir: %s", self->directory);
-		}
 	}
 
 	self->tracker = gkm_file_tracker_new (self->directory, "*.keyring", NULL);

@@ -28,9 +28,7 @@
 
 #include <glib-object.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+G_BEGIN_DECLS
 
 #define GKD_SECRET_TYPE_DISPATCH                 (gkd_secret_dispatch_get_type())
 #define GKD_SECRET_DISPATCH(obj)                 (G_TYPE_CHECK_INSTANCE_CAST ((obj), GKD_SECRET_TYPE_DISPATCH, GkdSecretDispatch))
@@ -53,8 +51,6 @@ const gchar*           gkd_secret_dispatch_get_object_path                   (Gk
 DBusMessage*           gkd_secret_dispatch_message                           (GkdSecretDispatch *self,
                                                                               DBusMessage *message);
 
-#ifdef __cplusplus
-}
-#endif
+G_END_DECLS
 
 #endif /* __GKD_SECRET_DISPATCH_H__ */

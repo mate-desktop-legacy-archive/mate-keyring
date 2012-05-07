@@ -1,22 +1,22 @@
-/*
+/* 
  * mate-keyring
- *
+ * 
  * Copyright (C) 2008 Stefan Walter
- *
- * This program is free software; you can redistribute it and/or modify
+ * 
+ * This program is free software; you can redistribute it and/or modify 
  * it under the terms of the GNU Lesser General Public License as
  * published by the Free Software Foundation; either version 2.1 of
  * the License, or (at your option) any later version.
- *
+ *  
  * This program is distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * Lesser General Public License for more details.
- *
+ *  
  * You should have received a copy of the GNU Lesser General Public
  * License along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
+ * 02111-1307, USA.  
  */
 
 #ifndef __GCR_IMPORTER_H__
@@ -27,9 +27,7 @@
 
 #include <glib-object.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+G_BEGIN_DECLS
 
 typedef enum {
 	GCR_IMPORTER_PROMPT_NEEDED,
@@ -57,36 +55,36 @@ struct _GcrImporterClass {
 	GObjectClass parent_class;
 
 	/* signals */
-
-	void (*imported) (GcrImporter *self, struct _GP11Object *object);
+	void (*queued) (GcrImporter *self, const gchar *label, struct _GckAttributes *attrs);
+	void (*imported) (GcrImporter *self, struct _GckObject *object);
 };
 
 GType                     gcr_importer_get_type               (void);
 
 GcrImporter*              gcr_importer_new                    (void);
 
-GcrParser*                gcr_importer_get_parser             (GcrImporter *self);
-
-void                      gcr_importer_set_parser             (GcrImporter *self,
-                                                               GcrParser *parser);
-
-struct _GP11Slot*         gcr_importer_get_slot               (GcrImporter *self);
+struct _GckSlot*          gcr_importer_get_slot               (GcrImporter *self);
 
 void                      gcr_importer_set_slot               (GcrImporter *self,
-                                                               struct _GP11Slot *slot);
+                                                               struct _GckSlot *slot);
 
 GcrImporterPromptBehavior gcr_importer_get_prompt_behavior    (GcrImporter *self);
 
 void                      gcr_importer_set_prompt_behavior    (GcrImporter *self,
                                                                GcrImporterPromptBehavior behavior);
 
+void                      gcr_importer_queue                  (GcrImporter *self,
+                                                               const gchar *label,
+                                                               struct _GckAttributes *attrs);
+
+void                      gcr_importer_listen                 (GcrImporter *self,
+                                                               GcrParser *parser);
+
 gboolean                  gcr_importer_import                 (GcrImporter *self,
-                                                               GInputStream *input,
                                                                GCancellable *cancel,
                                                                GError **error);
 
 void                      gcr_importer_import_async           (GcrImporter *self,
-                                                               GInputStream *input,
                                                                GCancellable *cancel,
                                                                GAsyncReadyCallback callback,
                                                                gpointer user_data);
@@ -95,8 +93,6 @@ gboolean                  gcr_importer_import_finish          (GcrImporter *self
                                                                GAsyncResult *res,
                                                                GError **error);
 
-#ifdef __cplusplus
-}
-#endif
+G_END_DECLS
 
 #endif /* __GCR_IMPORTER_H__ */

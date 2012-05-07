@@ -45,6 +45,7 @@ DECLARE_TEST (remove);
 DECLARE_TEST (hex_encode);
 DECLARE_TEST (hex_encode_spaces);
 DECLARE_TEST (hex_decode);
+DECLARE_TEST (hex_decode_fail);
 DECLARE_TEST (oid_tests);
 DECLARE_TEST (zero_padding);
 DECLARE_TEST (zero_padding_no_data);
