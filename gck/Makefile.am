@@ -63,14 +63,14 @@ gck-marshal.c: gck-marshal.list $(GLIB_GENMARSHAL)
 	$(GLIB_GENMARSHAL) $< --body --prefix=_gck_marshal >> $@
 
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = gck-$(GCK_MAJOR).pc
+pkgconfig_DATA = mate-gck-$(GCK_MAJOR).pc
 
 EXTRA_DIST = \
 	mate-gck.pc.in \
 	gck-marshal.list
 
 DISTCLEANFILES = \
-	gck-$(GCK_MAJOR).pc
+	mate-gck-$(GCK_MAJOR).pc
 
 mate-gck-$(GCK_MAJOR).pc: mate-gck.pc
 	cp mate-gck.pc mate-gck-$(GCK_MAJOR).pc
