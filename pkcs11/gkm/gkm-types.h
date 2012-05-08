@@ -23,14 +23,15 @@
 #define __GKM_TYPES_H__
 
 typedef struct _GkmAesKey GkmAesKey;
+typedef struct _GkmAssertion GkmAssertion;
 typedef struct _GkmCertificate GkmCertificate;
 typedef struct _GkmCertificateKey GkmCertificateKey;
-typedef struct _GkmCertificateTrust GkmCertificateTrust;
 typedef struct _GkmCredential GkmCredential;
 typedef struct _GkmDhKey GkmDhKey;
 typedef struct _GkmDhPrivateKey GkmDhPrivateKey;
 typedef struct _GkmDhPublicKey GkmDhPublicKey;
 typedef struct _GkmFactory GkmFactory;
+typedef struct _GkmGenericKey GkmGenericKey;
 typedef struct _GkmManager GkmManager;
 typedef struct _GkmModule GkmModule;
 typedef struct _GkmNullKey GkmNullKey;
@@ -47,5 +48,6 @@ typedef struct _GkmSexpKey GkmSexpKey;
 typedef struct _GkmStore GkmStore;
 typedef struct _GkmTimer GkmTimer;
 typedef struct _GkmTransaction GkmTransaction;
+typedef struct _GkmTrust GkmTrust;
 
 #endif /* __GKM_TYPES_H__ */

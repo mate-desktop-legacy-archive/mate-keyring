@@ -5,8 +5,8 @@
 <title>GcrTokenManager</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
 <link rel="home" href="index.html" title="gcr Reference Manual">
-<link rel="up" href="ch01.html" title="[Insert title here]">
-<link rel="prev" href="gcr-GcrCertificate.html" title="GcrCertificate">
+<link rel="up" href="storage.html" title="Part II. Storage">
+<link rel="prev" href="gcr-Trust-Storage-and-Lookups.html" title="Trust Storage and Lookups">
 <link rel="next" href="gcr-gcr-importer.html" title="GcrImporter">
 <meta name="generator" content="GTK-Doc V1.15 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
@@ -14,8 +14,8 @@
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
 <tr valign="middle">
-<td><a accesskey="p" href="gcr-GcrCertificate.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gcr-Trust-Storage-and-Lookups.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="storage.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
 <th width="100%" align="center">gcr Reference Manual</th>
 <td><a accesskey="n" href="gcr-gcr-importer.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
@@ -39,8 +39,8 @@
 <a name="gcr-gcr-initializer.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">                    <a class="link" href="gcr-gcr-initializer.html#GcrTokenManagerPrivate" title="GcrTokenManagerPrivate">GcrTokenManagerPrivate</a>;
                     <a class="link" href="gcr-gcr-initializer.html#GcrTokenManager" title="GcrTokenManager">GcrTokenManager</a>;
-<a class="link" href="gcr-gcr-initializer.html#GcrTokenManager" title="GcrTokenManager"><span class="returnvalue">GcrTokenManager</span></a>*    <a class="link" href="gcr-gcr-initializer.html#gcr-token-manager-new" title="gcr_token_manager_new ()">gcr_token_manager_new</a>               (<em class="parameter"><code><span class="type">struct _GckSlot</span> *slot</code></em>);
-struct <a href="http://library.gnome.org/devel/gck/unstable/GckSlot.html"><span class="returnvalue">_GckSlot</span></a>*    <a class="link" href="gcr-gcr-initializer.html#gcr-token-manager-get-slot" title="gcr_token_manager_get_slot ()">gcr_token_manager_get_slot</a>          (<em class="parameter"><code><a class="link" href="gcr-gcr-initializer.html#GcrTokenManager" title="GcrTokenManager"><span class="type">GcrTokenManager</span></a> *self</code></em>);
+<a class="link" href="gcr-gcr-initializer.html#GcrTokenManager" title="GcrTokenManager"><span class="returnvalue">GcrTokenManager</span></a>*    <a class="link" href="gcr-gcr-initializer.html#gcr-token-manager-new" title="gcr_token_manager_new ()">gcr_token_manager_new</a>               (<em class="parameter"><code><a href="http://library.gnome.org/devel/gck/unstable/GckSlot.html"><span class="type">GckSlot</span></a> *slot</code></em>);
+<a href="http://library.gnome.org/devel/gck/unstable/GckSlot.html"><span class="returnvalue">GckSlot</span></a>*            <a class="link" href="gcr-gcr-initializer.html#gcr-token-manager-get-slot" title="gcr_token_manager_get_slot ()">gcr_token_manager_get_slot</a>          (<em class="parameter"><code><a class="link" href="gcr-gcr-initializer.html#GcrTokenManager" title="GcrTokenManager"><span class="type">GcrTokenManager</span></a> *self</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="gcr-gcr-initializer.html#gcr-token-manager-initialize" title="gcr_token_manager_initialize ()">gcr_token_manager_initialize</a>        (<em class="parameter"><code><a class="link" href="gcr-gcr-initializer.html#GcrTokenManager" title="GcrTokenManager"><span class="type">GcrTokenManager</span></a> *self</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancel</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
@@ -90,7 +90,7 @@ struct <a href="http://library.gnome.org/devel/gck/unstable/GckSlot.html"><span 
 <hr>
 <div class="refsect2" title="gcr_token_manager_new ()">
 <a name="gcr-token-manager-new"></a><h3>gcr_token_manager_new ()</h3>
-<pre class="programlisting"><a class="link" href="gcr-gcr-initializer.html#GcrTokenManager" title="GcrTokenManager"><span class="returnvalue">GcrTokenManager</span></a>*    gcr_token_manager_new               (<em class="parameter"><code><span class="type">struct _GckSlot</span> *slot</code></em>);</pre>
+<pre class="programlisting"><a class="link" href="gcr-gcr-initializer.html#GcrTokenManager" title="GcrTokenManager"><span class="returnvalue">GcrTokenManager</span></a>*    gcr_token_manager_new               (<em class="parameter"><code><a href="http://library.gnome.org/devel/gck/unstable/GckSlot.html"><span class="type">GckSlot</span></a> *slot</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -112,7 +112,7 @@ struct <a href="http://library.gnome.org/devel/gck/unstable/GckSlot.html"><span 
 <hr>
 <div class="refsect2" title="gcr_token_manager_get_slot ()">
 <a name="gcr-token-manager-get-slot"></a><h3>gcr_token_manager_get_slot ()</h3>
-<pre class="programlisting">struct <a href="http://library.gnome.org/devel/gck/unstable/GckSlot.html"><span class="returnvalue">_GckSlot</span></a>*    gcr_token_manager_get_slot          (<em class="parameter"><code><a class="link" href="gcr-gcr-initializer.html#GcrTokenManager" title="GcrTokenManager"><span class="type">GcrTokenManager</span></a> *self</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gck/unstable/GckSlot.html"><span class="returnvalue">GckSlot</span></a>*            gcr_token_manager_get_slot          (<em class="parameter"><code><a class="link" href="gcr-gcr-initializer.html#GcrTokenManager" title="GcrTokenManager"><span class="type">GcrTokenManager</span></a> *self</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">

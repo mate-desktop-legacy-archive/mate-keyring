@@ -5,9 +5,9 @@
 <title>GcrImporter</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
 <link rel="home" href="index.html" title="gcr Reference Manual">
-<link rel="up" href="ch01.html" title="[Insert title here]">
+<link rel="up" href="storage.html" title="Part II. Storage">
 <link rel="prev" href="gcr-gcr-initializer.html" title="GcrTokenManager">
-<link rel="next" href="gcr-gcr-simple-certificate.html" title="GcrSimpleCertificate">
+<link rel="next" href="gcr-gcr-parser.html" title="GcrParser">
 <meta name="generator" content="GTK-Doc V1.15 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -15,10 +15,10 @@
 <table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
 <tr valign="middle">
 <td><a accesskey="p" href="gcr-gcr-initializer.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="u" href="storage.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
 <th width="100%" align="center">gcr Reference Manual</th>
-<td><a accesskey="n" href="gcr-gcr-simple-certificate.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+<td><a accesskey="n" href="gcr-gcr-parser.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
 </tr>
 <tr><td colspan="5" class="shortcuts">
 <a href="#gcr-gcr-importer.synopsis" class="shortcut">Top</a>
@@ -49,9 +49,12 @@
                     <a class="link" href="gcr-gcr-importer.html#GcrImporterPrivate" title="GcrImporterPrivate">GcrImporterPrivate</a>;
                     <a class="link" href="gcr-gcr-importer.html#GcrImporter-struct" title="GcrImporter">GcrImporter</a>;
 <a class="link" href="gcr-gcr-importer.html#GcrImporter"><span class="returnvalue">GcrImporter</span></a>*        <a class="link" href="gcr-gcr-importer.html#gcr-importer-new" title="gcr_importer_new ()">gcr_importer_new</a>                    (<em class="parameter"><code><span class="type">void</span></code></em>);
-struct <a href="http://library.gnome.org/devel/gck/unstable/GckSlot.html"><span class="returnvalue">_GckSlot</span></a>*    <a class="link" href="gcr-gcr-importer.html#gcr-importer-get-slot" title="gcr_importer_get_slot ()">gcr_importer_get_slot</a>               (<em class="parameter"><code><a class="link" href="gcr-gcr-importer.html#GcrImporter"><span class="type">GcrImporter</span></a> *self</code></em>);
+<a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="returnvalue">GcrParser</span></a>*          <a class="link" href="gcr-gcr-importer.html#gcr-importer-get-parser" title="gcr_importer_get_parser ()">gcr_importer_get_parser</a>             (<em class="parameter"><code><a class="link" href="gcr-gcr-importer.html#GcrImporter"><span class="type">GcrImporter</span></a> *self</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="gcr-gcr-importer.html#gcr-importer-set-parser" title="gcr_importer_set_parser ()">gcr_importer_set_parser</a>             (<em class="parameter"><code><a class="link" href="gcr-gcr-importer.html#GcrImporter"><span class="type">GcrImporter</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="type">GcrParser</span></a> *parser</code></em>);
+<a href="http://library.gnome.org/devel/gck/unstable/GckSlot.html"><span class="returnvalue">GckSlot</span></a>*            <a class="link" href="gcr-gcr-importer.html#gcr-importer-get-slot" title="gcr_importer_get_slot ()">gcr_importer_get_slot</a>               (<em class="parameter"><code><a class="link" href="gcr-gcr-importer.html#GcrImporter"><span class="type">GcrImporter</span></a> *self</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="gcr-gcr-importer.html#gcr-importer-set-slot" title="gcr_importer_set_slot ()">gcr_importer_set_slot</a>               (<em class="parameter"><code><a class="link" href="gcr-gcr-importer.html#GcrImporter"><span class="type">GcrImporter</span></a> *self</code></em>,
-                                                         <em class="parameter"><code><span class="type">struct _GckSlot</span> *slot</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gck/unstable/GckSlot.html"><span class="type">GckSlot</span></a> *slot</code></em>);
 <a class="link" href="gcr-gcr-importer.html#GcrImporterPromptBehavior" title="enum GcrImporterPromptBehavior"><span class="returnvalue">GcrImporterPromptBehavior</span></a>  <a class="link" href="gcr-gcr-importer.html#gcr-importer-get-prompt-behavior" title="gcr_importer_get_prompt_behavior ()">gcr_importer_get_prompt_behavior</a>
                                                         (<em class="parameter"><code><a class="link" href="gcr-gcr-importer.html#GcrImporter"><span class="type">GcrImporter</span></a> *self</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="gcr-gcr-importer.html#gcr-importer-set-prompt-behavior" title="gcr_importer_set_prompt_behavior ()">gcr_importer_set_prompt_behavior</a>    (<em class="parameter"><code><a class="link" href="gcr-gcr-importer.html#GcrImporter"><span class="type">GcrImporter</span></a> *self</code></em>,
@@ -143,9 +146,54 @@ GcrImporter implements
 </table></div>
 </div>
 <hr>
+<div class="refsect2" title="gcr_importer_get_parser ()">
+<a name="gcr-importer-get-parser"></a><h3>gcr_importer_get_parser ()</h3>
+<pre class="programlisting"><a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="returnvalue">GcrParser</span></a>*          gcr_importer_get_parser             (<em class="parameter"><code><a class="link" href="gcr-gcr-importer.html#GcrImporter"><span class="type">GcrImporter</span></a> *self</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gcr_importer_set_parser ()">
+<a name="gcr-importer-set-parser"></a><h3>gcr_importer_set_parser ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                gcr_importer_set_parser             (<em class="parameter"><code><a class="link" href="gcr-gcr-importer.html#GcrImporter"><span class="type">GcrImporter</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="type">GcrParser</span></a> *parser</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>parser</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
 <div class="refsect2" title="gcr_importer_get_slot ()">
 <a name="gcr-importer-get-slot"></a><h3>gcr_importer_get_slot ()</h3>
-<pre class="programlisting">struct <a href="http://library.gnome.org/devel/gck/unstable/GckSlot.html"><span class="returnvalue">_GckSlot</span></a>*    gcr_importer_get_slot               (<em class="parameter"><code><a class="link" href="gcr-gcr-importer.html#GcrImporter"><span class="type">GcrImporter</span></a> *self</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gck/unstable/GckSlot.html"><span class="returnvalue">GckSlot</span></a>*            gcr_importer_get_slot               (<em class="parameter"><code><a class="link" href="gcr-gcr-importer.html#GcrImporter"><span class="type">GcrImporter</span></a> *self</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -168,7 +216,7 @@ GcrImporter implements
 <div class="refsect2" title="gcr_importer_set_slot ()">
 <a name="gcr-importer-set-slot"></a><h3>gcr_importer_set_slot ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                gcr_importer_set_slot               (<em class="parameter"><code><a class="link" href="gcr-gcr-importer.html#GcrImporter"><span class="type">GcrImporter</span></a> *self</code></em>,
-                                                         <em class="parameter"><code><span class="type">struct _GckSlot</span> *slot</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gck/unstable/GckSlot.html"><span class="type">GckSlot</span></a> *slot</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">

@@ -1,0 +1,160 @@
+<!-- ##### SECTION Title ##### -->
+gcr-certificate-chain
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT GcrCertificateChain ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG GcrCertificateChain:length ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG GcrCertificateChain:status ##### -->
+<para>
+
+</para>
+
+<!-- ##### ENUM GcrCertificateChainStatus ##### -->
+<para>
+
+</para>
+
+@GCR_CERTIFICATE_CHAIN_UNKNOWN: 
+@GCR_CERTIFICATE_CHAIN_INCOMPLETE: 
+@GCR_CERTIFICATE_CHAIN_DISTRUSTED: 
+@GCR_CERTIFICATE_CHAIN_SELFSIGNED: 
+@GCR_CERTIFICATE_CHAIN_PINNED: 
+@GCR_CERTIFICATE_CHAIN_ANCHORED: 
+
+<!-- ##### FUNCTION gcr_certificate_chain_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_certificate_chain_add ##### -->
+<para>
+
+</para>
+
+@self: 
+@certificate: 
+
+
+<!-- ##### FUNCTION gcr_certificate_chain_get_certificate ##### -->
+<para>
+
+</para>
+
+@self: 
+@index: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_certificate_chain_get_status ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_certificate_chain_get_anchor ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_certificate_chain_get_endpoint ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_certificate_chain_get_length ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### ENUM GcrCertificateChainFlags ##### -->
+<para>
+
+</para>
+
+@GCR_CERTIFICATE_CHAIN_FLAG_NO_LOOKUPS: 
+
+<!-- ##### FUNCTION gcr_certificate_chain_build ##### -->
+<para>
+
+</para>
+
+@self: 
+@purpose: 
+@peer: 
+@flags: 
+@cancellable: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_certificate_chain_build_async ##### -->
+<para>
+
+</para>
+
+@self: 
+@purpose: 
+@peer: 
+@flags: 
+@cancellable: 
+@callback: 
+@user_data: 
+
+
+<!-- ##### FUNCTION gcr_certificate_chain_build_finish ##### -->
+<para>
+
+</para>
+
+@self: 
+@result: 
+@error: 
+@Returns: 
+
+

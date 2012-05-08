@@ -152,6 +152,7 @@ void                gck_attribute_clear                     (GckAttribute *attr)
 
 void                gck_attribute_free                      (GckAttribute *attr);
 
+void                gck_attribute_dump                      (GckAttribute *attr);
 
 typedef struct _GckAttributes GckAttributes;
 
@@ -229,6 +230,8 @@ void                gck_attributes_unref                    (GckAttributes *attr
 
 gboolean            gck_attributes_contains                 (GckAttributes *attrs,
                                                              GckAttribute *match);
+
+void                gck_attributes_dump                     (GckAttributes *attrs);
 
 /* -------------------------------------------------------------------------
  * FORWARDS
@@ -490,6 +493,10 @@ GckMechanismInfo*   gck_slot_get_mechanism_info             (GckSlot *self,
 
 gboolean            gck_slot_has_flags                      (GckSlot *self,
                                                              gulong flags);
+
+GckEnumerator*      gck_slots_enumerate_objects             (GList *slots,
+                                                             GckAttributes *attrs,
+                                                             guint session_options);
 
 #if UNIMPLEMENTED
 
@@ -1293,17 +1300,34 @@ enum {
 	GCK_URI_BAD_SYNTAX = 3
 };
 
+typedef enum {
+	GCK_URI_PARSE_MODULE = (1 << 1),
+	GCK_URI_PARSE_TOKEN =   (1 << 2) | GCK_URI_PARSE_MODULE,
+	GCK_URI_PARSE_OBJECT =  (1 << 3) | GCK_URI_PARSE_TOKEN,
+	GCK_URI_PARSE_ANY =     0xFFFFFFFF,
+} GckUriParseFlags;
+
+typedef struct _GckUriInfo {
+	gboolean any_unrecognized;
+	GckModuleInfo *module_info;
+	GckTokenInfo *token_info;
+	GckAttributes *attributes;
+
+	/*< private >*/
+	gpointer dummy[4];
+} GckUriInfo;
+
 #define             GCK_URI_ERROR                           (gck_uri_get_error_quark ())
 
 GQuark              gck_uri_get_error_quark                 (void);
 
-gchar*              gck_uri_build                           (GckTokenInfo *token,
-                                                             GckAttributes *attrs);
+gchar*              gck_uri_build                           (GckUriInfo *uri_info);
 
-gboolean            gck_uri_parse                           (const gchar *uri,
-                                                             GckTokenInfo **token,
-                                                             GckAttributes **attrs,
-                                                             GError **err);
+GckUriInfo*         gck_uri_parse                           (const gchar *uri,
+                                                             GckUriParseFlags flags,
+                                                             GError **error);
+
+void                gck_uri_info_free                       (GckUriInfo *uri_info);
 
 G_END_DECLS
 

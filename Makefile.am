@@ -25,6 +25,8 @@ SUBDIRS = \
 	po \
 	docs
 
+ACLOCAL_AMFLAGS = ${ACLOCAL_FLAGS}
+
 EXTRA_DIST = \
 	intltool-extract.in \
 	intltool-merge.in \
@@ -66,8 +68,18 @@ install-pam:
 if WITH_COVERAGE
 coverage:
 	mkdir -p testing/coverage
+	$(LCOV) --directory docs/ --zerocounters
 	$(LCOV) --directory . --capture --output-file testing/coverage.info
 	$(GENHTML) --output-directory testing/coverage testing/coverage.info
 	$(LCOV) --directory . --zerocounters
 	@echo "file://$(abs_top_builddir)/testing/coverage/index.html"
+
+clear-coverage:
+	$(LCOV) --directory . --zerocounters
+
+endif
+
+if WITH_GNU_MAKE
+# Include this local file if it exists
+-include Makefile.local
 endif

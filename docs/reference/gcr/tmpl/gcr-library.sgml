@@ -1,0 +1,110 @@
+<!-- ##### SECTION Title ##### -->
+gcr-library
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION gcr_pkcs11_get_modules ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_pkcs11_set_modules ##### -->
+<para>
+
+</para>
+
+@modules: 
+
+
+<!-- ##### FUNCTION gcr_pkcs11_add_module ##### -->
+<para>
+
+</para>
+
+@module: 
+
+
+<!-- ##### FUNCTION gcr_pkcs11_add_module_from_file ##### -->
+<para>
+
+</para>
+
+@module_path: 
+@init_params: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_pkcs11_get_trust_lookup_slots ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_pkcs11_get_trust_store_slot ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_pkcs11_get_trust_lookup_uris ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_pkcs11_set_trust_lookup_uris ##### -->
+<para>
+
+</para>
+
+@pkcs11_uris: 
+
+
+<!-- ##### FUNCTION gcr_pkcs11_get_trust_store_uri ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_pkcs11_set_trust_store_uri ##### -->
+<para>
+
+</para>
+
+@pkcs11_uri: 
+
+

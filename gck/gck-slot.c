@@ -300,33 +300,6 @@ gck_token_info_free (GckTokenInfo *token_info)
 	g_free (token_info);
 }
 
-static gboolean
-match_token_string (const gchar *match, const gchar *string)
-{
-	/* NULL matches anything */
-	if (match == NULL)
-		return TRUE;
-
-	if (string == NULL)
-		return FALSE;
-
-	return g_str_equal (match, string);
-}
-
-gboolean
-_gck_token_info_match (GckTokenInfo *match, GckTokenInfo *info)
-{
-	/* Matches two GckTokenInfo for use in PKCS#11 URI's */
-
-	g_return_val_if_fail (match, FALSE);
-	g_return_val_if_fail (info, FALSE);
-
-	return (match_token_string (match->label, info->label) &&
-	        match_token_string (match->manufacturer_id, info->manufacturer_id) &&
-	        match_token_string (match->model, info->model) &&
-	        match_token_string (match->serial_number, info->serial_number));
-}
-
 /**
  * GckMechanismInfo:
  * @min_key_size: The minimum key size that can be used with this mechanism.
@@ -798,6 +771,32 @@ gck_slot_has_flags (GckSlot *self, gulong flags)
 
 	return (info.flags & flags) != 0;
 }
+
+/**
+ * gck_slots_enumerate_objects:
+ * @slots: a list of #GckSlot to enumerate objects on.
+ * @attrs: Attributes that the objects must have, or empty for all objects.
+ * @session_options: Options for opening a session.
+ *
+ * Setup an enumerator for listing matching objects on the slots.
+ *
+ * This call will not block but will return an enumerator immediately.
+ *
+ * Return value: a new enumerator
+ **/
+GckEnumerator*
+gck_slots_enumerate_objects (GList *slots, GckAttributes *attrs, guint session_options)
+{
+	GckUriInfo *uri_info;
+
+	g_return_val_if_fail (attrs, NULL);
+
+	uri_info = _gck_uri_info_new ();
+	uri_info->attributes = gck_attributes_ref (attrs);
+
+	return _gck_enumerator_new (slots, session_options, uri_info);
+}
+
 
 #if UNIMPLEMENTED
 

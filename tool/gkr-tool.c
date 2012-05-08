@@ -87,7 +87,9 @@ typedef struct _CommandInfo {
 } CommandInfo;
 
 static CommandInfo command_info[] = {
+	{ "certificate-exception", gkr_tool_trust },
 	{ "import", gkr_tool_import },
+	{ "version", gkr_tool_version },
 	{ NULL, NULL }
 };
 
@@ -97,12 +99,13 @@ print_general_usage (void)
 	CommandInfo *cmd;
 	const gchar *prefix;
 	
-	g_printerr ("usage: mate-keyring command [options]\n");
+	g_printerr (_("usage: mate-keyring command [options]\n"));
 	
-	prefix = "commands: ";
+	prefix = _("commands: ");
 	for (cmd = command_info; cmd->name; ++cmd) {
 		g_printerr ("%s%s\n", prefix, cmd->name);
-		prefix = "          ";
+		// Translators: keep same length as translated message "commands: "
+		prefix = _("          ");
 	}
 }
 

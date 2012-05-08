@@ -22,6 +22,7 @@
 #include "config.h"
 
 #include "pkcs11/pkcs11.h"
+#include "pkcs11/pkcs11i.h"
 
 #include "gkm-aes-mechanism.h"
 #include "gkm-attributes.h"
@@ -40,6 +41,11 @@ struct _GkmAesKey {
 };
 
 G_DEFINE_TYPE (GkmAesKey, gkm_aes_key, GKM_TYPE_SECRET_KEY);
+
+static const CK_MECHANISM_TYPE GKM_AES_MECHANISMS[] = {
+	CKM_AES_CBC_PAD,
+	CKM_G_HKDF_SHA256_DERIVE
+};
 
 /* -----------------------------------------------------------------------------
  * INTERNAL
@@ -139,7 +145,7 @@ factory_create_aes_key (GkmSession *session, GkmTransaction *transaction,
  */
 
 static CK_RV
-gkm_aes_key_real_get_attribute (GkmObject *base, GkmSession *session, CK_ATTRIBUTE *attr)
+gkm_aes_key_get_attribute (GkmObject *base, GkmSession *session, CK_ATTRIBUTE *attr)
 {
 	GkmAesKey *self = GKM_AES_KEY (base);
 
@@ -147,6 +153,9 @@ gkm_aes_key_real_get_attribute (GkmObject *base, GkmSession *session, CK_ATTRIBU
 	{
 	case CKA_KEY_TYPE:
 		return gkm_attribute_set_ulong (attr, CKK_AES);
+
+	case CKA_DERIVE:
+		return gkm_attribute_set_bool (attr, CK_TRUE);
 
 	case CKA_UNWRAP:
 	case CKA_WRAP:
@@ -167,6 +176,14 @@ gkm_aes_key_real_get_attribute (GkmObject *base, GkmSession *session, CK_ATTRIBU
 	};
 
 	return GKM_OBJECT_CLASS (gkm_aes_key_parent_class)->get_attribute (base, session, attr);
+}
+
+static gconstpointer
+gkm_aes_key_get_key_value (GkmSecretKey *key, gsize *n_value)
+{
+	GkmAesKey *self = GKM_AES_KEY (key);
+	*n_value = self->n_value;
+	return self->value;
 }
 
 static void
@@ -195,12 +212,15 @@ gkm_aes_key_class_init (GkmAesKeyClass *klass)
 {
 	GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
 	GkmObjectClass *gkm_class = GKM_OBJECT_CLASS (klass);
+	GkmSecretKeyClass *key_class = GKM_SECRET_KEY_CLASS (klass);
 
 	gkm_aes_key_parent_class = g_type_class_peek_parent (klass);
 
 	gobject_class->finalize = gkm_aes_key_finalize;
 
-	gkm_class->get_attribute = gkm_aes_key_real_get_attribute;
+	gkm_class->get_attribute = gkm_aes_key_get_attribute;
+
+	key_class->get_key_value = gkm_aes_key_get_key_value;
 }
 
 /* -----------------------------------------------------------------------------

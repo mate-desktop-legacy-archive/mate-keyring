@@ -34,7 +34,7 @@ libgkm_rpc_layer_la_CFLAGS = \
 # ------------------------------------------------------------------------------
 # The module code, built as the public mate-keyring module
 
-moduledir = $(libdir)/mate-keyring/
+moduledir = $(pkcs11dir)
 
 module_LTLIBRARIES = \
 	mate-keyring-pkcs11.la

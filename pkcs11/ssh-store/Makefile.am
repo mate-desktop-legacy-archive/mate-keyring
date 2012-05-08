@@ -5,7 +5,8 @@ INCLUDES = \
     	-I$(top_srcdir)/pkcs11 \
     	$(GOBJECT_CFLAGS) \
 	$(LIBGCRYPT_CFLAGS) \
-	$(GLIB_CFLAGS)
+	$(GLIB_CFLAGS) \
+	$(GMODULE_CFLAGS)
 
 
 # ------------------------------------------------------------------------------
@@ -24,14 +25,14 @@ libgkm_ssh_store_la_SOURCES = \
 # ------------------------------------------------------------------------------
 # The standalone module
 
-moduledir = $(libdir)/mate-keyring/devel/
+moduledir = $(pkcs11standalonedir)
 
 module_LTLIBRARIES = \
 	gkm-ssh-store-standalone.la
 
 gkm_ssh_store_standalone_la_LDFLAGS = \
 	-module -avoid-version \
-	-no-undefined -export-symbols-regex 'C_GetFunctionList'
+	-no-undefined -export-symbols-regex 'C_GetFunctionList|g_module_check_init'
 
 gkm_ssh_store_standalone_la_SOURCES = \
 	gkm-ssh-standalone.c
@@ -42,6 +43,7 @@ gkm_ssh_store_standalone_la_LIBADD = \
 	$(GOBJECT_LIBS) \
 	$(GTHREAD_LIBS) \
 	$(GLIB_LIBS) \
+	$(GMODULE_LIBS) \
 	$(LIBGCRYPT_LIBS)
 
 

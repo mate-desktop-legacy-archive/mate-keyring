@@ -5,20 +5,20 @@
 <title>GcrParser</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
 <link rel="home" href="index.html" title="gcr Reference Manual">
-<link rel="up" href="ch01.html" title="[Insert title here]">
-<link rel="prev" href="gcr-gcr-certificate-basics-widget.html" title="GcrCertificateBasicsWidget">
-<link rel="next" href="gcr-GcrCertificate.html" title="GcrCertificate">
+<link rel="up" href="storage.html" title="Part II. Storage">
+<link rel="prev" href="gcr-gcr-importer.html" title="GcrImporter">
+<link rel="next" href="misc.html" title="Part III. Miscellaneous">
 <meta name="generator" content="GTK-Doc V1.15 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
 <tr valign="middle">
-<td><a accesskey="p" href="gcr-gcr-certificate-basics-widget.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gcr-gcr-importer.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="storage.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
 <th width="100%" align="center">gcr Reference Manual</th>
-<td><a accesskey="n" href="gcr-GcrCertificate.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+<td><a accesskey="n" href="misc.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
 </tr>
 <tr><td colspan="5" class="shortcuts">
 <a href="#gcr-gcr-parser.synopsis" class="shortcut">Top</a>
@@ -61,7 +61,7 @@
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *password</code></em>);
 const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*        <a class="link" href="gcr-gcr-parser.html#gcr-parser-get-parsed-label" title="gcr_parser_get_parsed_label ()">gcr_parser_get_parsed_label</a>         (<em class="parameter"><code><a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="type">GcrParser</span></a> *self</code></em>);
 const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*        <a class="link" href="gcr-gcr-parser.html#gcr-parser-get-parsed-description" title="gcr_parser_get_parsed_description ()">gcr_parser_get_parsed_description</a>   (<em class="parameter"><code><a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="type">GcrParser</span></a> *self</code></em>);
-struct <a href="http://library.gnome.org/devel/gck/unstable/gck-GckAttributes.html#GckAttributes"><span class="returnvalue">_GckAttributes</span></a>* <a class="link" href="gcr-gcr-parser.html#gcr-parser-get-parsed-attributes" title="gcr_parser_get_parsed_attributes ()">gcr_parser_get_parsed_attributes</a> (<em class="parameter"><code><a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="type">GcrParser</span></a> *self</code></em>);
+<a href="http://library.gnome.org/devel/gck/unstable/gck-GckAttributes.html#GckAttributes"><span class="returnvalue">GckAttributes</span></a>*      <a class="link" href="gcr-gcr-parser.html#gcr-parser-get-parsed-attributes" title="gcr_parser_get_parsed_attributes ()">gcr_parser_get_parsed_attributes</a>    (<em class="parameter"><code><a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="type">GcrParser</span></a> *self</code></em>);
 </pre>
 </div>
 <div class="refsect1" title="Object Hierarchy">
@@ -322,7 +322,7 @@ struct <a href="http://library.gnome.org/devel/gck/unstable/gck-GckAttributes.ht
 <hr>
 <div class="refsect2" title="gcr_parser_get_parsed_attributes ()">
 <a name="gcr-parser-get-parsed-attributes"></a><h3>gcr_parser_get_parsed_attributes ()</h3>
-<pre class="programlisting">struct <a href="http://library.gnome.org/devel/gck/unstable/gck-GckAttributes.html#GckAttributes"><span class="returnvalue">_GckAttributes</span></a>* gcr_parser_get_parsed_attributes (<em class="parameter"><code><a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="type">GcrParser</span></a> *self</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gck/unstable/gck-GckAttributes.html#GckAttributes"><span class="returnvalue">GckAttributes</span></a>*      gcr_parser_get_parsed_attributes    (<em class="parameter"><code><a class="link" href="gcr-gcr-parser.html#GcrParser"><span class="type">GcrParser</span></a> *self</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">

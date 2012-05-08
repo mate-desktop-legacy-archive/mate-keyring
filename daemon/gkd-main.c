@@ -72,6 +72,12 @@
 #define socklen_t int
 #endif
 
+#define GKD_COMP_KEYRING    "keyring"
+#define GKD_COMP_PKCS11     "pkcs11"
+#define GKD_COMP_SECRETS    "secrets"
+#define GKD_COMP_SSH        "ssh"
+#define GKD_COMP_GPG        "gpg"
+
 /* -----------------------------------------------------------------------------
  * COMMAND LINE
  */
@@ -79,15 +85,15 @@
 /* All the components to run on startup if not specified on command line */
 #ifdef WITH_SSH
 #	ifdef WITH_GPG
-#		define DEFAULT_COMPONENTS  "pkcs11,secrets,ssh,gpg"
+#		define DEFAULT_COMPONENTS  GKD_COMP_PKCS11 "," GKD_COMP_SECRETS "," GKD_COMP_SSH "," GKD_COMP_GPG
 #	else
-#		define DEFAULT_COMPONENTS  "pkcs11,secrets,ssh"
+#		define DEFAULT_COMPONENTS  GKD_COMP_PKCS11 "," GKD_COMP_SECRETS "," GKD_COMP_SSH
 #	endif
 #else
 #	ifdef WITH_GPG
-#		define DEFAULT_COMPONENTS  "pkcs11,secrets,gpg"
+#		define DEFAULT_COMPONENTS  GKD_COMP_PKCS11 "," GKD_COMP_SECRETS  "," GKD_COMP_GPG
 #	else
-#		define DEFAULT_COMPONENTS  "pkcs11,secrets"
+#		define DEFAULT_COMPONENTS  GKD_COMP_PKCS11 "," GKD_COMP_SECRETS
 #	endif
 #endif
 
@@ -103,9 +109,11 @@ static gboolean pkcs11_started = FALSE;
 static gboolean secrets_started = FALSE;
 static gboolean ssh_started = FALSE;
 static gboolean gpg_started = FALSE;
+static gboolean dbus_started = FALSE;
 
 static gboolean run_foreground = FALSE;
 static gboolean run_daemonized = FALSE;
+static gboolean run_version = FALSE;
 static gboolean run_for_login = FALSE;
 static gboolean run_for_start = FALSE;
 static gboolean run_for_replace = FALSE;
@@ -131,6 +139,8 @@ static GOptionEntry option_entries[] = {
 	  "The optional components to run", DEFAULT_COMPONENTS },
 	{ "control-directory", 'C', 0, G_OPTION_ARG_FILENAME, &control_directory,
 	  "The directory for sockets and control data", NULL },
+	{ "version", 'V', 0, G_OPTION_ARG_NONE, &run_version,
+	  "Show the version number and exit.", NULL },
 	{ NULL }
 };
 
@@ -639,7 +649,7 @@ gkr_daemon_startup_steps (const gchar *components)
 	 */
 
 #ifdef WITH_SSH
-	if (strstr (components, "ssh")) {
+	if (strstr (components, GKD_COMP_SSH)) {
 		if (ssh_started) {
 			g_message ("The SSH agent was already initialized");
 		} else {
@@ -653,7 +663,7 @@ gkr_daemon_startup_steps (const gchar *components)
 #endif
 
 #ifdef WITH_GPG
-	if (strstr (components, "gpg")) {
+	if (strstr (components, GKD_COMP_GPG)) {
 		if (gpg_started) {
 			g_message ("The GPG agent was already initialized");
 		} else {
@@ -699,24 +709,33 @@ gkr_daemon_initialize_steps (const gchar *components)
 			egg_secure_strclear (login_password);
 		}
 
-		gkd_dbus_setup ();
+		dbus_started = TRUE;
+		if (!gkd_dbus_setup ())
+			dbus_started = FALSE;
 	}
 
 	/* The Secret Service API */
-	if (strstr (components, "secret") || strstr (components, "keyring")) {
+	if (strstr (components, GKD_COMP_SECRETS) || strstr (components, GKD_COMP_KEYRING)) {
 		if (secrets_started) {
 			g_message ("The Secret Service was already initialized");
 		} else {
-			secrets_started = TRUE;
-			if (!gkd_dbus_secrets_startup ()) {
-				secrets_started = FALSE;
-				return FALSE;
+			if (!dbus_started) {
+				dbus_started = TRUE;
+				if (!gkd_dbus_setup ())
+					dbus_started = FALSE;
+			}
+			if (dbus_started) {
+				secrets_started = TRUE;
+				if (!gkd_dbus_secrets_startup ()) {
+					secrets_started = FALSE;
+					return FALSE;
+				}
 			}
 		}
 	}
 
 	/* The PKCS#11 remoting */
-	if (strstr (components, "pkcs11")) {
+	if (strstr (components, GKD_COMP_PKCS11)) {
 		if (pkcs11_started) {
 			g_message ("The PKCS#11 component was already initialized");
 		} else {
@@ -811,6 +830,18 @@ main (int argc, char *argv[])
 	prepare_logging ();
 
 	parse_arguments (&argc, &argv);
+
+	/* The --version option. This is machine parseable output */
+	if (run_version) {
+		g_print ("mate-keyring-daemon: %s\n", VERSION);
+		g_print ("testing: %s\n",
+#ifdef WITH_TESTS
+		         "enabled");
+#else
+		         "disabled");
+#endif
+		exit (0);
+	}
 
 	/* The --start option */
 	if (run_for_start) {

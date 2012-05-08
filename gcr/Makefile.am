@@ -1,3 +1,15 @@
+
+if WITH_TESTS
+TESTS_DIR = tests
+EXPORT_PATT = '^_?gcr_*'
+else
+TESTS_DIR =
+EXPORT_PATT = '^gcr_*'
+endif
+
+SUBDIRS = . \
+	$(TESTS_DIR)
+
 # ------------------------------------------------------------------
 # UI BUILDER
 #
@@ -16,14 +28,20 @@ incdir = $(includedir)/mategcr@GCR_VERSION_SUFFIX@/gcr
 inc_HEADERS = \
 	gcr.h \
 	gcr-certificate.h \
+	gcr-certificate-basics-widget.h \
+	gcr-certificate-chain.h \
+	gcr-certificate-details-widget.h \
 	gcr-certificate-renderer.h \
 	gcr-certificate-widget.h \
 	gcr-key-renderer.h \
 	gcr-key-widget.h \
 	gcr-importer.h \
+	gcr-library.h \
 	gcr-parser.h \
+	gcr-pkcs11-certificate.h \
 	gcr-renderer.h \
 	gcr-simple-certificate.h \
+	gcr-trust.h \
 	gcr-types.h \
 	gcr-unlock-options.h \
 	gcr-unlock-options-widget.h \
@@ -48,8 +66,10 @@ lib_LTLIBRARIES = libmategcr@GCR_VERSION_SUFFIX@.la
 
 libmategcr@GCR_VERSION_SUFFIX@_la_SOURCES = \
 	gcr-certificate.c gcr-certificate.h \
+	gcr-certificate-chain.c gcr-certificate-chain.h \
 	gcr-certificate-renderer.c gcr-certificate-renderer.h \
 	gcr-certificate-widget.c gcr-certificate-widget.h \
+	gcr-display-scrolled.c gcr-display-scrolled.h \
 	gcr-display-view.c gcr-display-view.h \
 	gcr-icons.c gcr-icons.h \
 	gcr-import-dialog.c gcr-import-dialog.h \
@@ -57,10 +77,12 @@ libmategcr@GCR_VERSION_SUFFIX@_la_SOURCES = \
 	gcr-internal.h \
 	gcr-key-renderer.c gcr-key-renderer.h \
 	gcr-key-widget.c gcr-key-widget.h \
-	gcr-library.c \
+	gcr-library.c gcr-library.h \
 	gcr-parser.c gcr-parser.h \
+	gcr-pkcs11-certificate.c gcr-pkcs11-certificate.h \
 	gcr-renderer.c gcr-renderer.h \
 	gcr-simple-certificate.c gcr-simple-certificate.h \
+	gcr-trust.c gcr-trust.h \
 	gcr-types.h \
 	gcr-unlock-options.h \
 	gcr-unlock-options-widget.c gcr-unlock-options-widget.h \
@@ -68,14 +90,15 @@ libmategcr@GCR_VERSION_SUFFIX@_la_SOURCES = \
 	$(BUILT_SOURCES)
 
 libmategcr@GCR_VERSION_SUFFIX@_la_CFLAGS = \
-	-DPKCS11_MODULE_PATH=\""$(libdir)/mate-keyring/mate-keyring-pkcs11.so"\" \
 	-DGCK_API_SUBJECT_TO_CHANGE \
 	-DGCR_API_SUBJECT_TO_CHANGE \
+	-DGCR_COMPILATION \
 	-DUIDIR=\""$(uidir)"\"
 
 libmategcr@GCR_VERSION_SUFFIX@_la_LDFLAGS = \
-    	-version-info $(GCR_LT_RELEASE) \
-	-no-undefined -export-symbols-regex 'gcr_*'
+	-version-info $(GCR_LT_RELEASE) \
+	-no-undefined \
+	-export-symbols-regex $(EXPORT_PATT)
 
 libmategcr@GCR_VERSION_SUFFIX@_la_LIBADD = \
 	$(top_builddir)/egg/libegg.la \
@@ -104,7 +127,8 @@ mate-gcr-$(GCR_MAJOR).pc: mate-gcr.pc
 EXTRA_DIST = \
 	mate-gcr.pc.in \
 	gcr-marshal.list \
-	$(ui_DATA)
+	$(ui_DATA) \
+	$(conf_DATA)
 
 CLEANFILES = \
 	$(BUILT_SOURCES) \
@@ -112,12 +136,3 @@ CLEANFILES = \
 
 DISTCLEANFILES = \
 	$(pkgconfig_DATA)
-
-if WITH_TESTS
-TESTS_DIR = tests
-else
-TESTS_DIR = 
-endif
-
-SUBDIRS = . \
-	$(TESTS_DIR)

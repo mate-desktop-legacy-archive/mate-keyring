@@ -163,7 +163,7 @@ gkd_dbus_singleton_acquire (gboolean *acquired)
 	DBusError derr = DBUS_ERROR_INIT;
 	dbus_uint32_t res = 0;
 	const gchar *service = NULL;
-	unsigned int flags;
+	unsigned int flags = 0;
 
 	g_assert (acquired);
 
@@ -192,7 +192,7 @@ gkd_dbus_singleton_acquire (gboolean *acquired)
 #endif
 			service = MATE_KEYRING_DAEMON_SERVICE;
 
-		res = dbus_bus_request_name (dbus_conn, service, 0, &derr);
+		res = dbus_bus_request_name (dbus_conn, service, flags, &derr);
 		if (dbus_error_is_set (&derr)) {
 			g_message ("couldn't request name '%s' on session bus: %s", service, derr.message);
 			dbus_error_free (&derr);
@@ -276,13 +276,13 @@ dbus_cleanup (gpointer unused)
 	gkd_dbus_environment_cleanup (dbus_conn);
 }
 
-void
+gboolean
 gkd_dbus_setup (void)
 {
 	gboolean unused;
 
 	if (!connect_to_session_bus ())
-		return;
+		return FALSE;
 
 	/* Our singleton, and internal service API */
 	gkd_dbus_singleton_acquire (&unused);
@@ -295,4 +295,5 @@ gkd_dbus_setup (void)
 	gkd_dbus_secrets_init (dbus_conn);
 
 	egg_cleanup_register (dbus_cleanup, NULL);
+	return TRUE;
 }

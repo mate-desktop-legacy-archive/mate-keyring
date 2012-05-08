@@ -3,8 +3,7 @@ SUBDIRS = \
 	control \
 	ssh-agent \
 	gpg-agent \
-	dbus \
-	data
+	dbus
 
 bin_PROGRAMS= \
 	mate-keyring-daemon
@@ -43,7 +42,8 @@ mate_keyring_daemon_LDADD = \
 	$(top_builddir)/pkcs11/rpc-layer/libgkm-rpc-layer.la \
 	$(top_builddir)/pkcs11/secret-store/libgkm-secret-store.la \
 	$(top_builddir)/pkcs11/ssh-store/libgkm-ssh-store.la \
-	$(top_builddir)/pkcs11/user-store/libgkm-user-store.la \
+	$(top_builddir)/pkcs11/mate2-store/libgkm-mate2-store.la \
+	$(top_builddir)/pkcs11/xdg-store/libgkm-xdg-store.la \
 	$(top_builddir)/pkcs11/gkm/libgkm.la \
 	$(top_builddir)/gck/libmategck.la \
 	$(top_builddir)/egg/libegg-dbus.la \
@@ -85,7 +85,7 @@ CLEANFILES = \
 # If installing as non-root, chown+chmod will not succeed but
 # the build will continue.
 install-exec-hook:
-	chown root $(bindir)/mate-keyring-daemon || true
-	chmod u+s $(bindir)/mate-keyring-daemon || true
+	chown root $(DESTDIR)$(bindir)/mate-keyring-daemon || true
+	chmod u+s $(DESTDIR)$(bindir)/mate-keyring-daemon || true
 
 @INTLTOOL_DESKTOP_RULE@

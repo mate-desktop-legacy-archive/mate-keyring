@@ -1,5 +1,5 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 8; tab-width: 8 -*- */
-/* pkcs11g.h - MATE internal definitions to PKCS#11
+/* pkcs11i.h - MATE internal definitions to PKCS#11
 
    Copyright (C) 2008, Stef Walter
 
@@ -25,7 +25,24 @@
 #define PKCS11I_H
 
 #include "pkcs11.h"
-#include "pkcs11g.h"
+
+#define CKA_MATE   (CKA_VENDOR_DEFINED | 0x474E4D45UL /* GNME */ )
+#define CKO_MATE   (CKO_VENDOR_DEFINED | 0x474E4D45UL /* GNME */ )
+#define CKR_MATE   (CKR_VENDOR_DEFINED | 0x474E4D45UL /* GNME */ )
+#define CKM_MATE   (CKR_VENDOR_DEFINED | 0x474E4D45UL /* GNME */ )
+#define CKK_MATE   (CKR_VENDOR_DEFINED | 0x474E4D45UL /* GNME */ )
+
+/* -------------------------------------------------------------------
+ * OBJECT UNIQUE IDENTIFIER
+ */
+
+/* A string unique among all objects on a given machine */
+#define CKA_MATE_UNIQUE                            (CKA_MATE + 350)
+
+/* -------------------------------------------------------------------
+ */
+
+#define CKA_MATE_TRANSIENT                      (CKA_MATE + 201)
 
 /* Signifies that nobody is logged in */
 #define CKU_NONE G_MAXULONG
@@ -94,6 +111,8 @@ typedef CK_G_APPLICATION* CK_G_APPLICATION_PTR;
 
 /* Used for wrapping and unwrapping as null */
 #define CKM_G_NULL                           (CKM_MATE + 100)
+
+#define CKM_G_HKDF_SHA256_DERIVE             (CKM_MATE + 101)
 
 #define CKK_G_NULL                           (CKK_MATE + 100)
 

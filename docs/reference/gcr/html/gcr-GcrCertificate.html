@@ -5,20 +5,20 @@
 <title>GcrCertificate</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
 <link rel="home" href="index.html" title="gcr Reference Manual">
-<link rel="up" href="ch01.html" title="[Insert title here]">
-<link rel="prev" href="gcr-gcr-parser.html" title="GcrParser">
-<link rel="next" href="gcr-gcr-initializer.html" title="GcrTokenManager">
+<link rel="up" href="certificates.html" title="Part I. Certificates">
+<link rel="prev" href="certificates.html" title="Part I. Certificates">
+<link rel="next" href="GcrSimpleCertificate.html" title="GcrSimpleCertificate">
 <meta name="generator" content="GTK-Doc V1.15 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
 <tr valign="middle">
-<td><a accesskey="p" href="gcr-gcr-parser.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="certificates.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="certificates.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
 <th width="100%" align="center">gcr Reference Manual</th>
-<td><a accesskey="n" href="gcr-gcr-initializer.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+<td><a accesskey="n" href="GcrSimpleCertificate.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
 </tr>
 <tr><td colspan="5" class="shortcuts">
 <a href="#gcr-GcrCertificate.synopsis" class="shortcut">Top</a>
@@ -37,25 +37,30 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="gcr-GcrCertificate.top_of_page"></a>GcrCertificate</span></h2>
-<p>GcrCertificate — Represents a certificate.</p>
+<p>GcrCertificate — Represents an X.509 certificate</p>
 </td>
 <td valign="top" align="right"></td>
 </tr></table></div>
 <div class="refsynopsisdiv" title="Synopsis">
 <a name="gcr-GcrCertificate.synopsis"></a><h2>Synopsis</h2>
-<a name="GcrCertificateIface"></a><pre class="synopsis">#define             <a class="link" href="gcr-GcrCertificate.html#GCR-CERTIFICATE-GET-INTERFACE:CAPS" title="GCR_CERTIFICATE_GET_INTERFACE()">GCR_CERTIFICATE_GET_INTERFACE</a>       (inst)
-                    <a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate">GcrCertificate</a>;
+<a name="GcrCertificateIface"></a><pre class="synopsis">                    <a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate">GcrCertificate</a>;
                     <a class="link" href="gcr-GcrCertificate.html#GcrCertificateIface-struct" title="GcrCertificateIface">GcrCertificateIface</a>;
-const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a>*       <a class="link" href="gcr-GcrCertificate.html#gcr-certificate-get-der-data" title="gcr_certificate_get_der_data ()">gcr_certificate_get_der_data</a>        (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="returnvalue">gconstpointer</span></a>       <a class="link" href="gcr-GcrCertificate.html#gcr-certificate-get-der-data" title="gcr_certificate_get_der_data ()">gcr_certificate_get_der_data</a>        (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *n_data</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              <a class="link" href="gcr-GcrCertificate.html#gcr-certificate-get-issuer-cn" title="gcr_certificate_get_issuer_cn ()">gcr_certificate_get_issuer_cn</a>       (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              <a class="link" href="gcr-GcrCertificate.html#gcr-certificate-get-issuer-dn" title="gcr_certificate_get_issuer_dn ()">gcr_certificate_get_issuer_dn</a>       (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              <a class="link" href="gcr-GcrCertificate.html#gcr-certificate-get-issuer-part" title="gcr_certificate_get_issuer_part ()">gcr_certificate_get_issuer_part</a>     (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *part</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            <a class="link" href="gcr-GcrCertificate.html#gcr-certificate-get-issuer-raw" title="gcr_certificate_get_issuer_raw ()">gcr_certificate_get_issuer_raw</a>      (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *n_data</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="gcr-GcrCertificate.html#gcr-certificate-is-issuer" title="gcr_certificate_is_issuer ()">gcr_certificate_is_issuer</a>           (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *issuer</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              <a class="link" href="gcr-GcrCertificate.html#gcr-certificate-get-subject-cn" title="gcr_certificate_get_subject_cn ()">gcr_certificate_get_subject_cn</a>      (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              <a class="link" href="gcr-GcrCertificate.html#gcr-certificate-get-subject-dn" title="gcr_certificate_get_subject_dn ()">gcr_certificate_get_subject_dn</a>      (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              <a class="link" href="gcr-GcrCertificate.html#gcr-certificate-get-subject-part" title="gcr_certificate_get_subject_part ()">gcr_certificate_get_subject_part</a>    (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *part</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            <a class="link" href="gcr-GcrCertificate.html#gcr-certificate-get-subject-raw" title="gcr_certificate_get_subject_raw ()">gcr_certificate_get_subject_raw</a>     (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *n_data</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Date-and-Time-Functions.html#GDate"><span class="returnvalue">GDate</span></a>*              <a class="link" href="gcr-GcrCertificate.html#gcr-certificate-get-issued-date" title="gcr_certificate_get_issued_date ()">gcr_certificate_get_issued_date</a>     (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Date-and-Time-Functions.html#GDate"><span class="returnvalue">GDate</span></a>*              <a class="link" href="gcr-GcrCertificate.html#gcr-certificate-get-expiry-date" title="gcr_certificate_get_expiry_date ()">gcr_certificate_get_expiry_date</a>     (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a>*             <a class="link" href="gcr-GcrCertificate.html#gcr-certificate-get-serial-number" title="gcr_certificate_get_serial_number ()">gcr_certificate_get_serial_number</a>   (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
@@ -87,37 +92,27 @@ GcrCertificateIface requires
 <a name="gcr-GcrCertificate.implementations"></a><h2>Known Implementations</h2>
 <p>
 GcrCertificateIface is implemented by
- <a class="link" href="gcr-gcr-simple-certificate.html#GcrSimpleCertificate">GcrSimpleCertificate</a>.</p>
+ <a class="link" href="GcrPkcs11Certificate.html" title="GcrPkcs11Certificate">GcrPkcs11Certificate</a> and  <a class="link" href="GcrSimpleCertificate.html" title="GcrSimpleCertificate">GcrSimpleCertificate</a>.</p>
 </div>
 <div class="refsect1" title="Description">
 <a name="gcr-GcrCertificate.description"></a><h2>Description</h2>
 <p>
-This is an interface that represents an X509 certificate. Objects can 
+This is an interface that represents an X.509 certificate. Objects can
 implement this interface to make a certificate usable with the GCR
 library. 
 </p>
 <p>
-You can use <a class="link" href="gcr-gcr-simple-certificate.html#GcrSimpleCertificate"><span class="type">GcrSimpleCertificate</span></a> to simply load a certificate.
+Various methods are available to parse out relevant bits of the certificate.
+However no verification of the validity of a certificate is done here. Use
+your favorite crypto library to do this.
+</p>
+<p>
+You can use <a class="link" href="GcrSimpleCertificate.html" title="GcrSimpleCertificate"><span class="type">GcrSimpleCertificate</span></a> to simply load a certificate for which
+you already have the raw certificate data.
 </p>
 </div>
 <div class="refsect1" title="Details">
 <a name="gcr-GcrCertificate.details"></a><h2>Details</h2>
-<div class="refsect2" title="GCR_CERTIFICATE_GET_INTERFACE()">
-<a name="GCR-CERTIFICATE-GET-INTERFACE:CAPS"></a><h3>GCR_CERTIFICATE_GET_INTERFACE()</h3>
-<pre class="programlisting">#define GCR_CERTIFICATE_GET_INTERFACE(inst)  (G_TYPE_INSTANCE_GET_INTERFACE ((inst), GCR_TYPE_CERTIFICATE, GcrCertificateIface))
-</pre>
-<p>
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody><tr>
-<td><p><span class="term"><em class="parameter"><code>inst</code></em> :</span></p></td>
-<td>
-</td>
-</tr></tbody>
-</table></div>
-</div>
-<hr>
 <div class="refsect2" title="GcrCertificate">
 <a name="GcrCertificate"></a><h3>GcrCertificate</h3>
 <pre class="programlisting">typedef struct _GcrCertificate GcrCertificate;</pre>
@@ -134,10 +129,10 @@ You can use <a class="link" href="gcr-gcr-simple-certificate.html#GcrSimpleCerti
 <hr>
 <div class="refsect2" title="gcr_certificate_get_der_data ()">
 <a name="gcr-certificate-get-der-data"></a><h3>gcr_certificate_get_der_data ()</h3>
-<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a>*       gcr_certificate_get_der_data        (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gconstpointer"><span class="returnvalue">gconstpointer</span></a>       gcr_certificate_get_der_data        (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *n_data</code></em>);</pre>
 <p>
-Gets the raw DER data for an X509 certificate.
+Gets the raw DER data for an X.509 certificate.
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -154,7 +149,7 @@ Gets the raw DER data for an X509 certificate.
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> raw DER data of the X509 certificate.
+<td> raw DER data of the X.509 certificate.
 </td>
 </tr>
 </tbody>
@@ -254,6 +249,70 @@ required.
 </table></div>
 </div>
 <hr>
+<div class="refsect2" title="gcr_certificate_get_issuer_raw ()">
+<a name="gcr-certificate-get-issuer-raw"></a><h3>gcr_certificate_get_issuer_raw ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            gcr_certificate_get_issuer_raw      (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *n_data</code></em>);</pre>
+<p>
+Get the raw DER data for the issuer DN of the certificate.
+</p>
+<p>
+The data should be freed by using <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> when no longer required.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>n_data</code></em> :</span></p></td>
+<td>The length of the returned data.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> allocated memory containing the raw issuer.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gcr_certificate_is_issuer ()">
+<a name="gcr-certificate-is-issuer"></a><h3>gcr_certificate_is_issuer ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            gcr_certificate_is_issuer           (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *issuer</code></em>);</pre>
+<p>
+Check if <em class="parameter"><code>issuer</code></em> could be the issuer of this certificate. This is done by
+comparing the relevant subject and issuer fields. No signature check is
+done. Proper verification of certificates must be done via a crypto
+library.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>issuer</code></em> :</span></p></td>
+<td>a possible issuer <a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> whether <em class="parameter"><code>issuer</code></em> could be the issuer of the certificate.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
 <div class="refsect2" title="gcr_certificate_get_subject_cn ()">
 <a name="gcr-certificate-get-subject-cn"></a><h3>gcr_certificate_get_subject_cn ()</h3>
 <pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              gcr_certificate_get_subject_cn      (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>);</pre>
@@ -341,6 +400,38 @@ required.
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td> The allocated part of the subject DN, or NULL if no such part is present.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gcr_certificate_get_subject_raw ()">
+<a name="gcr-certificate-get-subject-raw"></a><h3>gcr_certificate_get_subject_raw ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            gcr_certificate_get_subject_raw     (<em class="parameter"><code><a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a> *self</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *n_data</code></em>);</pre>
+<p>
+Get the raw DER data for the subject DN of the certificate.
+</p>
+<p>
+The data should be freed by using <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> when no longer required.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>self</code></em> :</span></p></td>
+<td>a <a class="link" href="gcr-GcrCertificate.html#GcrCertificate" title="GcrCertificate"><span class="type">GcrCertificate</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>n_data</code></em> :</span></p></td>
+<td>The length of the returned data.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> allocated memory containing the raw subject.
 </td>
 </tr>
 </tbody>

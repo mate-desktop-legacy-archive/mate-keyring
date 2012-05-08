@@ -46,6 +46,7 @@
 <ANCHOR id="gck-slot-get-mechanisms" href="gck/GckSlot.html#gck-slot-get-mechanisms">
 <ANCHOR id="gck-slot-get-mechanism-info" href="gck/GckSlot.html#gck-slot-get-mechanism-info">
 <ANCHOR id="gck-slot-has-flags" href="gck/GckSlot.html#gck-slot-has-flags">
+<ANCHOR id="gck-slots-enumerate-objects" href="gck/GckSlot.html#gck-slots-enumerate-objects">
 <ANCHOR id="gck-slot-open-session" href="gck/GckSlot.html#gck-slot-open-session">
 <ANCHOR id="gck-slot-open-session-full" href="gck/GckSlot.html#gck-slot-open-session-full">
 <ANCHOR id="gck-slot-open-session-async" href="gck/GckSlot.html#gck-slot-open-session-async">
@@ -202,6 +203,15 @@
 <ANCHOR id="GCK-ERROR:CAPS" href="gck/gck-Errors.html#GCK-ERROR:CAPS">
 <ANCHOR id="gck-message-from-rv" href="gck/gck-Errors.html#gck-message-from-rv">
 <ANCHOR id="CKR-GCK-MODULE-PROBLEM:CAPS" href="gck/gck-Errors.html#CKR-GCK-MODULE-PROBLEM:CAPS">
+<ANCHOR id="gck-PKCS11-URIs" href="gck/gck-PKCS11-URIs.html">
+<ANCHOR id="gck-PKCS11-URIs.synopsis" href="gck/gck-PKCS11-URIs.html#gck-PKCS11-URIs.synopsis">
+<ANCHOR id="gck-PKCS11-URIs.description" href="gck/gck-PKCS11-URIs.html#gck-PKCS11-URIs.description">
+<ANCHOR id="gck-PKCS11-URIs.details" href="gck/gck-PKCS11-URIs.html#gck-PKCS11-URIs.details">
+<ANCHOR id="GckUriInfo" href="gck/gck-PKCS11-URIs.html#GckUriInfo">
+<ANCHOR id="GckUriParseFlags" href="gck/gck-PKCS11-URIs.html#GckUriParseFlags">
+<ANCHOR id="gck-uri-parse" href="gck/gck-PKCS11-URIs.html#gck-uri-parse">
+<ANCHOR id="gck-uri-build" href="gck/gck-PKCS11-URIs.html#gck-uri-build">
+<ANCHOR id="gck-uri-info-free" href="gck/gck-PKCS11-URIs.html#gck-uri-info-free">
 <ANCHOR id="gck-Miscellaneous-Functions" href="gck/gck-Miscellaneous-Functions.html">
 <ANCHOR id="gck-Miscellaneous-Functions.synopsis" href="gck/gck-Miscellaneous-Functions.html#gck-Miscellaneous-Functions.synopsis">
 <ANCHOR id="gck-Miscellaneous-Functions.description" href="gck/gck-Miscellaneous-Functions.html#gck-Miscellaneous-Functions.description">

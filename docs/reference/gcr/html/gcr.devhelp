@@ -2,22 +2,109 @@
 <!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
 <book xmlns="http://www.devhelp.net/book" title="gcr Reference Manual" link="index.html" author="" name="gcr">
   <chapters>
-    <sub name="[Insert title here]" link="ch01.html">
-      <sub name="GcrImportDialog" link="gcr-gcr-import-dialog.html"/>
-      <sub name="GcrCertificateDetailsWidget" link="gcr-gcr-certificate-details-widget.html"/>
-      <sub name="GcrCertificateBasicsWidget" link="gcr-gcr-certificate-basics-widget.html"/>
-      <sub name="GcrParser" link="gcr-gcr-parser.html"/>
+    <sub name="Certificates" link="certificates.html">
       <sub name="GcrCertificate" link="gcr-GcrCertificate.html"/>
+      <sub name="GcrSimpleCertificate" link="GcrSimpleCertificate.html"/>
+      <sub name="GcrPkcs11Certificate" link="GcrPkcs11Certificate.html"/>
+      <sub name="GcrCertificateChain" link="GcrCertificateChain.html"/>
+    </sub>
+    <sub name="Storage" link="storage.html">
+      <sub name="Trust Storage and Lookups" link="gcr-Trust-Storage-and-Lookups.html"/>
       <sub name="GcrTokenManager" link="gcr-gcr-initializer.html"/>
       <sub name="GcrImporter" link="gcr-gcr-importer.html"/>
-      <sub name="GcrSimpleCertificate" link="gcr-gcr-simple-certificate.html"/>
-      <sub name="GcrXxx" link="gcr-gcr-xxx.html"/>
-      <sub name="gcr-types" link="gcr-gcr-types.html"/>
+      <sub name="GcrParser" link="gcr-gcr-parser.html"/>
+    </sub>
+    <sub name="Miscellaneous" link="misc.html">
+      <sub name="Library Settings" link="gcr-Library-Settings.html"/>
     </sub>
   </chapters>
   <functions>
-    <function name="GcrImportDialogPrivate" link="gcr-gcr-import-dialog.html#GcrImportDialogPrivate"/>
-    <function name="GcrImportDialog" link="gcr-gcr-import-dialog.html#GcrImportDialog"/>
+    <function name="GcrCertificate" link="gcr-GcrCertificate.html#GcrCertificate"/>
+    <function name="GcrCertificateIface" link="gcr-GcrCertificate.html#GcrCertificateIface-struct"/>
+    <function name="gcr_certificate_get_der_data ()" link="gcr-GcrCertificate.html#gcr-certificate-get-der-data"/>
+    <function name="gcr_certificate_get_issuer_cn ()" link="gcr-GcrCertificate.html#gcr-certificate-get-issuer-cn"/>
+    <function name="gcr_certificate_get_issuer_dn ()" link="gcr-GcrCertificate.html#gcr-certificate-get-issuer-dn"/>
+    <function name="gcr_certificate_get_issuer_part ()" link="gcr-GcrCertificate.html#gcr-certificate-get-issuer-part"/>
+    <function name="gcr_certificate_get_issuer_raw ()" link="gcr-GcrCertificate.html#gcr-certificate-get-issuer-raw"/>
+    <function name="gcr_certificate_is_issuer ()" link="gcr-GcrCertificate.html#gcr-certificate-is-issuer"/>
+    <function name="gcr_certificate_get_subject_cn ()" link="gcr-GcrCertificate.html#gcr-certificate-get-subject-cn"/>
+    <function name="gcr_certificate_get_subject_dn ()" link="gcr-GcrCertificate.html#gcr-certificate-get-subject-dn"/>
+    <function name="gcr_certificate_get_subject_part ()" link="gcr-GcrCertificate.html#gcr-certificate-get-subject-part"/>
+    <function name="gcr_certificate_get_subject_raw ()" link="gcr-GcrCertificate.html#gcr-certificate-get-subject-raw"/>
+    <function name="gcr_certificate_get_issued_date ()" link="gcr-GcrCertificate.html#gcr-certificate-get-issued-date"/>
+    <function name="gcr_certificate_get_expiry_date ()" link="gcr-GcrCertificate.html#gcr-certificate-get-expiry-date"/>
+    <function name="gcr_certificate_get_serial_number ()" link="gcr-GcrCertificate.html#gcr-certificate-get-serial-number"/>
+    <function name="gcr_certificate_get_serial_number_hex ()" link="gcr-GcrCertificate.html#gcr-certificate-get-serial-number-hex"/>
+    <function name="gcr_certificate_get_key_size ()" link="gcr-GcrCertificate.html#gcr-certificate-get-key-size"/>
+    <function name="gcr_certificate_get_fingerprint ()" link="gcr-GcrCertificate.html#gcr-certificate-get-fingerprint"/>
+    <function name="gcr_certificate_get_fingerprint_hex ()" link="gcr-GcrCertificate.html#gcr-certificate-get-fingerprint-hex"/>
+    <function name="GcrSimpleCertificate" link="GcrSimpleCertificate.html#GcrSimpleCertificate-struct"/>
+    <function name="gcr_simple_certificate_new ()" link="GcrSimpleCertificate.html#gcr-simple-certificate-new"/>
+    <function name="gcr_simple_certificate_new_static ()" link="GcrSimpleCertificate.html#gcr-simple-certificate-new-static"/>
+    <function name="GcrPkcs11Certificate" link="GcrPkcs11Certificate.html#GcrPkcs11Certificate-struct"/>
+    <function name="gcr_pkcs11_certificate_get_attributes ()" link="GcrPkcs11Certificate.html#gcr-pkcs11-certificate-get-attributes"/>
+    <function name="gcr_pkcs11_certificate_lookup_issuer ()" link="GcrPkcs11Certificate.html#gcr-pkcs11-certificate-lookup-issuer"/>
+    <function name="gcr_pkcs11_certificate_lookup_issuer_async ()" link="GcrPkcs11Certificate.html#gcr-pkcs11-certificate-lookup-issuer-async"/>
+    <function name="gcr_pkcs11_certificate_lookup_issuer_finish ()" link="GcrPkcs11Certificate.html#gcr-pkcs11-certificate-lookup-issuer-finish"/>
+    <function name="The &quot;attributes&quot; property" link="GcrPkcs11Certificate.html#GcrPkcs11Certificate--attributes"/>
+    <function name="GcrCertificateChain" link="GcrCertificateChain.html#GcrCertificateChain-struct"/>
+    <function name="enum GcrCertificateChainStatus" link="GcrCertificateChain.html#GcrCertificateChainStatus"/>
+    <function name="gcr_certificate_chain_new ()" link="GcrCertificateChain.html#gcr-certificate-chain-new"/>
+    <function name="gcr_certificate_chain_add ()" link="GcrCertificateChain.html#gcr-certificate-chain-add"/>
+    <function name="gcr_certificate_chain_get_certificate ()" link="GcrCertificateChain.html#gcr-certificate-chain-get-certificate"/>
+    <function name="gcr_certificate_chain_get_status ()" link="GcrCertificateChain.html#gcr-certificate-chain-get-status"/>
+    <function name="gcr_certificate_chain_get_anchor ()" link="GcrCertificateChain.html#gcr-certificate-chain-get-anchor"/>
+    <function name="gcr_certificate_chain_get_endpoint ()" link="GcrCertificateChain.html#gcr-certificate-chain-get-endpoint"/>
+    <function name="gcr_certificate_chain_get_length ()" link="GcrCertificateChain.html#gcr-certificate-chain-get-length"/>
+    <function name="enum GcrCertificateChainFlags" link="GcrCertificateChain.html#GcrCertificateChainFlags"/>
+    <function name="gcr_certificate_chain_build ()" link="GcrCertificateChain.html#gcr-certificate-chain-build"/>
+    <function name="gcr_certificate_chain_build_async ()" link="GcrCertificateChain.html#gcr-certificate-chain-build-async"/>
+    <function name="gcr_certificate_chain_build_finish ()" link="GcrCertificateChain.html#gcr-certificate-chain-build-finish"/>
+    <function name="The &quot;length&quot; property" link="GcrCertificateChain.html#GcrCertificateChain--length"/>
+    <function name="The &quot;status&quot; property" link="GcrCertificateChain.html#GcrCertificateChain--status"/>
+    <function name="GCR_PURPOSE_SERVER_AUTH" link="gcr-Trust-Storage-and-Lookups.html#GCR-PURPOSE-SERVER-AUTH:CAPS"/>
+    <function name="GCR_PURPOSE_CLIENT_AUTH" link="gcr-Trust-Storage-and-Lookups.html#GCR-PURPOSE-CLIENT-AUTH:CAPS"/>
+    <function name="GCR_PURPOSE_EMAIL" link="gcr-Trust-Storage-and-Lookups.html#GCR-PURPOSE-EMAIL:CAPS"/>
+    <function name="GCR_PURPOSE_CODE_SIGNING" link="gcr-Trust-Storage-and-Lookups.html#GCR-PURPOSE-CODE-SIGNING:CAPS"/>
+    <function name="gcr_trust_is_certificate_anchored ()" link="gcr-Trust-Storage-and-Lookups.html#gcr-trust-is-certificate-anchored"/>
+    <function name="gcr_trust_is_certificate_anchored_async ()" link="gcr-Trust-Storage-and-Lookups.html#gcr-trust-is-certificate-anchored-async"/>
+    <function name="gcr_trust_is_certificate_anchored_finish ()" link="gcr-Trust-Storage-and-Lookups.html#gcr-trust-is-certificate-anchored-finish"/>
+    <function name="gcr_trust_is_certificate_pinned ()" link="gcr-Trust-Storage-and-Lookups.html#gcr-trust-is-certificate-pinned"/>
+    <function name="gcr_trust_is_certificate_pinned_async ()" link="gcr-Trust-Storage-and-Lookups.html#gcr-trust-is-certificate-pinned-async"/>
+    <function name="gcr_trust_is_certificate_pinned_finish ()" link="gcr-Trust-Storage-and-Lookups.html#gcr-trust-is-certificate-pinned-finish"/>
+    <function name="gcr_trust_add_pinned_certificate ()" link="gcr-Trust-Storage-and-Lookups.html#gcr-trust-add-pinned-certificate"/>
+    <function name="gcr_trust_add_pinned_certificate_async ()" link="gcr-Trust-Storage-and-Lookups.html#gcr-trust-add-pinned-certificate-async"/>
+    <function name="gcr_trust_add_pinned_certificate_finish ()" link="gcr-Trust-Storage-and-Lookups.html#gcr-trust-add-pinned-certificate-finish"/>
+    <function name="gcr_trust_remove_pinned_certificate ()" link="gcr-Trust-Storage-and-Lookups.html#gcr-trust-remove-pinned-certificate"/>
+    <function name="gcr_trust_remove_pinned_certificate_async ()" link="gcr-Trust-Storage-and-Lookups.html#gcr-trust-remove-pinned-certificate-async"/>
+    <function name="gcr_trust_remove_pinned_certificate_finish ()" link="gcr-Trust-Storage-and-Lookups.html#gcr-trust-remove-pinned-certificate-finish"/>
+    <function name="GcrTokenManagerPrivate" link="gcr-gcr-initializer.html#GcrTokenManagerPrivate"/>
+    <function name="GcrTokenManager" link="gcr-gcr-initializer.html#GcrTokenManager"/>
+    <function name="gcr_token_manager_new ()" link="gcr-gcr-initializer.html#gcr-token-manager-new"/>
+    <function name="gcr_token_manager_get_slot ()" link="gcr-gcr-initializer.html#gcr-token-manager-get-slot"/>
+    <function name="gcr_token_manager_initialize ()" link="gcr-gcr-initializer.html#gcr-token-manager-initialize"/>
+    <function name="gcr_token_manager_initialize_async ()" link="gcr-gcr-initializer.html#gcr-token-manager-initialize-async"/>
+    <function name="gcr_token_manager_initialize_finish ()" link="gcr-gcr-initializer.html#gcr-token-manager-initialize-finish"/>
+    <function name="gcr_token_manager_change_pin ()" link="gcr-gcr-initializer.html#gcr-token-manager-change-pin"/>
+    <function name="gcr_token_manager_change_pin_async ()" link="gcr-gcr-initializer.html#gcr-token-manager-change-pin-async"/>
+    <function name="gcr_token_manager_change_pin_finish ()" link="gcr-gcr-initializer.html#gcr-token-manager-change-pin-finish"/>
+    <function name="enum GcrImporterPromptBehavior" link="gcr-gcr-importer.html#GcrImporterPromptBehavior"/>
+    <function name="GcrImporterPrivate" link="gcr-gcr-importer.html#GcrImporterPrivate"/>
+    <function name="GcrImporter" link="gcr-gcr-importer.html#GcrImporter-struct"/>
+    <function name="gcr_importer_new ()" link="gcr-gcr-importer.html#gcr-importer-new"/>
+    <function name="gcr_importer_get_parser ()" link="gcr-gcr-importer.html#gcr-importer-get-parser"/>
+    <function name="gcr_importer_set_parser ()" link="gcr-gcr-importer.html#gcr-importer-set-parser"/>
+    <function name="gcr_importer_get_slot ()" link="gcr-gcr-importer.html#gcr-importer-get-slot"/>
+    <function name="gcr_importer_set_slot ()" link="gcr-gcr-importer.html#gcr-importer-set-slot"/>
+    <function name="gcr_importer_get_prompt_behavior ()" link="gcr-gcr-importer.html#gcr-importer-get-prompt-behavior"/>
+    <function name="gcr_importer_set_prompt_behavior ()" link="gcr-gcr-importer.html#gcr-importer-set-prompt-behavior"/>
+    <function name="gcr_importer_import ()" link="gcr-gcr-importer.html#gcr-importer-import"/>
+    <function name="gcr_importer_import_async ()" link="gcr-gcr-importer.html#gcr-importer-import-async"/>
+    <function name="gcr_importer_import_finish ()" link="gcr-gcr-importer.html#gcr-importer-import-finish"/>
+    <function name="The &quot;prompt-behavior&quot; property" link="gcr-gcr-importer.html#GcrImporter--prompt-behavior"/>
+    <function name="The &quot;slot&quot; property" link="gcr-gcr-importer.html#GcrImporter--slot"/>
+    <function name="The &quot;imported&quot; signal" link="gcr-gcr-importer.html#GcrImporter-imported"/>
+    <function name="The &quot;queued&quot; signal" link="gcr-gcr-importer.html#GcrImporter-queued"/>
     <function name="GcrParsedItem" link="gcr-gcr-parser.html#GcrParsedItem"/>
     <function name="GcrParserPrivate" link="gcr-gcr-parser.html#GcrParserPrivate"/>
     <function name="GcrParser" link="gcr-gcr-parser.html#GcrParser-struct"/>
@@ -35,52 +122,15 @@
     <function name="The &quot;parsed-label&quot; property" link="gcr-gcr-parser.html#GcrParser--parsed-label"/>
     <function name="The &quot;authenticate&quot; signal" link="gcr-gcr-parser.html#GcrParser-authenticate"/>
     <function name="The &quot;parsed&quot; signal" link="gcr-gcr-parser.html#GcrParser-parsed"/>
-    <function name="GCR_CERTIFICATE_GET_INTERFACE()" link="gcr-GcrCertificate.html#GCR-CERTIFICATE-GET-INTERFACE:CAPS"/>
-    <function name="GcrCertificate" link="gcr-GcrCertificate.html#GcrCertificate"/>
-    <function name="GcrCertificateIface" link="gcr-GcrCertificate.html#GcrCertificateIface-struct"/>
-    <function name="gcr_certificate_get_der_data ()" link="gcr-GcrCertificate.html#gcr-certificate-get-der-data"/>
-    <function name="gcr_certificate_get_issuer_cn ()" link="gcr-GcrCertificate.html#gcr-certificate-get-issuer-cn"/>
-    <function name="gcr_certificate_get_issuer_dn ()" link="gcr-GcrCertificate.html#gcr-certificate-get-issuer-dn"/>
-    <function name="gcr_certificate_get_issuer_part ()" link="gcr-GcrCertificate.html#gcr-certificate-get-issuer-part"/>
-    <function name="gcr_certificate_get_subject_cn ()" link="gcr-GcrCertificate.html#gcr-certificate-get-subject-cn"/>
-    <function name="gcr_certificate_get_subject_dn ()" link="gcr-GcrCertificate.html#gcr-certificate-get-subject-dn"/>
-    <function name="gcr_certificate_get_subject_part ()" link="gcr-GcrCertificate.html#gcr-certificate-get-subject-part"/>
-    <function name="gcr_certificate_get_issued_date ()" link="gcr-GcrCertificate.html#gcr-certificate-get-issued-date"/>
-    <function name="gcr_certificate_get_expiry_date ()" link="gcr-GcrCertificate.html#gcr-certificate-get-expiry-date"/>
-    <function name="gcr_certificate_get_serial_number ()" link="gcr-GcrCertificate.html#gcr-certificate-get-serial-number"/>
-    <function name="gcr_certificate_get_serial_number_hex ()" link="gcr-GcrCertificate.html#gcr-certificate-get-serial-number-hex"/>
-    <function name="gcr_certificate_get_key_size ()" link="gcr-GcrCertificate.html#gcr-certificate-get-key-size"/>
-    <function name="gcr_certificate_get_fingerprint ()" link="gcr-GcrCertificate.html#gcr-certificate-get-fingerprint"/>
-    <function name="gcr_certificate_get_fingerprint_hex ()" link="gcr-GcrCertificate.html#gcr-certificate-get-fingerprint-hex"/>
-    <function name="GcrTokenManagerPrivate" link="gcr-gcr-initializer.html#GcrTokenManagerPrivate"/>
-    <function name="GcrTokenManager" link="gcr-gcr-initializer.html#GcrTokenManager"/>
-    <function name="gcr_token_manager_new ()" link="gcr-gcr-initializer.html#gcr-token-manager-new"/>
-    <function name="gcr_token_manager_get_slot ()" link="gcr-gcr-initializer.html#gcr-token-manager-get-slot"/>
-    <function name="gcr_token_manager_initialize ()" link="gcr-gcr-initializer.html#gcr-token-manager-initialize"/>
-    <function name="gcr_token_manager_initialize_async ()" link="gcr-gcr-initializer.html#gcr-token-manager-initialize-async"/>
-    <function name="gcr_token_manager_initialize_finish ()" link="gcr-gcr-initializer.html#gcr-token-manager-initialize-finish"/>
-    <function name="gcr_token_manager_change_pin ()" link="gcr-gcr-initializer.html#gcr-token-manager-change-pin"/>
-    <function name="gcr_token_manager_change_pin_async ()" link="gcr-gcr-initializer.html#gcr-token-manager-change-pin-async"/>
-    <function name="gcr_token_manager_change_pin_finish ()" link="gcr-gcr-initializer.html#gcr-token-manager-change-pin-finish"/>
-    <function name="enum GcrImporterPromptBehavior" link="gcr-gcr-importer.html#GcrImporterPromptBehavior"/>
-    <function name="GcrImporterPrivate" link="gcr-gcr-importer.html#GcrImporterPrivate"/>
-    <function name="GcrImporter" link="gcr-gcr-importer.html#GcrImporter-struct"/>
-    <function name="gcr_importer_new ()" link="gcr-gcr-importer.html#gcr-importer-new"/>
-    <function name="gcr_importer_get_slot ()" link="gcr-gcr-importer.html#gcr-importer-get-slot"/>
-    <function name="gcr_importer_set_slot ()" link="gcr-gcr-importer.html#gcr-importer-set-slot"/>
-    <function name="gcr_importer_get_prompt_behavior ()" link="gcr-gcr-importer.html#gcr-importer-get-prompt-behavior"/>
-    <function name="gcr_importer_set_prompt_behavior ()" link="gcr-gcr-importer.html#gcr-importer-set-prompt-behavior"/>
-    <function name="gcr_importer_import ()" link="gcr-gcr-importer.html#gcr-importer-import"/>
-    <function name="gcr_importer_import_async ()" link="gcr-gcr-importer.html#gcr-importer-import-async"/>
-    <function name="gcr_importer_import_finish ()" link="gcr-gcr-importer.html#gcr-importer-import-finish"/>
-    <function name="The &quot;prompt-behavior&quot; property" link="gcr-gcr-importer.html#GcrImporter--prompt-behavior"/>
-    <function name="The &quot;slot&quot; property" link="gcr-gcr-importer.html#GcrImporter--slot"/>
-    <function name="The &quot;imported&quot; signal" link="gcr-gcr-importer.html#GcrImporter-imported"/>
-    <function name="The &quot;queued&quot; signal" link="gcr-gcr-importer.html#GcrImporter-queued"/>
-    <function name="GcrSimpleCertificatePrivate" link="gcr-gcr-simple-certificate.html#GcrSimpleCertificatePrivate"/>
-    <function name="GcrSimpleCertificate" link="gcr-gcr-simple-certificate.html#GcrSimpleCertificate-struct"/>
-    <function name="gcr_simple_certificate_new ()" link="gcr-gcr-simple-certificate.html#gcr-simple-certificate-new"/>
-    <function name="GCR_DATA_ERROR" link="gcr-gcr-types.html#GCR-DATA-ERROR:CAPS"/>
-    <function name="gcr_data_error_get_domain ()" link="gcr-gcr-types.html#gcr-data-error-get-domain"/>
+    <function name="gcr_pkcs11_get_modules ()" link="gcr-Library-Settings.html#gcr-pkcs11-get-modules"/>
+    <function name="gcr_pkcs11_set_modules ()" link="gcr-Library-Settings.html#gcr-pkcs11-set-modules"/>
+    <function name="gcr_pkcs11_add_module ()" link="gcr-Library-Settings.html#gcr-pkcs11-add-module"/>
+    <function name="gcr_pkcs11_add_module_from_file ()" link="gcr-Library-Settings.html#gcr-pkcs11-add-module-from-file"/>
+    <function name="gcr_pkcs11_get_trust_lookup_slots ()" link="gcr-Library-Settings.html#gcr-pkcs11-get-trust-lookup-slots"/>
+    <function name="gcr_pkcs11_get_trust_store_slot ()" link="gcr-Library-Settings.html#gcr-pkcs11-get-trust-store-slot"/>
+    <function name="gcr_pkcs11_get_trust_lookup_uris ()" link="gcr-Library-Settings.html#gcr-pkcs11-get-trust-lookup-uris"/>
+    <function name="gcr_pkcs11_set_trust_lookup_uris ()" link="gcr-Library-Settings.html#gcr-pkcs11-set-trust-lookup-uris"/>
+    <function name="gcr_pkcs11_get_trust_store_uri ()" link="gcr-Library-Settings.html#gcr-pkcs11-get-trust-store-uri"/>
+    <function name="gcr_pkcs11_set_trust_store_uri ()" link="gcr-Library-Settings.html#gcr-pkcs11-set-trust-store-uri"/>
   </functions>
 </book>

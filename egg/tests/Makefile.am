@@ -1,39 +1,53 @@
+
 asn1-def-test.c: test.asn
 	$(ASN1PARSER) -o asn1-def-test.c $(srcdir)/test.asn
 
-# Test files should be listed in order they need to run
-TESTING_FILES = \
+INCLUDES = \
+	-I$(top_srcdir)/egg \
+	-DSRCDIR=$(srcdir) \
+	$(GLIB_CFLAGS)
+
+LDADD =  \
+	$(top_builddir)/egg/libegg.la \
+	$(LIBGCRYPT_LIBS) \
+	$(GTHREAD_LIBS) \
+	$(GLIB_LIBS)
+
+TEST_PROGS = \
+	test-asn1 \
+	test-dn \
+	test-cleanup \
+	test-hex \
+	test-oid \
+	test-secmem \
+	test-padding \
+	test-symkey \
+	test-openssl \
+	test-dh \
+	test-spawn
+
+test_asn1_SOURCES = \
 	test-asn1.c \
-	unit-test-asn1.c \
-	test-dn.c \
-	unit-test-cleanup.c \
-	unit-test-hex.c \
-	unit-test-oid.c \
-	test-padding.c \
-	unit-test-secmem.c \
-	unit-test-symkey.c \
-	unit-test-openssl.c \
-	unit-test-dh.c \
-	unit-test-spawn.c \
 	asn1-def-test.c
 
-UNIT_PROMPT = 
+check_PROGRAMS = $(TEST_PROGS)
 
-TESTING_LIBS =  \
-	$(top_builddir)/egg/libegg.la
+test: $(TEST_PROGS)
+	SRCDIR='$(srcdir)' gtester -k --verbose ${TEST_PROGS}
+
+check-local: test
+
+if WITH_TESTS
+all-local: $(check_PROGRAMS)
+endif
 
 EXTRA_DIST = \
 	test.asn \
-	test-data
-
-include $(top_srcdir)/testing/testing.make
-
-BUILT_SOURCES += \
-	asn1-def-test.c
+	files
 
 # ------------------------------------------------------------------------------
 
-noinst_PROGRAMS += \
+noinst_PROGRAMS = \
 	test-asn1x
 
 test_asn1x_SOURCES = \
@@ -41,4 +55,5 @@ test_asn1x_SOURCES = \
 
 test_asn1x_LDADD = \
 	$(top_builddir)/egg/libegg-asn1x.la \
-	$(LIBTASN1_LIBS)
+	$(LIBTASN1_LIBS) \
+	$(LDADD)

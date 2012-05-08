@@ -3,7 +3,7 @@ Type=Application
 _Name=SSH Key Agent
 _Comment=MATE Keyring: SSH Agent
 Exec=@VALGRIND_RUN@@BINDIR@/mate-keyring-daemon --start --components=ssh
-OnlyShowIn=MATE;LXDE;
+OnlyShowIn=MATE;LXDE;XFCE;
 X-MATE-Autostart-Phase=Initialization
 X-MATE-AutoRestart=false
 X-MATE-Autostart-Notify=true

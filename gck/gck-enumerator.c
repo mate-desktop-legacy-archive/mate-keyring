@@ -56,14 +56,10 @@ struct _GckEnumeratorState {
 
 	/* Input to enumerator */
 	GList *modules;
-	GckTokenInfo *match_token;
-	GckAttributes *match_attrs;
+	GckUriInfo *match;
 	guint session_options;
 	gboolean authenticate;
 	gchar *password;
-
-	/* state_module */
-	GckModule *module;
 
 	/* state_slots */
 	GList *slots;
@@ -71,6 +67,7 @@ struct _GckEnumeratorState {
 	/* state_slot */
 	GckSlot *slot;
 	GckTokenInfo *token_info;
+	CK_FUNCTION_LIST_PTR funcs;
 
 	/* state_session */
 	GckSession *session;
@@ -90,8 +87,7 @@ struct _GckEnumeratorPrivate {
 
 G_DEFINE_TYPE (GckEnumerator, gck_enumerator, G_TYPE_OBJECT);
 
-static gpointer state_start          (GckEnumeratorState *args, gboolean forward);
-static gpointer state_module         (GckEnumeratorState *args, gboolean forward);
+static gpointer state_modules        (GckEnumeratorState *args, gboolean forward);
 static gpointer state_slots          (GckEnumeratorState *args, gboolean forward);
 static gpointer state_slot           (GckEnumeratorState *args, gboolean forward);
 static gpointer state_session        (GckEnumeratorState *args, gboolean forward);
@@ -123,10 +119,7 @@ cleanup_state (GckEnumeratorState *args)
 	g_assert (args);
 
 	/* Have each state cleanup */
-	rewind_state (args, state_start);
-
-	/* state_module */
-	g_assert (!args->module);
+	rewind_state (args, state_modules);
 
 	/* state_slots */
 	g_assert (!args->slots);
@@ -134,6 +127,7 @@ cleanup_state (GckEnumeratorState *args)
 	/* state_slot */
 	g_assert (!args->slot);
 	g_assert (!args->token_info);
+	g_assert (!args->funcs);
 
 	/* state_session */
 	g_assert (!args->session);
@@ -156,19 +150,20 @@ cleanup_state (GckEnumeratorState *args)
 		args->password  = NULL;
 	}
 
-	gck_token_info_free (args->match_token);
-	args->match_token = NULL;
-
-	if (args->match_attrs) {
-		_gck_attributes_unlock (args->match_attrs);
-		gck_attributes_unref (args->match_attrs);
+	if (args->match) {
+		if (args->match->attributes)
+			_gck_attributes_unlock (args->match->attributes);
+		gck_uri_info_free (args->match);
+		args->match = NULL;
 	}
 }
 
 static gpointer
-state_start (GckEnumeratorState *args, gboolean forward)
+state_modules (GckEnumeratorState *args, gboolean forward)
 {
-	g_assert (args->module == NULL);
+	GckModule *module;
+
+	g_assert (args->slots == NULL);
 
 	if (forward) {
 
@@ -177,10 +172,14 @@ state_start (GckEnumeratorState *args, gboolean forward)
 			return NULL;
 
 		/* Pop off the current module */
-		args->module = args->modules->data;
-		g_assert (GCK_IS_MODULE (args->module));
+		module = args->modules->data;
+		g_assert (GCK_IS_MODULE (module));
 		args->modules = g_list_delete_link (args->modules, args->modules);
-		return state_module;
+
+		args->slots = gck_module_get_slots (module, TRUE);
+		g_object_unref (module);
+
+		return state_slots;
 	}
 
 	/* Should never be asked to go backward from start state */
@@ -188,30 +187,12 @@ state_start (GckEnumeratorState *args, gboolean forward)
 }
 
 static gpointer
-state_module (GckEnumeratorState *args, gboolean forward)
-{
-	g_assert (args->module);
-	g_assert (!args->slots);
-
-	/* module to slots state */
-	if (forward) {
-
-		args->slots = gck_module_get_slots (args->module, TRUE);
-		return state_slots;
-
-	/* module to start state */
-	} else {
-		g_object_unref (args->module);
-		args->module = NULL;
-		return state_start;
-	}
-}
-
-static gpointer
 state_slots (GckEnumeratorState *args, gboolean forward)
 {
 	GckSlot *slot;
+	GckModule *module;
 	GckTokenInfo *token_info;
+	gboolean matched;
 
 	g_assert (args->slot == NULL);
 
@@ -220,7 +201,7 @@ state_slots (GckEnumeratorState *args, gboolean forward)
 
 		/* If there are no more slots go back to start state */
 		if (!args->slots)
-			return rewind_state (args, state_start);
+			return rewind_state (args, state_modules);
 
 		/* Pop the next slot off the stack */
 		slot = args->slots->data;
@@ -230,57 +211,66 @@ state_slots (GckEnumeratorState *args, gboolean forward)
 		if (!token_info) {
 			g_message ("couldn't get token info while enumerating");
 			g_object_unref (slot);
-			return rewind_state (args, state_start);
+			return rewind_state (args, state_modules);
 		}
+
+		matched = TRUE;
+
+		/* Do we have unrecognized matches? */
+		if (args->match->any_unrecognized) {
+			matched = FALSE;
 
 		/* Are we trying to match the slot? */
-		if (args->match_token) {
+		} else if (args->match->token_info) {
 
 			/* No match? Go to next slot */
-			if (!_gck_token_info_match (args->match_token, token_info)) {
-				g_object_unref (slot);
-				gck_token_info_free (token_info);
-				return state_slots;
-			}
+			matched = _gck_token_info_match (args->match->token_info, token_info);
 		}
+
+		if (!matched) {
+			g_object_unref (slot);
+			gck_token_info_free (token_info);
+			return state_slots;
+		}
+
+		module = gck_slot_get_module (slot);
+		args->funcs = gck_module_get_functions (module);
+		g_assert (args->funcs);
+		g_object_unref (module);
 
 		/* We have a slot */
 		args->slot = slot;
 		args->token_info = token_info;
 		return state_slot;
 
-	/* slots state to module state */
+	/* slots state to modules state */
 	} else {
 
 		gck_list_unref_free (args->slots);
 		args->slots = NULL;
-		return state_module;
+		return state_modules;
 	}
 }
 
 static gpointer
 state_slot (GckEnumeratorState *args, gboolean forward)
 {
-	CK_FUNCTION_LIST_PTR funcs;
 	CK_SESSION_HANDLE session;
 	CK_FLAGS flags;
 	CK_RV rv;
 
 	g_assert (args->slot);
-	g_assert (args->module);
+	g_assert (args->funcs);
 	g_assert (args->session == NULL);
 
 	/* slot to session state */
 	if (forward) {
-		funcs = gck_module_get_functions (args->module);
-		g_return_val_if_fail (funcs, NULL);
-
 		flags = CKF_SERIAL_SESSION;
 		if ((args->session_options & GCK_SESSION_READ_WRITE) == GCK_SESSION_READ_WRITE)
 			flags |= CKF_RW_SESSION;
 
-		rv = (funcs->C_OpenSession) (gck_slot_get_handle (args->slot),
-		                             flags, NULL, NULL, &session);
+		rv = (args->funcs->C_OpenSession) (gck_slot_get_handle (args->slot),
+		                                   flags, NULL, NULL, &session);
 
 		if (rv != CKR_OK) {
 			g_message ("couldn't open session on module while enumerating objects: %s",
@@ -295,6 +285,7 @@ state_slot (GckEnumeratorState *args, gboolean forward)
 	} else {
 		g_object_unref (args->slot);
 		args->slot = NULL;
+		args->funcs = NULL;
 
 		gck_token_info_free (args->token_info);
 		args->token_info = NULL;
@@ -306,13 +297,12 @@ state_slot (GckEnumeratorState *args, gboolean forward)
 static gpointer
 state_session (GckEnumeratorState *args, gboolean forward)
 {
-	CK_FUNCTION_LIST_PTR funcs;
 	GckSessionInfo *sinfo;
 	CK_ULONG n_pin;
 	CK_RV rv;
 
+	g_assert (args->funcs);
 	g_assert (args->session);
-	g_assert (args->module);
 	g_assert (!args->want_password);
 	g_assert (args->token_info);
 
@@ -344,13 +334,10 @@ state_session (GckEnumeratorState *args, gboolean forward)
 
 		gck_session_info_free (sinfo);
 
-		funcs = gck_module_get_functions (args->module);
-		g_return_val_if_fail (funcs, NULL);
-
 		/* Try to log in */
 		n_pin = args->password ? strlen (args->password) : 0;
-		rv = (funcs->C_Login) (gck_session_get_handle (args->session), CKU_USER,
-		                       (CK_BYTE_PTR)args->password, n_pin);
+		rv = (args->funcs->C_Login) (gck_session_get_handle (args->session), CKU_USER,
+		                             (CK_BYTE_PTR)args->password, n_pin);
 
 		/* Authentication failed, ask for a password */
 		if (rv == CKR_PIN_INCORRECT) {
@@ -375,7 +362,6 @@ state_session (GckEnumeratorState *args, gboolean forward)
 static gpointer
 state_authenticated (GckEnumeratorState *args, gboolean forward)
 {
-	CK_FUNCTION_LIST_PTR funcs;
 	CK_OBJECT_HANDLE objects[128];
 	CK_SESSION_HANDLE session;
 	CK_ATTRIBUTE_PTR attrs;
@@ -391,28 +377,25 @@ state_authenticated (GckEnumeratorState *args, gboolean forward)
 	g_assert (args->session);
 	g_assert (!args->want_password);
 	g_assert (args->want_objects);
+	g_assert (args->funcs);
 
-	if (args->match_attrs) {
-		attrs = _gck_attributes_commit_out (args->match_attrs, &n_attrs);
+	if (args->match->attributes) {
+		attrs = _gck_attributes_commit_out (args->match->attributes, &n_attrs);
 	} else {
 		attrs = NULL;
 		n_attrs = 0;
 	}
 
-	funcs = gck_module_get_functions (args->module);
-	g_return_val_if_fail (funcs, NULL);
-
 	session = gck_session_get_handle (args->session);
 	g_return_val_if_fail (session, NULL);
 
 	/* Get all the objects */
-	rv = (funcs->C_FindObjectsInit) (session, attrs, n_attrs);
+	rv = (args->funcs->C_FindObjectsInit) (session, attrs, n_attrs);
 
 	if (rv == CKR_OK) {
-		while (rv == CKR_OK) {
-			rv = (funcs->C_FindObjects) (session, objects, G_N_ELEMENTS (objects), &count);
-
-			if (count == 0)
+		for(;;) {
+			rv = (args->funcs->C_FindObjects) (session, objects, G_N_ELEMENTS (objects), &count);
+			if (rv != CKR_OK || count == 0)
 				break;
 
 			if (!args->objects)
@@ -420,7 +403,7 @@ state_authenticated (GckEnumeratorState *args, gboolean forward)
 			g_array_append_vals (args->objects, objects, count);
 		}
 
-		(funcs->C_FindObjectsFinal) (session);
+		(args->funcs->C_FindObjectsFinal) (session);
 	}
 
 	return state_results;
@@ -482,7 +465,6 @@ gck_enumerator_init (GckEnumerator *self)
 
 	self->pv = G_TYPE_INSTANCE_GET_PRIVATE (self, GCK_TYPE_ENUMERATOR, GckEnumeratorPrivate);
 	args = g_new0 (GckEnumeratorState, 1);
-	args->handler = state_start;
 	g_atomic_pointer_set (&self->pv->state, args);
 }
 
@@ -518,7 +500,8 @@ gck_enumerator_class_init (GckEnumeratorClass *klass)
  */
 
 GckEnumerator*
-_gck_enumerator_new (GList *modules, guint session_options, GckTokenInfo *match_token, GckAttributes *match_attrs)
+_gck_enumerator_new (GList *modules_or_slots, guint session_options,
+                     GckUriInfo *uri_info)
 {
 	GckEnumerator *self;
 	GckEnumeratorState *state;
@@ -527,13 +510,20 @@ _gck_enumerator_new (GList *modules, guint session_options, GckTokenInfo *match_
 	state = g_atomic_pointer_get (&self->pv->state);
 
 	state->session_options = session_options;
-	state->modules = gck_list_ref_copy (modules);
 
-	if (match_attrs) {
-		state->match_attrs = gck_attributes_ref (match_attrs);
-		_gck_attributes_lock (state->match_attrs);
+	if (modules_or_slots && GCK_IS_SLOT (modules_or_slots->data)) {
+		state->slots = gck_list_ref_copy (modules_or_slots);
+		state->modules = NULL;
+		state->handler = state_slots;
+	} else {
+		state->modules = gck_list_ref_copy (modules_or_slots);
+		state->slots = NULL;
+		state->handler = state_modules;
 	}
-	state->match_token = match_token;
+
+	state->match = uri_info;
+	if (uri_info->attributes)
+		_gck_attributes_lock (uri_info->attributes);
 
 	return self;
 }
@@ -570,20 +560,22 @@ static gboolean
 complete_enumerate_next (EnumerateNext *args, CK_RV result)
 {
 	GckEnumeratorState *state;
+	GckModule *module;
 	gboolean ret = TRUE;
 
 	g_assert (args->state);
 	state = args->state;
 
 	if (state->want_password) {
-		g_assert (state->module);
 		g_assert (state->slot);
 
 		/* TODO: Should we be using secure memory here? */
 		g_free (state->password);
 		state->password = NULL;
 
-		ret = _gck_module_fire_authenticate_slot (state->module, state->slot, NULL, &state->password);
+		module = gck_slot_get_module (state->slot);
+		ret = _gck_module_fire_authenticate_slot (module, state->slot, NULL, &state->password);
+		g_object_unref (module);
 
 		/* If authenticate returns TRUE then call is not complete */
 		ret = !ret;

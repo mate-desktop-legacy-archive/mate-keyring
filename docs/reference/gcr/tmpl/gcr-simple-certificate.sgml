@@ -20,12 +20,6 @@ GcrSimpleCertificate
 <!-- ##### SECTION Image ##### -->
 
 
-<!-- ##### STRUCT GcrSimpleCertificatePrivate ##### -->
-<para>
-
-</para>
-
-
 <!-- ##### STRUCT GcrSimpleCertificate ##### -->
 <para>
 
@@ -33,6 +27,16 @@ GcrSimpleCertificate
 
 
 <!-- ##### FUNCTION gcr_simple_certificate_new ##### -->
+<para>
+
+</para>
+
+@data: 
+@n_data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_simple_certificate_new_static ##### -->
 <para>
 
 </para>

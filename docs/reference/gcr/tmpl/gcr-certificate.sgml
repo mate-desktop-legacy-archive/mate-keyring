@@ -20,14 +20,6 @@ gcr-certificate
 <!-- ##### SECTION Image ##### -->
 
 
-<!-- ##### MACRO GCR_CERTIFICATE_GET_INTERFACE ##### -->
-<para>
-
-</para>
-
-@inst: 
-
-
 <!-- ##### STRUCT GcrCertificate ##### -->
 <para>
 
@@ -78,6 +70,26 @@ gcr-certificate
 @Returns: 
 
 
+<!-- ##### FUNCTION gcr_certificate_get_issuer_raw ##### -->
+<para>
+
+</para>
+
+@self: 
+@n_data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_certificate_is_issuer ##### -->
+<para>
+
+</para>
+
+@self: 
+@issuer: 
+@Returns: 
+
+
 <!-- ##### FUNCTION gcr_certificate_get_subject_cn ##### -->
 <para>
 
@@ -103,6 +115,16 @@ gcr-certificate
 
 @self: 
 @part: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_certificate_get_subject_raw ##### -->
+<para>
+
+</para>
+
+@self: 
+@n_data: 
 @Returns: 
 
 

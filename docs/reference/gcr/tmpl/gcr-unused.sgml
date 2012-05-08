@@ -1,3 +1,240 @@
+<!-- ##### SECTION ./tmpl/gcr-certificate-basics-widget.sgml:Image ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-certificate-basics-widget.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gcr-certificate-basics-widget.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gcr-certificate-basics-widget.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-certificate-basics-widget.sgml:Stability_Level ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-certificate-basics-widget.sgml:Title ##### -->
+GcrCertificateBasicsWidget
+
+
+<!-- ##### SECTION ./tmpl/gcr-certificate-details-widget.sgml:Image ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-certificate-details-widget.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gcr-certificate-details-widget.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gcr-certificate-details-widget.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-certificate-details-widget.sgml:Stability_Level ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-certificate-details-widget.sgml:Title ##### -->
+GcrCertificateDetailsWidget
+
+
+<!-- ##### SECTION ./tmpl/gcr-internal.sgml:Image ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-internal.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gcr-internal.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gcr-internal.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-internal.sgml:Stability_Level ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-internal.sgml:Title ##### -->
+gcr-internal
+
+
+<!-- ##### SECTION ./tmpl/gcr-marshal.sgml:Image ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-marshal.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gcr-marshal.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gcr-marshal.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-marshal.sgml:Stability_Level ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-marshal.sgml:Title ##### -->
+gcr-marshal
+
+
+<!-- ##### SECTION ./tmpl/gcr-types.sgml:Image ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-types.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gcr-types.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gcr-types.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-types.sgml:Stability_Level ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-types.sgml:Title ##### -->
+gcr-types
+
+
+<!-- ##### SECTION ./tmpl/gcr-xxx.sgml:Image ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-xxx.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gcr-xxx.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gcr-xxx.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-xxx.sgml:Stability_Level ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr-xxx.sgml:Title ##### -->
+GcrXxx
+
+
+<!-- ##### SECTION ./tmpl/gcr.sgml:Image ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gcr.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gcr.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr.sgml:Stability_Level ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gcr.sgml:Title ##### -->
+gcr
+
+
+<!-- ##### SECTION ./tmpl/run-auto-test.sgml:Image ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/run-auto-test.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/run-auto-test.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/run-auto-test.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/run-auto-test.sgml:Stability_Level ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/run-auto-test.sgml:Title ##### -->
+run-auto-test
+
+
+<!-- ##### MACRO GCR_CERTIFICATE_GET_INTERFACE ##### -->
+<para>
+
+</para>
+
+@inst: 
+
+<!-- ##### MACRO GCR_DATA_ERROR ##### -->
+<para>
+
+</para>
+
+
 <!-- ##### STRUCT GcrCertificateBasicsWidget ##### -->
 <para>
 
@@ -34,49 +271,13 @@
 </para>
 
 
-<!-- ##### ARG GcrCertificateIface:description ##### -->
-<para>
-
-</para>
-
-
-<!-- ##### ARG GcrCertificateIface:expiry ##### -->
-<para>
-
-</para>
-
-
-<!-- ##### ARG GcrCertificateIface:icon ##### -->
-<para>
-
-</para>
-
-
-<!-- ##### ARG GcrCertificateIface:issuer ##### -->
-<para>
-
-</para>
-
-
-<!-- ##### ARG GcrCertificateIface:label ##### -->
-<para>
-
-</para>
-
-
-<!-- ##### ARG GcrCertificateIface:markup ##### -->
-<para>
-
-</para>
-
-
-<!-- ##### ARG GcrCertificateIface:subject ##### -->
-<para>
-
-</para>
-
-
 <!-- ##### ARG GcrImporter:parser ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT GcrSimpleCertificatePrivate ##### -->
 <para>
 
 </para>
@@ -130,19 +331,19 @@
 @details: 
 @cert: 
 
-<!-- ##### FUNCTION gcr_importer_get_parser ##### -->
+<!-- ##### FUNCTION gcr_data_error_get_domain ##### -->
 <para>
 
 </para>
 
-@self: 
+@void: 
 @Returns: 
 
-<!-- ##### FUNCTION gcr_importer_set_parser ##### -->
+<!-- ##### FUNCTION gcr_pkcs11_get_trust_lookup_modules ##### -->
 <para>
 
 </para>
 
-@self: 
-@parser: 
+@void: 
+@Returns: 
 

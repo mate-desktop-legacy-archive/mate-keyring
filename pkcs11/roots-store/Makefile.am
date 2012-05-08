@@ -5,7 +5,9 @@ INCLUDES = \
     	-I$(top_srcdir)/pkcs11 \
     	$(GOBJECT_CFLAGS) \
 	$(LIBGCRYPT_CFLAGS) \
-	$(GLIB_CFLAGS)
+	$(GLIB_CFLAGS) \
+	$(GMODULE_CFLAGS)
+
 
 
 # ------------------------------------------------------------------------------
@@ -17,19 +19,20 @@ noinst_LTLIBRARIES = \
 libgkm_roots_store_la_SOURCES = \
 	gkm-roots-store.h \
 	gkm-roots-module.c gkm-roots-module.h \
-	gkm-roots-certificate.c gkm-roots-certificate.h
+	gkm-roots-certificate.c gkm-roots-certificate.h \
+	gkm-roots-trust.c gkm-roots-trust.h
 
 # ------------------------------------------------------------------------------
 # The standalone module
 
-moduledir = $(libdir)/mate-keyring/standalone/
+moduledir = $(pkcs11standalonedir)
 
 module_LTLIBRARIES = \
 	gkm-roots-store-standalone.la
 
 gkm_roots_store_standalone_la_LDFLAGS = \
 	-module -avoid-version \
-	-no-undefined -export-symbols-regex 'C_GetFunctionList'
+	-no-undefined -export-symbols-regex 'C_GetFunctionList|g_module_check_init'
 
 gkm_roots_store_standalone_la_SOURCES = \
 	gkm-roots-standalone.c
@@ -40,7 +43,8 @@ gkm_roots_store_standalone_la_LIBADD = \
 	$(GOBJECT_LIBS) \
 	$(GTHREAD_LIBS) \
 	$(GLIB_LIBS) \
-	$(LIBGCRYPT_LIBS)
+	$(LIBGCRYPT_LIBS) \
+	$(GMODULE_LIBS)
 
 
 # -------------------------------------------------------------------------------

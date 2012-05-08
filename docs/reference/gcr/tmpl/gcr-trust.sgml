@@ -1,0 +1,192 @@
+<!-- ##### SECTION Title ##### -->
+gcr-trust
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO GCR_PURPOSE_SERVER_AUTH ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GCR_PURPOSE_CLIENT_AUTH ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GCR_PURPOSE_EMAIL ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO GCR_PURPOSE_CODE_SIGNING ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION gcr_trust_is_certificate_anchored ##### -->
+<para>
+
+</para>
+
+@certificate: 
+@purpose: 
+@cancellable: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_trust_is_certificate_anchored_async ##### -->
+<para>
+
+</para>
+
+@certificate: 
+@purpose: 
+@cancellable: 
+@callback: 
+@user_data: 
+
+
+<!-- ##### FUNCTION gcr_trust_is_certificate_anchored_finish ##### -->
+<para>
+
+</para>
+
+@result: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_trust_is_certificate_pinned ##### -->
+<para>
+
+</para>
+
+@certificate: 
+@purpose: 
+@peer: 
+@cancellable: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_trust_is_certificate_pinned_async ##### -->
+<para>
+
+</para>
+
+@certificate: 
+@purpose: 
+@peer: 
+@cancellable: 
+@callback: 
+@user_data: 
+
+
+<!-- ##### FUNCTION gcr_trust_is_certificate_pinned_finish ##### -->
+<para>
+
+</para>
+
+@result: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_trust_add_pinned_certificate ##### -->
+<para>
+
+</para>
+
+@certificate: 
+@purpose: 
+@peer: 
+@cancellable: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_trust_add_pinned_certificate_async ##### -->
+<para>
+
+</para>
+
+@certificate: 
+@purpose: 
+@peer: 
+@cancellable: 
+@callback: 
+@user_data: 
+
+
+<!-- ##### FUNCTION gcr_trust_add_pinned_certificate_finish ##### -->
+<para>
+
+</para>
+
+@result: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_trust_remove_pinned_certificate ##### -->
+<para>
+
+</para>
+
+@certificate: 
+@purpose: 
+@peer: 
+@cancellable: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_trust_remove_pinned_certificate_async ##### -->
+<para>
+
+</para>
+
+@certificate: 
+@purpose: 
+@peer: 
+@cancellable: 
+@callback: 
+@user_data: 
+
+
+<!-- ##### FUNCTION gcr_trust_remove_pinned_certificate_finish ##### -->
+<para>
+
+</para>
+
+@result: 
+@error: 
+@Returns: 
+
+

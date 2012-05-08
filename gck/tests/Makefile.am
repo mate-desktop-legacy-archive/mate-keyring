@@ -26,6 +26,9 @@ EXTRA_DIST = \
 
 include $(top_srcdir)/testing/testing.make
 
+EXTRA_DIST += \
+	test-gck.h
+
 # ------------------------------------------------------------------------
 
 lib_LTLIBRARIES = libmock-test-module.la

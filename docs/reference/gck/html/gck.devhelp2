@@ -10,6 +10,7 @@
       <sub name="GckAttribute" link="gck-GckAttribute.html"/>
       <sub name="GckAttributes" link="gck-GckAttributes.html"/>
       <sub name="Errors" link="gck-Errors.html"/>
+      <sub name="PKCS11 URIs" link="gck-PKCS11-URIs.html"/>
       <sub name="Miscellaneous Functions" link="gck-Miscellaneous-Functions.html"/>
     </sub>
   </chapters>
@@ -46,6 +47,7 @@
     <keyword type="function" name="gck_slot_get_mechanisms ()" link="GckSlot.html#gck-slot-get-mechanisms"/>
     <keyword type="function" name="gck_slot_get_mechanism_info ()" link="GckSlot.html#gck-slot-get-mechanism-info"/>
     <keyword type="function" name="gck_slot_has_flags ()" link="GckSlot.html#gck-slot-has-flags"/>
+    <keyword type="function" name="gck_slots_enumerate_objects ()" link="GckSlot.html#gck-slots-enumerate-objects"/>
     <keyword type="function" name="gck_slot_open_session ()" link="GckSlot.html#gck-slot-open-session"/>
     <keyword type="function" name="gck_slot_open_session_full ()" link="GckSlot.html#gck-slot-open-session-full"/>
     <keyword type="function" name="gck_slot_open_session_async ()" link="GckSlot.html#gck-slot-open-session-async"/>
@@ -173,6 +175,11 @@
     <keyword type="macro" name="GCK_ERROR" link="gck-Errors.html#GCK-ERROR:CAPS"/>
     <keyword type="function" name="gck_message_from_rv ()" link="gck-Errors.html#gck-message-from-rv"/>
     <keyword type="macro" name="CKR_GCK_MODULE_PROBLEM" link="gck-Errors.html#CKR-GCK-MODULE-PROBLEM:CAPS"/>
+    <keyword type="struct" name="GckUriInfo" link="gck-PKCS11-URIs.html#GckUriInfo"/>
+    <keyword type="enum" name="enum GckUriParseFlags" link="gck-PKCS11-URIs.html#GckUriParseFlags"/>
+    <keyword type="function" name="gck_uri_parse ()" link="gck-PKCS11-URIs.html#gck-uri-parse"/>
+    <keyword type="function" name="gck_uri_build ()" link="gck-PKCS11-URIs.html#gck-uri-build"/>
+    <keyword type="function" name="gck_uri_info_free ()" link="gck-PKCS11-URIs.html#gck-uri-info-free"/>
     <keyword type="function" name="gck_list_ref_copy ()" link="gck-Miscellaneous-Functions.html#gck-list-ref-copy"/>
     <keyword type="function" name="gck_list_unref_free ()" link="gck-Miscellaneous-Functions.html#gck-list-unref-free"/>
     <keyword type="function" name="gck_string_from_chars ()" link="gck-Miscellaneous-Functions.html#gck-string-from-chars"/>

@@ -24,11 +24,13 @@ libegg_la_CFLAGS = \
 libegg_la_SOURCES = \
 	egg-asn1x.c egg-asn1x.h \
 	egg-buffer.c egg-buffer.h \
+	egg-byte-array.c egg-byte-array.h \
 	egg-cleanup.c egg-cleanup.h \
 	egg-dh.c egg-dh.h \
 	egg-dn.c egg-dn.h \
 	egg-error.h \
 	egg-hex.c egg-hex.h \
+	egg-hkdf.c egg-hkdf.h \
 	egg-libgcrypt.c egg-libgcrypt.h \
 	egg-mkdtemp.c egg-mkdtemp.h \
 	egg-oid.c egg-oid.h \
@@ -38,6 +40,7 @@ libegg_la_SOURCES = \
 	egg-secure-memory.c egg-secure-memory.h \
 	egg-spawn.c egg-spawn.h \
 	egg-symkey.c egg-symkey.h \
+	egg-testing.c egg-testing.h \
 	egg-asn1-defs.h \
 	$(BUILT_SOURCES)
 
@@ -96,6 +99,7 @@ libegg_dbus_la_LIBADD = \
 libegg_prompt_la_SOURCES = \
 	egg-dh.c egg-dh.h \
 	egg-hex.c egg-hex.h \
+	egg-hkdf.c egg-hkdf.h \
 	egg-libgcrypt.c egg-libgcrypt.h \
 	egg-padding.c egg-padding.h \
 	egg-secure-memory.c egg-secure-memory.h

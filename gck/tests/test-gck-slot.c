@@ -5,11 +5,12 @@
 #include "test-suite.h"
 #include "gck-test.h"
 #include "gck-private.h"
+#include "test-gck.h"
 
 static GckModule *module = NULL;
 static GckSlot *slot = NULL;
 
-DEFINE_SETUP(load_slots)
+TESTING_SETUP(load_slots)
 {
 	GError *err = NULL;
 	GList *slots;
@@ -27,13 +28,13 @@ DEFINE_SETUP(load_slots)
 
 }
 
-DEFINE_TEARDOWN(load_slots)
+TESTING_TEARDOWN(load_slots)
 {
 	g_object_unref (slot);
 	g_object_unref (module);
 }
 
-DEFINE_TEST(slot_info)
+TESTING_TEST(slot_info)
 {
 	GckSlotInfo *info;
 	GckTokenInfo *token;
@@ -88,7 +89,7 @@ DEFINE_TEST(slot_info)
 	gck_list_unref_free (slots);
 }
 
-DEFINE_TEST(slot_props)
+TESTING_TEST(slot_props)
 {
 	GckModule *mod;
 	CK_SLOT_ID slot_id;
@@ -100,7 +101,7 @@ DEFINE_TEST(slot_props)
 	g_object_unref (mod);
 }
 
-DEFINE_TEST(slot_equals_hash)
+TESTING_TEST(slot_equals_hash)
 {
 	GckModule *other_mod;
 	GckSlot *other_slot;
@@ -127,7 +128,7 @@ DEFINE_TEST(slot_equals_hash)
 	g_object_unref (other_slot);
 }
 
-DEFINE_TEST(slot_mechanisms)
+TESTING_TEST(slot_mechanisms)
 {
 	GckMechanisms *mechs;
 	GckMechanismInfo *info;
@@ -147,7 +148,7 @@ DEFINE_TEST(slot_mechanisms)
 	gck_mechanisms_free (mechs);
 }
 
-DEFINE_TEST(token_info_match_null)
+TESTING_TEST(token_info_match_null)
 {
 	GckTokenInfo *match;
 	GckTokenInfo *token;
@@ -164,7 +165,7 @@ DEFINE_TEST(token_info_match_null)
 	gck_token_info_free (token);
 }
 
-DEFINE_TEST(token_info_match_label)
+TESTING_TEST(token_info_match_label)
 {
 	GckTokenInfo *match;
 	GckTokenInfo *token;
@@ -183,7 +184,7 @@ DEFINE_TEST(token_info_match_label)
 	gck_token_info_free (token);
 }
 
-DEFINE_TEST(token_info_match_different)
+TESTING_TEST(token_info_match_different)
 {
 	GckTokenInfo *match;
 	GckTokenInfo *token;

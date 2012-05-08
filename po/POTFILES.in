@@ -17,8 +17,10 @@ gcr/gcr-certificate-widget.c
 [type: gettext/glade]gcr/gcr-import-dialog.ui
 [type: gettext/glade]gcr/gcr-unlock-options-widget.ui
 gcr/gcr-importer.c
+gcr/gcr-library.c
 gcr/gcr-key-renderer.c
 gcr/gcr-parser.c
+gcr/gcr-trust.c
 gck/gck-uri.c
 gck/gck-misc.c
 pkcs11/gkm/gkm-certificate.c
@@ -26,5 +28,7 @@ pkcs11/ssh-store/gkm-ssh-private-key.c
 pkcs11/secret-store/gkm-secret-collection.c
 pkcs11/wrap-layer/gkm-wrap-login.c
 pkcs11/wrap-layer/gkm-wrap-prompt.c
+tool/gkr-tool.c
 ui/gku-prompt-tool.c
+ui/mate-keyring-prompt.desktop.in.in
 [type: gettext/glade]ui/gku-prompt.ui

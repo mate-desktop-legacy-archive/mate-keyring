@@ -63,6 +63,9 @@ typedef             <a class="link" href="GckSlot.html#GckMechanisms" title="Gck
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gulong"><span class="type">gulong</span></a> mech_type</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="GckSlot.html#gck-slot-has-flags" title="gck_slot_has_flags ()">gck_slot_has_flags</a>                  (<em class="parameter"><code><a class="link" href="GckSlot.html" title="GckSlot"><span class="type">GckSlot</span></a> *self</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gulong"><span class="type">gulong</span></a> flags</code></em>);
+<span class="returnvalue">GckEnumerator</span>*      <a class="link" href="GckSlot.html#gck-slots-enumerate-objects" title="gck_slots_enumerate_objects ()">gck_slots_enumerate_objects</a>         (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *slots</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="gck-GckAttributes.html#GckAttributes" title="GckAttributes"><span class="type">GckAttributes</span></a> *attrs</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> session_options</code></em>);
 <a class="link" href="GckSession.html" title="GckSession"><span class="returnvalue">GckSession</span></a>*         <a class="link" href="GckSlot.html#gck-slot-open-session" title="gck_slot_open_session ()">gck_slot_open_session</a>               (<em class="parameter"><code><a class="link" href="GckSlot.html" title="GckSlot"><span class="type">GckSlot</span></a> *self</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> options</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
@@ -515,6 +518,44 @@ Check if the PKCS11 slot has the given flags.
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td> Whether one or more flags exist.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gck_slots_enumerate_objects ()">
+<a name="gck-slots-enumerate-objects"></a><h3>gck_slots_enumerate_objects ()</h3>
+<pre class="programlisting"><span class="returnvalue">GckEnumerator</span>*      gck_slots_enumerate_objects         (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *slots</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="gck-GckAttributes.html#GckAttributes" title="GckAttributes"><span class="type">GckAttributes</span></a> *attrs</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> session_options</code></em>);</pre>
+<p>
+Setup an enumerator for listing matching objects on the slots.
+</p>
+<p>
+This call will not block but will return an enumerator immediately.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>slots</code></em> :</span></p></td>
+<td>a list of <a class="link" href="GckSlot.html" title="GckSlot"><span class="type">GckSlot</span></a> to enumerate objects on.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>attrs</code></em> :</span></p></td>
+<td>Attributes that the objects must have, or empty for all objects.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>session_options</code></em> :</span></p></td>
+<td>Options for opening a session.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> a new enumerator
 </td>
 </tr>
 </tbody>

@@ -42,6 +42,11 @@ int gkr_tool_parse_options (int *argc, char** argv[], GOptionEntry *options);
 /* -------------------------------------------------------------------------------
  * VARIOUS COMMAND HANDLERS 
  */
+
 int gkr_tool_import (int argc, char *argv[]);
+
+int gkr_tool_trust (int argc, char *argv[]);
+
+int gkr_tool_version (int argc, char *argv[]);
 
 #endif /* GKRTOOL_H_ */

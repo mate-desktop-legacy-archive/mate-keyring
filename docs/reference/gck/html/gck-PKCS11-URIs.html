@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PKCS11 URIs</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+<link rel="home" href="index.html" title="GCK Reference Manual">
+<link rel="up" href="ch01.html" title="PKCS#11 GObject Bindings">
+<link rel="prev" href="gck-Errors.html" title="Errors">
+<link rel="next" href="gck-Miscellaneous-Functions.html" title="Miscellaneous Functions">
+<meta name="generator" content="GTK-Doc V1.15 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="gck-Errors.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">GCK Reference Manual</th>
+<td><a accesskey="n" href="gck-Miscellaneous-Functions.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#gck-PKCS11-URIs.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#gck-PKCS11-URIs.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry" title="PKCS11 URIs">
+<a name="gck-PKCS11-URIs"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gck-PKCS11-URIs.top_of_page"></a>PKCS11 URIs</span></h2>
+<p>PKCS11 URIs — Parsing and building PKCS#11 URIs.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="gck-PKCS11-URIs.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">                    <a class="link" href="gck-PKCS11-URIs.html#GckUriInfo" title="GckUriInfo">GckUriInfo</a>;
+enum                <a class="link" href="gck-PKCS11-URIs.html#GckUriParseFlags" title="enum GckUriParseFlags">GckUriParseFlags</a>;
+<a class="link" href="gck-PKCS11-URIs.html#GckUriInfo" title="GckUriInfo"><span class="returnvalue">GckUriInfo</span></a>*         <a class="link" href="gck-PKCS11-URIs.html#gck-uri-parse" title="gck_uri_parse ()">gck_uri_parse</a>                       (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="gck-PKCS11-URIs.html#GckUriParseFlags" title="enum GckUriParseFlags"><span class="type">GckUriParseFlags</span></a> flags</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              <a class="link" href="gck-PKCS11-URIs.html#gck-uri-build" title="gck_uri_build ()">gck_uri_build</a>                       (<em class="parameter"><code><a class="link" href="gck-PKCS11-URIs.html#GckUriInfo" title="GckUriInfo"><span class="type">GckUriInfo</span></a> *uri_info</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="gck-PKCS11-URIs.html#gck-uri-info-free" title="gck_uri_info_free ()">gck_uri_info_free</a>                   (<em class="parameter"><code><a class="link" href="gck-PKCS11-URIs.html#GckUriInfo" title="GckUriInfo"><span class="type">GckUriInfo</span></a> *uri_info</code></em>);
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="gck-PKCS11-URIs.description"></a><h2>Description</h2>
+<p>
+<a class="ulink" href="" target="_top">PKCS#11 URIs</a>
+are a standard for referring to PKCS<span class="type">11</span> modules, tokens, or objects. What the
+PKCS#11 URI refers to depends on the context in which it is used.
+</p>
+<p>
+A PKCS#11 URI can always resolve to more than one object, token or module. A
+PKCS#11 URI that refers to a token, would (when used in a context that expects
+objects) refer to all the token on that module.
+</p>
+<p>
+In most cases the parsing or building of URIs is handled elsewhere in the GCK
+library. For example to enumerate objects that match a PKCS#11 URI use the
+<code class="function">gck_modules_enumerate_uri()</code> function. Or to build a PKCS#11 URI for a given
+object, use the <code class="function">gck_object_build_uri()</code> function.
+</p>
+<p>
+To parse a PKCS#11 URI use the <a class="link" href="gck-PKCS11-URIs.html#gck-uri-parse" title="gck_uri_parse ()"><code class="function">gck_uri_parse()</code></a> function passing in the type of
+context in which you're using the URI. To build a URI use the <a class="link" href="gck-PKCS11-URIs.html#gck-uri-build" title="gck_uri_build ()"><code class="function">gck_uri_build()</code></a>
+function.
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="gck-PKCS11-URIs.details"></a><h2>Details</h2>
+<div class="refsect2" title="GckUriInfo">
+<a name="GckUriInfo"></a><h3>GckUriInfo</h3>
+<pre class="programlisting">typedef struct {
+	gboolean any_unrecognized;
+	GckModuleInfo *module_info;
+	GckTokenInfo *token_info;
+	GckAttributes *attributes;
+} GckUriInfo;
+</pre>
+<p>
+Information about the contents of a PKCS#11 URI. Various fields may be <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+depending on the context that the URI was parsed for.
+</p>
+<p>
+Since PKCS#11 URIs represent a set which results from the intersections of
+all of the URI parts, if <em class="parameter"><code>any_recognized</code></em> is set to <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> then usually the URI
+should be treated as not matching anything.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> <em class="structfield"><code><a name="GckUriInfo.any-unrecognized"></a>any_unrecognized</code></em>;</span></p></td>
+<td>whether any parts of the PKCS#11 URI were unsupported or unrecognized.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="GckModule.html#GckModuleInfo" title="GckModuleInfo"><span class="type">GckModuleInfo</span></a> *<em class="structfield"><code><a name="GckUriInfo.module-info"></a>module_info</code></em>;</span></p></td>
+<td>information about the PKCS#11 modules matching the URI.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="GckSlot.html#GckTokenInfo" title="GckTokenInfo"><span class="type">GckTokenInfo</span></a> *<em class="structfield"><code><a name="GckUriInfo.token-info"></a>token_info</code></em>;</span></p></td>
+<td>information about the PKCS#11 tokens matching the URI.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gck-GckAttributes.html#GckAttributes" title="GckAttributes"><span class="type">GckAttributes</span></a> *<em class="structfield"><code><a name="GckUriInfo.attributes"></a>attributes</code></em>;</span></p></td>
+<td>information about the PKCS#11 objects matching the URI.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="enum GckUriParseFlags">
+<a name="GckUriParseFlags"></a><h3>enum GckUriParseFlags</h3>
+<pre class="programlisting">typedef enum {
+	GCK_URI_PARSE_MODULE = (1 &lt;&lt; 1),
+	GCK_URI_PARSE_TOKEN =   (1 &lt;&lt; 2) | GCK_URI_PARSE_MODULE,
+	GCK_URI_PARSE_OBJECT =  (1 &lt;&lt; 3) | GCK_URI_PARSE_TOKEN,
+	GCK_URI_PARSE_ANY =     0xFFFFFFFF,
+} GckUriParseFlags;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="gck_uri_parse ()">
+<a name="gck-uri-parse"></a><h3>gck_uri_parse ()</h3>
+<pre class="programlisting"><a class="link" href="gck-PKCS11-URIs.html#GckUriInfo" title="GckUriInfo"><span class="returnvalue">GckUriInfo</span></a>*         gck_uri_parse                       (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="gck-PKCS11-URIs.html#GckUriParseFlags" title="enum GckUriParseFlags"><span class="type">GckUriParseFlags</span></a> flags</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Parse a PKCS#11 URI for use in a given context.
+</p>
+<p>
+The result will contain the fields that are relevant for
+the given context. See <a class="link" href="gck-PKCS11-URIs.html#GckUriInfo" title="GckUriInfo"><span class="type">GckUriInfo</span></a>  for more info.
+Other fields will be set to <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>uri</code></em> :</span></p></td>
+<td>the URI to parse.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>flags</code></em> :</span></p></td>
+<td>the context in which the URI will be used.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> a newly allocated <a class="link" href="gck-PKCS11-URIs.html#GckUriInfo" title="GckUriInfo"><span class="type">GckUriInfo</span></a>, which should be freed with
+	<a class="link" href="gck-PKCS11-URIs.html#gck-uri-info-free" title="gck_uri_info_free ()"><code class="function">gck_uri_info_free()</code></a>.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gck_uri_build ()">
+<a name="gck-uri-build"></a><h3>gck_uri_build ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              gck_uri_build                       (<em class="parameter"><code><a class="link" href="gck-PKCS11-URIs.html#GckUriInfo" title="GckUriInfo"><span class="type">GckUriInfo</span></a> *uri_info</code></em>);</pre>
+<p>
+Build a PKCS#11 URI. Any set fields of <em class="parameter"><code>uri_info</code></em> will be used to build
+the URI.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>uri_info</code></em> :</span></p></td>
+<td>the info to build the URI from.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> a newly allocated string containing a PKCS#11 URI.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gck_uri_info_free ()">
+<a name="gck-uri-info-free"></a><h3>gck_uri_info_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                gck_uri_info_free                   (<em class="parameter"><code><a class="link" href="gck-PKCS11-URIs.html#GckUriInfo" title="GckUriInfo"><span class="type">GckUriInfo</span></a> *uri_info</code></em>);</pre>
+<p>
+Free a <a class="link" href="gck-PKCS11-URIs.html#GckUriInfo" title="GckUriInfo"><span class="type">GckUriInfo</span></a>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>uri_info</code></em> :</span></p></td>
+<td>URI info to free.
+</td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.15</div>
+</body>
+</html>

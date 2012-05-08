@@ -76,6 +76,24 @@ GcrImporter
 @Returns: 
 
 
+<!-- ##### FUNCTION gcr_importer_get_parser ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gcr_importer_set_parser ##### -->
+<para>
+
+</para>
+
+@self: 
+@parser: 
+
+
 <!-- ##### FUNCTION gcr_importer_get_slot ##### -->
 <para>
 

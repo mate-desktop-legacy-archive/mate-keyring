@@ -178,6 +178,17 @@ gck-slot
 @Returns: 
 
 
+<!-- ##### FUNCTION gck_slots_enumerate_objects ##### -->
+<para>
+
+</para>
+
+@slots: 
+@attrs: 
+@session_options: 
+@Returns: 
+
+
 <!-- ##### FUNCTION gck_slot_open_session ##### -->
 <para>
 

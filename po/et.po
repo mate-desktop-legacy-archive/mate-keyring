@@ -2,24 +2,25 @@
 # Estonian translation of MATE-keyring.
 #
 # Copyright (C) 2005, 2006 Free Software Foundation, Inc.
-# Copyright (C) 2007-2010 The MATE Project.
+# Copyright (C) 2007–2011 The MATE Project.
 # This file is distributed under the same license as the mate-keyring package.
 #
-# Ivar Smolin <okul linux ee>, 2005-2010.
+# Ivar Smolin <okul linux ee>, 2005–2011.
 # Priit Laes <plaes plaes org>, 2005, 2006, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-keyring MASTER\n"
+"Project-Id-Version: mate-keyring 3.0\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mate-"
 "keyring&component=general\n"
-"POT-Creation-Date: 2010-10-16 18:28+0000\n"
-"PO-Revision-Date: 2010-11-09 16:17+0200\n"
+"POT-Creation-Date: 2011-03-09 19:00+0000\n"
+"PO-Revision-Date: 2011-03-10 08:00+0200\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <mate-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: et\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
@@ -226,6 +227,9 @@ msgstr "Jah"
 msgid "No"
 msgstr "Ei"
 
+msgid "Couldn't export the certificate."
+msgstr "Sertifikaati pole võimalik eksportida."
+
 msgid "Identity"
 msgstr "Identiteet"
 
@@ -354,7 +358,7 @@ msgid "No location available to import to"
 msgstr "Asukohta, kuhu importida, pole saadaval"
 
 msgid "Import Certificates/Keys"
-msgstr "Sertifikaadi/võtmete importimine"
+msgstr "Sertifikaatide/võtmete importimine"
 
 msgid "Choose a location to store the imported certificates/keys."
 msgstr "Vali asukoht imporditud sertifikaatide/võtmete säilitamiseks."
@@ -375,8 +379,10 @@ msgid "Public DSA Key"
 msgstr "Avalik DSA-võti"
 
 #, c-format
-msgid "%d bits"
-msgstr "%d bitti"
+msgid "%d bit"
+msgid_plural "%d bits"
+msgstr[0] "%d bitt"
+msgstr[1] "%d bitti"
 
 msgid "Strength"
 msgstr "Tugevus"
@@ -399,6 +405,13 @@ msgstr "Vigaseid või rikutud andmeid pole võimalik töödelda."
 
 msgid "The data is locked"
 msgstr "Andmed on lukustatud"
+
+#. Translators: A pinned certificate is an exception which
+#. trusts a given certificate explicitly for a purpose and
+#. communication with a certain peer.
+#, c-format
+msgid "Couldn't find a place to store the pinned certificate"
+msgstr "Määratud sertifikaadi säilitamiseks pole võimalik kohta leida"
 
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
@@ -764,6 +777,17 @@ msgid ""
 "To change the password for '%s', the original and new passwords are required"
 msgstr "'%s' parooli muutmiseks on vaja nii endist kui uut parooli"
 
+#, c-format
+msgid "usage: mate-keyring command [options]\n"
+msgstr "kasutamine: mate-keyring käsk [valikud]\n"
+
+msgid "commands: "
+msgstr "käsud: "
+
+#. Translators: keep same length as translated message "commands: "
+msgid "          "
+msgstr "       "
+
 msgid "Store passwords unencrypted?"
 msgstr "Kas salvestada paroolid krüptimata kujul?"
 
@@ -783,6 +807,12 @@ msgstr "Paroolid pole vastavuses."
 
 msgid "Password cannot be blank"
 msgstr "Parool ei tohi olla tühi"
+
+msgid "Keyring Access"
+msgstr "Ligipääs võtmerõngale"
+
+msgid "Unlock access to passwords and other secrets"
+msgstr "Paroolidele ja teistele saladustele ligipääsu võimaldamine"
 
 msgid "New password strength"
 msgstr "Uue parooli tugevus"
