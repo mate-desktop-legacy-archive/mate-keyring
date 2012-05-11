@@ -56,6 +56,7 @@ INCLUDES = \
 	$(GTK_CFLAGS) \
 	$(GOBJECT_CFLAGS) \
 	$(GLIB_CFLAGS) \
+	$(GTHREAD_CFLAGS) \
 	$(LIBGCRYPT_CFLAGS) \
 	$(LIBTASN1_CFLAGS)
 
@@ -106,6 +107,7 @@ libmategcr@GCR_VERSION_SUFFIX@_la_LIBADD = \
 	$(top_builddir)/gck/libmategck.la \
 	$(GOBJECT_LIBS) \
 	$(GLIB_LIBS) \
+	$(GTHREAD_LIBS) \
 	$(LIBGCRYPT_LIBS) \
 	$(GTK_LIBS)
 
