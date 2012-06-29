@@ -1,28 +1,28 @@
-# Bulgarian translation of mate-keyring po-file.
-# Copyright (C) 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc. 
-# Copyright (C) 2009, 2010, 2011 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-keyring package.
-# Rostislav "zbrox" Raykov <zbrox@i-space.org>, 2004, 2005, 2006.
-# Alexander Shopov <ash@kambanaria.org>, 2007, 2008, 2009, 2011.
-# Yavor Doganov <yavor@gnu.org>, 2008, 2009.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Alexander Shopov <ash@kambanaria.org>, 2007, 2008, 2009.
 # Damyan Ivanov <dmn@debian.org>, 2010.
-#
+# Rostislav "zbrox" Raykov <zbrox@i-space.org>, 2004, 2005, 2006.
+# Yavor Doganov <yavor@gnu.org>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-keyring master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-16 22:40+0200\n"
-"PO-Revision-Date: 2011-02-16 22:40+0200\n"
-"Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
-"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
-"Language: bg\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-06-29 11:58+0200\n"
+"PO-Revision-Date: 2012-06-29 09:59+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Bulgarian (http://www.transifex.com/projects/p/MATE/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: bg\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
-#: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:74
+#: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
 #: ../pkcs11/secret-store/gkm-secret-collection.c:325
 #: ../pkcs11/wrap-layer/gkm-wrap-login.c:343
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:789
@@ -41,32 +41,28 @@ msgstr "Изберете нова парола за ключодържателя
 #: ../daemon/dbus/gkd-secret-change.c:92
 #, c-format
 msgid ""
-"An application wants to change the password for the '%s' keyring. Choose the "
-"new password you want to use for it."
-msgstr ""
-"Непозната програма иска да промени паролата за ключодържателя „%s“. Трябва "
-"да изберете парола за него."
+"An application wants to change the password for the '%s' keyring. Choose the"
+" new password you want to use for it."
+msgstr "Непозната програма иска да промени паролата за ключодържателя „%s“. Трябва да изберете парола за него."
 
 #: ../daemon/dbus/gkd-secret-change.c:111
 msgid "The original password was incorrect"
 msgstr "Първоначалната парола е грешна"
 
-#: ../daemon/dbus/gkd-secret-create.c:78
+#: ../daemon/dbus/gkd-secret-create.c:83
 msgid "New Keyring Password"
 msgstr "Нова парола за ключодържател"
 
-#: ../daemon/dbus/gkd-secret-create.c:79
+#: ../daemon/dbus/gkd-secret-create.c:84
 msgid "Choose password for new keyring"
 msgstr "Изберете паролата за новия ключодържател"
 
-#: ../daemon/dbus/gkd-secret-create.c:81
+#: ../daemon/dbus/gkd-secret-create.c:86
 #, c-format
 msgid ""
 "An application wants to create a new keyring called '%s'. Choose the "
 "password you want to use for it."
-msgstr ""
-"Непозната програма иска да създаде нов ключодържател наречен „%s“. Трябва да "
-"изберете парола за него."
+msgstr "Непозната програма иска да създаде нов ключодържател наречен „%s“. Трябва да изберете парола за него."
 
 #: ../daemon/mate-keyring-pkcs11.desktop.in.in.h:1
 msgid "Certificate and Key Storage"
@@ -77,53 +73,53 @@ msgid "MATE Keyring: PKCS#11 Component"
 msgstr "Ключодържател на MATE: компонент за PKCS#11"
 
 #: ../daemon/mate-keyring-secrets.desktop.in.in.h:1
-msgid "MATE Keyring: Secret Service"
-msgstr "Ключодържател на MATE: услуга за тайни"
-
-#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
 msgid "Secret Storage Service"
 msgstr "Услуга за шифриран носител"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
-msgid "MATE Keyring: SSH Agent"
-msgstr "Ключодържател на MATE: агент на SSH"
+#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
+msgid "MATE Keyring: Secret Service"
+msgstr "Ключодържател на MATE: услуга за тайни"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
 msgid "SSH Key Agent"
 msgstr "Агентът на SSH за ключове"
 
-#: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
-msgid "MATE Keyring: GPG Agent"
-msgstr "Ключодържател на MATE: агент на GPG"
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+msgid "MATE Keyring: SSH Agent"
+msgstr "Ключодържател на MATE: агент на SSH"
 
-#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
+#: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
 msgid "GPG Password Agent"
 msgstr "Агент за пароли на GPG"
+
+#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
+msgid "MATE Keyring: GPG Agent"
+msgstr "Ключодържател на MATE: агент на GPG"
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:104 ../gcr/gcr-key-renderer.c:291
 #: ../gcr/gcr-key-renderer.c:296
 msgid "Unknown"
 msgstr "Непознат"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:199
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:202
 #, c-format
 msgid "PGP Key: %s"
 msgstr "Ключ за PGP: %s"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:348
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:349
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:354
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:355
 msgid "Enter Passphrase"
 msgstr "Въведете парола"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:383
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:397
 msgid "Forget this password if idle for"
 msgstr "Забравяне на паролата след бездействане от"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:384
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:398
 msgid "Forget this password after"
 msgstr "Забравяне на паролата след"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:385
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:399
 msgid "Forget this password when I log out"
 msgstr "Забравяне на паролата при излизане"
 
@@ -142,7 +138,7 @@ msgstr "Идентификатор на потребител"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr "Адрес на е-поща"
+msgstr ""
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -292,15 +288,15 @@ msgstr "Не"
 
 #: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr "Идентичност"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr "Проверен от"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr "Изтича на"
+msgstr ""
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
@@ -370,31 +366,31 @@ msgstr "Отпечатъци"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr "Внасяне на сертификати и ключове"
+msgstr ""
 
 #: ../gcr/gcr-import-dialog.ui.h:2
-msgid "Import Into:"
-msgstr "Внасяне в:"
-
-#: ../gcr/gcr-import-dialog.ui.h:3
 msgid "Password:"
 msgstr "Парола:"
+
+#: ../gcr/gcr-import-dialog.ui.h:3
+msgid "Import Into:"
+msgstr "Внасяне в:"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:1
 msgid "Automatically unlock this keyring whenever I'm logged in"
 msgstr "Автоматично отключване на ключодържателя при влизане."
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:2
+msgid "Lock this keyring when I log out"
+msgstr "Автоматично заключване на ключодържателя при излизане"
+
+#: ../gcr/gcr-unlock-options-widget.ui.h:3
 msgid "Lock this keyring after"
 msgstr "Заключване на ключодържателя след"
 
-#: ../gcr/gcr-unlock-options-widget.ui.h:3
+#: ../gcr/gcr-unlock-options-widget.ui.h:4
 msgid "Lock this keyring if idle for"
 msgstr "Заключване на ключодържателя при бездействане след"
-
-#: ../gcr/gcr-unlock-options-widget.ui.h:4
-msgid "Lock this keyring when I log out"
-msgstr "Автоматично заключване на ключодържателя при излизане"
 
 #. Translators: The 'minutes' from 'Lock this keyring if idle for x minutes'.
 #: ../gcr/gcr-unlock-options-widget.ui.h:6
@@ -466,15 +462,15 @@ msgstr "Изберете местоположение за внасяните с
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr "Ключ"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr "Частен ключ за RSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr "Частен ключ за DSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
@@ -482,31 +478,31 @@ msgstr "Частен ключ"
 
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr "Публичен ключ за DSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
 msgid "%d bit"
 msgid_plural "%d bits"
-msgstr[0] "%d бит"
-msgstr[1] "%d бита"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr "Надеждност"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr "Алгоритъм"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr "Размер"
+msgstr ""
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr "Отпечатък"
+msgstr ""
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -526,17 +522,17 @@ msgstr "Данните са заключени"
 #: ../gcr/gcr-trust.c:420
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
-msgstr "Не може да бъде открито място за съхранението на избрания сертификат"
+msgstr ""
 
 #: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
 #: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
-msgstr "Адресът е неправилен . Кодирането на полето „%s“ е неправилно."
+msgstr ""
 
 #: ../gck/gck-uri.c:287
 msgid "The URI has does not have the 'pkcs11' scheme."
-msgstr "В адреса липсва схемата „pkcs11“."
+msgstr ""
 
 #: ../gck/gck-misc.c:101
 msgid "Insufficient memory available"
@@ -596,7 +592,7 @@ msgstr "Грешка в устройството"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr "Недостатъчно памет на устройството"
+msgstr ""
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
@@ -632,7 +628,7 @@ msgstr "Ключ не е необходим"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr "Ключът е различен от преди"
+msgstr ""
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
@@ -640,7 +636,7 @@ msgstr "Необходим е ключ"
 
 #: ../gck/gck-misc.c:151
 msgid "Cannot include the key in the digest"
-msgstr "Ключът не може да бъде вмъкнат в извадката"
+msgstr ""
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
@@ -784,7 +780,7 @@ msgstr "Друг потребител е влязъл"
 
 #: ../gck/gck-misc.c:223
 msgid "Too many users of different types are logged in"
-msgstr "Прекалено много различни видове потребители са влезли"
+msgstr ""
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
@@ -883,22 +879,18 @@ msgstr "Отключване на ключодържателя при влиза
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:636
 msgid "Enter password to unlock your login keyring"
-msgstr ""
-"Въведете парола за отключване на ключодържателя ви при влизане в системата"
+msgstr "Въведете парола за отключване на ключодържателя ви при влизане в системата"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:640
 msgid ""
 "The password you use to log in to your computer no longer matches that of "
 "your login keyring."
-msgstr ""
-"Паролата за системата ви вече не съвпада с тази на ключодържателя ви при "
-"влизане."
+msgstr "Паролата за системата ви вече не съвпада с тази на ключодържателя ви при влизане."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:642
 msgid ""
 "The login keyring did not get unlocked when you logged into your computer."
-msgstr ""
-"Ключодържателят при влизане не беше отключен при влизането ви в системата."
+msgstr "Ключодържателят при влизане не беше отключен при влизането ви в системата."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:660
 msgid "Unlock Keyring"
@@ -912,8 +904,7 @@ msgstr "Въведете парола за ключодържателя „%s“
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:666
 #, c-format
 msgid "An application wants access to the keyring '%s', but it is locked"
-msgstr ""
-"Непозната програма иска достъп до ключодържателя „%s“, но той е заключен"
+msgstr "Непозната програма иска достъп до ключодържателя „%s“, но той е заключен"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:686
 msgid "Unlock private key"
@@ -967,7 +958,8 @@ msgstr "Отключване на ключодържателя"
 msgid "Enter password to unlock the certificate/key storage"
 msgstr "Въведете парола за отключване на ключодържателя"
 
-#. TRANSLATORS: The storage is locked, and needs unlocking before the application can use it.
+#. TRANSLATORS: The storage is locked, and needs unlocking before the
+#. application can use it.
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:826
 #, c-format
 msgid ""
@@ -988,9 +980,7 @@ msgstr "За защита на ключодържателя се изисква 
 msgid ""
 "In order to prepare '%s' for storage of certificates or keys, a password is "
 "required"
-msgstr ""
-"Необходима е парола, за да подготвите ключодържателя „%s“ за съхранението на "
-"ключове и сертификати"
+msgstr "Необходима е парола, за да подготвите ключодържателя „%s“ за съхранението на ключове и сертификати"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1258
 msgid "Change Password"
@@ -1004,73 +994,77 @@ msgstr "За защита на ключодържателя се изисква 
 #, c-format
 msgid ""
 "To change the password for '%s', the original and new passwords are required"
-msgstr ""
-"За да промените паролата за „%s“, е необходимо да въведете старата и новата "
-"пароли"
+msgstr "За да промените паролата за „%s“, е необходимо да въведете старата и новата пароли"
 
 #: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: mate-keyring command [options]\n"
-msgstr "употреба: mate-keyring КОМАНДА [ОПЦИИ]\n"
+msgstr ""
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
-msgstr "команди: "
+msgstr ""
 
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
 msgid "          "
-msgstr "         "
+msgstr ""
 
-#: ../ui/gku-prompt-tool.c:538
+#: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
 msgstr "Запазване на паролите нешифрирани?"
 
-#: ../ui/gku-prompt-tool.c:539
+#: ../ui/gku-prompt-tool.c:598
 msgid ""
 "By choosing to use a blank password, your stored passwords will not be "
 "safely encrypted. They will be accessible by anyone with access to your "
 "files."
-msgstr ""
-"Ако изберете празна парола, запазените ви пароли няма да бъдат шифрирани "
-"надеждно и ще бъдат достъпни за всеки, който има достъп до вашите файлове."
+msgstr "Ако изберете празна парола, запазените ви пароли няма да бъдат шифрирани надеждно и ще бъдат достъпни за всеки, който има достъп до вашите файлове."
 
-#: ../ui/gku-prompt-tool.c:546
+#: ../ui/gku-prompt-tool.c:605
 msgid "Use Unsafe Storage"
 msgstr "Използване на незащитен ключодържател"
 
-#: ../ui/gku-prompt-tool.c:584
+#: ../ui/gku-prompt-tool.c:643
 msgid "Passwords do not match."
 msgstr "Паролите не съвпадат."
 
-#: ../ui/gku-prompt-tool.c:594
+#: ../ui/gku-prompt-tool.c:653
 msgid "Password cannot be blank"
 msgstr "Паролата не може да бъде празна"
 
+#: ../ui/mate-keyring-prompt.desktop.in.in.h:1
+msgid "Keyring Access"
+msgstr ""
+
+#: ../ui/mate-keyring-prompt.desktop.in.in.h:2
+msgid "Unlock access to passwords and other secrets"
+msgstr ""
+
 #: ../ui/gku-prompt.ui.h:1
-msgid "New password strength"
-msgstr "Надеждност на новата парола"
-
-#: ../ui/gku-prompt.ui.h:2
-msgid "_Application:"
-msgstr "_Програма:"
-
-#: ../ui/gku-prompt.ui.h:3
-msgid "_Confirm:"
-msgstr "По_твърждаване:"
-
-#: ../ui/gku-prompt.ui.h:4
-msgid "_Details:"
-msgstr "_Подробности:"
-
-#: ../ui/gku-prompt.ui.h:5
 msgid "_Name:"
 msgstr "_Име:"
 
-#: ../ui/gku-prompt.ui.h:6
+#: ../ui/gku-prompt.ui.h:2
 msgid "_Old Password:"
 msgstr "_Стара парола:"
 
-#: ../ui/gku-prompt.ui.h:7
+#: ../ui/gku-prompt.ui.h:3
 msgid "_Password:"
 msgstr "_Парола:"
+
+#: ../ui/gku-prompt.ui.h:4
+msgid "_Confirm:"
+msgstr "По_твърждаване:"
+
+#: ../ui/gku-prompt.ui.h:5
+msgid "New password strength"
+msgstr "Надеждност на новата парола"
+
+#: ../ui/gku-prompt.ui.h:6
+msgid "_Application:"
+msgstr "_Програма:"
+
+#: ../ui/gku-prompt.ui.h:7
+msgid "_Details:"
+msgstr "_Подробности:"

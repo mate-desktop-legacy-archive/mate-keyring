@@ -1,31 +1,27 @@
-# French translation of mate-keyring.
-# Copyright (C) 2004-2011 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-keyring package.
-#
-# Sébastien Bacher <seb128@debian.org>, 2004.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Christophe Merlet <redfox@redfoxcenter.org>, 2004.
-# Laurent Richard <laurent.richard@ael.be>, 2006.
 # Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
-# Yann Simon <yann.simon.fr@gmail.com>, 2007.
-# Claude Paroz <claude@2xlibre.net>, 2007-2010.
+# Laurent Richard <laurent.richard@ael.be>, 2006.
 # Robert-André Mauchin <zebob.m@pengzone.org>, 2008.
-# Bruno Brouard <annoa.b@gmail.com>, 2008-2011.
-# Laurent Coudeur <laurentc@iol.ie>, 2009-2010.
-# Gérard Baylard <Geodebay@gmail.com>, 2011.
-#
+# Sébastien Bacher <seb128@debian.org>, 2004.
+# Yann Simon <yann.simon.fr@gmail.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-keyring HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mate-"
-"keyring&component=general\n"
-"POT-Creation-Date: 2011-03-10 08:08+0000\n"
-"PO-Revision-Date: 2011-02-09 20:54+0100\n"
-"Last-Translator: Gérard Baylard <Geodebay@gmail.com>\n"
-"Language-Team: MATE French Team <matefr@traduc.org>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-06-29 11:58+0200\n"
+"PO-Revision-Date: 2012-06-29 09:59+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/MATE/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n>1;\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
 #: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
@@ -47,11 +43,9 @@ msgstr "Choisissez un nouveau mot de passe pour le trousseau de clés « %s »
 #: ../daemon/dbus/gkd-secret-change.c:92
 #, c-format
 msgid ""
-"An application wants to change the password for the '%s' keyring. Choose the "
-"new password you want to use for it."
-msgstr ""
-"Une application veut modifier le mot de passe du trousseau de clés « %s ». "
-"Choisissez le nouveau mot de passe que vous voulez lui associer."
+"An application wants to change the password for the '%s' keyring. Choose the"
+" new password you want to use for it."
+msgstr "Une application veut modifier le mot de passe du trousseau de clés « %s ». Choisissez le nouveau mot de passe que vous voulez lui associer."
 
 #: ../daemon/dbus/gkd-secret-change.c:111
 msgid "The original password was incorrect"
@@ -70,9 +64,7 @@ msgstr "Choisissez le mot de passe du nouveau trousseau de clés"
 msgid ""
 "An application wants to create a new keyring called '%s'. Choose the "
 "password you want to use for it."
-msgstr ""
-"Une application veut créer un nouveau trousseau de clés nommé « %s ». "
-"Choisissez le mot de passe que vous voulez lui associer."
+msgstr "Une application veut créer un nouveau trousseau de clés nommé « %s ». Choisissez le mot de passe que vous voulez lui associer."
 
 #: ../daemon/mate-keyring-pkcs11.desktop.in.in.h:1
 msgid "Certificate and Key Storage"
@@ -83,53 +75,53 @@ msgid "MATE Keyring: PKCS#11 Component"
 msgstr "Trousseau de clés MATE : composant PKCS#11"
 
 #: ../daemon/mate-keyring-secrets.desktop.in.in.h:1
-msgid "MATE Keyring: Secret Service"
-msgstr "Trousseau de clés MATE : service secret"
-
-#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
 msgid "Secret Storage Service"
 msgstr "Service de stockage secret"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
-msgid "MATE Keyring: SSH Agent"
-msgstr "Trousseau de clés MATE : agent SSH"
+#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
+msgid "MATE Keyring: Secret Service"
+msgstr "Trousseau de clés MATE : service secret"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
 msgid "SSH Key Agent"
 msgstr "Agent de clés SSH"
 
-#: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
-msgid "MATE Keyring: GPG Agent"
-msgstr "Trousseau de clés MATE : agent GPG"
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+msgid "MATE Keyring: SSH Agent"
+msgstr "Trousseau de clés MATE : agent SSH"
 
-#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
+#: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
 msgid "GPG Password Agent"
 msgstr "Agent de mot de passe GPG"
+
+#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
+msgid "MATE Keyring: GPG Agent"
+msgstr "Trousseau de clés MATE : agent GPG"
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:104 ../gcr/gcr-key-renderer.c:291
 #: ../gcr/gcr-key-renderer.c:296
 msgid "Unknown"
 msgstr "Inconnu"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:199
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:202
 #, c-format
 msgid "PGP Key: %s"
 msgstr "Clé PGP : %s"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:348
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:349
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:354
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:355
 msgid "Enter Passphrase"
 msgstr "Saisissez la phrase de passe"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:383
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:397
 msgid "Forget this password if idle for"
 msgstr "Oublier ce mot de passe s'il est inactif pendant"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:384
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:398
 msgid "Forget this password after"
 msgstr "Oublier ce mot de passe après"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:385
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:399
 msgid "Forget this password when I log out"
 msgstr "Oublier ce mot de passe quand je me déconnecte"
 
@@ -148,7 +140,7 @@ msgstr "ID utilisateur"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr "Adresse électronique"
+msgstr ""
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -261,9 +253,7 @@ msgstr "SHA1 avec DSA"
 #: ../egg/egg-spawn.c:273
 #, c-format
 msgid "Unexpected error in select() reading data from a child process (%s)"
-msgstr ""
-"Erreur inattendue dans select() lors de la lecture de données provenant du "
-"processus fils (%s)"
+msgstr "Erreur inattendue dans select() lors de la lecture de données provenant du processus fils (%s)"
 
 #: ../egg/egg-spawn.c:320
 #, c-format
@@ -300,15 +290,15 @@ msgstr "Non"
 
 #: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr "Identité"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr "Vérifié par"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr "Expire"
+msgstr ""
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
@@ -374,36 +364,35 @@ msgstr "Clé publique"
 #. Fingerprints
 #: ../gcr/gcr-certificate-renderer.c:449
 msgid "Fingerprints"
-msgstr "Empreintes digitales"
+msgstr "Empreintes numériques"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr "Importer certificats et clés"
+msgstr ""
 
 #: ../gcr/gcr-import-dialog.ui.h:2
-msgid "Import Into:"
-msgstr "Importer vers :"
-
-#: ../gcr/gcr-import-dialog.ui.h:3
 msgid "Password:"
 msgstr "Mot de passe :"
 
+#: ../gcr/gcr-import-dialog.ui.h:3
+msgid "Import Into:"
+msgstr "Importer vers :"
+
 #: ../gcr/gcr-unlock-options-widget.ui.h:1
 msgid "Automatically unlock this keyring whenever I'm logged in"
-msgstr ""
-"Déverrouiller automatiquement ce trousseau de clés quand je suis connecté"
+msgstr "Déverrouiller automatiquement ce trousseau de clés quand je suis connecté"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:2
+msgid "Lock this keyring when I log out"
+msgstr "Verrouiller ce trousseau de clés quand je me déconnecte"
+
+#: ../gcr/gcr-unlock-options-widget.ui.h:3
 msgid "Lock this keyring after"
 msgstr "Verrouiller ce trousseau de clés après"
 
-#: ../gcr/gcr-unlock-options-widget.ui.h:3
+#: ../gcr/gcr-unlock-options-widget.ui.h:4
 msgid "Lock this keyring if idle for"
 msgstr "Verrouiller ce trousseau de clés s'il est inactif pendant"
-
-#: ../gcr/gcr-unlock-options-widget.ui.h:4
-msgid "Lock this keyring when I log out"
-msgstr "Verrouiller ce trousseau de clés quand je me déconnecte"
 
 #. Translators: The 'minutes' from 'Lock this keyring if idle for x minutes'.
 #: ../gcr/gcr-unlock-options-widget.ui.h:6
@@ -475,15 +464,15 @@ msgstr "Choisissez un emplacement pour stocker les certificats/clés importés."
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr "Clé"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr "Clé RSA privée"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr "Clé DSA privée"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
@@ -491,31 +480,31 @@ msgstr "Clé privée"
 
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr "Clé DSA publique"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
 msgid "%d bit"
 msgid_plural "%d bits"
-msgstr[0] "%d bit"
-msgstr[1] "%d bits"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr "Robustesse"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr "Algorithme"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr "Taille"
+msgstr ""
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr "Empreinte digitale"
+msgstr ""
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -536,19 +525,16 @@ msgstr "Les données sont verrouillées"
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
 msgstr ""
-"Impossible de trouver un emplacement pour enregistrer le certificat accepté."
 
 #: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
 #: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
 msgstr ""
-"La syntaxe de l'URI n'est pas valide. Le codage du champ « %s » n'est pas "
-"correct."
 
 #: ../gck/gck-uri.c:287
 msgid "The URI has does not have the 'pkcs11' scheme."
-msgstr "L'URI ne respecte pas le modèle « pkcs11 »."
+msgstr ""
 
 #: ../gck/gck-misc.c:101
 msgid "Insufficient memory available"
@@ -608,7 +594,7 @@ msgstr "Une erreur s'est produite sur le périphérique"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr "Mémoire disponible insuffisante sur le périphérique"
+msgstr ""
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
@@ -644,7 +630,7 @@ msgstr "Aucune clé nécessaire"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr "La clé n'est pas identique à la précédente"
+msgstr ""
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
@@ -652,14 +638,12 @@ msgstr "Une clé est requise"
 
 #: ../gck/gck-misc.c:151
 msgid "Cannot include the key in the digest"
-msgstr "Impossible d'inclure la clé dans le « Digest » d'authentification"
+msgstr ""
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
 msgstr "Cette opération ne peut pas être réalisée avec cette clé"
 
-# http://en.wikipedia.org/wiki/Key_Wrap
-# Key Wrap may be considered as a form of Key Encapsulation algorithm
 #: ../gck/gck-misc.c:155
 msgid "The key cannot be wrapped"
 msgstr "Impossible d'encapsuler la clé"
@@ -798,7 +782,7 @@ msgstr "Un autre utilisateur est déjà connecté"
 
 #: ../gck/gck-misc.c:223
 msgid "Too many users of different types are logged in"
-msgstr "Trop d'utilisateurs de types différents sont connectés"
+msgstr ""
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
@@ -895,25 +879,20 @@ msgstr "Le mot de passe de déverrouillage n'est pas correct"
 msgid "Unlock Login Keyring"
 msgstr "Déverrouiller le trousseau de connexion"
 
-#: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:636w
+#: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:636
 msgid "Enter password to unlock your login keyring"
-msgstr ""
-"Saisissez votre mot de passe pour déverrouiller le trousseau de connexion"
+msgstr "Saisissez votre mot de passe pour déverrouiller le trousseau de connexion"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:640
 msgid ""
 "The password you use to log in to your computer no longer matches that of "
 "your login keyring."
-msgstr ""
-"Le mot de passe que vous utilisez pour ouvrir une session sur cet ordinateur "
-"ne correspond plus à celui de votre trousseau de connexion."
+msgstr "Le mot de passe que vous utilisez pour ouvrir une session sur cet ordinateur ne correspond plus à celui de votre trousseau de connexion."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:642
 msgid ""
 "The login keyring did not get unlocked when you logged into your computer."
-msgstr ""
-"Le trousseau de connexion n'a pas été déverrouillé lors de votre connexion à "
-"cet ordinateur."
+msgstr "Le trousseau de connexion n'a pas été déverrouillé lors de votre connexion à cet ordinateur."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:660
 msgid "Unlock Keyring"
@@ -922,15 +901,12 @@ msgstr "Déverrouiller le trousseau de clés"
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:662
 #, c-format
 msgid "Enter password for keyring '%s' to unlock"
-msgstr ""
-"Saisissez le mot de passe du trousseau de clés « %s » pour le déverrouiller"
+msgstr "Saisissez le mot de passe du trousseau de clés « %s » pour le déverrouiller"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:666
 #, c-format
 msgid "An application wants access to the keyring '%s', but it is locked"
-msgstr ""
-"Une application veut accéder au trousseau de clés « %s », mais il est "
-"verrouillé"
+msgstr "Une application veut accéder au trousseau de clés « %s », mais il est verrouillé"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:686
 msgid "Unlock private key"
@@ -956,23 +932,19 @@ msgstr "Saisissez le mot de passe pour déverrouiller la clé publique"
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:717
 #, c-format
 msgid "An application wants access to the private key '%s', but it is locked"
-msgstr ""
-"Une application veut accéder à la clé privée « %s », mais elle est verrouillée"
+msgstr "Une application veut accéder à la clé privée « %s », mais elle est verrouillée"
 
 #. TRANSLATORS: The certificate is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:720
 #, c-format
 msgid "An application wants access to the certificate '%s', but it is locked"
-msgstr ""
-"Une application veut accéder au certificat « %s », mais il est verrouillé"
+msgstr "Une application veut accéder au certificat « %s », mais il est verrouillé"
 
 #. TRANSLATORS: The public key is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:723
 #, c-format
 msgid "An application wants access to the public key '%s', but it is locked"
-msgstr ""
-"Une application veut accéder à la clé publique « %s », mais elle est "
-"verrouillée"
+msgstr "Une application veut accéder à la clé publique « %s », mais elle est verrouillée"
 
 #. TRANSLATORS: The object '%s' is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:726
@@ -986,19 +958,16 @@ msgstr "Déverrouiller le stockage de certificats/clés"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:823
 msgid "Enter password to unlock the certificate/key storage"
-msgstr ""
-"Saisissez le mot de passe pour déverrouiller l'espace de stockage de "
-"certificats/clés"
+msgstr "Saisissez le mot de passe pour déverrouiller l'espace de stockage de certificats/clés"
 
-#. TRANSLATORS: The storage is locked, and needs unlocking before the application can use it.
+#. TRANSLATORS: The storage is locked, and needs unlocking before the
+#. application can use it.
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:826
 #, c-format
 msgid ""
 "An application wants access to the certificate/key storage '%s', but it is "
 "locked"
-msgstr ""
-"Une application veut accéder au stockage de certificats/clés « %s », mais il "
-"est verrouillé"
+msgstr "Une application veut accéder au stockage de certificats/clés « %s », mais il est verrouillé"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1132
 msgid "New Password Required"
@@ -1006,17 +975,14 @@ msgstr "Nouveau mot de passe nécessaire"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1133
 msgid "New password required for secure storage"
-msgstr ""
-"Un nouveau mot de passe est nécessaire pour l'espace de stockage sécurisé"
+msgstr "Un nouveau mot de passe est nécessaire pour l'espace de stockage sécurisé"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1135
 #, c-format
 msgid ""
 "In order to prepare '%s' for storage of certificates or keys, a password is "
 "required"
-msgstr ""
-"Un mot de passe est nécessaire pour préparer « %s » au stockage de "
-"certificats ou de clés"
+msgstr "Un mot de passe est nécessaire pour préparer « %s » au stockage de certificats ou de clés"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1258
 msgid "Change Password"
@@ -1030,23 +996,21 @@ msgstr "Modifier le mot de passe pour l'espace de stockage sécurisé"
 #, c-format
 msgid ""
 "To change the password for '%s', the original and new passwords are required"
-msgstr ""
-"Pour modifier le mot de passe pour « %s », l'ancien et un nouveau mot de "
-"passe sont nécessaires"
+msgstr "Pour modifier le mot de passe pour « %s », l'ancien et un nouveau mot de passe sont nécessaires"
 
 #: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: mate-keyring command [options]\n"
-msgstr "utilisation : mate-keyring commande [options]\n"
+msgstr ""
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
-msgstr "commandes : "
+msgstr ""
 
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
 msgid "          "
-msgstr "            "
+msgstr ""
 
 #: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
@@ -1057,10 +1021,7 @@ msgid ""
 "By choosing to use a blank password, your stored passwords will not be "
 "safely encrypted. They will be accessible by anyone with access to your "
 "files."
-msgstr ""
-"En choisissant d'utiliser un mot de passe vide, vos mots de passe stockés ne "
-"seront pas chiffrés de manière sûre. Ils seront accessibles par n'importe "
-"qui ayant un accès à vos fichiers."
+msgstr "En choisissant d'utiliser un mot de passe vide, vos mots de passe stockés ne seront pas chiffrés de manière sûre. Ils seront accessibles par n'importe qui ayant un accès à vos fichiers."
 
 #: ../ui/gku-prompt-tool.c:605
 msgid "Use Unsafe Storage"
@@ -1076,36 +1037,36 @@ msgstr "Le mot de passe ne peut pas être vide"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:1
 msgid "Keyring Access"
-msgstr "Accès au trousseau de clés"
+msgstr ""
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:2
 msgid "Unlock access to passwords and other secrets"
-msgstr "Déverrouiller l'accès aux mots de passe et autres secrets"
+msgstr ""
 
 #: ../ui/gku-prompt.ui.h:1
-msgid "New password strength"
-msgstr "Robustesse du nouveau mot de passe"
-
-#: ../ui/gku-prompt.ui.h:2
-msgid "_Application:"
-msgstr "Appl_ication :"
-
-#: ../ui/gku-prompt.ui.h:3
-msgid "_Confirm:"
-msgstr "_Confirmation :"
-
-#: ../ui/gku-prompt.ui.h:4
-msgid "_Details:"
-msgstr "_Détails :"
-
-#: ../ui/gku-prompt.ui.h:5
 msgid "_Name:"
 msgstr "_Nom :"
 
-#: ../ui/gku-prompt.ui.h:6
+#: ../ui/gku-prompt.ui.h:2
 msgid "_Old Password:"
 msgstr "_Ancien mot de passe :"
 
-#: ../ui/gku-prompt.ui.h:7
+#: ../ui/gku-prompt.ui.h:3
 msgid "_Password:"
 msgstr "_Mot de passe :"
+
+#: ../ui/gku-prompt.ui.h:4
+msgid "_Confirm:"
+msgstr "_Confirmation :"
+
+#: ../ui/gku-prompt.ui.h:5
+msgid "New password strength"
+msgstr "Robustesse du nouveau mot de passe"
+
+#: ../ui/gku-prompt.ui.h:6
+msgid "_Application:"
+msgstr "Appl_ication :"
+
+#: ../ui/gku-prompt.ui.h:7
+msgid "_Details:"
+msgstr "_Détails :"

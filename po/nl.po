@@ -1,28 +1,23 @@
-# Dutch translation for mate-keyring
-#
-# This file is distributed under the same license as the mate-keyring package.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Daniel van Eeden <daniel_e@dds.nl>, 2004, 2008.
 # Tino Meinen <a.t.meinen@chello.nl>, 2005.
-# Wouter Bolsterlee <wbolster@gnome.org>, 2006–2011.
-#
-# Keyring vertalen we als sleutelbos (Wouter Bolsterlee, Tino Meinen)
-#
-# ‘Secret service’ laat ik voorlopig even onvertaald (Wouter Bolsterlee)
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-keyring\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-19 17:27+0100\n"
-"PO-Revision-Date: 2011-03-19 17:27+0100\n"
-"Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
-"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
-"Language: nl\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-06-29 11:58+0200\n"
+"PO-Revision-Date: 2012-06-29 09:59+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Dutch (http://www.transifex.com/projects/p/MATE/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
 #: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
@@ -34,7 +29,7 @@ msgstr "Naamloos"
 
 #: ../daemon/dbus/gkd-secret-change.c:86
 msgid "Change Keyring Password"
-msgstr "Wachtwoord van sleutelbos wijzigen"
+msgstr "Sleutelbos-wachtwoord wijzigen"
 
 #: ../daemon/dbus/gkd-secret-change.c:88
 #, c-format
@@ -44,11 +39,9 @@ msgstr "Kies een nieuw wachtwoord voor de sleutelbos ‘%s’"
 #: ../daemon/dbus/gkd-secret-change.c:92
 #, c-format
 msgid ""
-"An application wants to change the password for the '%s' keyring. Choose the "
-"new password you want to use for it."
-msgstr ""
-"Een programma wil het wachtwoord voor de sleutelbos ‘%s’ wijzigen.U kunt het "
-"te gebruiken wachtwoord kiezen."
+"An application wants to change the password for the '%s' keyring. Choose the"
+" new password you want to use for it."
+msgstr "Een programma wil het wachtwoord voor de sleutelbos ‘%s’ wijzigen.U kunt het te gebruiken wachtwoord kiezen."
 
 #: ../daemon/dbus/gkd-secret-change.c:111
 msgid "The original password was incorrect"
@@ -56,7 +49,7 @@ msgstr "Het oorspronkelijke wachtwoord was onjuist"
 
 #: ../daemon/dbus/gkd-secret-create.c:83
 msgid "New Keyring Password"
-msgstr "Nieuw wachtwoord voor sleutelbos"
+msgstr "Nieuw sleutelbos-wachtwoord"
 
 #: ../daemon/dbus/gkd-secret-create.c:84
 msgid "Choose password for new keyring"
@@ -67,9 +60,7 @@ msgstr "Kies wachtwoord voor de nieuwe sleutelbos"
 msgid ""
 "An application wants to create a new keyring called '%s'. Choose the "
 "password you want to use for it."
-msgstr ""
-"Een programma wil een nieuwe sleutelbos met de naam ‘%s’ aanmaken. U kunt "
-"het te gebruiken wachtwoord kiezen."
+msgstr "Een programma wil een nieuwe sleutelbos met de naam ‘%s’ aanmaken. U kunt het te gebruiken wachtwoord kiezen."
 
 #: ../daemon/mate-keyring-pkcs11.desktop.in.in.h:1
 msgid "Certificate and Key Storage"
@@ -80,29 +71,28 @@ msgid "MATE Keyring: PKCS#11 Component"
 msgstr "Sleutelbos-service: PKCS#11-component"
 
 #: ../daemon/mate-keyring-secrets.desktop.in.in.h:1
-msgid "MATE Keyring: Secret Service"
-msgstr "Sleutelbos-service: Secret Service"
-
-# Onvertaald gelaten (Wouter Bolsterlee)
-#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
 msgid "Secret Storage Service"
 msgstr "Secret Storage Service"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
-msgid "MATE Keyring: SSH Agent"
-msgstr "Sleutelbos-service: SSH-agent"
+#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
+msgid "MATE Keyring: Secret Service"
+msgstr "Sleutelbos-service: Secret Service"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
 msgid "SSH Key Agent"
 msgstr "SSH-sleutelagent"
 
-#: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
-msgid "MATE Keyring: GPG Agent"
-msgstr "Mate-sleutelbos: GPG-agent"
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+msgid "MATE Keyring: SSH Agent"
+msgstr "Sleutelbos-service: SSH-agent"
 
-#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
+#: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
 msgid "GPG Password Agent"
 msgstr "GPG-wachtwoordagent"
+
+#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
+msgid "MATE Keyring: GPG Agent"
+msgstr "Mate-sleutelbos: GPG-agent"
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:104 ../gcr/gcr-key-renderer.c:291
 #: ../gcr/gcr-key-renderer.c:296
@@ -121,7 +111,7 @@ msgstr "Voer wachtwoordzin in"
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:397
 msgid "Forget this password if idle for"
-msgstr "Dit wachtwoord vergeten na inactiviteit van"
+msgstr "Dit wachtwoord vergeen na inactiviteit van"
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:398
 msgid "Forget this password after"
@@ -131,7 +121,6 @@ msgstr "Dit wachtwoord vergeten na"
 msgid "Forget this password when I log out"
 msgstr "Dit wachtwoord vergeten bij afmelden"
 
-# Onvertaald gelaten (Wouter Bolsterlee)
 #. TRANSLATORS: This is the display label for the login keyring
 #: ../daemon/login/gkd-login.c:147
 msgid "Login"
@@ -139,15 +128,15 @@ msgstr "Login"
 
 #: ../egg/egg-oid.c:41
 msgid "Domain Component"
-msgstr "Domeincomponent"
+msgstr "Domain-component"
 
 #: ../egg/egg-oid.c:43
 msgid "User ID"
-msgstr "Gebruikers-ID"
+msgstr "User-id"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr "E-mailadres"
+msgstr ""
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -159,7 +148,7 @@ msgstr "Geboorteplaats"
 
 #: ../egg/egg-oid.c:58
 msgid "Gender"
-msgstr "Geslacht"
+msgstr "Geslag"
 
 #: ../egg/egg-oid.c:60
 msgid "Country of Citizenship"
@@ -179,7 +168,7 @@ msgstr "Achternaam"
 
 #: ../egg/egg-oid.c:69 ../gcr/gcr-certificate-renderer.c:379
 msgid "Serial Number"
-msgstr "Serienummer"
+msgstr "Serienummber"
 
 #: ../egg/egg-oid.c:71
 msgid "Country"
@@ -221,12 +210,10 @@ msgstr "Voornaam"
 msgid "Initials"
 msgstr "Initialen"
 
-# Onvertaald gelaten (Wouter Bolsterlee)
 #: ../egg/egg-oid.c:91
 msgid "Generation Qualifier"
 msgstr "Generation Qualifier"
 
-# Onvertaald gelaten (Wouter Bolsterlee)
 #: ../egg/egg-oid.c:93
 msgid "DN Qualifier"
 msgstr "DN Qualifier"
@@ -262,9 +249,7 @@ msgstr "SHA1 met DSA"
 #: ../egg/egg-spawn.c:273
 #, c-format
 msgid "Unexpected error in select() reading data from a child process (%s)"
-msgstr ""
-"Onverwachte fout bij select() tijdens het lezen van gegevens van een "
-"dochterproces: %s"
+msgstr "Onverwachte fout bij select() tijdens het lezen van gegevens van een dochterproces: %s"
 
 #: ../egg/egg-spawn.c:320
 #, c-format
@@ -301,15 +286,15 @@ msgstr "Nee"
 
 #: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr "Identiteit"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr "Geverifieerd door"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr "Verloopt op"
+msgstr ""
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
@@ -340,11 +325,11 @@ msgstr "Niet geldig na"
 
 #: ../gcr/gcr-certificate-renderer.c:401
 msgid "Signature Algorithm"
-msgstr "Algoritme voor ondertekening"
+msgstr "Ondertekeningsalgoritme"
 
 #: ../gcr/gcr-certificate-renderer.c:406
 msgid "Signature Parameters"
-msgstr "Parameters voor ondertekening"
+msgstr "Ondertekeningsparameters"
 
 #: ../gcr/gcr-certificate-renderer.c:413
 msgid "Signature"
@@ -353,7 +338,7 @@ msgstr "Ondertekening"
 #. Public Key Info
 #: ../gcr/gcr-certificate-renderer.c:418
 msgid "Public Key Info"
-msgstr "Publieke sleutelinformatie"
+msgstr "Pulieke-sleutelinformatie"
 
 #: ../gcr/gcr-certificate-renderer.c:423
 msgid "Key Algorithm"
@@ -370,40 +355,40 @@ msgstr "Sleutelgrootte"
 #: ../gcr/gcr-certificate-renderer.c:444 ../gcr/gcr-key-renderer.c:271
 #: ../gcr/gcr-parser.c:204
 msgid "Public Key"
-msgstr "Publieke sleutel"
+msgstr "Pulieke sleutel"
 
 #. Fingerprints
 #: ../gcr/gcr-certificate-renderer.c:449
 msgid "Fingerprints"
-msgstr "Vingerafdrukken"
+msgstr "Vingeradrukken"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr "Certificaten en sleutels importeren"
+msgstr ""
 
 #: ../gcr/gcr-import-dialog.ui.h:2
-msgid "Import Into:"
-msgstr "Importeren naar:"
-
-#: ../gcr/gcr-import-dialog.ui.h:3
 msgid "Password:"
 msgstr "Wachtwoord:"
+
+#: ../gcr/gcr-import-dialog.ui.h:3
+msgid "Import Into:"
+msgstr "Importeren naar:"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:1
 msgid "Automatically unlock this keyring whenever I'm logged in"
 msgstr "Deze sleutelbos automatisch ontgrendelen bij aanmelden"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:2
+msgid "Lock this keyring when I log out"
+msgstr "Deze sleutelbos automatisch vergrendelen bij afmelden"
+
+#: ../gcr/gcr-unlock-options-widget.ui.h:3
 msgid "Lock this keyring after"
 msgstr "Deze sleutelbos vergrendelen na"
 
-#: ../gcr/gcr-unlock-options-widget.ui.h:3
+#: ../gcr/gcr-unlock-options-widget.ui.h:4
 msgid "Lock this keyring if idle for"
 msgstr "Deze sleutelbos vergrendelen na inactiviteit van"
-
-#: ../gcr/gcr-unlock-options-widget.ui.h:4
-msgid "Lock this keyring when I log out"
-msgstr "Deze sleutelbos automatisch vergrendelen bij afmelden"
 
 #. Translators: The 'minutes' from 'Lock this keyring if idle for x minutes'.
 #: ../gcr/gcr-unlock-options-widget.ui.h:6
@@ -412,15 +397,15 @@ msgstr "minuten"
 
 #: ../gcr/gcr-importer.c:133 ../pkcs11/wrap-layer/gkm-wrap-prompt.c:701
 msgid "Enter password to unlock the private key"
-msgstr "Voer uw wachtwoord in voor ontgrendelen van de privé-sleutel"
+msgstr "Voer uw wachtwoord in voor ontgrendeling van de privé-sleutel"
 
 #: ../gcr/gcr-importer.c:135 ../pkcs11/wrap-layer/gkm-wrap-prompt.c:703
 msgid "Enter password to unlock the certificate"
-msgstr "Voer uw wachtwoord in voor ontgrendelen van het certificaat"
+msgstr "Voer uw wachtwoord in voor ontgrendeling van het certificaat"
 
 #: ../gcr/gcr-importer.c:137 ../pkcs11/wrap-layer/gkm-wrap-prompt.c:707
 msgid "Enter password to unlock"
-msgstr "Voer wachtwoord in voor ontgrendelen"
+msgstr "Voer wachtwoord in voor ontgrendeling"
 
 #. TRANSLATORS: The key is locked.
 #: ../gcr/gcr-importer.c:146
@@ -471,20 +456,19 @@ msgstr "Certificaten of sleutels importeren"
 
 #: ../gcr/gcr-importer.c:502
 msgid "Choose a location to store the imported certificates/keys."
-msgstr ""
-"Kies een locatie om de geïmporteerde certificaten of sleutels op te slaan"
+msgstr "Kies een locatie om de geïmporteerde certificaten of sleutels op te slaan"
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr "Sleutel"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr "Privé-sleutel (RSA)"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr "Privé-sleutel (DSA)"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
@@ -492,31 +476,31 @@ msgstr "Privé-sleutel"
 
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr "Publieke DSA-sleutel"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
 msgid "%d bit"
 msgid_plural "%d bits"
-msgstr[0] "%d bit"
-msgstr[1] "%d bits"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr "Sterkte"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr "Algoritme"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr "Grootte"
+msgstr ""
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr "Vingerafdruk"
+msgstr ""
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -536,18 +520,17 @@ msgstr "De gegevens zijn vergrendeld"
 #: ../gcr/gcr-trust.c:420
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
-msgstr "Kon geen locatie vinden om het ‘pinned’ certificaat op te slaan"
+msgstr ""
 
 #: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
 #: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
 msgstr ""
-"De URI heeft een ongeldige syntaxis. Het gecodeerde veld ‘%s’ is ongeldig."
 
 #: ../gck/gck-uri.c:287
 msgid "The URI has does not have the 'pkcs11' scheme."
-msgstr "De URI heeft niet het ‘pkcs11’-schema."
+msgstr ""
 
 #: ../gck/gck-misc.c:101
 msgid "Insufficient memory available"
@@ -571,7 +554,7 @@ msgstr "Ongeldige argumenten"
 
 #: ../gck/gck-misc.c:111
 msgid "The module cannot create needed threads"
-msgstr "De module kan de benodigde threads niet aanmaken"
+msgstr "De module kan de benodige threads niet aanmaken"
 
 #: ../gck/gck-misc.c:113
 msgid "The module cannot lock data properly"
@@ -579,7 +562,7 @@ msgstr "De module kan gegevens niet op een juiste manier vergrendelen"
 
 #: ../gck/gck-misc.c:115
 msgid "The field is read-only"
-msgstr "Het veld is ‘alleen lezen’"
+msgstr "Het veld is alleen-lezen"
 
 #: ../gck/gck-misc.c:117
 msgid "The field is sensitive and cannot be revealed"
@@ -607,7 +590,7 @@ msgstr "Er is een fout op het apparaat opgetreden"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr "Onvoldoende geheugen beschikbaar op apparaat"
+msgstr ""
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
@@ -635,7 +618,7 @@ msgstr "De sleutel heeft een onjuiste grootte"
 
 #: ../gck/gck-misc.c:143
 msgid "The key is of the wrong type"
-msgstr "Het type van de sleutel is onjuist"
+msgstr "Het sleuteltype is onjuist"
 
 #: ../gck/gck-misc.c:145
 msgid "No key is needed"
@@ -643,7 +626,7 @@ msgstr "Er is geen sleutel nodig"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr "De sleutel is anders dan voorheen"
+msgstr ""
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
@@ -651,7 +634,7 @@ msgstr "Er is een sleutel nodig"
 
 #: ../gck/gck-misc.c:151
 msgid "Cannot include the key in the digest"
-msgstr "Kan de sleutel niet in ‘digest’ opnemen"
+msgstr ""
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
@@ -675,7 +658,7 @@ msgstr "Het crypto-mechanisme heeft een ongeldig argument"
 
 #: ../gck/gck-misc.c:163
 msgid "The object is missing or invalid"
-msgstr "Het object ontbreekt of is ongeldig"
+msgstr "Het object ontbreekd of is ongeldig"
 
 #: ../gck/gck-misc.c:165
 msgid "Another operation is already taking place"
@@ -719,7 +702,7 @@ msgstr "De sessie is ongeldig"
 
 #: ../gck/gck-misc.c:185
 msgid "The session is read-only"
-msgstr "De sessie is ‘alleen lezen’"
+msgstr "De sessie is alleen-lezen"
 
 #: ../gck/gck-misc.c:187
 msgid "An open session exists"
@@ -727,7 +710,7 @@ msgstr "Er is een open sessie"
 
 #: ../gck/gck-misc.c:189
 msgid "A read-only session exists"
-msgstr "Er is een ‘alleen-lezen’-sessie"
+msgstr "Er is een alleen-lezen sessie"
 
 #: ../gck/gck-misc.c:191
 msgid "An administrator session exists"
@@ -771,15 +754,15 @@ msgstr "Importeren mislukt, want de sleutel heeft een onjuiste lengte"
 
 #: ../gck/gck-misc.c:211
 msgid "Cannot import because the key is of the wrong type"
-msgstr "Importeren mislukt, want het type sleutel is onjuist"
+msgstr "Importeren mislukt, want het sleuteltype is onjuist"
 
 #: ../gck/gck-misc.c:213
 msgid "You are already logged in"
-msgstr "U bent al aangemeld"
+msgstr "U bent al ingelogd"
 
 #: ../gck/gck-misc.c:215
 msgid "No user has logged in"
-msgstr "Er is geen gebruiker aangemeld"
+msgstr "Er is geen gebruiker ingelogd"
 
 #: ../gck/gck-misc.c:217
 msgid "The user's password or PIN is not set"
@@ -791,11 +774,11 @@ msgstr "Het type gebruiker is ongeldig"
 
 #: ../gck/gck-misc.c:221
 msgid "Another user is already logged in"
-msgstr "Er is al een andere gebruiker aangemeld"
+msgstr "Er is al een andere gebruiker ingelogd"
 
 #: ../gck/gck-misc.c:223
 msgid "Too many users of different types are logged in"
-msgstr "Er zijn teveel gebruikers van verschillende types aangemeld"
+msgstr ""
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
@@ -811,11 +794,11 @@ msgstr "Kan niet exporteren want de sleutel is ongeldig"
 
 #: ../gck/gck-misc.c:231
 msgid "Cannot export because the key is of the wrong size"
-msgstr "Kan niet exporteren want de grootte van de sleutel is onjuist"
+msgstr "Kan niet expoteren want de sleutelgrootte is onjuist"
 
 #: ../gck/gck-misc.c:233
 msgid "Cannot export because the key is of the wrong type"
-msgstr "Kan niet exporteren want het type sleutel is onjuist"
+msgstr "Kan niet exporteren want het sleuteltype is onjuist"
 
 #: ../gck/gck-misc.c:235
 msgid "Unable to initialize the random number generator"
@@ -831,7 +814,7 @@ msgstr "Het crypto-mechanisme heeft een ongeldige parameter"
 
 #: ../gck/gck-misc.c:241
 msgid "Not enough space to store the result"
-msgstr "Niet genoeg ruimte om het resultaat op te slaan"
+msgstr "Niet genoeg vrije schrijfruimte om het resultaat op te slaan"
 
 #: ../gck/gck-misc.c:243
 msgid "The saved state is invalid"
@@ -890,26 +873,22 @@ msgstr "Het wachtwoord was onjuist"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:634
 msgid "Unlock Login Keyring"
-msgstr "Login-sleutelbos ontgrendelen"
+msgstr "Aanmeldsleutelbos ontgrendelen"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:636
 msgid "Enter password to unlock your login keyring"
-msgstr "Voer wachtwoord in om de login-sleutelbos te ontgrendelen"
+msgstr "Voer wachtwoord in om de aanmeldsleutelbos te ontgrendelen"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:640
 msgid ""
 "The password you use to log in to your computer no longer matches that of "
 "your login keyring."
-msgstr ""
-"Het wachtwoord dat u gebruikt om u aan te melden bij deze computer komt niet "
-"overeen met het wachtwoord van uw login-sleutelbos."
+msgstr "Het wachtwoord dat u gebruikt om u aan te melden bij deze computer komt niet overeen met het wachtwoord van uw aanmeldsleutelbos."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:642
 msgid ""
 "The login keyring did not get unlocked when you logged into your computer."
-msgstr ""
-"Uw login-sleutelbos was niet automatisch ontgrendeld bij het aanmelden op "
-"deze computer."
+msgstr "Uw aanmeldsleutelbos was niet automatisch ontgrendeld bij het aanmelden op deze computer."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:660
 msgid "Unlock Keyring"
@@ -923,8 +902,7 @@ msgstr "Voer wachtwoord in voor het ontgrendelen van sleutelbos ‘%s’"
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:666
 #, c-format
 msgid "An application wants access to the keyring '%s', but it is locked"
-msgstr ""
-"Een programma wil toegang tot de sleutelbos ‘%s’, maar deze is vergrendeld."
+msgstr "Een programma wil toegang tot de sleutelbos ‘%s’, maar deze is vergrendeld."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:686
 msgid "Unlock private key"
@@ -944,29 +922,25 @@ msgstr "Ontgrendelen"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:705
 msgid "Enter password to unlock the public key"
-msgstr "Voer wachtwoord in voor ontgrendelen van de publieke sleutel"
+msgstr "Voer uw wachtwoord in voor ontgrendeling van de publieke sleutel"
 
 #. TRANSLATORS: The private key is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:717
 #, c-format
 msgid "An application wants access to the private key '%s', but it is locked"
-msgstr ""
-"Een programma wil toegang tot de sleutelbos ‘%s’, maar deze is gesloten"
+msgstr "Een programma wil toegang tot de sleutelbos ‘%s’, maar deze is gesloten"
 
 #. TRANSLATORS: The certificate is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:720
 #, c-format
 msgid "An application wants access to the certificate '%s', but it is locked"
-msgstr ""
-"Een programma wil toegang tot het certificaat ‘%s’, maar dit certificaat is "
-"gesloten"
+msgstr "Een programma wil toegang tot het certificaat ‘%s’, maar dit certificaat is gesloten"
 
 #. TRANSLATORS: The public key is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:723
 #, c-format
 msgid "An application wants access to the public key '%s', but it is locked"
-msgstr ""
-"Een programma wil toegang tot de publieke sleutel ‘%s’, maar deze is gesloten"
+msgstr "Een programma wil toegang tot de publieke sleutel ‘%s’, maar deze is gesloten"
 
 #. TRANSLATORS: The object '%s' is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:726
@@ -980,18 +954,16 @@ msgstr "Certificaat/sleutelopslag ontgrendelen"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:823
 msgid "Enter password to unlock the certificate/key storage"
-msgstr ""
-"Voer wachtwoord in voor ontgrendelen van het certificaat of de sleutelopslag"
+msgstr "Voer uw wachtwoord in voor ontgrendeling van het certificaat of de sleutelopslag"
 
-#. TRANSLATORS: The storage is locked, and needs unlocking before the application can use it.
+#. TRANSLATORS: The storage is locked, and needs unlocking before the
+#. application can use it.
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:826
 #, c-format
 msgid ""
 "An application wants access to the certificate/key storage '%s', but it is "
 "locked"
-msgstr ""
-"Een toepassing wil toegang tot het certificaat of de sleutelopslag ‘%s’, "
-"maar deze is gesloten"
+msgstr "Een toepassing wil toegang tot het certificaat of de sleutelopslag ‘%s’, maar deze is gesloten"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1132
 msgid "New Password Required"
@@ -1006,9 +978,7 @@ msgstr "Nieuw wachtwoord vereist voor beveiligde opslag"
 msgid ""
 "In order to prepare '%s' for storage of certificates or keys, a password is "
 "required"
-msgstr ""
-"Om ‘%s’ voor te bereiden voor de opslag van certificaten of sleutels, is een "
-"wachtwoord nodig."
+msgstr "Om ‘%s’ voor te bereiden voro de opslag van certificaten of sleutels, is een wachtwoord nodig."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1258
 msgid "Change Password"
@@ -1022,23 +992,21 @@ msgstr "Wachtwoord voor beveiligde opslag wijzigen"
 #, c-format
 msgid ""
 "To change the password for '%s', the original and new passwords are required"
-msgstr ""
-"Om het wachtwoord voor ‘%s’ te wijzigingen is zowel het oude als het nieuwe "
-"wachtwoord nodig."
+msgstr "Om het wachtwoord voor ‘%s’ te wijzingen is zowel het oude als het nieuwe wachtwoord nodig."
 
 #: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: mate-keyring command [options]\n"
-msgstr "gebruik: mate-keyring opdracht [opties]\n"
+msgstr ""
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
-msgstr "opdrachten: "
+msgstr ""
 
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
 msgid "          "
-msgstr "            "
+msgstr ""
 
 #: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
@@ -1049,10 +1017,7 @@ msgid ""
 "By choosing to use a blank password, your stored passwords will not be "
 "safely encrypted. They will be accessible by anyone with access to your "
 "files."
-msgstr ""
-"Door een leeg wachtwoord te gebruiken worden de opgeslagen wachtwoorden niet "
-"veilig bewaard. Iedereen met toegang tot uw bestanden kan deze wachtwoorden "
-"achterhalen."
+msgstr "Door een leeg wachtwoord te gebruiken worden de opgeslagen wachtwoorden niet veilig bewaard. Iedereen met toegang tot uw bestanden kan deze wachtwoorden acherhalen."
 
 #: ../ui/gku-prompt-tool.c:605
 msgid "Use Unsafe Storage"
@@ -1068,546 +1033,36 @@ msgstr "Wachtwoord mag niet leeg zijn"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:1
 msgid "Keyring Access"
-msgstr "Sleutelbostoegang"
+msgstr ""
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:2
 msgid "Unlock access to passwords and other secrets"
-msgstr "Toegang tot wachtwoorden en andere geheime informatie regelen"
+msgstr ""
 
 #: ../ui/gku-prompt.ui.h:1
-msgid "New password strength"
-msgstr "Veiligheid wachtwoord"
-
-#: ../ui/gku-prompt.ui.h:2
-msgid "_Application:"
-msgstr "_Toepassing:"
-
-#: ../ui/gku-prompt.ui.h:3
-msgid "_Confirm:"
-msgstr "_Bevestigen:"
-
-#: ../ui/gku-prompt.ui.h:4
-msgid "_Details:"
-msgstr "_Details:"
-
-#: ../ui/gku-prompt.ui.h:5
 msgid "_Name:"
 msgstr "_Naam:"
 
-#: ../ui/gku-prompt.ui.h:6
+#: ../ui/gku-prompt.ui.h:2
 msgid "_Old Password:"
 msgstr "_Oud wachtwoord:"
 
-#: ../ui/gku-prompt.ui.h:7
+#: ../ui/gku-prompt.ui.h:3
 msgid "_Password:"
 msgstr "_Wachtwoord:"
 
-#~ msgid "Email"
-#~ msgstr "E-mail"
-
-#~ msgid "<i>Not Part of Certificate</i>"
-#~ msgstr "<i>Geen onderdeel van certificaat</i>"
-
-#~ msgid "<i>unknown</i>"
-#~ msgstr "<i>onbekend</i>"
-
-#~ msgid "<Not Part of Certificate>"
-#~ msgstr "<Geen onderdeel van certificaat>"
-
-#~ msgid "<b>Fingerprints</b>"
-#~ msgstr "<b>Vingeradrukken</b>"
-
-#~ msgid "<b>Issued By</b>"
-#~ msgstr "<b>Uitgegeven door</b>"
-
-#~ msgid "<b>Issued To</b>"
-#~ msgstr "<b>Uitgegeven aan</b>"
-
-#~ msgid "<b>This certificate has been verified for the following uses:</b>"
-#~ msgstr "<b>Dit certificaat is geverifieerd voor het volgende gebruik:</b>"
-
-#~ msgid "<b>Validity</b>"
-#~ msgstr "<b>Geldigheid</b>"
-
-#~ msgid "Common Name (CN)"
-#~ msgstr "Common Name (CN)"
-
-#~ msgid "Email Recipient Certificate"
-#~ msgstr "E-mailontvangst-certificaat"
-
-#~ msgid "Email Signer Certificate"
-#~ msgstr "E-mailondertekening-certificaat"
-
-#~ msgid "Issued On"
-#~ msgstr "Uitgegeven op"
-
-#~ msgid "MD5 Fingerprint"
-#~ msgstr "MD5-vingerafdruk"
-
-#~ msgid "Organization (O)"
-#~ msgstr "Organisatie (O)"
-
-#~ msgid "Organizational Unit (OU)"
-#~ msgstr "Organisatieonderdeel (OU)"
-
-#~ msgid "SHA1 Fingerprint"
-#~ msgstr "SHA1-vingerafdruk"
-
-#~ msgid "SSL Client Certificate"
-#~ msgstr "SSL-client-certificaat"
-
-#~ msgid "SSL Server Certificate"
-#~ msgstr "SSL-server-certificaat"
-
-#~ msgid "<span size='large' weight='bold'>Import Certificates and Keys</span>"
-#~ msgstr ""
-#~ "<span size='large' weight='bold'>Certificaten en sleutels importeren</"
-#~ "span>"
-
-#~ msgid ""
-#~ "This option enables the PKCS#11 component in the mate-keyring daemon. It "
-#~ "only takes effect during startup with mate-session, (ie: when the user "
-#~ "logs in). This setting may be overridden when certain command line "
-#~ "arguments are passed to the daemon."
-#~ msgstr ""
-#~ "Deze optie schakelt de PKCS#11-component van mate-keyring daemon in. Dit "
-#~ "heeft alleen effect tijdens het opstarten via mate-session (wanneer de "
-#~ "gebruiker zich aanmeldt). Deze instelling kan worden overschreven door "
-#~ "parameters op de opdrachtregel mee te geven aan de daemon."
-
-#~ msgid ""
-#~ "This option enables the SSH agent in the mate-keyring daemon. It only "
-#~ "takes effect as mate-keyring-daemon starts, (ie: when the user logs in). "
-#~ "This setting may be overridden when certain command line arguments are "
-#~ "passed to the daemon."
-#~ msgstr ""
-#~ "Deze optie schakelt de SSH-agent van mate-keyring daemon in. Dit heeft "
-#~ "alleen effect als mate-keyring-daemon start, bijvoorbeeld als de "
-#~ "gebruiker zich aanmeldt. Deze instelling kan worden overschreven door "
-#~ "parameters op de opdrachtregel mee te geven aan de daemon."
-
-#~ msgid ""
-#~ "This option enables the secret service component in the mate-keyring "
-#~ "daemon. It only takes effect during startup with mate-session, (ie: when "
-#~ "the user logs in). This setting may be overridden when certain command "
-#~ "line arguments are passed to the daemon."
-#~ msgstr ""
-#~ "Deze optie schakelt de ‘secret service’-component van mate-keyring "
-#~ "daemon in. Dit heeft alleen effect tijdens het opstarten via mate-"
-#~ "session (wanneer de gebruiker zich aanmeldt). Deze instelling kan worden "
-#~ "overschreven door parameters op de opdrachtregel mee te geven aan de "
-#~ "daemon."
-
-#~ msgid "Whether the mate-keyring PKCS#11 component is enabled."
-#~ msgstr "Of de PKCS#11-component van mate-keyring ingeschakeld is."
-
-#~ msgid "Whether the mate-keyring SSH agent is enabled."
-#~ msgstr "Of de SSH-agent van mate-keyring ingeschakeld is."
-
-#~ msgid "Whether the mate-keyring secret service is enabled."
-#~ msgstr "Of de ‘secret service’ van mate-keyring ingeschakeld is."
-
-#~ msgid "Removable Disk: %s"
-#~ msgstr "Loskoppelbare schijf: %s"
-
-#~ msgid "Removable Disk"
-#~ msgstr "Loskoppelbare schijf"
-
-#~ msgid "Home"
-#~ msgstr "Persoonlijke map"
-
-#~ msgid "The disk or drive this file is located on is not present"
-#~ msgstr ""
-#~ "De schijf of het station waar dit bestand zich bevindt is niet aanwezig"
-
-#~ msgid "Couldn't create directory: %s"
-#~ msgstr "Kon map niet aanmaken: %s"
-
-#~ msgid "Couldn't delete the file: %s"
-#~ msgstr "Kon bestand niet verwijderen: %s"
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to access the password for '<object "
-#~ "prop='name'/>' in the default keyring."
-#~ msgstr ""
-#~ "Het programma ‘%s’ (%s) wil toegang tot het wachtwoord voor ‘<object "
-#~ "prop='name'/>’ uit de standaardsleutelbos."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to access the password for '<object "
-#~ "prop='name'/>' in %s."
-#~ msgstr ""
-#~ "Het programma ‘%s’ (%s) wil toegang tot het wachtwoord voor ‘<object "
-#~ "prop='name'/>’ in %s."
-
-#~ msgid ""
-#~ "The application '%s' wants to access the password for '<object "
-#~ "prop='name'/>' in the default keyring."
-#~ msgstr ""
-#~ "Het programma ‘%s’ wil toegang tot het wachtwoord voor ‘<object "
-#~ "prop='name'/>’ uit de standaard sleutelbos."
-
-#~ msgid ""
-#~ "The application '%s' wants to access the password for '<object "
-#~ "prop='name'/>' in %s."
-#~ msgstr ""
-#~ "Het programma ‘%s’ wil toegang tot het wachtwoord voor ‘<object "
-#~ "prop='name'/>’ uit %s."
-
-#~ msgid ""
-#~ "An unknown application wants to access the password for '<object "
-#~ "prop='name'/>' in the default keyring."
-#~ msgstr ""
-#~ "Een onbekend programma wil toegang tot het wachtwoord voor ‘<object "
-#~ "prop='name'/>’ uit de standaard sleutelbos."
-
-#~ msgid ""
-#~ "An unknown application wants to access the password for '<object "
-#~ "prop='name'/>' in %s."
-#~ msgstr ""
-#~ "Een onbekend programma wil toegang tot het wachtwoord voor ‘<object "
-#~ "prop='name'/>’ uit %s."
-
-#~ msgid "Allow access"
-#~ msgstr "Toegang toestaan"
-
-#~ msgid "Allow application access to keyring?"
-#~ msgstr "Programma toegang tot sleutelbos verlenen?"
-
-# besloten/gesloten/beveiligd
-#~ msgid ""
-#~ "The application '%s' (%s) wants access to the default keyring, but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "Het programma ‘%s’ (%s) wil toegang tot de standaard sleutelbos maar deze "
-#~ "is gesloten"
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants access to the keyring '%s', but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "Het programma ‘%s’ (%s) wil toegang tot de sleutelbos ‘%s’, maar deze is "
-#~ "gesloten"
-
-#~ msgid ""
-#~ "The application '%s' wants access to the default keyring, but it is locked"
-#~ msgstr ""
-#~ "Het programma ‘%s’ wil toegang tot de standaard sleutelbos, maar deze is "
-#~ "gesloten"
-
-#~ msgid ""
-#~ "The application '%s' wants access to the keyring '%s', but it is locked"
-#~ msgstr ""
-#~ "Het programma ‘%s’ wil toegang tot de sleutelbos ‘%s’, maar deze is "
-#~ "gesloten."
-
-#~ msgid ""
-#~ "An unknown application wants access to the default keyring, but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "Een onbekend programma wil toegang tot de standaard sleutelbos, maar deze "
-#~ "is gesloten."
-
-#~ msgid "Enter password for default keyring to unlock"
-#~ msgstr ""
-#~ "Voer wachtwoord in voor het ontgrendelen van de standaard sleutelbos"
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to create a new keyring called '%s'. You "
-#~ "have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Het programma ‘%s’ (%s) wil een nieuwe sleutelbos aanmaken genaamd ‘%s’. "
-#~ "U kunt het wachtwoord kiezen wat u er voor wilt gebruiken."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to create a new default keyring. You have "
-#~ "to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Het programma ‘%s’ (%s) wil een nieuwe standaard sleutelbos aanmaken. U "
-#~ "kunt het wachtwoord kiezen wat u er voor wilt gebruiken."
-
-#~ msgid ""
-#~ "The application '%s' wants to create a new keyring called '%s'. You have "
-#~ "to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Het programma ‘%s’ wil een nieuwe sleutelbos aanmaken genaamd ‘%s’ U kunt "
-#~ "het wachtwoord kiezen wat u er voor wilt gebruiken."
-
-#~ msgid ""
-#~ "The application '%s' wants to create a new default keyring. You have to "
-#~ "choose the password you want to use for it."
-#~ msgstr ""
-#~ "Het programma ‘%s’ wil een nieuwe standaard sleutelbos aanmaken. U kunt "
-#~ "het wachtwoord kiezen wat u er voor wilt gebruiken."
-
-#~ msgid ""
-#~ "An unknown application wants to create a new default keyring. You have to "
-#~ "choose the password you want to use for it."
-#~ msgstr ""
-#~ "Een onbekend programma wil een nieuwe standaard sleutelbos aanmaken.U "
-#~ "kunt het wachtwoord kiezen wat u er voor wilt gebruiken."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to change the password for the '%s' "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Het programma ‘%s’ (%s) wil het wachtwoord voor de sleutelbos ‘%s’ "
-#~ "wijzigen. U kunt het wachtwoord kiezen wat u er voor wilt gebruiken."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to change the password for the default "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Het programma ‘%s’ (%s) wil het wachtwoord voor de standaard sleutelbos "
-#~ "wijzigen. U kunt het wachtwoord kiezen wat u er voor wilt gebruiken."
-
-#~ msgid ""
-#~ "The application '%s' wants to change the password for the '%s' keyring. "
-#~ "You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Het programma ‘%s’ wil het wachtwoord voor de sleutelbos ‘%s’ wijzigen. U "
-#~ "kunt het wachtwoord kiezen wat u er voor wilt gebruiken."
-
-#~ msgid ""
-#~ "The application '%s' wants to change the password for the default "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Het programma ‘%s’ wil het wachtwoord voor de standaard sleutelbos "
-#~ "wijzigen. U kunt het wachtwoord kiezen wat u er voor wilt gebruiken."
-
-#~ msgid ""
-#~ "An unknown application wants to change the password for the default "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Een onbekend programma wil het wachtwoord voor de standaard sleutelbos "
-#~ "wijzigen.U kunt het wachtwoord kiezen wat u er voor wilt gebruiken."
-
-#~ msgid "Choose a new password for the default keyring. "
-#~ msgstr "Kies nieuw wachtwoord voor standaard sleutelbos."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to store a password, but there is no "
-#~ "default keyring. To create one, you need to choose the password you wish "
-#~ "to use for it."
-#~ msgstr ""
-#~ "Het programma ‘%s’ (%s) wil een wachtwoord opslaan, maar er is geen "
-#~ "standaard sleutelbos. Om er een te creëren, zal een wachtwoord gekozen "
-#~ "moeten worden wat u er voor wilt gebruiken."
-
-#~ msgid ""
-#~ "The application '%s' wants to store a password, but there is no default "
-#~ "keyring. To create one, you need to choose the password you wish to use "
-#~ "for it."
-#~ msgstr ""
-#~ "Het programma ‘%s’ wil een wachtwoord opslaan, maar er is geen standaard "
-#~ "sleutelbos. Om er een te creëren, zal een wachtwoord gekozen moeten "
-#~ "worden wat u er voor wilt gebruiken."
-
-#~ msgid ""
-#~ "An unknown application wants to store a password, but there is no default "
-#~ "keyring. To create one, you need to choose the password you wish to use "
-#~ "for it."
-#~ msgstr ""
-#~ "Een onbekend programma wil een wachtwoord opslaan, maar er is geen "
-#~ "standaard sleutelbos. Om er een te creëren, zal een wachtwoord gekozen "
-#~ "moeten worden wat u er voor wilt gebruiken."
-
-#~ msgid "Create Default Keyring"
-#~ msgstr "Aanmaken standaard-sleutelbos"
-
-#~ msgid "Choose password for default keyring"
-#~ msgstr "Kies wachtwoord voor standaard sleutelbos"
-
-#~ msgid "Create Login Keyring"
-#~ msgstr "Aanmaken login-sleutelbos"
-
-#~ msgid "Enter your login password"
-#~ msgstr "Voer uw aanmeldwachtwoord in"
-
-#~ msgid ""
-#~ "Your login keyring was not automatically created when you logged into "
-#~ "this computer. It will now be created."
-#~ msgstr ""
-#~ "Uw login-sleutelbos is niet automatisch aangemaakt bij het aanmelden op "
-#~ "deze computer. Deze zal nu alsnog aangemaakt worden."
-
-#~ msgid "Unlock password for %s keyring"
-#~ msgstr "Wachtwoord voor ontgrendelen van sleutelbos ‘%s’"
-
-#~ msgid "Automatically unlock this private key when I log in."
-#~ msgstr "Deze privé-sleutel automatisch ontgrendelen bij aanmelden"
-
-#~ msgid "Automatically unlock this certificate when I log in."
-#~ msgstr "Dit certificaat automatisch ontgrendelen bij aanmelden"
-
-#~ msgid "Automatically unlock this public key when I log in."
-#~ msgstr "Deze publieke sleutel automatisch ontgrendelen bij aanmelden"
-
-#~ msgid "Automatically unlock this when I log in"
-#~ msgstr "Deze sleutelbos automatisch ontgrendelen bij aanmelden"
-
-#~ msgid "Automatically unlock secure storage when I log in."
-#~ msgstr "Beveilgide opslag automatisch ontgrendelen bij aanmelden"
-
-#~ msgid ""
-#~ "<b><big>Could not grab your mouse.</big></b>\n"
-#~ "\n"
-#~ "A malicious client may be eavesdropping on your session or you may have "
-#~ "just clicked a menu or some application just decided to get focus.\n"
-#~ "\n"
-#~ "Try again."
-#~ msgstr ""
-#~ "<b><big>Kon de muis niet claimen.</big></b>\n"
-#~ "\n"
-#~ "Het is mogelijk dat kwaadwillende persoon of toepassing uw sessie "
-#~ "afluistert, maar het kan ook zijn dat u op een menu of toepassing heeft "
-#~ "geklikt, of dat een andere toepassing voorgrond is gekomen.\n"
-#~ "\n"
-#~ "Probeer opnieuw."
-
-#~ msgid ""
-#~ "<b><big>Could not grab your keyboard.</big></b>\n"
-#~ "\n"
-#~ "A malicious client may be eavesdropping on your session or you may have "
-#~ "just clicked a menu or some application just decided to get focus.\n"
-#~ "\n"
-#~ "Try again."
-#~ msgstr ""
-#~ "<b><big>Kon het toetsenbord niet claimen.</big></b>\n"
-#~ "\n"
-#~ "Het is mogelijk dat kwaadwillende persoon of toepassing uw sessie "
-#~ "afluistert, maar het kan ook zijn dat u op een menu of toepassing heeft "
-#~ "geklikt, of dat een andere toepassing voorgrond is gekomen.\n"
-#~ "\n"
-#~ "Probeer opnieuw."
-
-#~ msgid "_Deny"
-#~ msgstr "_Niet toestaan"
-
-#~ msgid "C_reate"
-#~ msgstr "_Aanmaken"
-
-#~ msgid "C_hange"
-#~ msgstr "_Wijzigen"
-
-#~ msgid "Allow _Once"
-#~ msgstr "_Eenmalig toestaan"
-
-#~ msgid "_Always Allow"
-#~ msgstr "_Altijd toestaan"
-
-#~ msgid "Access Denied"
-#~ msgstr "Geen toegang"
-
-#~ msgid "The mate-keyring-daemon application is not running."
-#~ msgstr "De toepassing ‘mate-keyring-daemon’ is niet actief."
-
-#~ msgid "Error communicating with mate-keyring-daemon"
-#~ msgstr "Fout bij communicatie met ‘mate-keyring-daemon’"
-
-#~ msgid "A keyring with that name already exists"
-#~ msgstr "Er bestaat al een sleutelbos met deze naam"
-
-#~ msgid "Programmer error: The application sent invalid data."
-#~ msgstr "Programeerfout: de toepassing stuurde ongeldige gegevens."
-
-#~ msgid "No matching results"
-#~ msgstr "Geen resultaten"
-
-#~ msgid "A keyring with that name does not exist."
-#~ msgstr "Er bestaat geen sleutelbos met deze naam."
-
-#~ msgid "The keyring has already been unlocked."
-#~ msgstr "De sleutelbos is al geopend."
-
-#~ msgid ""
-#~ "A list of paths to PKCS#11 modules to load. No modules are currently "
-#~ "listed by default, as this is still an experimental feature. This is used "
-#~ "by seahorse and other PKCS#11 aware applications."
-#~ msgstr ""
-#~ "Een lijst van paden naar PKCS#11 die geladen moeten worden. Standaard is "
-#~ "deze lijst leeg, omdat deze functionaliteit nog experimenteel is. Dit "
-#~ "wordt gebruikt door Seahorse en toepassingen die PKCS#11 ondersteunen."
-
-#~ msgid "PKCS#11 Modules"
-#~ msgstr "PKCS#11-modules"
-
-#~ msgid "Import private key"
-#~ msgstr "Privé-sleutel importeren"
-
-#~ msgid "Import public key"
-#~ msgstr "Publieke sleutel importeren"
-
-#~ msgid "The system wants to import the public key '%s', but it is locked"
-#~ msgstr ""
-#~ "De computer wil de publieke sleutel ‘%s’ importeren, maar deze is "
-#~ "gesloten."
-
-#~ msgid "Create Storage for Key Information"
-#~ msgstr "Opslag voor sleutelinformatie aanmaken"
-
-#~ msgid "Choose password to protect storage"
-#~ msgstr "Kies een wachtwoord voor opslagbeveiliging"
-
-#~ msgid ""
-#~ "The system wants to store information about your keys and certificates. "
-#~ "In order to protect this information, choose a password with which it "
-#~ "will be locked."
-#~ msgstr ""
-#~ "De computer wil informatie over uw sleutels en certificaten opslaan. Om "
-#~ "deze informatie te beschermen, dient u een wachtwoord te kiezen om deze "
-#~ "informatie te vergrendelen."
-
-#~ msgid "Unlock Storage for Key Information"
-#~ msgstr "Opslag voor sleutelinformatie ontgrendelen"
-
-#~ msgid "Enter password to unlock storage"
-#~ msgstr "Voer wachtwoord in voor ontgrendelen van opslag"
-
-#~ msgid ""
-#~ "The system wants to access information about your keys and certificates, "
-#~ "but it is locked."
-#~ msgstr ""
-#~ "De computer wil toegang tot informatie over uw sleutels en certificaten, "
-#~ "maar deze is geblokkeerd."
-
-#~ msgid "Trust Association"
-#~ msgstr "Vertrouwensband"
-
-#~ msgid "Cannot delete '%s' because it is tied to other objects."
-#~ msgstr ""
-#~ "Kan ‘%s’ niet verwijderen, omdat deze gekoppeld is aan andere objecten."
-
-#~ msgid "Lock private key"
-#~ msgstr "Privé-sleutel vergrendelen"
-
-#~ msgid "Lock"
-#~ msgstr "Vergrendelen"
-
-#~ msgid "Enter password to protect the private key"
-#~ msgstr "Voer wachtwoord in voor het vergrendelen van de privé-sleutel"
-
-#~ msgid ""
-#~ "The system wants to store the private key '%s' on your disk. Please enter "
-#~ "a password to lock it with."
-#~ msgstr ""
-#~ "De computer wil de privé-sleutel ‘%s’ opslaan. Geef een wachtwoord om "
-#~ "deze te vergrendelen."
-
-#~ msgid ""
-#~ "The system wants to store '%s' on your disk. Please enter a password to "
-#~ "lock it with."
-#~ msgstr ""
-#~ "De computer wil ‘%s’ opslaan. Geef een wachtwoord voor de vergrendeling."
-
-#~ msgid "Couldn't read secure shell private key: %s"
-#~ msgstr "Kon privé SSH-sleutel niet lezen: %s"
-
-#~ msgid "Invalid secure shell private key at: %s"
-#~ msgstr "Ongeldige privé SSH-sleutel: %s"
-
-#~ msgid "Couldn't encrypt the SSH key to store it."
-#~ msgstr "Kon de SSH-sleutel niet versleutelen voor opslag."
-
-#~ msgid "Couldn't encode the SSH key to store it."
-#~ msgstr "Kon de SSH-sleutel niet coderen voor opslag."
+#: ../ui/gku-prompt.ui.h:4
+msgid "_Confirm:"
+msgstr "_Bevestigen:"
+
+#: ../ui/gku-prompt.ui.h:5
+msgid "New password strength"
+msgstr "Veiligheid wachtwoord"
+
+#: ../ui/gku-prompt.ui.h:6
+msgid "_Application:"
+msgstr "_Toepassing:"
+
+#: ../ui/gku-prompt.ui.h:7
+msgid "_Details:"
+msgstr "_Details:"

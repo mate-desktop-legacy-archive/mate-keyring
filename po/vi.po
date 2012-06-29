@@ -1,25 +1,25 @@
-# Vietnamese translation of MATE Keyring.
-# Copyright © 2010 MATE i18n Project for Vietnamese.
-# Nguyễn Thái Ngọc Duy <pclouds@vnlinux.org>, 2004,2008.
-# Clytie Siddall <clytie@riverland.net.au>, 2005-2010.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Nguyễn Thái Ngọc Duy <pclouds@vnlinux.org>, 2004, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-keyring 2.26.3\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mate-"
-"keyring&component=general\n"
-"POT-Creation-Date: 2010-12-22 18:04+0000\n"
-"PO-Revision-Date: 2011-01-03 16:51+0900\n"
-"Last-Translator: Nguyen Vu Hung <vuhung16plus@gmail.com>\n"
-"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-06-29 11:58+0200\n"
+"PO-Revision-Date: 2012-06-29 09:59+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: LocFactoryEditor 1.8\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
-#: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:74
+#: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
 #: ../pkcs11/secret-store/gkm-secret-collection.c:325
 #: ../pkcs11/wrap-layer/gkm-wrap-login.c:343
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:789
@@ -38,32 +38,28 @@ msgstr "Hãy chọn một mật khẩu mới cho vòng khóa « %s »"
 #: ../daemon/dbus/gkd-secret-change.c:92
 #, c-format
 msgid ""
-"An application wants to change the password for the '%s' keyring. Choose the "
-"new password you want to use for it."
-msgstr ""
-"Một ứng dụng muốn thay đổi mật khẫu cho vòng khoá « %s ». Hãy chọn mật khẩu "
-"cần sử dụng với nó."
+"An application wants to change the password for the '%s' keyring. Choose the"
+" new password you want to use for it."
+msgstr "Một ứng dụng muốn thay đổi mật khẫu cho vòng khoá « %s ». Hãy chọn mật khẩu cần sử dụng với nó."
 
 #: ../daemon/dbus/gkd-secret-change.c:111
 msgid "The original password was incorrect"
 msgstr "Bạn đã gõ sai mật khẩu gốc"
 
-#: ../daemon/dbus/gkd-secret-create.c:78
+#: ../daemon/dbus/gkd-secret-create.c:83
 msgid "New Keyring Password"
 msgstr "Mật khẩu vòng khóa mới"
 
-#: ../daemon/dbus/gkd-secret-create.c:79
+#: ../daemon/dbus/gkd-secret-create.c:84
 msgid "Choose password for new keyring"
 msgstr "Hãy chọn mật khẩu cho vòng khóa mới"
 
-#: ../daemon/dbus/gkd-secret-create.c:81
+#: ../daemon/dbus/gkd-secret-create.c:86
 #, c-format
 msgid ""
 "An application wants to create a new keyring called '%s'. Choose the "
 "password you want to use for it."
-msgstr ""
-"Một ứng dụng muốn tạo một vòng khóa mới tên « %s ». Hãy chọn mật khẩu cần sử "
-"dụng với nó."
+msgstr "Một ứng dụng muốn tạo một vòng khóa mới tên « %s ». Hãy chọn mật khẩu cần sử dụng với nó."
 
 #: ../daemon/mate-keyring-pkcs11.desktop.in.in.h:1
 msgid "Certificate and Key Storage"
@@ -74,60 +70,55 @@ msgid "MATE Keyring: PKCS#11 Component"
 msgstr "Vòng Khoá MATE: thành phần PKCS#11"
 
 #: ../daemon/mate-keyring-secrets.desktop.in.in.h:1
-msgid "MATE Keyring: Secret Service"
-msgstr "Vòng Khoá MATE: dịch vụ mật"
-
-#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
 msgid "Secret Storage Service"
 msgstr "Dịch vụ lưu trữ mật"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
-msgid "MATE Keyring: SSH Agent"
-msgstr "Vòng Khoá MATE: SSH Agent"
+#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
+msgid "MATE Keyring: Secret Service"
+msgstr "Vòng Khoá MATE: dịch vụ mật"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
 msgid "SSH Key Agent"
 msgstr "Tác nhân khoá SSH"
 
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+msgid "MATE Keyring: SSH Agent"
+msgstr "Vòng Khoá MATE: SSH Agent"
+
 #: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
-#| msgid "MATE Keyring: SSH Agent"
-msgid "MATE Keyring: GPG Agent"
-msgstr "Vòng Khoá MATE: GPG Agent"
+msgid "GPG Password Agent"
+msgstr ""
 
 #: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
-#| msgid "New password strength"
-msgid "GPG Password Agent"
-msgstr "Agent cho mật khẩu GPG"
+msgid "MATE Keyring: GPG Agent"
+msgstr ""
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:104 ../gcr/gcr-key-renderer.c:291
 #: ../gcr/gcr-key-renderer.c:296
-#| msgid "Unknown error"
 msgid "Unknown"
-msgstr "Không biết"
+msgstr ""
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:199
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:202
 #, c-format
 msgid "PGP Key: %s"
-msgstr "Khóa PGP: %s"
+msgstr ""
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:348
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:349
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:354
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:355
 msgid "Enter Passphrase"
-msgstr "Nhập mật mã"
+msgstr ""
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:383
-#| msgid "Lock this keyring if idle for"
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:397
 msgid "Forget this password if idle for"
-msgstr "Quên mật khẩu này nếu không dùng trong"
+msgstr ""
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:384
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:398
 msgid "Forget this password after"
-msgstr "Quên mật khẩu sau"
+msgstr ""
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:385
-#| msgid "Lock this keyring when I log out"
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:399
 msgid "Forget this password when I log out"
-msgstr "Quên mật khẩu sau khi đăng xuất"
+msgstr ""
 
 #. TRANSLATORS: This is the display label for the login keyring
 #: ../daemon/login/gkd-login.c:147
@@ -144,7 +135,7 @@ msgstr "Mã số người dùng"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr "Thư điện tử"
+msgstr ""
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -257,9 +248,7 @@ msgstr "SHA1 với mã hoá DSA"
 #: ../egg/egg-spawn.c:273
 #, c-format
 msgid "Unexpected error in select() reading data from a child process (%s)"
-msgstr ""
-"Gặp lỗi bất thường trong « select() » khi đọc dữ liệu từ một tiến trình con (%"
-"s)"
+msgstr "Gặp lỗi bất thường trong « select() » khi đọc dữ liệu từ một tiến trình con (%s)"
 
 #: ../egg/egg-spawn.c:320
 #, c-format
@@ -295,18 +284,16 @@ msgid "No"
 msgstr "Không"
 
 #: ../gcr/gcr-certificate-renderer.c:339
-#| msgid "Identifier"
 msgid "Identity"
-msgstr "Nhận diện"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr "Kiểm chứng bởi"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:350
-#| msgid "Expires On"
 msgid "Expires"
-msgstr "Hết hạn"
+msgstr ""
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
@@ -375,33 +362,32 @@ msgid "Fingerprints"
 msgstr "Vân tay"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
-#| msgid "Import Certificates/Keys"
 msgid "Import Certificates and Keys"
-msgstr "Nhập chứng nhận/khoá"
+msgstr ""
 
 #: ../gcr/gcr-import-dialog.ui.h:2
-msgid "Import Into:"
-msgstr "Nhập vào :"
-
-#: ../gcr/gcr-import-dialog.ui.h:3
 msgid "Password:"
 msgstr "Mật khẩu :"
+
+#: ../gcr/gcr-import-dialog.ui.h:3
+msgid "Import Into:"
+msgstr "Nhập vào :"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:1
 msgid "Automatically unlock this keyring whenever I'm logged in"
 msgstr "Tự động gỡ khoá vòng khoá này khi nào tôi đã đăng nhập"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:2
+msgid "Lock this keyring when I log out"
+msgstr "Khoá vòng khoá này khi tôi đang xuất"
+
+#: ../gcr/gcr-unlock-options-widget.ui.h:3
 msgid "Lock this keyring after"
 msgstr "Khoá vòng khoá này sau"
 
-#: ../gcr/gcr-unlock-options-widget.ui.h:3
+#: ../gcr/gcr-unlock-options-widget.ui.h:4
 msgid "Lock this keyring if idle for"
 msgstr "Khoá vòng khoá này nếu vẫn nghỉ sau"
-
-#: ../gcr/gcr-unlock-options-widget.ui.h:4
-msgid "Lock this keyring when I log out"
-msgstr "Khoá vòng khoá này khi tôi đang xuất"
 
 #. Translators: The 'minutes' from 'Lock this keyring if idle for x minutes'.
 #: ../gcr/gcr-unlock-options-widget.ui.h:6
@@ -473,52 +459,46 @@ msgstr "Hãy chọn một vị trí vào đó cần lưu các chứng nhận/kho
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr "Khóa"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:260
-#| msgid "Private Key"
 msgid "Private RSA Key"
-msgstr "Khoá cá nhân RSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:262
-#| msgid "Private Key"
 msgid "Private DSA Key"
-msgstr "Khoá cá nhân DSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
 msgstr "Khoá cá nhân"
 
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
-#| msgid "Public Key"
 msgid "Public DSA Key"
-msgstr "Khoá công khai DSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
-msgid "%d bits"
-msgstr "%d bit"
+msgid "%d bit"
+msgid_plural "%d bits"
+msgstr[0] ""
 
 #: ../gcr/gcr-key-renderer.c:279
-#| msgid "Street"
 msgid "Strength"
-msgstr "Độ mạnh"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:292
-#| msgid "Key Algorithm"
 msgid "Algorithm"
-msgstr "Thuật toán"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:299
-#| msgid "Key Size"
 msgid "Size"
-msgstr "Cỡ"
+msgstr ""
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
-#| msgid "Fingerprints"
 msgid "Fingerprint"
-msgstr "Vân tay"
+msgstr ""
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -526,27 +506,29 @@ msgstr "Dữ liệu không được nhận ra hay không được hỗ trợ."
 
 #: ../gcr/gcr-parser.c:1572
 msgid "Could not parse invalid or corrupted data."
-msgstr ""
-"Không thể phân tích cú pháp của dữ liệu không hợp lệ hay dữ liệu bị hỏng."
+msgstr "Không thể phân tích cú pháp của dữ liệu không hợp lệ hay dữ liệu bị hỏng."
 
 #: ../gcr/gcr-parser.c:1575
 msgid "The data is locked"
 msgstr "Dữ liệu bị khoá"
 
-#: ../gcr/gcr-trust.c:417
+#. Translators: A pinned certificate is an exception which
+#. trusts a given certificate explicitly for a purpose and
+#. communication with a certain peer.
+#: ../gcr/gcr-trust.c:420
 #, c-format
-#| msgid "Choose a location to store the imported certificates/keys."
 msgid "Couldn't find a place to store the pinned certificate"
-msgstr "Không tìm thấy vị trí lưu chứng nhận/khoá được nhập."
+msgstr ""
 
-#: ../gck/gck-uri.c:78 ../gck/gck-uri.c:135 ../gck/gck-uri.c:170
+#: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
+#: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
-msgstr "URI sai cú pháp. Trường '%s' sai."
+msgstr ""
 
-#: ../gck/gck-uri.c:195
+#: ../gck/gck-uri.c:287
 msgid "The URI has does not have the 'pkcs11' scheme."
-msgstr "URI không có 'pkcs11'."
+msgstr ""
 
 #: ../gck/gck-misc.c:101
 msgid "Insufficient memory available"
@@ -605,9 +587,8 @@ msgid "An error occurred on the device"
 msgstr "Lỗi xảy ra trên thiết bị"
 
 #: ../gck/gck-misc.c:129
-#| msgid "Insufficient memory available on device"
 msgid "Insufficient memory available on the device"
-msgstr "Không đủ bộ nhớ trên thiết bị."
+msgstr ""
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
@@ -643,16 +624,15 @@ msgstr "Không cần khoá"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr "Khoá khác trước"
+msgstr ""
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
 msgstr "Cần khoá"
 
 #: ../gck/gck-misc.c:151
-#| msgid "Cannot include the key in digest"
 msgid "Cannot include the key in the digest"
-msgstr "Không thể kèm khoá trong tóm tắt"
+msgstr ""
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
@@ -795,9 +775,8 @@ msgid "Another user is already logged in"
 msgstr "Người dùng khác đã đăng nhập"
 
 #: ../gck/gck-misc.c:223
-#| msgid "Too many users of different types logged in"
 msgid "Too many users of different types are logged in"
-msgstr "Quá nhiều người dùng thuộc các loại khác nhau đang đăng nhập"
+msgstr ""
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
@@ -895,23 +874,19 @@ msgid "Unlock Login Keyring"
 msgstr "Gỡ khoá vòng khoá đăng nhập"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:636
-#| msgid "Enter password for to unlock your login keyring"
 msgid "Enter password to unlock your login keyring"
-msgstr "Nhập mật khẩu để gỡ khoá vòng khoá đăng nhập"
+msgstr ""
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:640
 msgid ""
 "The password you use to log in to your computer no longer matches that of "
 "your login keyring."
-msgstr ""
-"Bạn đang sử dụng một mật khẩu để đăng nhập vào máy tính mà không còn tương "
-"ứng với mật khẩu của vòng khoá đăng nhập."
+msgstr "Bạn đang sử dụng một mật khẩu để đăng nhập vào máy tính mà không còn tương ứng với mật khẩu của vòng khoá đăng nhập."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:642
 msgid ""
 "The login keyring did not get unlocked when you logged into your computer."
-msgstr ""
-"Vòng khoá đăng nhập đã không được gỡ khoá khi bạn đăng nhập vào máy tính này."
+msgstr "Vòng khoá đăng nhập đã không được gỡ khoá khi bạn đăng nhập vào máy tính này."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:660
 msgid "Unlock Keyring"
@@ -979,15 +954,14 @@ msgstr "Mở khoá lưu trữ chứng nhận/khoá"
 msgid "Enter password to unlock the certificate/key storage"
 msgstr "Nhập mật khẩu để mở khoá kho lưu chứng nhận/khoá"
 
-#. TRANSLATORS: The storage is locked, and needs unlocking before the application can use it.
+#. TRANSLATORS: The storage is locked, and needs unlocking before the
+#. application can use it.
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:826
 #, c-format
 msgid ""
 "An application wants access to the certificate/key storage '%s', but it is "
 "locked"
-msgstr ""
-"Một ứng dụng muốn truy cập đến kho lưu chứng nhận/khoá « %s », nhưng nó vẫn "
-"bị khóa"
+msgstr "Một ứng dụng muốn truy cập đến kho lưu chứng nhận/khoá « %s », nhưng nó vẫn bị khóa"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1132
 msgid "New Password Required"
@@ -1002,186 +976,91 @@ msgstr "Yêu cầu mật khẩu mới để lưu trữ bảo mật"
 msgid ""
 "In order to prepare '%s' for storage of certificates or keys, a password is "
 "required"
-msgstr ""
-"Cần có mật khẩu để chuẩn bị '%s'để lưu trữ chứng nhận hay khoá"
+msgstr "Để chuẩn bi « %s » lưu trữ chứng nhận hay khoá thì yêu cầu một mật khẩu"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1258
-#| msgid "Change Keyring Password"
 msgid "Change Password"
-msgstr "Đổi mật khẩu"
+msgstr ""
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1259
-#| msgid "New password required for secure storage"
 msgid "Change password for secure storage"
-msgstr "Thay đổi mật khẩu mới để lưu trữ bảo mật"
+msgstr ""
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1261
 #, c-format
 msgid ""
 "To change the password for '%s', the original and new passwords are required"
-msgstr "Cần nhập mật khẩu cũ và mới để đổi mật khẩu cho '%s'"
+msgstr ""
 
-#: ../ui/gku-prompt-tool.c:538
+#: ../tool/gkr-tool.c:102
+#, c-format
+msgid "usage: mate-keyring command [options]\n"
+msgstr ""
+
+#: ../tool/gkr-tool.c:104
+msgid "commands: "
+msgstr ""
+
+#. Translators: keep same length as translated message "commands: "
+#: ../tool/gkr-tool.c:108
+msgid "          "
+msgstr ""
+
+#: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
 msgstr "Lưu mật khẩu không mật mã không?"
 
-#: ../ui/gku-prompt-tool.c:539
+#: ../ui/gku-prompt-tool.c:598
 msgid ""
 "By choosing to use a blank password, your stored passwords will not be "
 "safely encrypted. They will be accessible by anyone with access to your "
 "files."
-msgstr ""
-"Dùng một mật khẩu trắng thì mật khẩu đã lưu sẽ không thể được mã hoá an "
-"toàn. Mọi người đều có thể truy cập vào tập tin của bạn."
+msgstr "Dùng một mật khẩu trắng thì mật khẩu đã lưu sẽ không thể được mã hoá an toàn. Mọi người đều có thể truy cập vào tập tin của bạn."
 
-#: ../ui/gku-prompt-tool.c:546
+#: ../ui/gku-prompt-tool.c:605
 msgid "Use Unsafe Storage"
 msgstr "Lưu không an toàn"
 
-#: ../ui/gku-prompt-tool.c:584
+#: ../ui/gku-prompt-tool.c:643
 msgid "Passwords do not match."
 msgstr "Hai mật khẩu không trùng."
 
-#: ../ui/gku-prompt-tool.c:594
+#: ../ui/gku-prompt-tool.c:653
 msgid "Password cannot be blank"
 msgstr "Không cho phép mật khẩu trắng"
 
+#: ../ui/mate-keyring-prompt.desktop.in.in.h:1
+msgid "Keyring Access"
+msgstr ""
+
+#: ../ui/mate-keyring-prompt.desktop.in.in.h:2
+msgid "Unlock access to passwords and other secrets"
+msgstr ""
+
 #: ../ui/gku-prompt.ui.h:1
-msgid "New password strength"
-msgstr "Độ mạnh của mật khẩu mới"
-
-#: ../ui/gku-prompt.ui.h:2
-msgid "_Application:"
-msgstr "Ứn_g dụng:"
-
-#: ../ui/gku-prompt.ui.h:3
-msgid "_Confirm:"
-msgstr "Xá_c nhận:"
-
-#: ../ui/gku-prompt.ui.h:4
-msgid "_Details:"
-msgstr "Ch_i tiết:"
-
-#: ../ui/gku-prompt.ui.h:5
 msgid "_Name:"
 msgstr "Tê_n:"
 
-#: ../ui/gku-prompt.ui.h:6
+#: ../ui/gku-prompt.ui.h:2
 msgid "_Old Password:"
 msgstr "Mật khẩu _cũ :"
 
-#: ../ui/gku-prompt.ui.h:7
+#: ../ui/gku-prompt.ui.h:3
 msgid "_Password:"
 msgstr "_Mật khẩu :"
 
-#~| msgid ""
-#~| "This option enables the PKCS#11 component in the mate-keyring daemon. "
-#~| "It only takes effect as mate-keyring-daemon starts, (ie: when the user "
-#~| "logs in). This setting may be overridden when certain command line "
-#~| "arguments are passed to the daemon."
-#~ msgid ""
-#~ "This option enables the PKCS#11 component in the mate-keyring daemon. It "
-#~ "only takes effect during startup with mate-session, (ie: when the user "
-#~ "logs in). This setting may be overridden when certain command line "
-#~ "arguments are passed to the daemon."
-#~ msgstr ""
-#~ "Tuỳ chọn này hiệu lực thành phần PKCS#11 trong trình nền mate-keyring. "
-#~ "Nó chỉ có tác dụng trong khi khởi chạy bằng mate-session (ví dụ: khi "
-#~ "người dùng đăng nhập). Thiết lập này có thể bị ghi đè bằng đối số dòng "
-#~ "lệnh truyền cho trình nền."
+#: ../ui/gku-prompt.ui.h:4
+msgid "_Confirm:"
+msgstr "Xá_c nhận:"
 
-#~ msgid ""
-#~ "This option enables the SSH agent in the mate-keyring daemon. It only "
-#~ "takes effect as mate-keyring-daemon starts, (ie: when the user logs in). "
-#~ "This setting may be overridden when certain command line arguments are "
-#~ "passed to the daemon."
-#~ msgstr ""
-#~ "Tuỳ chọn này bật SSH agent trong mate-keyring daemon. Nó chỉ có tác dụng "
-#~ "khi mate-keyring-daemon hoạt động, (ví dụ: khi người dùng đăng nhập). "
-#~ "Thiết lập này có thể bị ghi đè bằng đối số dòng lệnh truyền cho daemon."
+#: ../ui/gku-prompt.ui.h:5
+msgid "New password strength"
+msgstr "Độ mạnh của mật khẩu mới"
 
-#~| msgid ""
-#~| "This option enables the PKCS#11 component in the mate-keyring daemon. "
-#~| "It only takes effect as mate-keyring-daemon starts, (ie: when the user "
-#~| "logs in). This setting may be overridden when certain command line "
-#~| "arguments are passed to the daemon."
-#~ msgid ""
-#~ "This option enables the secret service component in the mate-keyring "
-#~ "daemon. It only takes effect during startup with mate-session, (ie: when "
-#~ "the user logs in). This setting may be overridden when certain command "
-#~ "line arguments are passed to the daemon."
-#~ msgstr ""
-#~ "Tuỳ chọn này hiệu lực thành phần dịch vụ mật trong trình nền mate-"
-#~ "keyring. Nó chỉ có tác dụng trong khi khi khởi chạy bằng mate-session "
-#~ "(ví dụ: khi người dùng đăng nhập). Thiết lập này có thể bị ghi đè bằng "
-#~ "đối số dòng lệnh truyền cho trình nền."
+#: ../ui/gku-prompt.ui.h:6
+msgid "_Application:"
+msgstr "Ứn_g dụng:"
 
-#~ msgid "Whether the mate-keyring PKCS#11 component is enabled."
-#~ msgstr "Có bật thành phần mate-keyring PKCS#11 hay không."
-
-#~ msgid "Whether the mate-keyring SSH agent is enabled."
-#~ msgstr "Có bật mate-keyring SSH agent hay không."
-
-#~| msgid "Whether the mate-keyring SSH agent is enabled."
-#~ msgid "Whether the mate-keyring secret service is enabled."
-#~ msgstr "Có bật dịch vụ mật của mate-keyring hay không."
-
-#~ msgid "Email"
-#~ msgstr "Địa chỉ thư"
-
-#~ msgid "<i>Not Part of Certificate</i>"
-#~ msgstr "<i>Không phải phần của chứng nhận</i>"
-
-#~ msgid "<i>unknown</i>"
-#~ msgstr "<i>không rõ</i>"
-
-#~ msgid "<Not Part of Certificate>"
-#~ msgstr "<Không phải phần của chứng nhận>"
-
-#~ msgid "<b>Fingerprints</b>"
-#~ msgstr "<b>Vân tay</b>"
-
-#~ msgid "<b>Issued By</b>"
-#~ msgstr "<b>Cấp bởi</b>"
-
-#~ msgid "<b>Issued To</b>"
-#~ msgstr "<b>Cấp cho</b>"
-
-#~ msgid "<b>This certificate has been verified for the following uses:</b>"
-#~ msgstr "<b>Chứng nhận này đã được thẩm tra cho những mục đích theo đây:</b>"
-
-#~ msgid "<b>Validity</b>"
-#~ msgstr "<b>Đúng đắn</b>"
-
-#~ msgid "Common Name (CN)"
-#~ msgstr "Tên chung (TC)"
-
-#~ msgid "Email Recipient Certificate"
-#~ msgstr "Chứng nhận người nhận thư điện tử"
-
-#~ msgid "Email Signer Certificate"
-#~ msgstr "Chứng nhận người ký thư điện tử"
-
-#~ msgid "Issued On"
-#~ msgstr "Cấp vào"
-
-#~ msgid "MD5 Fingerprint"
-#~ msgstr "Vân tay MD5"
-
-#~ msgid "Organization (O)"
-#~ msgstr "Tổ chức (O)"
-
-#~ msgid "Organizational Unit (OU)"
-#~ msgstr "Đơn vị tổ chức (OU)"
-
-#~ msgid "SHA1 Fingerprint"
-#~ msgstr "Vân tay SHA1"
-
-#~ msgid "SSL Client Certificate"
-#~ msgstr "Chứng nhận ứng dụng khách SSL"
-
-#~ msgid "SSL Server Certificate"
-#~ msgstr "Chứng nhận trình phục vụ SSL"
-
-#~ msgid "<span size='large' weight='bold'>Import Certificates and Keys</span>"
-#~ msgstr "<span size='large' weight='bold'>Nhập các Chứng nhận và Khoá</span>"
+#: ../ui/gku-prompt.ui.h:7
+msgid "_Details:"
+msgstr "Ch_i tiết:"

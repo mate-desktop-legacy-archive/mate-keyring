@@ -1,25 +1,26 @@
-# Swedish messages for mate-keyring.
-# Copyright (C) 2003-2011 Free Software Foundation, Inc.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Christian Rose <menthos@menthos.com>, 2003, 2004.
-# Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011.
-#
+# Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-keyring\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-11 08:14+0100\n"
-"PO-Revision-Date: 2011-03-11 08:14+0100\n"
-"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
-"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
-"Language: sv\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-06-29 11:58+0200\n"
+"PO-Revision-Date: 2012-06-29 09:59+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
-#: ../daemon/dbus/gkd-secret-change.c:78
-#: ../daemon/dbus/gkd-secret-create.c:79
+#: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
 #: ../pkcs11/secret-store/gkm-secret-collection.c:325
 #: ../pkcs11/wrap-layer/gkm-wrap-login.c:343
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:789
@@ -37,7 +38,9 @@ msgstr "Välj ett nytt lösenord för nyckelringen \"%s\""
 
 #: ../daemon/dbus/gkd-secret-change.c:92
 #, c-format
-msgid "An application wants to change the password for the '%s' keyring. Choose the new password you want to use for it."
+msgid ""
+"An application wants to change the password for the '%s' keyring. Choose the"
+" new password you want to use for it."
 msgstr "Ett okänt program vill ändra lösenordet för nyckelringen \"%s\". Välj ett nytt lösenord som du vill använda för den."
 
 #: ../daemon/dbus/gkd-secret-change.c:111
@@ -54,7 +57,9 @@ msgstr "Välj lösenord för den nya nyckelringen"
 
 #: ../daemon/dbus/gkd-secret-create.c:86
 #, c-format
-msgid "An application wants to create a new keyring called '%s'. Choose the password you want to use for it."
+msgid ""
+"An application wants to create a new keyring called '%s'. Choose the "
+"password you want to use for it."
 msgstr "Ett okänt program vill skapa en ny nyckelring med namnet \"%s\". Välj ett lösenord som du vill använda för den."
 
 #: ../daemon/mate-keyring-pkcs11.desktop.in.in.h:1
@@ -66,54 +71,53 @@ msgid "MATE Keyring: PKCS#11 Component"
 msgstr "MATE-nyckelring: PKCS#11-komponent"
 
 #: ../daemon/mate-keyring-secrets.desktop.in.in.h:1
-msgid "MATE Keyring: Secret Service"
-msgstr "MATE-nyckelring: Hemlighetstjänst"
-
-#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
 msgid "Secret Storage Service"
 msgstr "Lagringstjänst för hemligheter"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
-msgid "MATE Keyring: SSH Agent"
-msgstr "MATE-nyckelring: SSH-agent"
+#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
+msgid "MATE Keyring: Secret Service"
+msgstr "MATE-nyckelring: Hemlighetstjänst"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
 msgid "SSH Key Agent"
 msgstr "SSH-nyckelagent"
 
-#: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
-msgid "MATE Keyring: GPG Agent"
-msgstr "MATE-nyckelring: GPG-agent"
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+msgid "MATE Keyring: SSH Agent"
+msgstr "MATE-nyckelring: SSH-agent"
 
-#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
+#: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
 msgid "GPG Password Agent"
 msgstr "GPG-lösenordsagent"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:104
-#: ../gcr/gcr-key-renderer.c:291
+#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
+msgid "MATE Keyring: GPG Agent"
+msgstr "MATE-nyckelring: GPG-agent"
+
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:104 ../gcr/gcr-key-renderer.c:291
 #: ../gcr/gcr-key-renderer.c:296
 msgid "Unknown"
 msgstr "Okänd"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:199
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:202
 #, c-format
 msgid "PGP Key: %s"
 msgstr "PGP-nyckel: %s"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:348
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:349
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:354
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:355
 msgid "Enter Passphrase"
 msgstr "Ange lösenfras"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:383
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:397
 msgid "Forget this password if idle for"
 msgstr "Glöm detta lösenord om inaktiv i"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:384
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:398
 msgid "Forget this password after"
 msgstr "Glöm detta lösenord efter"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:385
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:399
 msgid "Forget this password when I log out"
 msgstr "Glöm detta lösenord när jag loggar ut"
 
@@ -132,7 +136,7 @@ msgstr "Användar-id"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr "E-postadress"
+msgstr ""
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -162,8 +166,7 @@ msgstr "Common Name"
 msgid "Surname"
 msgstr "Förnamn"
 
-#: ../egg/egg-oid.c:69
-#: ../gcr/gcr-certificate-renderer.c:436
+#: ../egg/egg-oid.c:69 ../gcr/gcr-certificate-renderer.c:379
 msgid "Serial Number"
 msgstr "Serienummer"
 
@@ -219,8 +222,7 @@ msgstr "DN-kvalificerare"
 msgid "Pseudonym"
 msgstr "Pseudonym"
 
-#: ../egg/egg-oid.c:98
-#: ../gcr/gcr-key-renderer.c:287
+#: ../egg/egg-oid.c:98 ../gcr/gcr-key-renderer.c:287
 msgid "RSA"
 msgstr "RSA"
 
@@ -236,8 +238,7 @@ msgstr "MD5 med RSA"
 msgid "SHA1 with RSA"
 msgstr "SHA1 med RSA"
 
-#: ../egg/egg-oid.c:107
-#: ../gcr/gcr-key-renderer.c:289
+#: ../egg/egg-oid.c:107 ../gcr/gcr-key-renderer.c:289
 msgid "DSA"
 msgstr "DSA"
 
@@ -255,163 +256,154 @@ msgstr "Oväntat fel i select() vid läsning av data från en barnprocess (%s)"
 msgid "Unexpected error in waitpid() (%s)"
 msgstr "Oväntat fel i waitpid() (%s)"
 
-#: ../gcr/gcr-certificate-renderer.c:83
-#: ../gcr/gcr-parser.c:201
+#: ../gcr/gcr-certificate-renderer.c:82 ../gcr/gcr-parser.c:201
 msgid "Certificate"
 msgstr "Certifikat"
 
-#: ../gcr/gcr-certificate-renderer.c:108
+#: ../gcr/gcr-certificate-renderer.c:107
 msgid "Extension"
 msgstr "Utökning"
 
-#: ../gcr/gcr-certificate-renderer.c:113
+#: ../gcr/gcr-certificate-renderer.c:112
 msgid "Identifier"
 msgstr "Identifierare"
 
-#: ../gcr/gcr-certificate-renderer.c:121
+#: ../gcr/gcr-certificate-renderer.c:120
 msgid "Value"
 msgstr "Värde"
 
-#: ../gcr/gcr-certificate-renderer.c:127
+#: ../gcr/gcr-certificate-renderer.c:126
 msgid "Critical"
 msgstr "Kritiskt"
 
-#: ../gcr/gcr-certificate-renderer.c:127
+#: ../gcr/gcr-certificate-renderer.c:126
 msgid "Yes"
 msgstr "Ja"
 
-#: ../gcr/gcr-certificate-renderer.c:127
+#: ../gcr/gcr-certificate-renderer.c:126
 msgid "No"
 msgstr "Nej"
 
-#: ../gcr/gcr-certificate-renderer.c:198
-msgid "Couldn't export the certificate."
-msgstr "Kunde inte exportera certifikatet."
-
-#: ../gcr/gcr-certificate-renderer.c:396
+#: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr "Identitet"
+msgstr ""
 
-#: ../gcr/gcr-certificate-renderer.c:400
+#: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr "Verifierat av"
+msgstr ""
 
-#: ../gcr/gcr-certificate-renderer.c:407
+#: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr "Går ut"
+msgstr ""
 
 #. The subject
-#: ../gcr/gcr-certificate-renderer.c:417
+#: ../gcr/gcr-certificate-renderer.c:360
 msgid "Subject Name"
 msgstr "Subject-namn"
 
 #. The Issuer
-#: ../gcr/gcr-certificate-renderer.c:421
+#: ../gcr/gcr-certificate-renderer.c:364
 msgid "Issuer Name"
 msgstr "Utfärdarens namn"
 
 #. The Issued Parameters
-#: ../gcr/gcr-certificate-renderer.c:425
+#: ../gcr/gcr-certificate-renderer.c:368
 msgid "Issued Certificate"
 msgstr "Utfärdat certifikat"
 
-#: ../gcr/gcr-certificate-renderer.c:430
+#: ../gcr/gcr-certificate-renderer.c:373
 msgid "Version"
 msgstr "Version"
 
-#: ../gcr/gcr-certificate-renderer.c:444
+#: ../gcr/gcr-certificate-renderer.c:387
 msgid "Not Valid Before"
 msgstr "Inte giltigt före"
 
-#: ../gcr/gcr-certificate-renderer.c:449
+#: ../gcr/gcr-certificate-renderer.c:392
 msgid "Not Valid After"
 msgstr "Inte giltigt efter"
 
-#: ../gcr/gcr-certificate-renderer.c:458
+#: ../gcr/gcr-certificate-renderer.c:401
 msgid "Signature Algorithm"
 msgstr "Signaturalgoritm"
 
-#: ../gcr/gcr-certificate-renderer.c:463
+#: ../gcr/gcr-certificate-renderer.c:406
 msgid "Signature Parameters"
 msgstr "Signaturparametrar"
 
-#: ../gcr/gcr-certificate-renderer.c:470
+#: ../gcr/gcr-certificate-renderer.c:413
 msgid "Signature"
 msgstr "Signatur"
 
 #. Public Key Info
-#: ../gcr/gcr-certificate-renderer.c:475
+#: ../gcr/gcr-certificate-renderer.c:418
 msgid "Public Key Info"
 msgstr "Information om publik nyckel"
 
-#: ../gcr/gcr-certificate-renderer.c:480
+#: ../gcr/gcr-certificate-renderer.c:423
 msgid "Key Algorithm"
 msgstr "Nyckelalgoritm"
 
-#: ../gcr/gcr-certificate-renderer.c:486
+#: ../gcr/gcr-certificate-renderer.c:429
 msgid "Key Parameters"
 msgstr "Nyckelparametrar"
 
-#: ../gcr/gcr-certificate-renderer.c:493
+#: ../gcr/gcr-certificate-renderer.c:436
 msgid "Key Size"
 msgstr "Nyckelstorlek"
 
-#: ../gcr/gcr-certificate-renderer.c:501
-#: ../gcr/gcr-key-renderer.c:271
+#: ../gcr/gcr-certificate-renderer.c:444 ../gcr/gcr-key-renderer.c:271
 #: ../gcr/gcr-parser.c:204
 msgid "Public Key"
 msgstr "Publik nyckel"
 
 #. Fingerprints
-#: ../gcr/gcr-certificate-renderer.c:506
+#: ../gcr/gcr-certificate-renderer.c:449
 msgid "Fingerprints"
 msgstr "Fingeravtryck"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr "Importera certifikat och nycklar"
+msgstr ""
 
 #: ../gcr/gcr-import-dialog.ui.h:2
-msgid "Import Into:"
-msgstr "Importera till:"
-
-#: ../gcr/gcr-import-dialog.ui.h:3
 msgid "Password:"
 msgstr "Lösenord:"
+
+#: ../gcr/gcr-import-dialog.ui.h:3
+msgid "Import Into:"
+msgstr "Importera till:"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:1
 msgid "Automatically unlock this keyring whenever I'm logged in"
 msgstr "Lås automatiskt upp den här nyckelringen när jag är inloggad"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:2
+msgid "Lock this keyring when I log out"
+msgstr "Lås denna nyckelring när jag loggar ut"
+
+#: ../gcr/gcr-unlock-options-widget.ui.h:3
 msgid "Lock this keyring after"
 msgstr "Lås denna nyckelring efter"
 
-#: ../gcr/gcr-unlock-options-widget.ui.h:3
+#: ../gcr/gcr-unlock-options-widget.ui.h:4
 msgid "Lock this keyring if idle for"
 msgstr "Lås denna nyckelring om inaktiv i"
-
-#: ../gcr/gcr-unlock-options-widget.ui.h:4
-msgid "Lock this keyring when I log out"
-msgstr "Lås denna nyckelring när jag loggar ut"
 
 #. Translators: The 'minutes' from 'Lock this keyring if idle for x minutes'.
 #: ../gcr/gcr-unlock-options-widget.ui.h:6
 msgid "minutes"
 msgstr "minuter"
 
-#: ../gcr/gcr-importer.c:133
-#: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:701
+#: ../gcr/gcr-importer.c:133 ../pkcs11/wrap-layer/gkm-wrap-prompt.c:701
 msgid "Enter password to unlock the private key"
 msgstr "Ange lösenordet för att låsa upp privata nyckeln"
 
-#: ../gcr/gcr-importer.c:135
-#: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:703
+#: ../gcr/gcr-importer.c:135 ../pkcs11/wrap-layer/gkm-wrap-prompt.c:703
 msgid "Enter password to unlock the certificate"
 msgstr "Ange lösenordet för att låsa upp certifikatet"
 
-#: ../gcr/gcr-importer.c:137
-#: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:707
+#: ../gcr/gcr-importer.c:137 ../pkcs11/wrap-layer/gkm-wrap-prompt.c:707
 msgid "Enter password to unlock"
 msgstr "Ange lösenordet för att låsa upp"
 
@@ -448,9 +440,7 @@ msgstr "Certifikatet \"%s\" måste låsas upp för att kunna importeras"
 msgid "In order to import '%s', it must be unlocked"
 msgstr "\"%s\" måste låsas upp för att kunna importeras"
 
-#: ../gcr/gcr-importer.c:254
-#: ../gcr/gcr-parser.c:1566
-#: ../gcr/gcr-parser.c:1757
+#: ../gcr/gcr-importer.c:254 ../gcr/gcr-parser.c:1566 ../gcr/gcr-parser.c:1757
 #: ../gck/gck-misc.c:98
 msgid "The operation was cancelled"
 msgstr "Åtgärden avbröts"
@@ -470,49 +460,47 @@ msgstr "Välj en plats att lagra de importerade certifikaten/nycklarna till."
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr "Nyckel"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr "Privat RSA-nyckel"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr "Privat DSA-nyckel"
+msgstr ""
 
-#: ../gcr/gcr-key-renderer.c:264
-#: ../gcr/gcr-parser.c:198
+#: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
 msgstr "Privat nyckel"
 
-#: ../gcr/gcr-key-renderer.c:267
-#: ../gcr/gcr-key-renderer.c:269
+#: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr "Publik DSA-nyckel"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
 msgid "%d bit"
 msgid_plural "%d bits"
-msgstr[0] "%d bit"
-msgstr[1] "%d bitar"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr "Styrka"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr "Algoritm"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr "Storlek"
+msgstr ""
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr "Fingeravtryck"
+msgstr ""
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -532,19 +520,17 @@ msgstr "Data är låst"
 #: ../gcr/gcr-trust.c:420
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
-msgstr "Kunde inte hitta en plats att lagra de nålade certifikaten i"
+msgstr ""
 
-#: ../gck/gck-uri.c:124
-#: ../gck/gck-uri.c:181
-#: ../gck/gck-uri.c:216
+#: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
 #: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
-msgstr "URI:n har en ogiltig syntax. Kodningen för fältet \"%s\" är ogiltig."
+msgstr ""
 
 #: ../gck/gck-uri.c:287
 msgid "The URI has does not have the 'pkcs11' scheme."
-msgstr "URI:n saknar \"pkcs11\"-schemat."
+msgstr ""
 
 #: ../gck/gck-misc.c:101
 msgid "Insufficient memory available"
@@ -604,7 +590,7 @@ msgstr "Ett fel inträffade på enheten"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr "Slut på tillgängligt minne på enheten"
+msgstr ""
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
@@ -640,7 +626,7 @@ msgstr "Ingen nyckel behövs"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr "Nyckeln har ändrats sedan sist"
+msgstr ""
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
@@ -648,7 +634,7 @@ msgstr "En nyckel behövs"
 
 #: ../gck/gck-misc.c:151
 msgid "Cannot include the key in the digest"
-msgstr "Kan inte inkludera nyckeln i sammandraget"
+msgstr ""
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
@@ -792,7 +778,7 @@ msgstr "En annan användare är redan inloggad"
 
 #: ../gck/gck-misc.c:223
 msgid "Too many users of different types are logged in"
-msgstr "För många användare av olika typer är inloggade"
+msgstr ""
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
@@ -894,11 +880,14 @@ msgid "Enter password to unlock your login keyring"
 msgstr "Ange lösenordet för att låsa upp din inloggningsnyckelring"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:640
-msgid "The password you use to log in to your computer no longer matches that of your login keyring."
+msgid ""
+"The password you use to log in to your computer no longer matches that of "
+"your login keyring."
 msgstr "Lösenordet som du använde för att logga in i din dator matchar inte längre det i din inloggningsnyckelring."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:642
-msgid "The login keyring did not get unlocked when you logged into your computer."
+msgid ""
+"The login keyring did not get unlocked when you logged into your computer."
 msgstr "Din inloggningsnyckelring låstes inte upp när du loggade in på din dator."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:660
@@ -967,10 +956,13 @@ msgstr "Lås upp certifikat/nyckellager"
 msgid "Enter password to unlock the certificate/key storage"
 msgstr "Ange lösenordet för att låsa upp certifikatet/nyckellagret"
 
-#. TRANSLATORS: The storage is locked, and needs unlocking before the application can use it.
+#. TRANSLATORS: The storage is locked, and needs unlocking before the
+#. application can use it.
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:826
 #, c-format
-msgid "An application wants access to the certificate/key storage '%s', but it is locked"
+msgid ""
+"An application wants access to the certificate/key storage '%s', but it is "
+"locked"
 msgstr "Ett program vill komma åt certifikatet/nyckellagret \"%s\", men det är låst"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1132
@@ -983,7 +975,9 @@ msgstr "Nytt lösenord krävs för säker lagring"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1135
 #, c-format
-msgid "In order to prepare '%s' for storage of certificates or keys, a password is required"
+msgid ""
+"In order to prepare '%s' for storage of certificates or keys, a password is "
+"required"
 msgstr "Ett lösenord krävs för att förbereda \"%s\" för lagring av certifikat eller nycklar"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1258
@@ -996,29 +990,33 @@ msgstr "Ändra lösenordet för säker lagring"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1261
 #, c-format
-msgid "To change the password for '%s', the original and new passwords are required"
+msgid ""
+"To change the password for '%s', the original and new passwords are required"
 msgstr "För att ändra lösenordet för \"%s\" så krävs det ursprungliga och det nya lösenordet"
 
 #: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: mate-keyring command [options]\n"
-msgstr "användning: mate-keyring kommando [flaggor]\n"
+msgstr ""
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
-msgstr "kommandon: "
+msgstr ""
 
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
 msgid "          "
-msgstr "           "
+msgstr ""
 
 #: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
 msgstr "Lagra lösenord okrypterade?"
 
 #: ../ui/gku-prompt-tool.c:598
-msgid "By choosing to use a blank password, your stored passwords will not be safely encrypted. They will be accessible by anyone with access to your files."
+msgid ""
+"By choosing to use a blank password, your stored passwords will not be "
+"safely encrypted. They will be accessible by anyone with access to your "
+"files."
 msgstr "Genom att välja att använda ett blankt lösenord kommer dina lagrade lösenord inte att vara krypterade på ett säkert sätt. De kommer att vara åtkomliga för alla som har tillgång till dina filer."
 
 #: ../ui/gku-prompt-tool.c:605
@@ -1035,555 +1033,36 @@ msgstr "Lösenord får inte vara blanka"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:1
 msgid "Keyring Access"
-msgstr "Nyckelringsåtkomst"
+msgstr ""
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:2
 msgid "Unlock access to passwords and other secrets"
-msgstr "Lås upp åtkomst till lösenord och andra hemligheter"
+msgstr ""
 
 #: ../ui/gku-prompt.ui.h:1
-msgid "New password strength"
-msgstr "Styrka för nytt lösenord"
-
-#: ../ui/gku-prompt.ui.h:2
-msgid "_Application:"
-msgstr "P_rogram:"
-
-#: ../ui/gku-prompt.ui.h:3
-msgid "_Confirm:"
-msgstr "_Bekräfta:"
-
-#: ../ui/gku-prompt.ui.h:4
-msgid "_Details:"
-msgstr "_Detaljer:"
-
-#: ../ui/gku-prompt.ui.h:5
 msgid "_Name:"
 msgstr "_Namn:"
 
-#: ../ui/gku-prompt.ui.h:6
+#: ../ui/gku-prompt.ui.h:2
 msgid "_Old Password:"
 msgstr "_Gammalt lösenord:"
 
-#: ../ui/gku-prompt.ui.h:7
+#: ../ui/gku-prompt.ui.h:3
 msgid "_Password:"
 msgstr "_Lösenord:"
 
-#~ msgid "Email"
-#~ msgstr "E-post"
-#~ msgid "<i>Not Part of Certificate</i>"
-#~ msgstr "<i>Inte en del av certifikatet</i>"
-#~ msgid "<i>unknown</i>"
-#~ msgstr "<i>okänt</i>"
-#~ msgid "<Not Part of Certificate>"
-#~ msgstr "<Inte en del av certifikatet>"
-#~ msgid "<b>Fingerprints</b>"
-#~ msgstr "<b>Fingeravtryck</b>"
-#~ msgid "<b>Issued By</b>"
-#~ msgstr "<b>Utfärdat av</b>"
-#~ msgid "<b>Issued To</b>"
-#~ msgstr "<b>Utfärdat till</b>"
-#~ msgid "<b>This certificate has been verified for the following uses:</b>"
-#~ msgstr "<b>Detta certifikat har verifierats för följande användning:</b>"
-#~ msgid "<b>Validity</b>"
-#~ msgstr "<b>Giltighet</b>"
-#~ msgid "Common Name (CN)"
-#~ msgstr "Common Name (CN)"
-#~ msgid "Email Recipient Certificate"
-#~ msgstr "Certifikat för e-postmottagare"
-#~ msgid "Email Signer Certificate"
-#~ msgstr "Certifikat för e-postsignering"
-#~ msgid "Issued On"
-#~ msgstr "Utfärdat den"
-#~ msgid "MD5 Fingerprint"
-#~ msgstr "MD5-fingeravtryck"
-#~ msgid "Organization (O)"
-#~ msgstr "Organisation (O)"
-#~ msgid "Organizational Unit (OU)"
-#~ msgstr "Avdelning (OU)"
-#~ msgid "SHA1 Fingerprint"
-#~ msgstr "SHA1-fingeravtryck"
-#~ msgid "SSL Client Certificate"
-#~ msgstr "SSL-klientcertifikat"
-#~ msgid "SSL Server Certificate"
-#~ msgstr "SSL-servercertifikat"
-#~ msgid "<span size='large' weight='bold'>Import Certificates and Keys</span>"
-#~ msgstr ""
-#~ "<span size='large' weight='bold'>Importera certifikat och nycklar</span>"
-#~ msgid ""
-#~ "This option enables the PKCS#11 component in the mate-keyring daemon. It "
-#~ "only takes effect during startup with mate-session, (ie: when the user "
-#~ "logs in). This setting may be overridden when certain command line "
-#~ "arguments are passed to the daemon."
-#~ msgstr ""
-#~ "Detta alternativ aktiverar PKCS#11-komponenten i mate-keyring-demonen. "
-#~ "Den blir endast aktiverad vid uppstart med mate-session (alltså när "
-#~ "användaren loggar in). Denna inställning kan åsidosättas när vissa "
-#~ "kommandoradsflaggor skickas till demonen."
-#~ msgid ""
-#~ "This option enables the SSH agent in the mate-keyring daemon. It only "
-#~ "takes effect as mate-keyring-daemon starts, (ie: when the user logs in). "
-#~ "This setting may be overridden when certain command line arguments are "
-#~ "passed to the daemon."
-#~ msgstr ""
-#~ "Detta alternativ aktiverar SSH-agenten i mate-keyring-demonen. Den blir "
-#~ "endast aktiverad när mate-keyring-daemon startar, (alltså när användaren "
-#~ "loggar in). Denna inställning kan åsidosättas när vissa "
-#~ "kommandoradsflaggor skickas till demonen."
-#~ msgid ""
-#~ "This option enables the secret service component in the mate-keyring "
-#~ "daemon. It only takes effect during startup with mate-session, (ie: when "
-#~ "the user logs in). This setting may be overridden when certain command "
-#~ "line arguments are passed to the daemon."
-#~ msgstr ""
-#~ "Detta alternativ aktiverar tjänstekomponenten för hemligheter i mate-"
-#~ "keyring-demonen. Den blir endast aktiverad vid uppstart med mate-session "
-#~ "(alltså när användaren loggar in). Denna inställning kan åsidosättas när "
-#~ "vissa kommandoradsflaggor skickas till demonen."
-#~ msgid "Whether the mate-keyring PKCS#11 component is enabled."
-#~ msgstr "Huruvida PKCS#11-komponenten i mate-keyring är aktiverad."
-#~ msgid "Whether the mate-keyring SSH agent is enabled."
-#~ msgstr "Huruvida SSH-agenten i mate-keyring är aktiverad."
-#~ msgid "Whether the mate-keyring secret service is enabled."
-#~ msgstr "Huruvida hemlighetstjänsten i mate-keyring är aktiverad."
-#~ msgid "Automatically unlock secure storage when I log in."
-#~ msgstr "Lås automatiskt upp säkerhetslagret när jag loggar in."
+#: ../ui/gku-prompt.ui.h:4
+msgid "_Confirm:"
+msgstr "_Bekräfta:"
 
-#, fuzzy
-#~ msgid ""
-#~ "<span size=\"large\" weight=\"bold\">Enter password for keyring 'login' "
-#~ "to unlock</span>\n"
-#~ "\n"
-#~ "An application wants access to the keyring 'xxx', but it is locked."
-#~ msgstr ""
-#~ "Ett okänt program vill komma åt nyckelringen \"%s\", men den är låst."
+#: ../ui/gku-prompt.ui.h:5
+msgid "New password strength"
+msgstr "Styrka för nytt lösenord"
 
-#, fuzzy
-#~ msgid "Prompt me for each application that accesses this keyring."
-#~ msgstr "Tillåt åtkomst till nyckelringen för programmet"
-#~ msgid ""
-#~ "The application '%s' (%s) wants to access the password for '<object "
-#~ "prop='name'/>' in the default keyring."
-#~ msgstr ""
-#~ "Programmet \"%s\" (%s) vill komma åt lösenordet för \"<object prop='name'/"
-#~ ">\" i standardnyckelringen."
-#~ msgid ""
-#~ "The application '%s' (%s) wants to access the password for '<object "
-#~ "prop='name'/>' in %s."
-#~ msgstr ""
-#~ "Programmet \"%s\" (%s) vill komma åt lösenordet för \"<object prop='name'/"
-#~ ">\" i %s."
-#~ msgid ""
-#~ "The application '%s' wants to access the password for '<object "
-#~ "prop='name'/>' in the default keyring."
-#~ msgstr ""
-#~ "Programmet \"%s\" vill komma åt lösenordet för \"<object prop='name'/>\" "
-#~ "i standardnyckelringen."
-#~ msgid ""
-#~ "The application '%s' wants to access the password for '<object "
-#~ "prop='name'/>' in %s."
-#~ msgstr ""
-#~ "Programmet \"%s\" vill komma åt lösenordet för \"<object prop='name'/>\" "
-#~ "i %s."
-#~ msgid ""
-#~ "An unknown application wants to access the password for '<object "
-#~ "prop='name'/>' in the default keyring."
-#~ msgstr ""
-#~ "Ett okänt program vill komma åt lösenordet för \"<object prop='name'/>\" "
-#~ "i standardnyckelringen."
-#~ msgid ""
-#~ "An unknown application wants to access the password for '<object "
-#~ "prop='name'/>' in %s."
-#~ msgstr ""
-#~ "Ett okänt program vill komma åt lösenordet för \"<object prop='name'/>\" "
-#~ "i %s."
-#~ msgid "Allow access"
-#~ msgstr "Tillåt åtkomst"
-#~ msgid "Allow application access to keyring?"
-#~ msgstr "Tillåt åtkomst till nyckelringen för programmet?"
-#~ msgid ""
-#~ "The application '%s' (%s) wants access to the default keyring, but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "Programmet \"%s\" (%s) vill komma åt standardnyckelringen, men den är låst"
-#~ msgid ""
-#~ "The application '%s' (%s) wants access to the keyring '%s', but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "Programmet \"%s\" (%s) vill komma åt nyckelringen \"%s\", men den är låst"
-#~ msgid ""
-#~ "The application '%s' wants access to the default keyring, but it is locked"
-#~ msgstr ""
-#~ "Programmet \"%s\" vill komma åt standardnyckelringen, men den är låst"
-#~ msgid ""
-#~ "The application '%s' wants access to the keyring '%s', but it is locked"
-#~ msgstr ""
-#~ "Programmet \"%s\" vill komma åt nyckelringen \"%s\", men den är låst"
-#~ msgid ""
-#~ "An unknown application wants access to the default keyring, but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "Ett okänt program vill komma åt standardnyckelringen, men den är låst"
-#~ msgid "Enter password for default keyring to unlock"
-#~ msgstr "Ange lösenord för att låsa upp standardnyckelringen"
-#~ msgid ""
-#~ "The application '%s' (%s) wants to create a new keyring called '%s'. You "
-#~ "have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Programmet \"%s\" (%s) vill skapa en ny nyckelring med namnet \"%s\". Du "
-#~ "måste välja det lösenord som du vill använda för den nyckelringen."
-#~ msgid ""
-#~ "The application '%s' (%s) wants to create a new default keyring. You have "
-#~ "to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Programmet \"%s\" (%s) vill skapa en ny standardnyckelring. Du måste "
-#~ "välja det lösenord som du vill använda för den nyckelringen."
-#~ msgid ""
-#~ "The application '%s' wants to create a new keyring called '%s'. You have "
-#~ "to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Programmet \"%s\" vill skapa en ny nyckelring med namnet \"%s\". Du måste "
-#~ "välja det lösenord som du vill använda för den nyckelringen."
-#~ msgid ""
-#~ "The application '%s' wants to create a new default keyring. You have to "
-#~ "choose the password you want to use for it."
-#~ msgstr ""
-#~ "Programmet \"%s\" vill skapa en ny standardnyckelring. Du måste välja det "
-#~ "lösenord som du vill använda för den nyckelringen."
-#~ msgid ""
-#~ "An unknown application wants to create a new default keyring. You have to "
-#~ "choose the password you want to use for it."
-#~ msgstr ""
-#~ "Ett okänt program vill skapa en ny standardnyckelring. Du måste välja det "
-#~ "lösenord som du vill använda för den nyckelringen."
-#~ msgid ""
-#~ "The application '%s' (%s) wants to change the password for the '%s' "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Programmet \"%s\" (%s) vill ändra lösenordet för nyckelringen \"%s\". Du "
-#~ "måste välja det lösenord som du vill använda för den nyckelringen."
-#~ msgid ""
-#~ "The application '%s' (%s) wants to change the password for the default "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Programmet \"%s\" (%s) vill ändra lösenordet för standardnyckelringen. Du "
-#~ "måste välja det lösenord som du vill använda för den nyckelringen."
-#~ msgid ""
-#~ "The application '%s' wants to change the password for the '%s' keyring. "
-#~ "You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Programmet \"%s\" vill ändra lösenordet för nyckelringen \"%s\". Du måste "
-#~ "välja det lösenord som du vill använda för den nyckelringen."
-#~ msgid ""
-#~ "The application '%s' wants to change the password for the default "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Programmet \"%s\" vill ändra lösenordet för standardnyckelringen. Du "
-#~ "måste välja det lösenord som du vill använda för den nyckelringen."
-#~ msgid ""
-#~ "An unknown application wants to change the password for the default "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Ett okänt program vill ändra lösenordet för standardnyckelringen. Du "
-#~ "måste välja det lösenord som du vill använda för den nyckelringen."
-#~ msgid "Choose a new password for the default keyring."
-#~ msgstr "Välj ett nytt lösenord för standardnyckelringen."
-#~ msgid ""
-#~ "The application '%s' (%s) wants to store a password, but there is no "
-#~ "default keyring. To create one, you need to choose the password you wish "
-#~ "to use for it."
-#~ msgstr ""
-#~ "Programmet \"%s\" (%s) vill lagra ett lösenord, men det finns ingen "
-#~ "standardnyckelring. För att skapa en måste du välja det lösenord som du "
-#~ "vill använda för den."
-#~ msgid ""
-#~ "The application '%s' wants to store a password, but there is no default "
-#~ "keyring. To create one, you need to choose the password you wish to use "
-#~ "for it."
-#~ msgstr ""
-#~ "Programmet \"%s\" vill lagra ett lösenord, men det finns ingen "
-#~ "standardnyckelring. För att skapa en måste du välja det lösenord som du "
-#~ "vill använda för den."
-#~ msgid ""
-#~ "An unknown application wants to store a password, but there is no default "
-#~ "keyring. To create one, you need to choose the password you wish to use "
-#~ "for it."
-#~ msgstr ""
-#~ "Ett okänt program vill lagra ett lösenord, men det finns ingen "
-#~ "standardnyckelring. För att skapa en måste du välja det lösenord som du "
-#~ "vill använda för den."
-#~ msgid "Create Default Keyring"
-#~ msgstr "Skapa standardnyckelring"
-#~ msgid "Choose password for default keyring"
-#~ msgstr "Välj lösenord för standardnyckelringen"
-#~ msgid "Create Login Keyring"
-#~ msgstr "Skapa nyckelring för inloggning"
-#~ msgid "Enter your login password"
-#~ msgstr "Ange ditt inloggningslösenord"
-#~ msgid ""
-#~ "Your login keyring was not automatically created when you logged into "
-#~ "this computer. It will now be created."
-#~ msgstr ""
-#~ "Din inloggningsnyckelring skapades inte automatiskt när du loggade in på "
-#~ "denna dator. Den kommer nu att skapas."
-#~ msgid "Unlock password for %s keyring"
-#~ msgstr "Upplåsningslösenord för nyckelringen %s"
-#~ msgid "Automatically unlock this private key when I log in."
-#~ msgstr "Lås automatiskt upp den här privata nyckeln när jag loggar in."
-#~ msgid "Automatically unlock this certificate when I log in."
-#~ msgstr "Lås automatiskt upp det här certifikatet när jag loggar in."
-#~ msgid "Automatically unlock this public key when I log in."
-#~ msgstr "Lås automatiskt upp den här publika nyckeln när jag loggar in."
-#~ msgid "Automatically unlock this when I log in"
-#~ msgstr "Lås automatiskt upp denna när jag loggar in"
-#~ msgid ""
-#~ "<b><big>Could not grab your mouse.</big></b>\n"
-#~ "\n"
-#~ "A malicious client may be eavesdropping on your session or you may have "
-#~ "just clicked a menu or some application just decided to get focus.\n"
-#~ "\n"
-#~ "Try again."
-#~ msgstr ""
-#~ "<b><big>Kunde inte fånga din mus.</big></b>\n"
-#~ "\n"
-#~ "En ondsint klient kanske tjuvlyssnar på din session, du kanske klickade i "
-#~ "en meny eller något program bestämde sig för att ta fokus.\n"
-#~ "\n"
-#~ "Prova igen."
-#~ msgid ""
-#~ "<b><big>Could not grab your keyboard.</big></b>\n"
-#~ "\n"
-#~ "A malicious client may be eavesdropping on your session or you may have "
-#~ "just clicked a menu or some application just decided to get focus.\n"
-#~ "\n"
-#~ "Try again."
-#~ msgstr ""
-#~ "<b><big>Kunde inte fånga ditt tangentbord.</big></b>\n"
-#~ "\n"
-#~ "En ondsint klient kanske tjuvlyssnar på din session, du kanske klickade i "
-#~ "en meny eller något program bestämde sig för att ta fokus.\n"
-#~ "\n"
-#~ "Prova igen."
-#~ msgid "_Deny"
-#~ msgstr "_Neka"
-#~ msgid "C_reate"
-#~ msgstr "S_kapa"
-#~ msgid "C_hange"
-#~ msgstr "Ä_ndra"
-#~ msgid "Allow _Once"
-#~ msgstr "Tillåt _denna gång"
-#~ msgid "_Always Allow"
-#~ msgstr "Tillåt _alltid"
-#~ msgid "Removable Disk: %s"
-#~ msgstr "Flyttbar disk: %s"
-#~ msgid "Removable Disk"
-#~ msgstr "Flyttbar disk"
-#~ msgid "Home"
-#~ msgstr "Hem"
-#~ msgid "The disk or drive this file is located on is not present"
-#~ msgstr "Disken eller enheten som den här filen finns på är inte tillgänglig"
-#~ msgid "Couldn't create directory: %s"
-#~ msgstr "Kunde inte skapa katalog: %s"
-#~ msgid "Couldn't delete the file: %s"
-#~ msgstr "Kunde inte ta bort filen: %s"
-#~ msgid "Access Denied"
-#~ msgstr "Åtkomst nekad"
-#~ msgid "The mate-keyring-daemon application is not running."
-#~ msgstr "Programmet mate-keyring-daemon kör inte."
-#~ msgid "Error communicating with mate-keyring-daemon"
-#~ msgstr "Fel vid kommunikation med mate-keyring-daemon"
-#~ msgid "A keyring with that name already exists"
-#~ msgstr "En nyckelring med det namnet finns redan"
-#~ msgid "Programmer error: The application sent invalid data."
-#~ msgstr "Programmeringsfel: Programmet skickade ogiltigt data."
-#~ msgid "No matching results"
-#~ msgstr "Inga matchande resultat"
-#~ msgid "A keyring with that name does not exist."
-#~ msgstr "En nyckelring med det namnet finns inte."
-#~ msgid "The keyring has already been unlocked."
-#~ msgstr "Nyckelringen har redan låsts upp."
-#~ msgid ""
-#~ "A list of paths to PKCS#11 modules to load. No modules are currently "
-#~ "listed by default, as this is still an experimental feature. This is used "
-#~ "by seahorse and other PKCS#11 aware applications."
-#~ msgstr ""
-#~ "En lista över sökvägar till PKCS#11-moduler att läsa in. Inga moduler "
-#~ "listas för närvarande som standard eftersom detta fortfarande är en "
-#~ "experimentell funktion. Denna används av seahorse och andra program som "
-#~ "känner till PKCS#11."
-#~ msgid "PKCS#11 Modules"
-#~ msgstr "PKCS#11-moduler"
-#~ msgid "Import private key"
-#~ msgstr "Importera privat nyckel"
-#~ msgid "Import certificate"
-#~ msgstr "Importera certifikat"
-#~ msgid "Import public key"
-#~ msgstr "Importera publik nyckel"
-#~ msgid "Import"
-#~ msgstr "Importera"
-#~ msgid "The system wants to import the private key '%s', but it is locked"
-#~ msgstr "Systemet vill importera publika nyckeln \"%s\", men den är låst"
-#~ msgid "The system wants to import the certificate '%s', but it is locked"
-#~ msgstr "Systemet vill importera certifikatet \"%s\", men det är låst"
-#~ msgid "The system wants to import the public key '%s', but it is locked"
-#~ msgstr "Systemet vill importera publika nyckeln \"%s\", men den är låst"
-#~ msgid "The system wants to import '%s', but it is locked"
-#~ msgstr "Systemet vill importera \"%s\", men den är låst"
-#~ msgid "Create Storage for Key Information"
-#~ msgstr "Skapa lagringsplats för nyckelinformation"
-#~ msgid "Choose password to protect storage"
-#~ msgstr "Välj ett lösenord för att skydda lagringsplatsen"
-#~ msgid ""
-#~ "The system wants to store information about your keys and certificates. "
-#~ "In order to protect this information, choose a password with which it "
-#~ "will be locked."
-#~ msgstr ""
-#~ "Systemet vill lagra information om dina nycklar och certifikat. För att "
-#~ "skydda denna information måste du välja ett lösenord att låsa "
-#~ "informationen med."
-#~ msgid "Unlock Storage for Key Information"
-#~ msgstr "Lås upp lagringsplats för nyckelinformation"
-#~ msgid "Enter password to unlock storage"
-#~ msgstr "Ange lösenordet för att låsa upp lagringsplatsen"
-#~ msgid ""
-#~ "The system wants to access information about your keys and certificates, "
-#~ "but it is locked."
-#~ msgstr ""
-#~ "Systemet vill komma åt information om dina nycklar och certifikat, men "
-#~ "den är låst."
-#~ msgid "Trust Association"
-#~ msgstr "Tillitsassociering"
-#~ msgid "Cannot delete '%s' because it is tied to other objects."
-#~ msgstr "Kan inte ta bort \"%s\" därför att den är bunden till andra objekt."
-#~ msgid "Lock private key"
-#~ msgstr "Lås privat nyckel"
-#~ msgid "Lock"
-#~ msgstr "Lås"
-#~ msgid "Enter password to protect the private key"
-#~ msgstr "Ange ett lösenord för att skydda den privata nyckeln"
-#~ msgid "Enter password to protect storage"
-#~ msgstr "Ange ett lösenord för att skydda lagringsplatsen"
-#~ msgid ""
-#~ "The system wants to store the private key '%s' on your disk. Please enter "
-#~ "a password to lock it with."
-#~ msgstr ""
-#~ "Systemet vill lagra den privata nyckeln \"%s\" på din disk. Ange ett "
-#~ "lösenord att låsa den med."
-#~ msgid ""
-#~ "The system wants to store '%s' on your disk. Please enter a password to "
-#~ "lock it with."
-#~ msgstr ""
-#~ "Systemet vill lagra \"%s\" på din disk. Ange ett lösenord att låsa den "
-#~ "med."
-#~ msgid "Unrecognized or unsupported file."
-#~ msgstr "Filen är okänd eller stöds inte."
-#~ msgid "Could not parse invalid or corrupted file."
-#~ msgstr "Kunde inte tolka ogiltig eller skadad fil."
-#~ msgid "Couldn't encode secure shell public key."
-#~ msgstr "Kunde inte koda publik Secure Shell-nyckel."
-#~ msgid "Couldn't read secure shell private key: %s"
-#~ msgstr "Kunde inte läsa privat Secure Shell-nyckel: %s"
-#~ msgid "Invalid secure shell private key at: %s"
-#~ msgstr "Ogiltig privat Secure Shell-nyckel på: %s"
-#~ msgid "Couldn't encrypt the SSH key to store it."
-#~ msgstr "Kunde inte kryptera SSH-nyckeln för att lagra den."
-#~ msgid "Couldn't encode the SSH key to store it."
-#~ msgstr "Kunde inte koda SSH-nyckeln för att lagra den."
-#~ msgid "Unlock %s"
-#~ msgstr "Lås upp %s"
-#~ msgid "Old password cannot be blank."
-#~ msgstr "Gamla lösenord får inte vara blanka."
-#~ msgid "Must be run from mate-keyring\n"
-#~ msgstr "Måste köras från mate-keyring\n"
-#~ msgid ""
-#~ "The application '%s' (%s) wants access to an unknown keyring, but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "Programmet \"%s\" (%s) vill komma åt en okänd nyckelring, men den är låst"
-#~ msgid ""
-#~ "The application '%s' wants access to an unknown keyring, but it is locked"
-#~ msgstr ""
-#~ "Programmet \"%s\" vill komma åt en okänd nyckelring, men den är låst"
-#~ msgid ""
-#~ "An unknown application wants access to an unknown keyring, but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "Ett okänt program vill komma åt en okänd nyckelring, men den är låst"
-#~ msgid ""
-#~ "The application '%s' (%s) wants to access the password for '%s' in an "
-#~ "unknown keyring."
-#~ msgstr ""
-#~ "Programmet \"%s\" (%s) vill komma åt lösenordet för \"%s\" i en okänd "
-#~ "nyckelring."
-#~ msgid ""
-#~ "The application '%s' wants to access the password for '%s' in an unknown "
-#~ "keyring."
-#~ msgstr ""
-#~ "Programmet \"%s\" vill komma åt lösenordet för \"%s\" i en okänd "
-#~ "nyckelring."
-#~ msgid ""
-#~ "An unknown application wants to access the password for '%s' in an "
-#~ "unknown keyring."
-#~ msgstr ""
-#~ "Ett okänt program vill komma åt lösenordet för \"%s\" i en okänd "
-#~ "nyckelring."
-#~ msgid "You must specify the type of request to run\n"
-#~ msgstr "Du måste ange typen av begäran att köra\n"
-#~ msgid "Unknown request type\n"
-#~ msgstr "Okänd begäranstyp\n"
-#~ msgid ""
-#~ "The application '%s' (%s) wants access to the default keyring, but it is "
-#~ "locked."
-#~ msgstr ""
-#~ "Programmet \"%s\" (%s) vill komma åt standardnyckelringen, men den är "
-#~ "låst."
-#~ msgid ""
-#~ "The application '%s' (%s) wants access to the keyring '%s', but it is "
-#~ "locked."
-#~ msgstr ""
-#~ "Programmet \"%s\" (%s) vill komma åt nyckelringen \"%s\", men den är låst."
-#~ msgid ""
-#~ "The application '%s' (%s) wants access to an unknown keyring, but it is "
-#~ "locked."
-#~ msgstr ""
-#~ "Programmet \"%s\" (%s) vill komma åt en okänd nyckelring, men den är låst."
-#~ msgid ""
-#~ "The application '%s' wants access to the default keyring, but it is "
-#~ "locked."
-#~ msgstr ""
-#~ "Programmet \"%s\" vill komma åt standardnyckelringen, men den är låst."
-#~ msgid ""
-#~ "The application '%s' wants access to an unknown keyring, but it is locked."
-#~ msgstr ""
-#~ "Programmet \"%s\" vill komma åt en okänd nyckelring, men den är låst."
-#~ msgid ""
-#~ "An unknown application wants access to the default keyring, but it is "
-#~ "locked."
-#~ msgstr ""
-#~ "Ett okänt program vill komma åt standardnyckelringen, men den är låst."
-#~ msgid ""
-#~ "An unknown application wants access to an unknown keyring, but it is "
-#~ "locked."
-#~ msgstr ""
-#~ "Ett okänt program vill komma åt en okänd nyckelring, men den är låst."
-#~ msgid "The application '%s' (%s)"
-#~ msgstr "Programmet \"%s\" (%s)"
-#~ msgid "The application '%s'"
-#~ msgstr "Programmet \"%s\""
-#~ msgid "The application %s"
-#~ msgstr "Programmet %s"
-#~ msgid "the default keyring"
-#~ msgstr "standardnyckelringen"
-#~ msgid "the keyring '%s'"
-#~ msgstr "nyckelringen \"%s\""
-#~ msgid "an unknown keyring"
-#~ msgstr "en okänd nyckelring"
-#~ msgid "You must specify the type of request to run"
-#~ msgstr "Du måste ange typen av begäran att köra"
-#~ msgid "Unknown request type"
-#~ msgstr "Okänd begäranstyp"
-#~ msgid "*"
-#~ msgstr "*"
-#~ msgid "Password"
-#~ msgstr "Lösenord"
+#: ../ui/gku-prompt.ui.h:6
+msgid "_Application:"
+msgstr "P_rogram:"
 
+#: ../ui/gku-prompt.ui.h:7
+msgid "_Details:"
+msgstr "_Detaljer:"

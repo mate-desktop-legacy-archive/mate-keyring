@@ -1,28 +1,27 @@
-# translation of mate-keyring.master.po to Galician
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) 2010 Fran Diéguez.
-#
-# Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2005, 2006.
-# Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2007, 2008.
-# Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>, 2009.
+# 
+# Translators:
 # Antón Méixome <meixome@mancomun.org>, 2009.
 # Fran Dieguez <frandieguez@ubuntu.com>, 2010.
-# Fran Diéguez <frandieguez@gnome.org>, 2009, 2010, 2011.
-#
+# Fran Diéguez <frandieguez@ubuntu.com>, 2009, 2010.
+# Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2007, 2008.
+# Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2005, 2006.
+# Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-keyring.master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-15 22:44+0100\n"
-"PO-Revision-Date: 2011-03-15 22:44+0100\n"
-"Last-Translator: Fran Diéguez <frandieguez@gnome.org>\n"
-"Language-Team: Galician <mate-l10n-gl@gnome.org>\n"
-"Language: gl\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-06-29 11:58+0200\n"
+"PO-Revision-Date: 2012-06-29 09:59+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Galician (http://www.transifex.com/projects/p/MATE/language/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: gl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
 #: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
@@ -44,11 +43,9 @@ msgstr "Escolla un contrasinal novo para o anel de chaves «%s»"
 #: ../daemon/dbus/gkd-secret-change.c:92
 #, c-format
 msgid ""
-"An application wants to change the password for the '%s' keyring. Choose the "
-"new password you want to use for it."
-msgstr ""
-"Un aplicativo quere cambiar o contrasinal para o anel de chaves «%s». "
-"Escolla o contrasinal que quere usar para el."
+"An application wants to change the password for the '%s' keyring. Choose the"
+" new password you want to use for it."
+msgstr "Un aplicativo quere cambiar o contrasinal para o anel de chaves «%s». Escolla o contrasinal que quere usar para el."
 
 #: ../daemon/dbus/gkd-secret-change.c:111
 msgid "The original password was incorrect"
@@ -67,9 +64,7 @@ msgstr "Escolla o contrasinal para o anel de chaves novo"
 msgid ""
 "An application wants to create a new keyring called '%s'. Choose the "
 "password you want to use for it."
-msgstr ""
-"Un aplicativo quere crear un anel de chaves novo chamado «%s». Escolla o "
-"contrasinal que quere usar para el."
+msgstr "Un aplicativo quere crear un anel de chaves novo chamado «%s». Escolla o contrasinal que quere usar para el."
 
 #: ../daemon/mate-keyring-pkcs11.desktop.in.in.h:1
 msgid "Certificate and Key Storage"
@@ -80,53 +75,53 @@ msgid "MATE Keyring: PKCS#11 Component"
 msgstr "MATE Keyring: compoñente PKCS#11"
 
 #: ../daemon/mate-keyring-secrets.desktop.in.in.h:1
-msgid "MATE Keyring: Secret Service"
-msgstr "MATE Keyring: servizo segredo"
-
-#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
 msgid "Secret Storage Service"
 msgstr "Servizo de almacenamento segredo"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
-msgid "MATE Keyring: SSH Agent"
-msgstr "MATE Keyring: Axente SSH"
+#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
+msgid "MATE Keyring: Secret Service"
+msgstr "MATE Keyring: servizo segredo"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
 msgid "SSH Key Agent"
 msgstr "Axente de chave SSH"
 
-#: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
-msgid "MATE Keyring: GPG Agent"
-msgstr "Anel de chaves de MATE: axente GPG"
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+msgid "MATE Keyring: SSH Agent"
+msgstr "MATE Keyring: Axente SSH"
 
-#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
+#: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
 msgid "GPG Password Agent"
 msgstr "Axente de contrasinais GPG"
+
+#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
+msgid "MATE Keyring: GPG Agent"
+msgstr "Anel de chaves de MATE: axente GPG"
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:104 ../gcr/gcr-key-renderer.c:291
 #: ../gcr/gcr-key-renderer.c:296
 msgid "Unknown"
 msgstr "Descoñecido"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:199
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:202
 #, c-format
 msgid "PGP Key: %s"
 msgstr "Chave GPG: %s"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:348
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:349
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:354
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:355
 msgid "Enter Passphrase"
 msgstr "Introducir o contrasinal"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:383
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:397
 msgid "Forget this password if idle for"
 msgstr "Esquecer este contrasinal se está inactivo durante"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:384
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:398
 msgid "Forget this password after"
 msgstr "Esquecer este contrasinal despois de"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:385
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:399
 msgid "Forget this password when I log out"
 msgstr "Esquecer este contrasinal ao saír da sesión"
 
@@ -145,7 +140,7 @@ msgstr "ID de usuario"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr "Enderezos de correo electrónico"
+msgstr ""
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -258,9 +253,7 @@ msgstr "SHA1 con DSA"
 #: ../egg/egg-spawn.c:273
 #, c-format
 msgid "Unexpected error in select() reading data from a child process (%s)"
-msgstr ""
-"Produciuse un erro non esperado en select() ao ler os datos desde o proceso "
-"fillo (%s)."
+msgstr "Produciuse un erro non esperado en select() ao ler os datos dende o proceso fillo (%s)."
 
 #: ../egg/egg-spawn.c:320
 #, c-format
@@ -297,15 +290,15 @@ msgstr "Non"
 
 #: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr "Identidade"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr "Verificado por"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr "Caduca"
+msgstr ""
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
@@ -375,31 +368,31 @@ msgstr "Impresións dixitais"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr "Importar certificados e chaves"
+msgstr ""
 
 #: ../gcr/gcr-import-dialog.ui.h:2
-msgid "Import Into:"
-msgstr "Importar en:"
-
-#: ../gcr/gcr-import-dialog.ui.h:3
 msgid "Password:"
 msgstr "Contrasinal:"
+
+#: ../gcr/gcr-import-dialog.ui.h:3
+msgid "Import Into:"
+msgstr "Importar en:"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:1
 msgid "Automatically unlock this keyring whenever I'm logged in"
 msgstr "Desbloquear automaticamente este anel de chaves cando inicie a sesión"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:2
+msgid "Lock this keyring when I log out"
+msgstr "Bloquear este anel de chaves cando saia da sesión"
+
+#: ../gcr/gcr-unlock-options-widget.ui.h:3
 msgid "Lock this keyring after"
 msgstr "Bloquear este anel de chaves despois de"
 
-#: ../gcr/gcr-unlock-options-widget.ui.h:3
+#: ../gcr/gcr-unlock-options-widget.ui.h:4
 msgid "Lock this keyring if idle for"
 msgstr "Bloquear este anel de chaves se estou inactivo durante"
-
-#: ../gcr/gcr-unlock-options-widget.ui.h:4
-msgid "Lock this keyring when I log out"
-msgstr "Bloquear este anel de chaves cando saia da sesión"
 
 #. Translators: The 'minutes' from 'Lock this keyring if idle for x minutes'.
 #: ../gcr/gcr-unlock-options-widget.ui.h:6
@@ -471,15 +464,15 @@ msgstr "Seleccione unha localización para almacenar os certificados ou chaves."
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr "Chave"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr "Chave privada RSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr "Chave privada DSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
@@ -487,31 +480,31 @@ msgstr "Chave privada"
 
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr "Chave pública DSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
 msgid "%d bit"
 msgid_plural "%d bits"
-msgstr[0] "%d bit"
-msgstr[1] "%d bits"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr "Fortaleza"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr "Algoritmo"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr "Tamaño"
+msgstr ""
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr "Pegada"
+msgstr ""
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -531,18 +524,17 @@ msgstr "Os datos están bloqueados"
 #: ../gcr/gcr-trust.c:420
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
-msgstr "Non foi posíbel atopar un lugar para almacenar o certificado anclado"
+msgstr ""
 
 #: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
 #: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
 msgstr ""
-"O URI ten unha sintaxe incorrecta. A codificación do campo «%s» é inválida."
 
 #: ../gck/gck-uri.c:287
 msgid "The URI has does not have the 'pkcs11' scheme."
-msgstr "O URI non ten que ter o esquema «pkcs11»."
+msgstr ""
 
 #: ../gck/gck-misc.c:101
 msgid "Insufficient memory available"
@@ -602,7 +594,7 @@ msgstr "Produciuse un erro no dispositivo"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr "Non hai suficiente memoria dispoñíbel no dispositivo"
+msgstr ""
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
@@ -638,7 +630,7 @@ msgstr "Non é necesaria unha chave"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr "A chave é distinta que anteriormente"
+msgstr ""
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
@@ -646,7 +638,7 @@ msgstr "É necesario unha chave"
 
 #: ../gck/gck-misc.c:151
 msgid "Cannot include the key in the digest"
-msgstr "Non é posíbel incluír a chave no resumo"
+msgstr ""
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
@@ -790,7 +782,7 @@ msgstr "Xa hai outro usuario con sesión iniciada"
 
 #: ../gck/gck-misc.c:223
 msgid "Too many users of different types are logged in"
-msgstr "Hai demasiados usuarios de diferentes tipos coa sesión iniciada"
+msgstr ""
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
@@ -889,23 +881,18 @@ msgstr "Desbloquear o anel de inicio de sesión"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:636
 msgid "Enter password to unlock your login keyring"
-msgstr ""
-"Introduza o contrasinal para desbloquear o anel de chaves de inicio de sesión"
+msgstr "Introduza o contrasinal para desbloquear o anel de chaves de inicio de sesión"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:640
 msgid ""
 "The password you use to log in to your computer no longer matches that of "
 "your login keyring."
-msgstr ""
-"O contrasinal que usa para iniciar a sesión no seu computador non coincide "
-"co do seu anel de chaves de inicio de sesión."
+msgstr "O contrasinal que usa para iniciar a sesión no seu computador non coincide co do seu anel de chaves de inicio de sesión."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:642
 msgid ""
 "The login keyring did not get unlocked when you logged into your computer."
-msgstr ""
-"O seu anel de chaves de inicio de sesión non foi desbloqueado "
-"automaticamente ao iniciar a sesión neste computador."
+msgstr "O seu anel de chaves de inicio de sesión non foi desbloqueado automaticamente ao iniciar a sesión neste computador."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:660
 msgid "Unlock Keyring"
@@ -971,19 +958,16 @@ msgstr "Desbloquear o almacenamento de chave ou certificado"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:823
 msgid "Enter password to unlock the certificate/key storage"
-msgstr ""
-"Introduza o contrasinal para desbloquear o almacenamento da chave ou "
-"certificado"
+msgstr "Introduza o contrasinal para desbloquear o almacenamento da chave ou certificado"
 
-#. TRANSLATORS: The storage is locked, and needs unlocking before the application can use it.
+#. TRANSLATORS: The storage is locked, and needs unlocking before the
+#. application can use it.
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:826
 #, c-format
 msgid ""
 "An application wants access to the certificate/key storage '%s', but it is "
 "locked"
-msgstr ""
-"Un aplicativo quere acceder ao almacenamento da chave ou certificado «%s», "
-"mais está bloqueado"
+msgstr "Un aplicativo quere acceder ao almacenamento da chave ou certificado «%s», mais está bloqueado"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1132
 msgid "New Password Required"
@@ -998,9 +982,7 @@ msgstr "Requírese un contrasinal novo para o almacenamento seguro"
 msgid ""
 "In order to prepare '%s' for storage of certificates or keys, a password is "
 "required"
-msgstr ""
-"Para preparar «%s» para almacenar chaves ou certificados, é necesario un "
-"contrasinal"
+msgstr "Para preparar «%s» para almacenar chaves ou certificados, é necesario un contrasinal"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1258
 msgid "Change Password"
@@ -1014,23 +996,21 @@ msgstr "Cambie o contrasinal para ter un almacenamento seguro"
 #, c-format
 msgid ""
 "To change the password for '%s', the original and new passwords are required"
-msgstr ""
-"Para cambiar o contrasinal de «%s», requírense o orixinal e os novos "
-"contrasinais"
+msgstr "Para cambiar o contrasinal de «%s», requírense o orixinal e os novos contrasinais"
 
 #: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: mate-keyring command [options]\n"
-msgstr "uso: mate-keyring orde [opcións]\n"
+msgstr ""
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
-msgstr "ordes: "
+msgstr ""
 
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
 msgid "          "
-msgstr "          "
+msgstr ""
 
 #: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
@@ -1041,10 +1021,7 @@ msgid ""
 "By choosing to use a blank password, your stored passwords will not be "
 "safely encrypted. They will be accessible by anyone with access to your "
 "files."
-msgstr ""
-"Ao escoller usar un contrasinal en branco, os seus contrasinais almacenados "
-"non serán cifrados de modo seguro. Polo que serán accesíbeis por calquera "
-"que acceda aos seus ficheiros."
+msgstr "Ao escoller usar un contrasinal en branco, os seus contrasinais almacenados non serán cifrados de modo seguro. Polo que serán accesíbeis por calquera que acceda aos seus ficheiros."
 
 #: ../ui/gku-prompt-tool.c:605
 msgid "Use Unsafe Storage"
@@ -1060,152 +1037,36 @@ msgstr "O contrasinal non pode estar en branco"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:1
 msgid "Keyring Access"
-msgstr "Acceso ao anel de claves"
+msgstr ""
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:2
 msgid "Unlock access to passwords and other secrets"
-msgstr "Desbloquear o acceso a contrasinais e a outros segredos"
+msgstr ""
 
 #: ../ui/gku-prompt.ui.h:1
-msgid "New password strength"
-msgstr "Forza do novo contrasinal"
-
-# (pofilter) accelerators: accelerator _ is missing from translation
-#: ../ui/gku-prompt.ui.h:2
-msgid "_Application:"
-msgstr "_Aplicativo:"
-
-#: ../ui/gku-prompt.ui.h:3
-msgid "_Confirm:"
-msgstr "_Confirmar:"
-
-#: ../ui/gku-prompt.ui.h:4
-msgid "_Details:"
-msgstr "_Detalles:"
-
-#: ../ui/gku-prompt.ui.h:5
 msgid "_Name:"
 msgstr "_Nome:"
 
-#: ../ui/gku-prompt.ui.h:6
+#: ../ui/gku-prompt.ui.h:2
 msgid "_Old Password:"
 msgstr "_Contrasinal antigo:"
 
-#: ../ui/gku-prompt.ui.h:7
+#: ../ui/gku-prompt.ui.h:3
 msgid "_Password:"
 msgstr "_Contrasinal:"
 
-#~ msgid "Insufficient memory available on device"
-#~ msgstr "Non hai suficiente memoria dispoñíbel no dispositivo"
+#: ../ui/gku-prompt.ui.h:4
+msgid "_Confirm:"
+msgstr "_Confirmar:"
 
-#~ msgid "The key is different from before"
-#~ msgstr "A chave é diferente da anterior"
+#: ../ui/gku-prompt.ui.h:5
+msgid "New password strength"
+msgstr "Forza do novo contrasinal"
 
-#~ msgid "Cannot include the key in digest"
-#~ msgstr "Non é posíbel incluír a chave no resumo"
+#: ../ui/gku-prompt.ui.h:6
+msgid "_Application:"
+msgstr "_Aplicativo:"
 
-#~ msgid "Too many users of different types logged in"
-#~ msgstr "Hai demasiados usuarios de diferentes tipos con sesión iniciada"
-
-#~ msgid "Email"
-#~ msgstr "Correo electrónico"
-
-#~ msgid "<i>Not Part of Certificate</i>"
-#~ msgstr "<i>Non é parte do certificado</i>"
-
-#~ msgid "<i>unknown</i>"
-#~ msgstr "<i>descoñecido</i>"
-
-#~ msgid "<Not Part of Certificate>"
-#~ msgstr "<Non é parte do certificado>"
-
-#~ msgid "<b>Fingerprints</b>"
-#~ msgstr "<b>Impresións dixitais</b>"
-
-#~ msgid "<b>Issued By</b>"
-#~ msgstr "<b>Emitido por</b>"
-
-#~ msgid "<b>Issued To</b>"
-#~ msgstr "<b>Emitido para</b>"
-
-#~ msgid "<b>This certificate has been verified for the following uses:</b>"
-#~ msgstr "<b>Este certificato foi verificado polos seguintes usuarios:</b>"
-
-#~ msgid "<b>Validity</b>"
-#~ msgstr "<b>Validez</b>"
-
-#~ msgid "Common Name (CN)"
-#~ msgstr "Nome común (CN)"
-
-#~ msgid "Email Recipient Certificate"
-#~ msgstr "Certificado do destinatario do correo electónico"
-
-#~ msgid "Email Signer Certificate"
-#~ msgstr "Certificado do asinador do correo electrónico"
-
-#~ msgid "Issued On"
-#~ msgstr "Emitido o"
-
-#~ msgid "MD5 Fingerprint"
-#~ msgstr "Impresión dixital MD5"
-
-#~ msgid "Organization (O)"
-#~ msgstr "Organización (O)"
-
-#~ msgid "Organizational Unit (OU)"
-#~ msgstr "Unidade de organización (OU)"
-
-#~ msgid "SHA1 Fingerprint"
-#~ msgstr "Impresións dixitais SHA1"
-
-#~ msgid "SSL Client Certificate"
-#~ msgstr "Certificado do cliente SSL"
-
-#~ msgid "SSL Server Certificate"
-#~ msgstr "Certificado do servidor SSL"
-
-#~ msgid "<span size='large' weight='bold'>Import Certificates and Keys</span>"
-#~ msgstr ""
-#~ "<span size='large' weight='bold'>Importar certificados e chaves</span>"
-
-#~ msgid ""
-#~ "This option enables the PKCS#11 component in the mate-keyring daemon. It "
-#~ "only takes effect during startup with mate-session, (ie: when the user "
-#~ "logs in). This setting may be overridden when certain command line "
-#~ "arguments are passed to the daemon."
-#~ msgstr ""
-#~ "Esta opción activa o compoñente PKCS#11 no deamon mate-keyring. Só será "
-#~ "efectivo durante o inicio deste daemon, (p.ex. cando un usuario inicia a "
-#~ "sesión). Esta configuración pode ser sobrescrita cando se pasan "
-#~ "determinados argumentos da liña de ordes ao daemon."
-
-#~ msgid ""
-#~ "This option enables the SSH agent in the mate-keyring daemon. It only "
-#~ "takes effect as mate-keyring-daemon starts, (ie: when the user logs in). "
-#~ "This setting may be overridden when certain command line arguments are "
-#~ "passed to the daemon."
-#~ msgstr ""
-#~ "Esta opción activa o axente SSH no daemon mate-keyring. Só será efectivo "
-#~ "cando este daemon se inicie, por exemplo cando un usuario inicia a "
-#~ "sesión. Esta configuración pode ser ignorada cando se pasan determinados "
-#~ "argumentos da liña de ordes ao daemon."
-
-#~ msgid ""
-#~ "This option enables the secret service component in the mate-keyring "
-#~ "daemon. It only takes effect during startup with mate-session, (ie: when "
-#~ "the user logs in). This setting may be overridden when certain command "
-#~ "line arguments are passed to the daemon."
-#~ msgstr ""
-#~ "Esta opción activa o compoñente do servizo segredo no daemon de mate-"
-#~ "keyring. Só será efectivo durante o inicio do daemon, por exemplo cando "
-#~ "un usuario inicie a sesión. Esta configuración pode ser sobrescrita cando "
-#~ "se pasan determinados argumentos da liña de ordes ao daemon."
-
-#~ msgid "Whether the mate-keyring PKCS#11 component is enabled."
-#~ msgstr "Indica se o compoñente PKCS#11 do mate-keyring está activado."
-
-#~ msgid "Whether the mate-keyring SSH agent is enabled."
-#~ msgstr "Indica se o axente SSH do mate-keyring está activado."
-
-#~ msgid "Whether the mate-keyring secret service is enabled."
-#~ msgstr "Indica se o servizo segredo de mate-keyring está activado."
+#: ../ui/gku-prompt.ui.h:7
+msgid "_Details:"
+msgstr "_Detalles:"

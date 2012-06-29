@@ -1,21 +1,22 @@
-# mate-keyring's Portuguese translation.
-# Copyright © 2003, 2004, 2006, 2007, 2008, 2009, 2010, 2011 mate-keyring
-# This file is distributed under the same license as the mate-keyring package.
-# Duarte Loreto <happyguy_pt@hotmail.com>, 2003, 2004, 2006, 2007, 2008, 2009, 2010, 2011.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Duarte Loreto <happyguy_pt@hotmail.com>, 2003, 2004, 2006, 2007, 2008, 2009, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: 3.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-12 22:22+0000\n"
-"PO-Revision-Date: 2011-03-12 22:20+0000\n"
-"Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
-"Language-Team: Portuguese <mate_pt@yahoogroups.com>\n"
-"Language: pt\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-06-29 11:58+0200\n"
+"PO-Revision-Date: 2012-06-29 09:59+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Portuguese (http://www.transifex.com/projects/p/MATE/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: pt\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
 #: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
@@ -37,11 +38,9 @@ msgstr "Seleccione uma nova senha para o chaveiro '%s'"
 #: ../daemon/dbus/gkd-secret-change.c:92
 #, c-format
 msgid ""
-"An application wants to change the password for the '%s' keyring. Choose the "
-"new password you want to use for it."
-msgstr ""
-"Uma aplicação deseja alterar a senha do chaveiro '%s'. Seleccione a nova "
-"senha que deseja utilizar no chaveiro."
+"An application wants to change the password for the '%s' keyring. Choose the"
+" new password you want to use for it."
+msgstr "Uma aplicação deseja alterar a senha do chaveiro '%s'. Seleccione a nova senha que deseja utilizar no chaveiro."
 
 #: ../daemon/dbus/gkd-secret-change.c:111
 msgid "The original password was incorrect"
@@ -60,9 +59,7 @@ msgstr "Seleccione a senha para o novo chaveiro"
 msgid ""
 "An application wants to create a new keyring called '%s'. Choose the "
 "password you want to use for it."
-msgstr ""
-"Uma aplicação deseja criar um novo chaveiro denominado '%s'. Seleccione a "
-"senha que deseja utilizar no chaveiro."
+msgstr "Uma aplicação deseja criar um novo chaveiro denominado '%s'. Seleccione a senha que deseja utilizar no chaveiro."
 
 #: ../daemon/mate-keyring-pkcs11.desktop.in.in.h:1
 msgid "Certificate and Key Storage"
@@ -73,53 +70,53 @@ msgid "MATE Keyring: PKCS#11 Component"
 msgstr "MATE Keyring: Componente PKCS#11"
 
 #: ../daemon/mate-keyring-secrets.desktop.in.in.h:1
-msgid "MATE Keyring: Secret Service"
-msgstr "MATE Keyring: Serviço Secreto"
-
-#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
 msgid "Secret Storage Service"
 msgstr "Serviço de Armazenamento Secreto"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
-msgid "MATE Keyring: SSH Agent"
-msgstr "MATE Keyring: Agente SSH"
+#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
+msgid "MATE Keyring: Secret Service"
+msgstr "MATE Keyring: Serviço Secreto"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
 msgid "SSH Key Agent"
 msgstr "Agente de Chaves SSH"
 
-#: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
-msgid "MATE Keyring: GPG Agent"
-msgstr "MATE Keyring: Agente GPG"
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+msgid "MATE Keyring: SSH Agent"
+msgstr "MATE Keyring: Agente SSH"
 
-#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
+#: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
 msgid "GPG Password Agent"
 msgstr "Agente de Senha GPG"
+
+#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
+msgid "MATE Keyring: GPG Agent"
+msgstr "MATE Keyring: Agente GPG"
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:104 ../gcr/gcr-key-renderer.c:291
 #: ../gcr/gcr-key-renderer.c:296
 msgid "Unknown"
 msgstr "Desconhecido"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:199
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:202
 #, c-format
 msgid "PGP Key: %s"
 msgstr "Chave PGP: %s"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:348
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:349
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:354
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:355
 msgid "Enter Passphrase"
 msgstr "Introduza a Frase-Senha"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:383
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:397
 msgid "Forget this password if idle for"
 msgstr "Esquecer esta senha se inactivo por"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:384
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:398
 msgid "Forget this password after"
 msgstr "Esquecer esta senha após"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:385
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:399
 msgid "Forget this password when I log out"
 msgstr "Esquecer esta senha ao terminar a sessão"
 
@@ -138,7 +135,7 @@ msgstr "ID de Utilizador"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr "Endereço de Email"
+msgstr ""
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -288,15 +285,15 @@ msgstr "Não"
 
 #: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr "Identidade"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr "Verificado por"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr "Expira a"
+msgstr ""
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
@@ -366,32 +363,31 @@ msgstr "Impressões Digitais"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr "Importar Certificados e Chaves"
+msgstr ""
 
 #: ../gcr/gcr-import-dialog.ui.h:2
-msgid "Import Into:"
-msgstr "Importar Para:"
-
-#: ../gcr/gcr-import-dialog.ui.h:3
 msgid "Password:"
 msgstr "Senha:"
 
+#: ../gcr/gcr-import-dialog.ui.h:3
+msgid "Import Into:"
+msgstr "Importar Para:"
+
 #: ../gcr/gcr-unlock-options-widget.ui.h:1
 msgid "Automatically unlock this keyring whenever I'm logged in"
-msgstr ""
-"Destrancar automaticamente este chaveiro sempre que existir uma sessão minha"
+msgstr "Destrancar automaticamente este chaveiro sempre que existir uma sessão minha"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:2
+msgid "Lock this keyring when I log out"
+msgstr "Trancar este chaveiro ao terminar a sessão"
+
+#: ../gcr/gcr-unlock-options-widget.ui.h:3
 msgid "Lock this keyring after"
 msgstr "Trancar este chaveiro após"
 
-#: ../gcr/gcr-unlock-options-widget.ui.h:3
+#: ../gcr/gcr-unlock-options-widget.ui.h:4
 msgid "Lock this keyring if idle for"
 msgstr "Trancar este chaveiro se inactivo por"
-
-#: ../gcr/gcr-unlock-options-widget.ui.h:4
-msgid "Lock this keyring when I log out"
-msgstr "Trancar este chaveiro ao terminar a sessão"
 
 #. Translators: The 'minutes' from 'Lock this keyring if idle for x minutes'.
 #: ../gcr/gcr-unlock-options-widget.ui.h:6
@@ -459,20 +455,19 @@ msgstr "Importar Certificados/Chaves"
 
 #: ../gcr/gcr-importer.c:502
 msgid "Choose a location to store the imported certificates/keys."
-msgstr ""
-"Seleccione uma localização para armazenar os certificados/chaves importados."
+msgstr "Seleccione uma localização para armazenar os certificados/chaves importados."
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr "Chave"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr "Chave RSA Privada"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr "Chave DSA Privada"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
@@ -480,31 +475,31 @@ msgstr "Chave Privada"
 
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr "Chave DSA Pública"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
 msgid "%d bit"
 msgid_plural "%d bits"
-msgstr[0] "%d bit"
-msgstr[1] "%d bits"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr "Tamanho"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr "Algorítmo"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr "Tamanho"
+msgstr ""
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr "Impressão Digital"
+msgstr ""
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -525,18 +520,16 @@ msgstr "Os dados estão trancados"
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
 msgstr ""
-"Incapaz de encontrar uma localização onde armazenar o certificado marcado"
 
 #: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
 #: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
 msgstr ""
-"O URI tem uma sintaxe inválida. A codificação do campo '%s' é inválida."
 
 #: ../gck/gck-uri.c:287
 msgid "The URI has does not have the 'pkcs11' scheme."
-msgstr "O URI não tem o esquema 'pkcs11'."
+msgstr ""
 
 #: ../gck/gck-misc.c:101
 msgid "Insufficient memory available"
@@ -596,7 +589,7 @@ msgstr "Ocorreu um erro no dispositivo"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr "Memória disponível insuficiente no dispositivo"
+msgstr ""
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
@@ -632,7 +625,7 @@ msgstr "Nenhuma chave é necessária"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr "A chave é diferente da anterior"
+msgstr ""
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
@@ -640,7 +633,7 @@ msgstr "É necessária uma chave"
 
 #: ../gck/gck-misc.c:151
 msgid "Cannot include the key in the digest"
-msgstr "Incapaz de incluir a chave no digest"
+msgstr ""
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
@@ -784,7 +777,7 @@ msgstr "Outro utilizador já iniciou uma sessão"
 
 #: ../gck/gck-misc.c:223
 msgid "Too many users of different types are logged in"
-msgstr "Demasiados utilizadores de tipos diferentes já têm uma sessão aberta"
+msgstr ""
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
@@ -889,16 +882,12 @@ msgstr "Introduza a senha para destrancar o seu chaveiro de início de sessão"
 msgid ""
 "The password you use to log in to your computer no longer matches that of "
 "your login keyring."
-msgstr ""
-"A senha que utiliza para iniciar uma sessão no seu computador deixou de ser "
-"igual à do seu chaveiro de início de sessão."
+msgstr "A senha que utiliza para iniciar uma sessão no seu computador deixou de ser igual à do seu chaveiro de início de sessão."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:642
 msgid ""
 "The login keyring did not get unlocked when you logged into your computer."
-msgstr ""
-"O seu chaveiro de início de sessão não ficou destrancado quando iniciou a "
-"sessão neste computador."
+msgstr "O seu chaveiro de início de sessão não ficou destrancado quando iniciou a sessão neste computador."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:660
 msgid "Unlock Keyring"
@@ -938,22 +927,19 @@ msgstr "Introduza a senha para destrancar a chave pública"
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:717
 #, c-format
 msgid "An application wants access to the private key '%s', but it is locked"
-msgstr ""
-"Uma aplicação deseja aceder à chave privada '%s', mas esta está trancada"
+msgstr "Uma aplicação deseja aceder à chave privada '%s', mas esta está trancada"
 
 #. TRANSLATORS: The certificate is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:720
 #, c-format
 msgid "An application wants access to the certificate '%s', but it is locked"
-msgstr ""
-"Uma aplicação deseja aceder ao certificado '%s', mas este está trancado"
+msgstr "Uma aplicação deseja aceder ao certificado '%s', mas este está trancado"
 
 #. TRANSLATORS: The public key is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:723
 #, c-format
 msgid "An application wants access to the public key '%s', but it is locked"
-msgstr ""
-"Uma aplicação deseja aceder à chave pública '%s', mas esta está trancada"
+msgstr "Uma aplicação deseja aceder à chave pública '%s', mas esta está trancada"
 
 #. TRANSLATORS: The object '%s' is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:726
@@ -967,18 +953,16 @@ msgstr "Destrancar o certificado/armazenamento de chaves"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:823
 msgid "Enter password to unlock the certificate/key storage"
-msgstr ""
-"Introduza a senha para destrancar o certificado/armazenamento de chaves"
+msgstr "Introduza a senha para destrancar o certificado/armazenamento de chaves"
 
-#. TRANSLATORS: The storage is locked, and needs unlocking before the application can use it.
+#. TRANSLATORS: The storage is locked, and needs unlocking before the
+#. application can use it.
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:826
 #, c-format
 msgid ""
 "An application wants access to the certificate/key storage '%s', but it is "
 "locked"
-msgstr ""
-"Uma aplicação deseja aceder ao certificado/armazenamento de chaves '%s', mas "
-"este está trancado"
+msgstr "Uma aplicação deseja aceder ao certificado/armazenamento de chaves '%s', mas este está trancado"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1132
 msgid "New Password Required"
@@ -993,9 +977,7 @@ msgstr "É necessária uma nova senha para o armazenamento seguro"
 msgid ""
 "In order to prepare '%s' for storage of certificates or keys, a password is "
 "required"
-msgstr ""
-"De forma a preparar '%s' para o armazenamento de certificados ou chaves, é "
-"necessária uma senha"
+msgstr "De forma a preparar '%s' para o armazenamento de certificados ou chaves, é necessária uma senha"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1258
 msgid "Change Password"
@@ -1009,22 +991,21 @@ msgstr "Alterar a senha para o armazenamento seguro"
 #, c-format
 msgid ""
 "To change the password for '%s', the original and new passwords are required"
-msgstr ""
-"Para alterar a senha de '%s', são necessárias as senhas original e nova"
+msgstr "Para alterar a senha de '%s', são necessárias as senhas original e nova"
 
 #: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: mate-keyring command [options]\n"
-msgstr "utilização: mate-keyring comando [opções]\n"
+msgstr ""
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
-msgstr "comandos: "
+msgstr ""
 
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
 msgid "          "
-msgstr "          "
+msgstr ""
 
 #: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
@@ -1035,10 +1016,7 @@ msgid ""
 "By choosing to use a blank password, your stored passwords will not be "
 "safely encrypted. They will be accessible by anyone with access to your "
 "files."
-msgstr ""
-"Ao seleccionar utilizar uma senha vazia, as suas senhas armazenadas não "
-"serão encriptadas com segurança. Poderão ser acedidas por qualquer pessoa "
-"com acesso aos seus ficheiros."
+msgstr "Ao seleccionar utilizar uma senha vazia, as suas senhas armazenadas não serão encriptadas com segurança. Poderão ser acedidas por qualquer pessoa com acesso aos seus ficheiros."
 
 #: ../ui/gku-prompt-tool.c:605
 msgid "Use Unsafe Storage"
@@ -1054,602 +1032,36 @@ msgstr "A senha não pode ser vazia"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:1
 msgid "Keyring Access"
-msgstr "Acesso ao Chaveiro"
+msgstr ""
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:2
 msgid "Unlock access to passwords and other secrets"
-msgstr "Destrancar o acesso a senhas e outros segredos"
+msgstr ""
 
 #: ../ui/gku-prompt.ui.h:1
-msgid "New password strength"
-msgstr "Resistência da nova senha"
-
-#: ../ui/gku-prompt.ui.h:2
-msgid "_Application:"
-msgstr "_Aplicação:"
-
-#: ../ui/gku-prompt.ui.h:3
-msgid "_Confirm:"
-msgstr "_Confirmar:"
-
-#: ../ui/gku-prompt.ui.h:4
-msgid "_Details:"
-msgstr "_Detalhes:"
-
-#: ../ui/gku-prompt.ui.h:5
 msgid "_Name:"
 msgstr "_Nome:"
 
-#: ../ui/gku-prompt.ui.h:6
+#: ../ui/gku-prompt.ui.h:2
 msgid "_Old Password:"
 msgstr "Senha _Antiga:"
 
-#: ../ui/gku-prompt.ui.h:7
+#: ../ui/gku-prompt.ui.h:3
 msgid "_Password:"
 msgstr "_Senha:"
 
-#~ msgid "Couldn't export the certificate."
-#~ msgstr "Incapaz de exportar o certificado."
-
-#~ msgid "Email"
-#~ msgstr "Email"
-
-#~ msgid "<i>Not Part of Certificate</i>"
-#~ msgstr "<i>Não Faz Parte do Certificado</i>"
-
-#~ msgid "<i>unknown</i>"
-#~ msgstr "<i>desconhecido</i>"
-
-#~ msgid "<Not Part of Certificate>"
-#~ msgstr "<Não Faz Parte do Certificado>"
-
-#~ msgid "<b>Fingerprints</b>"
-#~ msgstr "<b>Impressões Digitais</b>"
-
-#~ msgid "<b>Issued By</b>"
-#~ msgstr "<b>Emitido Por</b>"
-
-#~ msgid "<b>Issued To</b>"
-#~ msgstr "<b>Emitido Para</b>"
-
-#~ msgid "<b>This certificate has been verified for the following uses:</b>"
-#~ msgstr "<b>Este certificado foi validado para as seguintes utilizações:</b>"
-
-#~ msgid "<b>Validity</b>"
-#~ msgstr "<b>Validade</b>"
-
-#~ msgid "Common Name (CN)"
-#~ msgstr "Nome Comum (NC)"
-
-#~ msgid "Email Recipient Certificate"
-#~ msgstr "Certificado de Destinatário da Mensagem"
-
-#~ msgid "Email Signer Certificate"
-#~ msgstr "Certificado do Assinante da Mensagem"
-
-#~ msgid "Issued On"
-#~ msgstr "Emitido Em"
-
-#~ msgid "MD5 Fingerprint"
-#~ msgstr "Impressão Digital MD5"
-
-#~ msgid "Organization (O)"
-#~ msgstr "Organização (O)"
-
-#~ msgid "Organizational Unit (OU)"
-#~ msgstr "Unidade Organizacional (UO)"
-
-#~ msgid "SHA1 Fingerprint"
-#~ msgstr "Impressão Digital SHA1"
-
-#~ msgid "SSL Client Certificate"
-#~ msgstr "Certificado de Cliente SSL"
-
-#~ msgid "SSL Server Certificate"
-#~ msgstr "Certificado de Servidor SSL"
-
-#~ msgid "<span size='large' weight='bold'>Import Certificates and Keys</span>"
-#~ msgstr ""
-#~ "<span size='large' weight='bold'>Importar Certificados e Chaves</span>"
-
-#~ msgid ""
-#~ "This option enables the PKCS#11 component in the mate-keyring daemon. It "
-#~ "only takes effect during startup with mate-session, (ie: when the user "
-#~ "logs in). This setting may be overridden when certain command line "
-#~ "arguments are passed to the daemon."
-#~ msgstr ""
-#~ "Esta opção activa o componente PKCS#11 no daemon mate-keyring. Apenas "
-#~ "tem efeito num arranque com o mate-session, (por ex: quando o utilizador "
-#~ "inicia uma sessão). Esta definição pode ser sobreposta quando "
-#~ "determinados argumentos de linha de comando forem passados para o daemon."
-
-#~ msgid ""
-#~ "This option enables the SSH agent in the mate-keyring daemon. It only "
-#~ "takes effect as mate-keyring-daemon starts, (ie: when the user logs in). "
-#~ "This setting may be overridden when certain command line arguments are "
-#~ "passed to the daemon."
-#~ msgstr ""
-#~ "Esta opção activa o agente SSH no daemon mate-keyring. Apenas tem efeito "
-#~ "quando o mate-keyring-daemon é iniciado, (por ex: quando o utilizador "
-#~ "inicia uma sessão). Esta definição pode ser sobreposta quando "
-#~ "determinados argumentos de linha de comando forem passados para o daemon."
-
-#~ msgid ""
-#~ "This option enables the secret service component in the mate-keyring "
-#~ "daemon. It only takes effect during startup with mate-session, (ie: when "
-#~ "the user logs in). This setting may be overridden when certain command "
-#~ "line arguments are passed to the daemon."
-#~ msgstr ""
-#~ "Esta opção activa o componente de serviço secreto no daemon do mate-"
-#~ "keyring. Apenas tem durante o arranque com o mate-session, (por ex: "
-#~ "quando o utilizador inicia uma sessão). Esta definição pode ser "
-#~ "sobreposta quando determinados argumentos de linha de comando forem "
-#~ "passados ao daemon."
-
-#~ msgid "Whether the mate-keyring PKCS#11 component is enabled."
-#~ msgstr "Se o componente PKCS#11 do mate-keyring está ou não activo."
-
-#~ msgid "Whether the mate-keyring SSH agent is enabled."
-#~ msgstr "Se o agente SSH do mate-keyring está ou não activo."
-
-#~ msgid "Whether the mate-keyring secret service is enabled."
-#~ msgstr "Se o serviço secreto do mate-keyring está ou não activo."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to access the password for '<object "
-#~ "prop='name'/>' in the default keyring."
-#~ msgstr ""
-#~ "A aplicação '%s' (%s) deseja aceder à senha de '<object prop='name'/>' no "
-#~ "chaveiro por omissão."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to access the password for '<object "
-#~ "prop='name'/>' in %s."
-#~ msgstr ""
-#~ "A aplicação '%s' (%s) deseja aceder à senha de '<object prop='name'/>' em "
-#~ "%s."
-
-#~ msgid ""
-#~ "The application '%s' wants to access the password for '<object "
-#~ "prop='name'/>' in the default keyring."
-#~ msgstr ""
-#~ "A aplicação '%s' deseja aceder à senha de '<object prop='name'/>' no "
-#~ "chaveiro por omissão."
-
-#~ msgid ""
-#~ "The application '%s' wants to access the password for '<object "
-#~ "prop='name'/>' in %s."
-#~ msgstr ""
-#~ "A aplicação '%s' deseja aceder à senha de '<object prop='name'/>' em %s."
-
-#~ msgid ""
-#~ "An unknown application wants to access the password for '<object "
-#~ "prop='name'/>' in the default keyring."
-#~ msgstr ""
-#~ "Uma aplicação desconhecida deseja aceder à senha de '<object prop='name'/"
-#~ ">' no chaveiro por omissão."
-
-#~ msgid ""
-#~ "An unknown application wants to access the password for '<object "
-#~ "prop='name'/>' in %s."
-#~ msgstr ""
-#~ "Uma aplicação desconhecida deseja aceder à senha de '<object prop='name'/"
-#~ ">' em %s."
-
-#~ msgid "Allow access"
-#~ msgstr "Permitir o acesso"
-
-#~ msgid "Allow application access to keyring?"
-#~ msgstr "Permitir à aplicação o acesso ao chaveiro?"
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants access to the default keyring, but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "A aplicação '%s' (%s) deseja aceder ao chaveiro por omissão, mas este "
-#~ "está trancado."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants access to the keyring '%s', but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "A aplicação '%s' (%s) deseja aceder ao chaveiro '%s', mas este está "
-#~ "trancado."
-
-#~ msgid ""
-#~ "The application '%s' wants access to the default keyring, but it is locked"
-#~ msgstr ""
-#~ "A aplicação '%s' deseja aceder ao chaveiro por omissão, mas este está "
-#~ "trancado"
-
-#~ msgid ""
-#~ "The application '%s' wants access to the keyring '%s', but it is locked"
-#~ msgstr ""
-#~ "A aplicação '%s' deseja aceder ao chaveiro '%s', mas este está trancado"
-
-#~ msgid ""
-#~ "An unknown application wants access to the default keyring, but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "Uma aplicação desconhecida deseja aceder ao chaveiro por omissão, mas "
-#~ "este está trancado"
-
-#~ msgid "Enter password for default keyring to unlock"
-#~ msgstr "Introduza a senha para destrancar o chaveiro por omissão"
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to create a new keyring called '%s'. You "
-#~ "have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "A aplicação '%s' (%s) deseja criar um novo chaveiro denominado '%s'. Terá "
-#~ "de seleccionar a senha que deseja utilizar no chaveiro."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to create a new default keyring. You have "
-#~ "to choose the password you want to use for it."
-#~ msgstr ""
-#~ "A aplicação '%s' (%s) deseja criar um novo chaveiro por omissão. Terá de "
-#~ "seleccionar a senha que deseja utilizar no chaveiro."
-
-#~ msgid ""
-#~ "The application '%s' wants to create a new keyring called '%s'. You have "
-#~ "to choose the password you want to use for it."
-#~ msgstr ""
-#~ "A aplicação '%s' deseja criar um novo chaveiro denominado '%s'. Terá de "
-#~ "seleccionar a senha que deseja utilizar no chaveiro."
-
-#~ msgid ""
-#~ "The application '%s' wants to create a new default keyring. You have to "
-#~ "choose the password you want to use for it."
-#~ msgstr ""
-#~ "A aplicação '%s' deseja criar um novo chaveiro por omissão. Terá de "
-#~ "seleccionar a senha que deseja utilizar no chaveiro."
-
-#~ msgid ""
-#~ "An unknown application wants to create a new default keyring. You have to "
-#~ "choose the password you want to use for it."
-#~ msgstr ""
-#~ "Uma aplicação desconhecida deseja criar um novo chaveiro por omissão. "
-#~ "Terá de seleccionar a senha que deseja utilizar no chaveiro."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to change the password for the '%s' "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "A aplicação '%s' (%s) deseja alterar a senha do chaveiro '%s'. Terá de "
-#~ "seleccionar a senha que deseja utilizar no chaveiro."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to change the password for the default "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "A aplicação '%s' (%s) deseja alterar a senha do chaveiro por omissão. "
-#~ "Terá de seleccionar a senha que deseja utilizar no chaveiro."
-
-#~ msgid ""
-#~ "The application '%s' wants to change the password for the '%s' keyring. "
-#~ "You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "A aplicação '%s' deseja alterar a senha do chaveiro '%s'. Terá de "
-#~ "seleccionar a senha que deseja utilizar no chaveiro."
-
-#~ msgid ""
-#~ "The application '%s' wants to change the password for the default "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "A aplicação '%s' deseja alterar a senha do chaveiro por omissão. Terá de "
-#~ "seleccionar a senha que deseja utilizar no chaveiro."
-
-#~ msgid ""
-#~ "An unknown application wants to change the password for the default "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Uma aplicação desconhecida deseja alterar a senha do chaveiro por "
-#~ "omissão. Terá de seleccionar a senha que deseja utilizar no chaveiro."
-
-#~ msgid "Choose a new password for the default keyring."
-#~ msgstr "Seleccione uma nova senha para o chaveiro por omissão."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to store a password, but there is no "
-#~ "default keyring. To create one, you need to choose the password you wish "
-#~ "to use for it."
-#~ msgstr ""
-#~ "A aplicação '%s' (%s) deseja armazenar uma senha mas não existe chaveiro "
-#~ "por omissão. Para criar um, tem de seleccionar a senha que deseja "
-#~ "utilizar no chaveiro."
-
-#~ msgid ""
-#~ "The application '%s' wants to store a password, but there is no default "
-#~ "keyring. To create one, you need to choose the password you wish to use "
-#~ "for it."
-#~ msgstr ""
-#~ "A aplicação '%s' deseja armazenar uma senha mas não existe chaveiro por "
-#~ "omissão. Para criar um, tem de seleccionar a senha que deseja utilizar no "
-#~ "chaveiro."
-
-#~ msgid ""
-#~ "An unknown application wants to store a password, but there is no default "
-#~ "keyring. To create one, you need to choose the password you wish to use "
-#~ "for it."
-#~ msgstr ""
-#~ "Uma aplicação desconhecida deseja armazenar uma senha mas não existe "
-#~ "chaveiro por omissão. Para criar um, tem de seleccionar a senha que "
-#~ "deseja utilizar no chaveiro."
-
-#~ msgid "Create Default Keyring"
-#~ msgstr "Criar um Chaveiro por Omissão"
-
-#~ msgid "Choose password for default keyring"
-#~ msgstr "Seleccione a senha para o chaveiro por omissão"
-
-#~ msgid "Create Login Keyring"
-#~ msgstr "Criar um Chaveiro de Início de Sessão"
-
-#~ msgid "Enter your login password"
-#~ msgstr "Introduza a sua senha de início de sessão"
-
-#~ msgid ""
-#~ "Your login keyring was not automatically created when you logged into "
-#~ "this computer. It will now be created."
-#~ msgstr ""
-#~ "O seu chaveiro de início de sessão não foi criado automaticamente quando "
-#~ "iniciou a sua sessão neste computador. Irá agora ser criado."
-
-#~ msgid "Unlock password for %s keyring"
-#~ msgstr "Senha de destranque para o chaveiro %s"
-
-#~ msgid "Automatically unlock this private key when I log in."
-#~ msgstr "Destrancar automaticamente esta chave privada ao iniciar sessão."
-
-#~ msgid "Automatically unlock this certificate when I log in."
-#~ msgstr "Destrancar automaticamente este certificado ao iniciar sessão."
-
-#~ msgid "Automatically unlock this public key when I log in."
-#~ msgstr "Destrancar automaticamente esta chave pública ao iniciar sessão."
-
-#~ msgid "Automatically unlock this when I log in"
-#~ msgstr "Destrancar este item automaticamente ao iniciar sessão"
-
-#~ msgid "Automatically unlock secure storage when I log in."
-#~ msgstr ""
-#~ "Destrancar automaticamente o armazenamento seguro ao iniciar sessão."
-
-#~ msgid ""
-#~ "<b><big>Could not grab your mouse.</big></b>\n"
-#~ "\n"
-#~ "A malicious client may be eavesdropping on your session or you may have "
-#~ "just clicked a menu or some application just decided to get focus.\n"
-#~ "\n"
-#~ "Try again."
-#~ msgstr ""
-#~ "<b><big>Incapaz de capturar o seu rato.</big></b>\n"
-#~ "\n"
-#~ "Um cliente malicioso poderá estar a observar a sua sessão ou pode ter "
-#~ "clicado num menu ou outra aplicação ter decidido obter o foco.\n"
-#~ "\n"
-#~ "Tente novamente."
-
-#~ msgid ""
-#~ "<b><big>Could not grab your keyboard.</big></b>\n"
-#~ "\n"
-#~ "A malicious client may be eavesdropping on your session or you may have "
-#~ "just clicked a menu or some application just decided to get focus.\n"
-#~ "\n"
-#~ "Try again."
-#~ msgstr ""
-#~ "<b><big>Incapaz de capturar o seu teclado.</big></b>\n"
-#~ "\n"
-#~ "Um cliente malicioso poderá estar a observar a sua sessão ou pode ter "
-#~ "clicado num menu ou outra aplicação ter decidido obter o foco.\n"
-#~ "\n"
-#~ "Tente novamente."
-
-#~ msgid "_Deny"
-#~ msgstr "_Negar"
-
-#~ msgid "C_reate"
-#~ msgstr "C_riar"
-
-#~ msgid "C_hange"
-#~ msgstr "_Alterar"
-
-#~ msgid "Allow _Once"
-#~ msgstr "Permitir _Uma Vez"
-
-#~ msgid "_Always Allow"
-#~ msgstr "Permitir _Sempre"
-
-#~ msgid "Removable Disk: %s"
-#~ msgstr "Disco Removível: %s"
-
-#~ msgid "Removable Disk"
-#~ msgstr "Disco Removível"
-
-#~ msgid "Home"
-#~ msgstr "Pasta Pessoal"
-
-#~ msgid "The disk or drive this file is located on is not present"
-#~ msgstr ""
-#~ "O disco ou dispositivo onde este ficheiro se encontra já não está presente"
-
-#~ msgid "Couldn't create directory: %s"
-#~ msgstr "Incapaz de criar o directório: %s"
-
-#~ msgid "Couldn't delete the file: %s"
-#~ msgstr "Incapaz de apagar o ficheiro: %s"
-
-#~ msgid "Access Denied"
-#~ msgstr "Acesso Negado"
-
-#~ msgid "The mate-keyring-daemon application is not running."
-#~ msgstr "A aplicação mate-keyring-daemon não se encontra em execução."
-
-#~ msgid "Error communicating with mate-keyring-daemon"
-#~ msgstr "Erro ao comunicar com o mate-keyring-daemon"
-
-#~ msgid "A keyring with that name already exists"
-#~ msgstr "Já existe um chaveiro com esse nome"
-
-#~ msgid "Programmer error: The application sent invalid data."
-#~ msgstr "Erro de programação: A aplicação enviou dados inválidos."
-
-#~ msgid "No matching results"
-#~ msgstr "Nenhum resultado coincidente"
-
-#~ msgid "A keyring with that name does not exist."
-#~ msgstr "Não existe um chaveiro com esse nome"
-
-#~ msgid "The keyring has already been unlocked."
-#~ msgstr "O chaveiro já foi destrancado."
-
-#~ msgid ""
-#~ "A list of paths to PKCS#11 modules to load. No modules are currently "
-#~ "listed by default, as this is still an experimental feature. This is used "
-#~ "by seahorse and other PKCS#11 aware applications."
-#~ msgstr ""
-#~ "Uma lista de caminhos para módulos PKCS#11 a ler. Nenhum módulo está "
-#~ "actualmente listado por omissão já que esta é uma funcionalidade "
-#~ "experimental. É utilizada pelo seahorse e outras aplicações compatíveis "
-#~ "com o PKCS#11."
-
-#~ msgid "PKCS#11 Modules"
-#~ msgstr "Módulos PKCS#11"
-
-#~ msgid "Import private key"
-#~ msgstr "Importar a chave privada"
-
-#~ msgid "Import public key"
-#~ msgstr "Importar a chave pública"
-
-#~ msgid "The system wants to import the public key '%s', but it is locked"
-#~ msgstr ""
-#~ "O sistema deseja importar a chave pública '%s', mas esta está trancada"
-
-#~ msgid "Create Storage for Key Information"
-#~ msgstr "Criar Armazenamento para Informação de Chave"
-
-#~ msgid "Choose password to protect storage"
-#~ msgstr "Seleccione a senha para proteger o armazenamento"
-
-#~ msgid ""
-#~ "The system wants to store information about your keys and certificates. "
-#~ "In order to protect this information, choose a password with which it "
-#~ "will be locked."
-#~ msgstr ""
-#~ "Este sistema deseja armazenar informação sobre as suas chaves e "
-#~ "certificados. Por forma a proteger esta informação, seleccione a senha "
-#~ "com a qual esta será trancada."
-
-#~ msgid "Unlock Storage for Key Information"
-#~ msgstr "Destrancar Armazenamento de Informação de Chave"
-
-#~ msgid "Enter password to unlock storage"
-#~ msgstr "Introduza a senha para destrancar o armazenamento"
-
-#~ msgid ""
-#~ "The system wants to access information about your keys and certificates, "
-#~ "but it is locked."
-#~ msgstr ""
-#~ "O sistema deseja aceder a informação sobre as suas chaves e certificados, "
-#~ "mas esta está trancada."
-
-#~ msgid "Trust Association"
-#~ msgstr "Associação de Confiança"
-
-#~ msgid "Cannot delete '%s' because it is tied to other objects."
-#~ msgstr "Incapaz de apagar '%s' pois está ligado a outros objectos."
-
-#~ msgid "Lock private key"
-#~ msgstr "Trancar a chave privada"
-
-#~ msgid "Lock"
-#~ msgstr "Trancar"
-
-#~ msgid "Enter password to protect the private key"
-#~ msgstr "Introduza a senha para proteger a chave privada"
-
-#~ msgid ""
-#~ "The system wants to store the private key '%s' on your disk. Please enter "
-#~ "a password to lock it with."
-#~ msgstr ""
-#~ "O sistema deseja armazenar a chave privada '%s' no seu disco. Introduza "
-#~ "uma senha com a qual a trancar."
-
-#~ msgid ""
-#~ "The system wants to store '%s' on your disk. Please enter a password to "
-#~ "lock it with."
-#~ msgstr ""
-#~ "O sistema deseja armazenar '%s' no seu disco. Introduza uma senha com a "
-#~ "qual a trancar."
-
-#~ msgid "Couldn't read secure shell private key: %s"
-#~ msgstr "Incapaz de ler a chave privada de consola segura: %s"
-
-#~ msgid "Invalid secure shell private key at: %s"
-#~ msgstr "Chave privada de consola segura inválida em: %s"
-
-#~ msgid "Couldn't encrypt the SSH key to store it."
-#~ msgstr "Incapaz de encriptar a chave SSH para a armazenar."
-
-#~ msgid "Couldn't encode the SSH key to store it."
-#~ msgstr "Incapaz de codificar a chave SSH para a armazenar."
-
-#~ msgid "Cannot set a random seed"
-#~ msgstr "Incapaz de definir uma semente aleatória"
-
-#~ msgid "Unlock %s"
-#~ msgstr "Destrancar %s"
-
-#~ msgid "Old password cannot be blank."
-#~ msgstr "A senha antiga não pode ser vazia."
-
-#~ msgid "<span weight=\"bold\">Password strength meter:</span>"
-#~ msgstr "<span weight=\"bold\">Medidor de resistência da senha:</span>"
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants access to an unknown keyring, but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "A aplicação '%s' (%s) deseja aceder a um chaveiro desconhecido, mas este "
-#~ "está trancado"
-
-#~ msgid ""
-#~ "The application '%s' wants access to an unknown keyring, but it is locked"
-#~ msgstr ""
-#~ "A aplicação '%s' deseja aceder a um chaveiro desconhecido, mas este está "
-#~ "trancado"
-
-#~ msgid ""
-#~ "An unknown application wants access to an unknown keyring, but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "Uma aplicação desconhecida deseja aceder a um chaveiro desconhecido, mas "
-#~ "este está trancado"
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to access the password for '%s' in an "
-#~ "unknown keyring."
-#~ msgstr ""
-#~ "A aplicação '%s' (%s) deseja aceder à senha para '%s' num chaveiro "
-#~ "desconhecido."
-
-#~ msgid ""
-#~ "The application '%s' wants to access the password for '%s' in an unknown "
-#~ "keyring."
-#~ msgstr ""
-#~ "A aplicação '%s' deseja aceder à senha para '%s' num chaveiro "
-#~ "desconhecido."
-
-#~ msgid ""
-#~ "An unknown application wants to access the password for '%s' in an "
-#~ "unknown keyring."
-#~ msgstr ""
-#~ "Uma aplicação desconhecida deseja aceder à senha para '%s' num chaveiro "
-#~ "desconhecido."
-
-#~ msgid "You must specify the type of request to run\n"
-#~ msgstr "Tem de especificar o tipo de pedido a executar\n"
-
-#~ msgid "Unknown request type\n"
-#~ msgstr "Tipo de pedido desconhecido\n"
+#: ../ui/gku-prompt.ui.h:4
+msgid "_Confirm:"
+msgstr "_Confirmar:"
+
+#: ../ui/gku-prompt.ui.h:5
+msgid "New password strength"
+msgstr "Resistência da nova senha"
+
+#: ../ui/gku-prompt.ui.h:6
+msgid "_Application:"
+msgstr "_Aplicação:"
+
+#: ../ui/gku-prompt.ui.h:7
+msgid "_Details:"
+msgstr "_Detalhes:"

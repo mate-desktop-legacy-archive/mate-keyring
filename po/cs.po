@@ -1,30 +1,26 @@
-# Czech translation of mate-keyring.
-# Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009 the author(s) of mate-keyring.
-# Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
-# This file is distributed under the same license as the mate-keyring package.
-#
-# Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Jakub Friedl <jfriedl@suse.cz>, 2007.
 # Kamil Páral <ripper42@gmail.com>, 2008.
-# Petr Kovar <pknbe@volny.cz>, 2008, 2009.
 # Lucas Lommer <llommer@svn.gnome.org>, 2008, 2009, 2010.
-# Marek Černocký <marek@manet.cz>, 2010, 2011.
-#
+# Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+# Petr Kovar <pknbe@volny.cz>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-keyring\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mate-"
-"keyring&component=general\n"
-"POT-Creation-Date: 2011-03-10 08:08+0000\n"
-"PO-Revision-Date: 2011-03-15 18:49+0100\n"
-"Last-Translator: Marek Černocký <marek@manet.cz>\n"
-"Language-Team: Czech <mate-cs-list@gnome.org>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-06-29 11:58+0200\n"
+"PO-Revision-Date: 2012-06-29 09:59+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Czech (http://www.transifex.com/projects/p/MATE/language/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: cs\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
 #: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
@@ -41,16 +37,14 @@ msgstr "Změnit heslo klíčenky"
 #: ../daemon/dbus/gkd-secret-change.c:88
 #, c-format
 msgid "Choose a new password for the '%s' keyring"
-msgstr "Zvolte nové heslo pro klíčenku „%s“"
+msgstr "Zvolte nové heslo pro klíčenku '%s'"
 
 #: ../daemon/dbus/gkd-secret-change.c:92
 #, c-format
 msgid ""
-"An application wants to change the password for the '%s' keyring. Choose the "
-"new password you want to use for it."
-msgstr ""
-"Nějaká aplikace chce změnit heslo klíčenky „%s“. Zvolte heslo, které pro ni "
-"chcete používat."
+"An application wants to change the password for the '%s' keyring. Choose the"
+" new password you want to use for it."
+msgstr "Nějaká aplikace chce změnit heslo klíčenky '%s'. Zvolte heslo, které pro ni chcete používat."
 
 #: ../daemon/dbus/gkd-secret-change.c:111
 msgid "The original password was incorrect"
@@ -69,9 +63,7 @@ msgstr "Zvolte heslo pro novou klíčenku"
 msgid ""
 "An application wants to create a new keyring called '%s'. Choose the "
 "password you want to use for it."
-msgstr ""
-"Nějaká aplikace chce vytvořit novou klíčenku nazvanou „%s“. Zvolite heslo, "
-"které pro ni chcete používat."
+msgstr "Nějaká aplikace chce vytvořit novou klíčenku nazvanou '%s'. Zvolite heslo, které pro ni chcete používat."
 
 #: ../daemon/mate-keyring-pkcs11.desktop.in.in.h:1
 msgid "Certificate and Key Storage"
@@ -82,55 +74,55 @@ msgid "MATE Keyring: PKCS#11 Component"
 msgstr "Klíčenka MATE: komponenta PKCS#11"
 
 #: ../daemon/mate-keyring-secrets.desktop.in.in.h:1
-msgid "MATE Keyring: Secret Service"
-msgstr "Klíčenka MATE: Služba utajení dat"
-
-#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
 msgid "Secret Storage Service"
 msgstr "Služba utajení dat"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
-msgid "MATE Keyring: SSH Agent"
-msgstr "Klíčenka MATE: Agent SSH"
+#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
+msgid "MATE Keyring: Secret Service"
+msgstr "Klíčenka MATE: Služba utajení dat"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
 msgid "SSH Key Agent"
 msgstr "Agent klíčů SSH"
 
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+msgid "MATE Keyring: SSH Agent"
+msgstr "Klíčenka MATE: Agent SSH"
+
 #: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
-msgid "MATE Keyring: GPG Agent"
-msgstr "Klíčenka MATE: Agent GPG"
+msgid "GPG Password Agent"
+msgstr ""
 
 #: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
-msgid "GPG Password Agent"
-msgstr "Agent hesel GPG"
+msgid "MATE Keyring: GPG Agent"
+msgstr ""
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:104 ../gcr/gcr-key-renderer.c:291
 #: ../gcr/gcr-key-renderer.c:296
 msgid "Unknown"
-msgstr "Neznámý"
+msgstr ""
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:199
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:202
 #, c-format
 msgid "PGP Key: %s"
-msgstr "Klíč PGP: %s"
+msgstr ""
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:348
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:349
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:354
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:355
 msgid "Enter Passphrase"
-msgstr "Zadejte heslovou frázi"
+msgstr ""
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:383
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:397
 msgid "Forget this password if idle for"
-msgstr "Zapomenout toto heslo při nečinnosti delší než"
+msgstr ""
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:384
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:398
 msgid "Forget this password after"
-msgstr "Zapomenout toto heslo za"
+msgstr ""
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:385
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:399
 msgid "Forget this password when I log out"
-msgstr "Zapomenout toto heslo po odhlášení"
+msgstr ""
 
 #. TRANSLATORS: This is the display label for the login keyring
 #: ../daemon/login/gkd-login.c:147
@@ -147,7 +139,7 @@ msgstr "ID uživatele"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr "E-mailová adresa"
+msgstr ""
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -260,8 +252,7 @@ msgstr "SHA1 s DSA"
 #: ../egg/egg-spawn.c:273
 #, c-format
 msgid "Unexpected error in select() reading data from a child process (%s)"
-msgstr ""
-"Neočekávaná chyba ve funkci select() při čtení dat potomka procesu (%s)"
+msgstr "Neočekávaná chyba ve funkci select() při čtení dat potomka procesu (%s)"
 
 #: ../egg/egg-spawn.c:320
 #, c-format
@@ -298,15 +289,15 @@ msgstr "Ne"
 
 #: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr "Identita"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr "Ověřil"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr "Vyprší"
+msgstr ""
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
@@ -376,31 +367,31 @@ msgstr "Otisky"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr "Importovat certifikáty a klíče"
+msgstr ""
 
 #: ../gcr/gcr-import-dialog.ui.h:2
-msgid "Import Into:"
-msgstr "Import do:"
-
-#: ../gcr/gcr-import-dialog.ui.h:3
 msgid "Password:"
 msgstr "Heslo:"
+
+#: ../gcr/gcr-import-dialog.ui.h:3
+msgid "Import Into:"
+msgstr "Import do:"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:1
 msgid "Automatically unlock this keyring whenever I'm logged in"
 msgstr "Automaticky odemknout klíčenku, kdykoliv se přihlásím"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:2
+msgid "Lock this keyring when I log out"
+msgstr "Uzamknout klíčenku, pokud se odhlásím"
+
+#: ../gcr/gcr-unlock-options-widget.ui.h:3
 msgid "Lock this keyring after"
 msgstr "Uzamknout tuto klíčenku za"
 
-#: ../gcr/gcr-unlock-options-widget.ui.h:3
+#: ../gcr/gcr-unlock-options-widget.ui.h:4
 msgid "Lock this keyring if idle for"
 msgstr "Uzamknout tuto klíčenku při nečinnosti delší než"
-
-#: ../gcr/gcr-unlock-options-widget.ui.h:4
-msgid "Lock this keyring when I log out"
-msgstr "Uzamknout klíčenku, pokud se odhlásím"
 
 #. Translators: The 'minutes' from 'Lock this keyring if idle for x minutes'.
 #: ../gcr/gcr-unlock-options-widget.ui.h:6
@@ -438,19 +429,19 @@ msgstr "Pokud chcete importovat data, musíte je odemknout"
 #: ../gcr/gcr-importer.c:157
 #, c-format
 msgid "In order to import the private key '%s', it must be unlocked"
-msgstr "Pokud chcete importovat soukromý klíč „%s“, musíte provést odemčení"
+msgstr "Pokud chcete importovat soukromý klíč '%s', musíte provést odemčení"
 
 #. TRANSLATORS: The certificate is locked.
 #: ../gcr/gcr-importer.c:160
 #, c-format
 msgid "In order to import the certificate '%s', it must be unlocked"
-msgstr "Pokud chcete importovat certifikát „%s“, musíte provést odemčení"
+msgstr "Pokud chcete importovat certifikát '%s', musíte provést odemčení"
 
 #. TRANSLATORS: The object '%s' is locked.
 #: ../gcr/gcr-importer.c:163
 #, c-format
 msgid "In order to import '%s', it must be unlocked"
-msgstr "Pokud chcete importovat „%s“, musíte provést odemčení"
+msgstr "Pokud chcete importovat '%s', musíte provést odemčení"
 
 #: ../gcr/gcr-importer.c:254 ../gcr/gcr-parser.c:1566 ../gcr/gcr-parser.c:1757
 #: ../gck/gck-misc.c:98
@@ -472,15 +463,15 @@ msgstr "Vyberte umístění, kde chcete uchovávat importované certifikáty/kl�
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr "Klíč"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr "Soukromý klíč RSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr "Soukromý klíč DSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
@@ -488,32 +479,32 @@ msgstr "Soukromý klíč"
 
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr "Veřejný klíč DSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
 msgid "%d bit"
 msgid_plural "%d bits"
-msgstr[0] "%d bit"
-msgstr[1] "%d bity"
-msgstr[2] "%d bitů"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr "Síla"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr "Algoritmus"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr "Velikost"
+msgstr ""
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr "Otisk"
+msgstr ""
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -533,17 +524,17 @@ msgstr "Data jsou uzamčena"
 #: ../gcr/gcr-trust.c:420
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
-msgstr "Nelze najít místo, kde se mají uchovávat vyznačené certifikáty"
+msgstr ""
 
 #: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
 #: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
-msgstr "Adresa URI má neplatnou syntaxi. Kódování pole „%s“ je neplatné."
+msgstr ""
 
 #: ../gck/gck-uri.c:287
 msgid "The URI has does not have the 'pkcs11' scheme."
-msgstr "Adresa URI nemá schéma „pkcs11“"
+msgstr ""
 
 #: ../gck/gck-misc.c:101
 msgid "Insufficient memory available"
@@ -603,7 +594,7 @@ msgstr "Na zařízení se vyskytla chyba"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr "Na zařízení není dostatek paměti"
+msgstr ""
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
@@ -639,7 +630,7 @@ msgstr "Klíč není potřeba"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr "Klíč je jiný, než byl dříve"
+msgstr ""
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
@@ -647,7 +638,7 @@ msgstr "Klíč je vyžadován"
 
 #: ../gck/gck-misc.c:151
 msgid "Cannot include the key in the digest"
-msgstr "Do kontrolního součtu nelze přiložit klíč"
+msgstr ""
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
@@ -791,7 +782,7 @@ msgstr "Již je přihlášen jiný uživatel"
 
 #: ../gck/gck-misc.c:223
 msgid "Too many users of different types are logged in"
-msgstr "Je přihlášeno příliš mnoho uživatelů rozdílných typů"
+msgstr ""
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
@@ -890,22 +881,18 @@ msgstr "Odemknout přihlašovací klíčenku"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:636
 msgid "Enter password to unlock your login keyring"
-msgstr "Zadejte heslo k odemčení své přihlašovací klíčenky"
+msgstr ""
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:640
 msgid ""
 "The password you use to log in to your computer no longer matches that of "
 "your login keyring."
-msgstr ""
-"Heslo, které používáte k přihlášení k tomuto počítači, již nadále neodpovídá "
-"tomu, které používáte pro přihlašovací klíčenku."
+msgstr "Heslo, které používáte k přihlášení k tomuto počítači, již nadále neodpovídá tomu, které používáte pro přihlašovací klíčenku."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:642
 msgid ""
 "The login keyring did not get unlocked when you logged into your computer."
-msgstr ""
-"Vaše přihlašovací klíčenka nebyla během vašeho přihlášení k tomuto počítači "
-"odemčena."
+msgstr "Vaše přihlašovací klíčenka nebyla během vašeho přihlášení k tomuto počítači odemčena."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:660
 msgid "Unlock Keyring"
@@ -914,12 +901,12 @@ msgstr "Odemknout klíčenku"
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:662
 #, c-format
 msgid "Enter password for keyring '%s' to unlock"
-msgstr "Zadejte heslo pro odemčení klíčenky „%s“"
+msgstr "Zadejte heslo pro odemčení klíčenky '%s'"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:666
 #, c-format
 msgid "An application wants access to the keyring '%s', but it is locked"
-msgstr "Nějaká aplikace chce přístup ke klíčence „%s“, která je zamčena"
+msgstr "Nějaká aplikace chce přístup ke klíčence '%s', která je zamčena"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:686
 msgid "Unlock private key"
@@ -963,7 +950,7 @@ msgstr "Aplikace požaduje přístup k veřejnému klíči „%s“, ale ten je 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:726
 #, c-format
 msgid "An application wants access to '%s', but it is locked"
-msgstr "Aplikace požaduje přístup k „%s“, ale ta je zamčena"
+msgstr "Aplikace požaduje přístup k '%s', ale ta je zamčena"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:822
 msgid "Unlock certificate/key storage"
@@ -973,15 +960,14 @@ msgstr "Odemknout umístění certifikátů/klíčů"
 msgid "Enter password to unlock the certificate/key storage"
 msgstr "Zadejte heslo k odemknutí umístění pro certifikáty/klíče"
 
-#. TRANSLATORS: The storage is locked, and needs unlocking before the application can use it.
+#. TRANSLATORS: The storage is locked, and needs unlocking before the
+#. application can use it.
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:826
 #, c-format
 msgid ""
 "An application wants access to the certificate/key storage '%s', but it is "
 "locked"
-msgstr ""
-"Aplikace požaduje přístup k úložišti certifikátů/klíčů „%s“, ale to je "
-"zamčeno"
+msgstr "Aplikace požaduje přístup k úložišti certifikátů/klíčů '%s', ale to je zamčeno"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1132
 msgid "New Password Required"
@@ -996,37 +982,35 @@ msgstr "Je vyžadováno nové heslo pro zabezpečené úložiště"
 msgid ""
 "In order to prepare '%s' for storage of certificates or keys, a password is "
 "required"
-msgstr ""
-"Pokud chcete použít „%s“ jako úložiště certifikátů a klíčů, musíte zvolit "
-"heslo."
+msgstr "Pokud chcete použít '%s' jako úložiště certifikátů a klíčů, musíte zvolit heslo."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1258
 msgid "Change Password"
-msgstr "Změnit heslo"
+msgstr ""
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1259
 msgid "Change password for secure storage"
-msgstr "Změnit heslo pro zabezpečené úložiště"
+msgstr ""
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1261
 #, c-format
 msgid ""
 "To change the password for '%s', the original and new passwords are required"
-msgstr "Ke změně hesla pro „%s“ jsou zapotřebí původní a nové heslo"
+msgstr ""
 
 #: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: mate-keyring command [options]\n"
-msgstr "použití: mate-keyring PŘÍKAZ [PŘEPÍNAČE]\n"
+msgstr ""
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
-msgstr "příkazy: "
+msgstr ""
 
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
 msgid "          "
-msgstr "         "
+msgstr ""
 
 #: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
@@ -1037,9 +1021,7 @@ msgid ""
 "By choosing to use a blank password, your stored passwords will not be "
 "safely encrypted. They will be accessible by anyone with access to your "
 "files."
-msgstr ""
-"Pokud zvolíte použití prázdného hesla, vaše uložená hesla nebudou bezpečně "
-"zašifrována. Budou přístupná každému, kdo bude mít přístup k vašim souborům."
+msgstr "Pokud zvolíte použití prázdného hesla, vaše uložená hesla nebudou bezpečně zašifrována. Budou přístupná každému, kdo bude mít přístup k vašim souborům."
 
 #: ../ui/gku-prompt-tool.c:605
 msgid "Use Unsafe Storage"
@@ -1055,96 +1037,36 @@ msgstr "Heslo nesmí být prázdné"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:1
 msgid "Keyring Access"
-msgstr "Přístup ke klíčence"
+msgstr ""
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:2
 msgid "Unlock access to passwords and other secrets"
-msgstr "Odemknout přístup k heslům a dalším utajovaným věcem"
+msgstr ""
 
 #: ../ui/gku-prompt.ui.h:1
-msgid "New password strength"
-msgstr "Síla nového hesla"
-
-#: ../ui/gku-prompt.ui.h:2
-msgid "_Application:"
-msgstr "_Aplikace:"
-
-#: ../ui/gku-prompt.ui.h:3
-msgid "_Confirm:"
-msgstr "_Potvrzení:"
-
-#: ../ui/gku-prompt.ui.h:4
-msgid "_Details:"
-msgstr "Po_drobnosti:"
-
-#: ../ui/gku-prompt.ui.h:5
 msgid "_Name:"
 msgstr "_Název:"
 
-#: ../ui/gku-prompt.ui.h:6
+#: ../ui/gku-prompt.ui.h:2
 msgid "_Old Password:"
 msgstr "_Staré heslo:"
 
-#: ../ui/gku-prompt.ui.h:7
+#: ../ui/gku-prompt.ui.h:3
 msgid "_Password:"
 msgstr "_Heslo:"
 
-#~ msgid "Email"
-#~ msgstr "E-mail"
+#: ../ui/gku-prompt.ui.h:4
+msgid "_Confirm:"
+msgstr "_Potvrzení:"
 
-#~ msgid "<i>Not Part of Certificate</i>"
-#~ msgstr "<i>Není součást certifikátu</i>"
+#: ../ui/gku-prompt.ui.h:5
+msgid "New password strength"
+msgstr "Síla nového hesla"
 
-#~ msgid "<i>unknown</i>"
-#~ msgstr "<i>neznámé</i>"
+#: ../ui/gku-prompt.ui.h:6
+msgid "_Application:"
+msgstr "_Aplikace:"
 
-#~ msgid "<Not Part of Certificate>"
-#~ msgstr "<Není součást certifikátu>"
-
-#~ msgid "<b>Fingerprints</b>"
-#~ msgstr "<b>Otisky</b>"
-
-#~ msgid "<b>Issued By</b>"
-#~ msgstr "<b>Vydáno kým</b>"
-
-#~ msgid "<b>Issued To</b>"
-#~ msgstr "<b>Vydáno pro</b>"
-
-#~ msgid "<b>This certificate has been verified for the following uses:</b>"
-#~ msgstr "<b>Tento certifikát byl ověřen pro následující použití:</b>"
-
-#~ msgid "<b>Validity</b>"
-#~ msgstr "<b>Platnost</b>"
-
-#~ msgid "Common Name (CN)"
-#~ msgstr "Běžný název (CN)"
-
-#~ msgid "Email Recipient Certificate"
-#~ msgstr "Certifikát příjemce e-mailu"
-
-#~ msgid "Email Signer Certificate"
-#~ msgstr "Certifikát odesilatele e-mailu"
-
-#~ msgid "Issued On"
-#~ msgstr "Vydáno"
-
-#~ msgid "MD5 Fingerprint"
-#~ msgstr "Otisk MD5"
-
-#~ msgid "Organization (O)"
-#~ msgstr "Organizace (O)"
-
-#~ msgid "Organizational Unit (OU)"
-#~ msgstr "Organizační jednotka (OU)"
-
-#~ msgid "SHA1 Fingerprint"
-#~ msgstr "Otisk SHA1"
-
-#~ msgid "SSL Client Certificate"
-#~ msgstr "Certifikát klienta SSL"
-
-#~ msgid "SSL Server Certificate"
-#~ msgstr "Certifikát serveru SSL"
-
-#~ msgid "<span size='large' weight='bold'>Import Certificates and Keys</span>"
-#~ msgstr "<span size='large' weight='bold'>Import certifikátů a klíčů</span>"
+#: ../ui/gku-prompt.ui.h:7
+msgid "_Details:"
+msgstr "Po_drobnosti:"

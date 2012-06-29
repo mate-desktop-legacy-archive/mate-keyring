@@ -1,25 +1,26 @@
-# Catalan translation of mate-keyring.
-# Copyright © 2004-2009 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-keyring package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Jordi Mallach <jordi@sindominio.net>, 2004, 2006.
-# Joan Duran <jodufi@gmail.com>, 2008-2011.
-#
+# Pere Orga <gotrunks@gmail.com>, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-keyring\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mate-"
-"keyring&component=general\n"
-"POT-Creation-Date: 2011-02-21 17:32+0000\n"
-"PO-Revision-Date: 2011-02-22 23:31+0100\n"
-"Last-Translator: Joan Duran <jodufi@gmail.com>\n"
-"Language-Team: Catalan <tradmate@softcatala.org>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-06-29 11:58+0200\n"
+"PO-Revision-Date: 2012-06-29 09:59+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Catalan (http://www.transifex.com/projects/p/MATE/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: ca\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
-#: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:74
+#: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
 #: ../pkcs11/secret-store/gkm-secret-collection.c:325
 #: ../pkcs11/wrap-layer/gkm-wrap-login.c:343
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:789
@@ -38,32 +39,28 @@ msgstr "Escolliu una contrasenya nova per a l'anell de claus «%s»"
 #: ../daemon/dbus/gkd-secret-change.c:92
 #, c-format
 msgid ""
-"An application wants to change the password for the '%s' keyring. Choose the "
-"new password you want to use for it."
-msgstr ""
-"Una aplicació vol canviar la contrasenya de l'anell de claus «%s». Trieu la "
-"contrasenya nova que hi vulgueu utilitzar."
+"An application wants to change the password for the '%s' keyring. Choose the"
+" new password you want to use for it."
+msgstr "Una aplicació vol canviar la contrasenya de l'anell de claus «%s». Trieu la contrasenya nova que hi vulgueu utilitzar."
 
 #: ../daemon/dbus/gkd-secret-change.c:111
 msgid "The original password was incorrect"
 msgstr "La contrasenya original era incorrecta"
 
-#: ../daemon/dbus/gkd-secret-create.c:78
+#: ../daemon/dbus/gkd-secret-create.c:83
 msgid "New Keyring Password"
 msgstr "Contrasenya de l'anell de claus nou"
 
-#: ../daemon/dbus/gkd-secret-create.c:79
+#: ../daemon/dbus/gkd-secret-create.c:84
 msgid "Choose password for new keyring"
 msgstr "Seleccioneu una contrasenya per a l'anell de claus nou"
 
-#: ../daemon/dbus/gkd-secret-create.c:81
+#: ../daemon/dbus/gkd-secret-create.c:86
 #, c-format
 msgid ""
 "An application wants to create a new keyring called '%s'. Choose the "
 "password you want to use for it."
-msgstr ""
-"Una aplicació vol crear un anell de claus nou anomenat «%s». Trieu la "
-"contrasenya nova que hi vulgueu utilitzar."
+msgstr "Una aplicació vol crear un anell de claus nou anomenat «%s». Trieu la contrasenya nova que hi vulgueu utilitzar."
 
 #: ../daemon/mate-keyring-pkcs11.desktop.in.in.h:1
 msgid "Certificate and Key Storage"
@@ -74,55 +71,55 @@ msgid "MATE Keyring: PKCS#11 Component"
 msgstr "Anell de claus del MATE: component PKCS#11"
 
 #: ../daemon/mate-keyring-secrets.desktop.in.in.h:1
-msgid "MATE Keyring: Secret Service"
-msgstr "Anell de claus del MATE: servei de secrets"
-
-#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
 msgid "Secret Storage Service"
 msgstr "Servei d'emmagatzemament de secrets"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
-msgid "MATE Keyring: SSH Agent"
-msgstr "Anell de claus del MATE: agent SSH"
+#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
+msgid "MATE Keyring: Secret Service"
+msgstr "Anell de claus del MATE: servei de secrets"
 
-#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
 msgid "SSH Key Agent"
 msgstr "Agent de claus SSH"
 
-#: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
-msgid "MATE Keyring: GPG Agent"
-msgstr "Anell de claus del MATE: agent GPG"
+#: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
+msgid "MATE Keyring: SSH Agent"
+msgstr "Anell de claus del MATE: agent SSH"
 
-#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
+#: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
 msgid "GPG Password Agent"
 msgstr "Agent de contrasenyes GPG"
+
+#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
+msgid "MATE Keyring: GPG Agent"
+msgstr "Anell de claus del MATE: Agent GPG"
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:104 ../gcr/gcr-key-renderer.c:291
 #: ../gcr/gcr-key-renderer.c:296
 msgid "Unknown"
 msgstr "Desconegut"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:199
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:202
 #, c-format
 msgid "PGP Key: %s"
 msgstr "Clau PGP: %s"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:348
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:349
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:354
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:355
 msgid "Enter Passphrase"
 msgstr "Introduïu la contrasenya"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:383
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:397
 msgid "Forget this password if idle for"
-msgstr "Oblida aquesta contrasenya si s'està inactiu durant"
+msgstr "Oblida la contrasenya si s'està inactiu durant"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:384
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:398
 msgid "Forget this password after"
-msgstr "Oblida aquesta contrasenya després de"
+msgstr "Oblida la contrasenya després de"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:385
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:399
 msgid "Forget this password when I log out"
-msgstr "Oblida aquesta contrasenya quan surti"
+msgstr "Oblida la contrasenya després de tancar sessió"
 
 #. TRANSLATORS: This is the display label for the login keyring
 #: ../daemon/login/gkd-login.c:147
@@ -139,7 +136,7 @@ msgstr "Identificador d'usuari"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr "Adreça de correu electrònic"
+msgstr ""
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -252,9 +249,7 @@ msgstr "SHA1 amb DSA"
 #: ../egg/egg-spawn.c:273
 #, c-format
 msgid "Unexpected error in select() reading data from a child process (%s)"
-msgstr ""
-"S'ha produït un error inesperat a «select()» en llegir les dades d'un procés "
-"fill (%s)"
+msgstr "S'ha produït un error inesperat a «select()» en llegir les dades d'un procés fill (%s)"
 
 #: ../egg/egg-spawn.c:320
 #, c-format
@@ -291,15 +286,15 @@ msgstr "No"
 
 #: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr "Identitat"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr "Verificat per"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr "Venç"
+msgstr ""
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
@@ -369,31 +364,31 @@ msgstr "Empremtes"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr "Importa certificats i claus"
+msgstr ""
 
 #: ../gcr/gcr-import-dialog.ui.h:2
-msgid "Import Into:"
-msgstr "Importa a:"
-
-#: ../gcr/gcr-import-dialog.ui.h:3
 msgid "Password:"
 msgstr "Contrasenya:"
+
+#: ../gcr/gcr-import-dialog.ui.h:3
+msgid "Import Into:"
+msgstr "Importa a:"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:1
 msgid "Automatically unlock this keyring whenever I'm logged in"
 msgstr "Desbloca l'anell de claus automàticament quan estigui en la sessió"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:2
+msgid "Lock this keyring when I log out"
+msgstr "Bloca aquest anell de claus quan surti"
+
+#: ../gcr/gcr-unlock-options-widget.ui.h:3
 msgid "Lock this keyring after"
 msgstr "Bloca aquest anell de claus després de"
 
-#: ../gcr/gcr-unlock-options-widget.ui.h:3
+#: ../gcr/gcr-unlock-options-widget.ui.h:4
 msgid "Lock this keyring if idle for"
 msgstr "Bloca aquest anell de claus si està inactiu durant"
-
-#: ../gcr/gcr-unlock-options-widget.ui.h:4
-msgid "Lock this keyring when I log out"
-msgstr "Bloca aquest anell de claus quan surti"
 
 #. Translators: The 'minutes' from 'Lock this keyring if idle for x minutes'.
 #: ../gcr/gcr-unlock-options-widget.ui.h:6
@@ -465,15 +460,15 @@ msgstr "Trieu una ubicació on emmagatzemar els certificats/claus importats."
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr "Clau"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr "Clau privada RSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr "Clau privada DSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
@@ -481,31 +476,31 @@ msgstr "Clau privada"
 
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr "Clau pública DSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
 msgid "%d bit"
 msgid_plural "%d bits"
-msgstr[0] "%d bit"
-msgstr[1] "%d bits"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr "Força"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr "Algorisme"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr "Mida"
+msgstr ""
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr "Empremta"
+msgstr ""
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -526,18 +521,16 @@ msgstr "Les dades estan blocades"
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
 msgstr ""
-"No s'ha pogut trobar una ubicació on emmagatzemar el certificat importat"
 
 #: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
 #: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
 msgstr ""
-"La sintaxi de l'URI no és vàlida. La codificació del camp «%s» no és vàlida."
 
 #: ../gck/gck-uri.c:287
 msgid "The URI has does not have the 'pkcs11' scheme."
-msgstr "L'URI no té l'esquema «pkcs11»."
+msgstr ""
 
 #: ../gck/gck-misc.c:101
 msgid "Insufficient memory available"
@@ -597,7 +590,7 @@ msgstr "Ha succeït un error en el dispositiu"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr "No hi ha prou memòria disponible en el dispositiu"
+msgstr ""
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
@@ -633,7 +626,7 @@ msgstr "No es necessita cap clau"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr "La clau és diferent que abans"
+msgstr ""
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
@@ -641,7 +634,7 @@ msgstr "Es necessita una clau"
 
 #: ../gck/gck-misc.c:151
 msgid "Cannot include the key in the digest"
-msgstr "No es pot incloure la clau en el resum"
+msgstr ""
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
@@ -785,7 +778,7 @@ msgstr "Ja ha entrat un altre usuari"
 
 #: ../gck/gck-misc.c:223
 msgid "Too many users of different types are logged in"
-msgstr "Han entrat massa usuaris de diferents tipus"
+msgstr ""
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
@@ -890,15 +883,12 @@ msgstr "Introduïu la contrasenya per desblocar l'anell de claus d'entrada"
 msgid ""
 "The password you use to log in to your computer no longer matches that of "
 "your login keyring."
-msgstr ""
-"La contrasenya que utilitzeu per entrar a l'ordinador ja no coincideix amb "
-"la contrasenya de l'anell de claus d'entrada."
+msgstr "La contrasenya que utilitzeu per entrar a l'ordinador ja no coincideix amb la contrasenya de l'anell de claus d'entrada."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:642
 msgid ""
 "The login keyring did not get unlocked when you logged into your computer."
-msgstr ""
-"No s'ha desblocat l'anell de claus d'entrada quan heu entrat a l'ordinador."
+msgstr "No s'ha desblocat l'anell de claus d'entrada quan heu entrat a l'ordinador."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:660
 msgid "Unlock Keyring"
@@ -964,18 +954,16 @@ msgstr "Desbloca el magatzem de certificats/claus"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:823
 msgid "Enter password to unlock the certificate/key storage"
-msgstr ""
-"Introduïu la contrasenya per desblocar el magatzem de certificats/claus"
+msgstr "Introduïu la contrasenya per desblocar el magatzem de certificats/claus"
 
-#. TRANSLATORS: The storage is locked, and needs unlocking before the application can use it.
+#. TRANSLATORS: The storage is locked, and needs unlocking before the
+#. application can use it.
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:826
 #, c-format
 msgid ""
 "An application wants access to the certificate/key storage '%s', but it is "
 "locked"
-msgstr ""
-"Una aplicació vol accedir al magatzem de certificats/claus «%s», però està "
-"blocat"
+msgstr "Una aplicació vol accedir al magatzem de certificats/claus «%s», però està blocat"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1132
 msgid "New Password Required"
@@ -983,16 +971,14 @@ msgstr "Cal una contrasenya nova"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1133
 msgid "New password required for secure storage"
-msgstr "Cal una contrasenya nova per al magatzem segur"
+msgstr "Cal una contrasenya nova per l'emmagatzematge segur"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1135
 #, c-format
 msgid ""
 "In order to prepare '%s' for storage of certificates or keys, a password is "
 "required"
-msgstr ""
-"Es necessita una contrasenya per poder preparar «%s» per al magatzem de "
-"certificats o claus"
+msgstr "Es necessita una contrasenya per poder preparar «%s» per al magatzem de certificats o claus"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1258
 msgid "Change Password"
@@ -1000,667 +986,83 @@ msgstr "Canvia la contrasenya"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1259
 msgid "Change password for secure storage"
-msgstr "Canvia la contrasenya per al magatzem segur"
+msgstr "Canvia la contrasenya per l'emmagatzematge segur"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1261
 #, c-format
 msgid ""
 "To change the password for '%s', the original and new passwords are required"
-msgstr ""
-"Cal la contrasenya original i la nova per canviar la contrasenya de «%s»"
+msgstr "Per canviar la contrasenya de «%s» cal la contrasenya original i la nova"
 
 #: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: mate-keyring command [options]\n"
-msgstr "utilització: mate-keyring ordre [opcions]\n"
+msgstr ""
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
-msgstr "ordres: "
+msgstr ""
 
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
 msgid "          "
-msgstr "        "
+msgstr ""
 
-#: ../ui/gku-prompt-tool.c:538
+#: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
 msgstr "Voleu emmagatzemar les contrasenyes desxifrades?"
 
-#: ../ui/gku-prompt-tool.c:539
+#: ../ui/gku-prompt-tool.c:598
 msgid ""
 "By choosing to use a blank password, your stored passwords will not be "
 "safely encrypted. They will be accessible by anyone with access to your "
 "files."
-msgstr ""
-"Si escolliu utilitzar una contrasenya en blanc, les contrasenyes "
-"emmagatzemades no es xifraran amb seguretat. Aquestes seran accessibles per "
-"qualsevol que tingui accés als vostres fitxers."
+msgstr "Si escolliu utilitzar una contrasenya en blanc, les contrasenyes emmagatzemades no es xifraran amb seguretat. Aquestes seran accessibles per qualsevol que tingui accés als vostres fitxers."
 
-#: ../ui/gku-prompt-tool.c:546
+#: ../ui/gku-prompt-tool.c:605
 msgid "Use Unsafe Storage"
 msgstr "Utilitza un magatzem no segur"
 
-#: ../ui/gku-prompt-tool.c:584
+#: ../ui/gku-prompt-tool.c:643
 msgid "Passwords do not match."
 msgstr "Les contrasenyes no coincideixen."
 
-#: ../ui/gku-prompt-tool.c:594
+#: ../ui/gku-prompt-tool.c:653
 msgid "Password cannot be blank"
 msgstr "La contrasenya no pot estar en blanc"
 
+#: ../ui/mate-keyring-prompt.desktop.in.in.h:1
+msgid "Keyring Access"
+msgstr ""
+
+#: ../ui/mate-keyring-prompt.desktop.in.in.h:2
+msgid "Unlock access to passwords and other secrets"
+msgstr ""
+
 #: ../ui/gku-prompt.ui.h:1
-msgid "New password strength"
-msgstr "Força de la contrasenya nova"
-
-#: ../ui/gku-prompt.ui.h:2
-msgid "_Application:"
-msgstr "_Aplicació:"
-
-#: ../ui/gku-prompt.ui.h:3
-msgid "_Confirm:"
-msgstr "_Confirmeu:"
-
-#: ../ui/gku-prompt.ui.h:4
-msgid "_Details:"
-msgstr "_Detalls:"
-
-#: ../ui/gku-prompt.ui.h:5
 msgid "_Name:"
 msgstr "_Nom:"
 
-#: ../ui/gku-prompt.ui.h:6
+#: ../ui/gku-prompt.ui.h:2
 msgid "_Old Password:"
 msgstr "C_ontrasenya antiga:"
 
-#: ../ui/gku-prompt.ui.h:7
+#: ../ui/gku-prompt.ui.h:3
 msgid "_Password:"
 msgstr "Contrasen_ya:"
 
-#~ msgid "Email"
-#~ msgstr "Correu electrònic"
-
-#~ msgid "<i>Not Part of Certificate</i>"
-#~ msgstr "<i>No és part del certificat</i>"
-
-#~ msgid "<i>unknown</i>"
-#~ msgstr "<i>desconegut</i>"
-
-#~ msgid "<Not Part of Certificate>"
-#~ msgstr "<No és part del certificat>"
-
-#~ msgid "<b>Fingerprints</b>"
-#~ msgstr "<b>Empremtes</b>"
-
-#~ msgid "<b>Issued By</b>"
-#~ msgstr "<b>Emès per</b>"
-
-#~ msgid "<b>Issued To</b>"
-#~ msgstr "<b>Emès per a</b>"
-
-#~ msgid "<b>This certificate has been verified for the following uses:</b>"
-#~ msgstr "<b>Aquest certificat s'ha verificat per als usos següents:</b>"
-
-#~ msgid "<b>Validity</b>"
-#~ msgstr "<b>Validesa</b>"
-
-#~ msgid "Common Name (CN)"
-#~ msgstr "Nom comú (CN)"
-
-#~ msgid "Email Recipient Certificate"
-#~ msgstr "Certificat del destinatari del correu electrònic"
-
-#~ msgid "Email Signer Certificate"
-#~ msgstr "Certificat del signant del correu electrònic"
-
-#~ msgid "Issued On"
-#~ msgstr "Emès el"
-
-#~ msgid "MD5 Fingerprint"
-#~ msgstr "Empremta MD5"
-
-#~ msgid "Organization (O)"
-#~ msgstr "Organització (O)"
-
-#~ msgid "Organizational Unit (OU)"
-#~ msgstr "Unitat organitzativa (OU)"
-
-#~ msgid "SHA1 Fingerprint"
-#~ msgstr "Empremta SHA1"
-
-#~ msgid "SSL Client Certificate"
-#~ msgstr "Certificat del client SSL"
-
-#~ msgid "SSL Server Certificate"
-#~ msgstr "Certificat del servidor SSL"
-
-#~ msgid "<span size='large' weight='bold'>Import Certificates and Keys</span>"
-#~ msgstr "<span size='large' weight='bold'>Importa certificats i claus</span>"
-
-#~ msgid ""
-#~ "This option enables the PKCS#11 component in the mate-keyring daemon. It "
-#~ "only takes effect during startup with mate-session, (ie: when the user "
-#~ "logs in). This setting may be overridden when certain command line "
-#~ "arguments are passed to the daemon."
-#~ msgstr ""
-#~ "Aquesta opció habilita el component PKCS#11 en el dimoni del mate-"
-#~ "keyring. Només té efecte quan s'inicia amb el mate-session, (per "
-#~ "exemple, quan l'usuari entra a la sessió). Es pot sobreescriure si es "
-#~ "passa una opció de línia d'ordres al dimoni."
-
-#~ msgid ""
-#~ "This option enables the SSH agent in the mate-keyring daemon. It only "
-#~ "takes effect as mate-keyring-daemon starts, (ie: when the user logs in). "
-#~ "This setting may be overridden when certain command line arguments are "
-#~ "passed to the daemon."
-#~ msgstr ""
-#~ "Aquesta opció habilita l'agent SSH en el dimoni del mate-keyring. Només "
-#~ "té efecte quan s'inicia el mate-keyring-daemon, (per exemple, quan "
-#~ "l'usuari entra a la sessió). Es pot sobreescriure aquest paràmetre si es "
-#~ "passa una opció de línia d'ordres al dimoni."
-
-#~ msgid ""
-#~ "This option enables the secret service component in the mate-keyring "
-#~ "daemon. It only takes effect during startup with mate-session, (ie: when "
-#~ "the user logs in). This setting may be overridden when certain command "
-#~ "line arguments are passed to the daemon."
-#~ msgstr ""
-#~ "Aquesta opció habilita el component de servei de secrets en el dimoni del "
-#~ "mate-keyring. Només té efecte quan s'inicia amb el mate-session, (per "
-#~ "exemple, quan l'usuari entra a la sessió). Es pot sobreescriure aquest "
-#~ "paràmetre si es passa una opció de línia d'ordres al dimoni."
-
-#~ msgid "Whether the mate-keyring PKCS#11 component is enabled."
-#~ msgstr "Si està habilitat el component PKCS#11 del mate-keyring."
-
-#~ msgid "Whether the mate-keyring SSH agent is enabled."
-#~ msgstr "Si està habilitat l'agent SSH del mate-keyring."
-
-#~ msgid "Whether the mate-keyring secret service is enabled."
-#~ msgstr "Si està habilitat el servei de secrets del mate-keyring."
-
-#~ msgid "Unlock password for %s keyring"
-#~ msgstr "Contrasenya de desblocatge de l'anell de claus %s"
-
-#~ msgid "Automatically unlock secure storage when I log in."
-#~ msgstr "Desbloca automàticament el magatzem segur quan iniciï la sessió."
-
-#~ msgid ""
-#~ "<span size=\"large\" weight=\"bold\">Enter password for keyring 'login' "
-#~ "to unlock</span>\n"
-#~ "\n"
-#~ "An application wants access to the keyring 'xxx', but it is locked."
-#~ msgstr ""
-#~ "<span size=\"large\" weight=\"bold\">Introduïu la contrasenya per "
-#~ "desblocar l'anell de claus d'entrada</span>\n"
-#~ "\n"
-#~ "Una aplicació vol accedir a l'anell de claus «xxx», però està blocat."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to access the password for '<object "
-#~ "prop='name'/>' in the default keyring."
-#~ msgstr ""
-#~ "L'aplicació «%s» (%s) vol accedir a la contrasenya per a «<object "
-#~ "prop='name'/>» en l'anell de claus predeterminat."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to access the password for '<object "
-#~ "prop='name'/>' in %s."
-#~ msgstr ""
-#~ "L'aplicació «%s» (%s) vol accedir a la contrasenya per a «<object "
-#~ "prop='name'/>» en %s."
-
-#~ msgid ""
-#~ "The application '%s' wants to access the password for '<object "
-#~ "prop='name'/>' in the default keyring."
-#~ msgstr ""
-#~ "L'aplicació «%s» vol accedir a la contrasenya per a «<object prop='name'/>» "
-#~ "de l'anell de claus predeterminat."
-
-#~ msgid ""
-#~ "The application '%s' wants to access the password for '<object "
-#~ "prop='name'/>' in %s."
-#~ msgstr ""
-#~ "L'aplicació «%s» vol accedir a la contrasenya per a «<object prop='name'/>» "
-#~ "en %s."
-
-#~ msgid ""
-#~ "An unknown application wants to access the password for '<object "
-#~ "prop='name'/>' in the default keyring."
-#~ msgstr ""
-#~ "Una aplicació desconeguda vol accedir a la contrasenya per a «<object "
-#~ "prop='name'/>» de l'anell de claus predeterminat."
-
-#~ msgid ""
-#~ "An unknown application wants to access the password for '<object "
-#~ "prop='name'/>' in %s."
-#~ msgstr ""
-#~ "Una aplicació desconeguda vol accedir a la contrasenya per a «<object "
-#~ "prop='name'/>» en %s."
-
-#~ msgid "Allow access"
-#~ msgstr "Permet l'accés"
-
-#~ msgid "Allow application access to keyring?"
-#~ msgstr "Voleu permetre que l'aplicació accedeixi a l'anell de claus?"
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants access to the default keyring, but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "L'aplicació «%s» (%s) vol accedir a l'anell de claus predeterminat, però "
-#~ "està blocat"
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants access to the keyring '%s', but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "L'aplicació «%s» (%s) vol accedir a l'anell de claus «%s», però està blocat"
-
-#~ msgid ""
-#~ "The application '%s' wants access to the default keyring, but it is locked"
-#~ msgstr ""
-#~ "L'aplicació «%s» vol accedir a l'anell de claus predeterminat, però està "
-#~ "blocat"
-
-#~ msgid ""
-#~ "The application '%s' wants access to the keyring '%s', but it is locked"
-#~ msgstr ""
-#~ "L'aplicació «%s» vol accedir a l'anell de claus «%s», però està blocat"
-
-#~ msgid ""
-#~ "An unknown application wants access to the default keyring, but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "Una aplicació desconeguda vol accedir a l'anell de claus predeterminat, "
-#~ "però està blocat"
-
-#~ msgid "Enter password for default keyring to unlock"
-#~ msgstr ""
-#~ "Introduïu la contrasenya per desblocar l'anell de claus predeterminat"
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to create a new keyring called '%s'. You "
-#~ "have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "L'aplicació «%s» (%s) vol crear un anell de claus nou anomenat «%s». Heu "
-#~ "d'establir la contrasenya que hi vulgueu utilitzar."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to create a new default keyring. You have "
-#~ "to choose the password you want to use for it."
-#~ msgstr ""
-#~ "L'aplicació «%s» (%s) vol crear un anell de claus predeterminat nou. Heu "
-#~ "d'establir la contrasenya que hi vulgueu utilitzar."
-
-#~ msgid ""
-#~ "The application '%s' wants to create a new keyring called '%s'. You have "
-#~ "to choose the password you want to use for it."
-#~ msgstr ""
-#~ "L'aplicació «%s» vol crear un anell de claus nou anomenat «%s». Heu "
-#~ "d'establir la contrasenya que hi vulgueu utilitzar."
-
-#~ msgid ""
-#~ "The application '%s' wants to create a new default keyring. You have to "
-#~ "choose the password you want to use for it."
-#~ msgstr ""
-#~ "L'aplicació «%s» vol crear un anell de claus predeterminat nou. Heu "
-#~ "d'establir la contrasenya que hi vulgueu utilitzar."
-
-#~ msgid ""
-#~ "An unknown application wants to create a new default keyring. You have to "
-#~ "choose the password you want to use for it."
-#~ msgstr ""
-#~ "Una aplicació desconeguda vol crear un anell de claus predeterminat nou. "
-#~ "Heu d'establir la contrasenya que hi vulgueu utilitzar."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to change the password for the '%s' "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "L'aplicació «%s» (%s) vol canviar la contrasenya de l'anell de claus «%s». "
-#~ "Heu d'escollir la contrasenya que hi vulgueu utilitzar."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to change the password for the default "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "L'aplicació «%s» (%s) vol canviar la contrasenya de l'anell de claus "
-#~ "predeterminat. Heu d'escollir la contrasenya que hi vulgueu utilitzar."
-
-#~ msgid ""
-#~ "The application '%s' wants to change the password for the '%s' keyring. "
-#~ "You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "L'aplicació «%s» vol canviar la contrasenya de l'anell de claus «%s». Heu "
-#~ "d'escollir la contrasenya que hi vulgueu utilitzar."
-
-#~ msgid ""
-#~ "The application '%s' wants to change the password for the default "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "L'aplicació «%s» vol canviar la contrasenya de l'anell de claus "
-#~ "predeterminat. Heu d'escollir la contrasenya que hi vulgueu utilitzar."
-
-#~ msgid ""
-#~ "An unknown application wants to change the password for the default "
-#~ "keyring. You have to choose the password you want to use for it."
-#~ msgstr ""
-#~ "Una aplicació desconeguda vol canviar l'anell de claus predeterminat. Heu "
-#~ "d'escollir la contrasenya que hi vulgueu utilitzar."
-
-#~ msgid "Choose a new password for the default keyring."
-#~ msgstr "Escolliu una contrasenya nova per a l'anell de claus predeterminat."
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to store a password, but there is no "
-#~ "default keyring. To create one, you need to choose the password you wish "
-#~ "to use for it."
-#~ msgstr ""
-#~ "L'aplicació «%s» (%s) vol emmagatzemar una contrasenya, però no hi ha cap "
-#~ "anell de claus predeterminat. Per crear-ne un, heu d'establir la "
-#~ "contrasenya que hi vulgueu utilitzar."
-
-#~ msgid ""
-#~ "The application '%s' wants to store a password, but there is no default "
-#~ "keyring. To create one, you need to choose the password you wish to use "
-#~ "for it."
-#~ msgstr ""
-#~ "L'aplicació «%s» vol emmagatzemar una contrasenya, però no hi ha cap anell "
-#~ "de claus predeterminat. Per crear-ne un, heu d'establir la contrasenya "
-#~ "que hi vulgueu utilitzar."
-
-#~ msgid ""
-#~ "An unknown application wants to store a password, but there is no default "
-#~ "keyring. To create one, you need to choose the password you wish to use "
-#~ "for it."
-#~ msgstr ""
-#~ "Una aplicació desconeguda vol emmagatzemar una contrasenya, però no hi ha "
-#~ "cap anell de claus predeterminat. Per crear-ne un, heu d'establir la "
-#~ "contrasenya que hi vulgueu utilitzar."
-
-#~ msgid "Create Default Keyring"
-#~ msgstr "Crea l'anell de claus predeterminat"
-
-#~ msgid "Choose password for default keyring"
-#~ msgstr "Estableix una contrasenya per a l'anell de claus predeterminat"
-
-#~ msgid "Create Login Keyring"
-#~ msgstr "Crea un anell de claus d'entrada"
-
-#~ msgid "Enter your login password"
-#~ msgstr "Introduïu la contrasenya d'entrada"
-
-#~ msgid ""
-#~ "Your login keyring was not automatically created when you logged into "
-#~ "this computer. It will now be created."
-#~ msgstr ""
-#~ "No s'ha creat l'anell de claus d'entrada quan heu entrat a l'ordinador. "
-#~ "Es crearà ara."
-
-#~ msgid "Automatically unlock this private key when I log in."
-#~ msgstr "Desbloca aquesta clau privada quan inici la sessió."
-
-#~ msgid "Automatically unlock this certificate when I log in."
-#~ msgstr "Desbloca aquest certificat quan inici la sessió."
-
-#~ msgid "Automatically unlock this public key when I log in."
-#~ msgstr "Desbloca aquesta clau pública quan inici la sessió."
-
-#~ msgid "Automatically unlock this when I log in"
-#~ msgstr "Desbloca-ho quan inici la sessió"
-
-#~ msgid ""
-#~ "<b><big>Could not grab your mouse.</big></b>\n"
-#~ "\n"
-#~ "A malicious client may be eavesdropping on your session or you may have "
-#~ "just clicked a menu or some application just decided to get focus.\n"
-#~ "\n"
-#~ "Try again."
-#~ msgstr ""
-#~ "<b><big>No s'ha pogut capturar el ratolí.</big></b>\n"
-#~ "\n"
-#~ "Pot ser que un client maliciós estigui tafanejant la vostra sessió, que "
-#~ "hàgiu fet clic a un menú o que alguna aplicació hagi obtingut el focus.\n"
-#~ "\n"
-#~ "Torneu-ho a provar."
-
-#~ msgid ""
-#~ "<b><big>Could not grab your keyboard.</big></b>\n"
-#~ "\n"
-#~ "A malicious client may be eavesdropping on your session or you may have "
-#~ "just clicked a menu or some application just decided to get focus.\n"
-#~ "\n"
-#~ "Try again."
-#~ msgstr ""
-#~ "<b><big>No s'ha pogut capturar el teclat.</big></b>\n"
-#~ "\n"
-#~ "Pot ser que un client maliciós estigui tafanejant la vostra sessió, que "
-#~ "hàgiu fet clic a un menú o que alguna aplicació hagi obtingut el focus.\n"
-#~ "\n"
-#~ "Torneu-ho a provar."
-
-#~ msgid "_Deny"
-#~ msgstr "_Denega"
-
-#~ msgid "C_reate"
-#~ msgstr "C_rea"
-
-#~ msgid "C_hange"
-#~ msgstr "Can_via"
-
-#~ msgid "Allow _Once"
-#~ msgstr "Permet _una vegada"
-
-#~ msgid "_Always Allow"
-#~ msgstr "Permet _sempre"
-
-#~ msgid "Removable Disk: %s"
-#~ msgstr "Disc extraïble: %s"
-
-#~ msgid "Removable Disk"
-#~ msgstr "Disc extraïble"
-
-#~ msgid "Home"
-#~ msgstr "Inici"
-
-#~ msgid "The disk or drive this file is located on is not present"
-#~ msgstr "No hi ha el disc o la unitat a on hi ha aquest fitxer"
-
-#~ msgid "Couldn't create directory: %s"
-#~ msgstr "No s'ha pogut crear el directori: %s"
-
-#~ msgid "Couldn't delete the file: %s"
-#~ msgstr "No s'ha pogut suprimir el fitxer: %s"
-
-#~ msgid "Access Denied"
-#~ msgstr "Accés denegat"
-
-#~ msgid "The mate-keyring-daemon application is not running."
-#~ msgstr "No s'està executant l'aplicació mate-keyring-daemon."
-
-#~ msgid "Error communicating with mate-keyring-daemon"
-#~ msgstr "S'ha produït un error en comunicar-se amb el mate-keyring-daemon."
-
-#~ msgid "A keyring with that name already exists"
-#~ msgstr "Ja existeix un anell de claus amb aquest nom"
-
-#~ msgid "Programmer error: The application sent invalid data."
-#~ msgstr "Error de programació: l'aplicació ha enviat dades errònies."
-
-#~ msgid "No matching results"
-#~ msgstr "No hi ha cap concordança"
-
-#~ msgid "A keyring with that name does not exist."
-#~ msgstr "No existeix cap anell de claus amb aquest nom."
-
-#~ msgid "The keyring has already been unlocked."
-#~ msgstr "Ja s'ha desblocat l'anell de claus."
-
-#~ msgid ""
-#~ "A list of paths to PKCS#11 modules to load. No modules are currently "
-#~ "listed by default, as this is still an experimental feature. This is used "
-#~ "by seahorse and other PKCS#11 aware applications."
-#~ msgstr ""
-#~ "Una llista de rutes dels mòduls PKCS#11 a carregar. Per defecte no hi ha "
-#~ "cap mòdul a la llista, ja que aquesta és una funció experimental. El "
-#~ "Seahorse i altres aplicacions PKCS#11 l'utilitzen."
-
-#~ msgid "PKCS#11 Modules"
-#~ msgstr "Mòduls PKCS#11"
-
-#~ msgid "Import private key"
-#~ msgstr "Importa la clau privada"
-
-#~ msgid "Import certificate"
-#~ msgstr "Importa el certificat"
-
-#~ msgid "Import public key"
-#~ msgstr "Importa la clau pública"
-
-#~ msgid "Import"
-#~ msgstr "Importa"
-
-#~ msgid "The system wants to import the private key '%s', but it is locked"
-#~ msgstr "El sistema vol importar la clau privada «%s», però està blocada"
-
-#~ msgid "The system wants to import the certificate '%s', but it is locked"
-#~ msgstr "El sistema vol importar el certificat «%s», però està blocat"
-
-#~ msgid "The system wants to import the public key '%s', but it is locked"
-#~ msgstr "El sistema vol importar la clau pública «%s», però està blocada"
-
-#~ msgid "The system wants to import '%s', but it is locked"
-#~ msgstr "El sistema vol importar «%s», però està blocat"
-
-#~ msgid "Create Storage for Key Information"
-#~ msgstr "Crea un magatzem per a la informació de la clau"
-
-#~ msgid "Choose password to protect storage"
-#~ msgstr "Seleccioneu una contrasenya per protegir el magatzem"
-
-#~ msgid ""
-#~ "The system wants to store information about your keys and certificates. "
-#~ "In order to protect this information, choose a password with which it "
-#~ "will be locked."
-#~ msgstr ""
-#~ "El sistema vol emmagatzemar informació sobre les vostres claus i "
-#~ "certificats. Per poder protegir aquesta informació, trieu una contrasenya "
-#~ "per blocar-la."
-
-#~ msgid "Unlock Storage for Key Information"
-#~ msgstr "Desbloca el magatzem per obtenir la informació de la clau"
-
-#~ msgid "Enter password to unlock storage"
-#~ msgstr "Introduïu la contrasenya per desblocar el magatzem"
-
-#~ msgid ""
-#~ "The system wants to access information about your keys and certificates, "
-#~ "but it is locked."
-#~ msgstr ""
-#~ "El sistema vol accedir a la informació sobre les vostres claus i "
-#~ "certificats, però està blocada"
-
-#~ msgid "Trust Association"
-#~ msgstr "Associació de confiança"
-
-#~ msgid "Cannot delete '%s' because it is tied to other objects."
-#~ msgstr "No es pot suprimir «%s» perquè està lligat a altres objectes."
-
-#~ msgid "Lock private key"
-#~ msgstr "Bloca la clau privada"
-
-#~ msgid "Lock"
-#~ msgstr "Bloca"
-
-#~ msgid "Enter password to protect the private key"
-#~ msgstr "Introduïu la contrasenya per protegir la clau privada"
-
-#~ msgid "Enter password to protect storage"
-#~ msgstr "Introduïu la contrasenya per protegir el magatzem"
-
-#~ msgid ""
-#~ "The system wants to store the private key '%s' on your disk. Please enter "
-#~ "a password to lock it with."
-#~ msgstr ""
-#~ "El sistema vol emmagatzemar la clau privada «%s» al disc. Introduïu una "
-#~ "contrasenya a utilitzar per blocar-la."
-
-#~ msgid ""
-#~ "The system wants to store '%s' on your disk. Please enter a password to "
-#~ "lock it with."
-#~ msgstr ""
-#~ "El sistema vol emmagatzemar «%s» al disc. Introduïu una contrasenya a "
-#~ "utilitzar per blocar-ho."
-
-#~ msgid "Unrecognized or unsupported file."
-#~ msgstr "Fitxer no reconegut o no compatible."
-
-#~ msgid "Could not parse invalid or corrupted file."
-#~ msgstr "No s'ha pogut analitzar el fitxer. No és vàlid o està malmès."
-
-#~ msgid "Couldn't read secure shell private key: %s"
-#~ msgstr ""
-#~ "No s'ha pogut llegir la clau privada de l'intèrpret d'ordres segur: %s"
-
-#~ msgid "Invalid secure shell private key at: %s"
-#~ msgstr "La clau privada de l'intèrpret d'ordres segur no és vàlida a: %s"
-
-#~ msgid "Couldn't encrypt the SSH key to store it."
-#~ msgstr "No s'ha pogut xifrar la clau SSH per emmagatzemar-la."
-
-#~ msgid "Couldn't encode the SSH key to store it."
-#~ msgstr "No s'ha pogut codificar la clau SSH per emmagatzemar-la."
-
-#~ msgid "Old password cannot be blank."
-#~ msgstr "La contrasenya antiga no pot ser buida."
-
-#~ msgid "<span weight=\"bold\">Password strength meter:</span>"
-#~ msgstr ""
-#~ "<span weight=\"bold\">Mesurador de la força de la contrasenya:</span>"
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants access to an unknown keyring, but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "L'aplicació «%s» (%s) vol accedir a un anell de claus desconegut, però "
-#~ "està blocat"
-
-#~ msgid ""
-#~ "The application '%s' wants access to an unknown keyring, but it is locked"
-#~ msgstr ""
-#~ "L'aplicació «%s» vol accedir un anell de claus desconegut, però està blocat"
-
-#~ msgid ""
-#~ "An unknown application wants access to an unknown keyring, but it is "
-#~ "locked"
-#~ msgstr ""
-#~ "Una aplicació desconeguda vol accedir a un anell de claus desconegut, "
-#~ "però està blocat"
-
-#~ msgid ""
-#~ "The application '%s' (%s) wants to access the password for '%s' in an "
-#~ "unknown keyring."
-#~ msgstr ""
-#~ "L'aplicació «%s» (%s) vol accedir a la contrasenya per a «%s» d'un anell de "
-#~ "claus desconegut."
-
-#~ msgid ""
-#~ "The application '%s' wants to access the password for '%s' in an unknown "
-#~ "keyring."
-#~ msgstr ""
-#~ "L'aplicació «%s» vol accedir a la contrasenya de «%s» d'un anell de claus "
-#~ "desconegut."
-
-#~ msgid ""
-#~ "An unknown application wants to access the password for '%s' in an "
-#~ "unknown keyring."
-#~ msgstr ""
-#~ "Una aplicació desconeguda vol accedir a la contrasenya per a «%s» d'un "
-#~ "anell de claus desconegut."
-
-#~ msgid "You must specify the type of request to run\n"
-#~ msgstr "Heu d'especificar el tipus de petició a executar\n"
-
-#~ msgid "Unknown request type\n"
-#~ msgstr "Es desconeix el tipus de petició\n"
+#: ../ui/gku-prompt.ui.h:4
+msgid "_Confirm:"
+msgstr "_Confirmeu:"
+
+#: ../ui/gku-prompt.ui.h:5
+msgid "New password strength"
+msgstr "Força de la contrasenya nova"
+
+#: ../ui/gku-prompt.ui.h:6
+msgid "_Application:"
+msgstr "_Aplicació:"
+
+#: ../ui/gku-prompt.ui.h:7
+msgid "_Details:"
+msgstr "_Detalls:"

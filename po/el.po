@@ -1,29 +1,26 @@
-# translation of el.po to Greek
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER.
-#
-# Kostas Papadimas <pkst@gnome.org>, 2004, 2006.
+# 
+# Translators:
 # Jennie Petoumenou <epetoumenou@gmail.com>, 2009, 2010.
-# Christos Spyroglou <cspyroglou@gmail.com>, 2010.
-#
+# Kostas Papadimas <pkst@gnome.org>, 2004, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: el\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-13 11:58+0200\n"
-"PO-Revision-Date: 2011-01-13 11:59+0200\n"
-"Last-Translator: Kostas Papadimas <pkst@gnome.org>\n"
-"Language-Team: Greek <team@mate.gr>\n"
-"Language: el\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-06-29 11:58+0200\n"
+"PO-Revision-Date: 2012-06-29 09:59+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Greek (http://www.transifex.com/projects/p/MATE/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 0.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
-#: ../daemon/dbus/gkd-secret-change.c:78
-#: ../daemon/dbus/gkd-secret-create.c:74
+#: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
 #: ../pkcs11/secret-store/gkm-secret-collection.c:325
 #: ../pkcs11/wrap-layer/gkm-wrap-login.c:343
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:789
@@ -41,25 +38,29 @@ msgstr "Επιλέξτε νέο κωδικό για την κλειδοθήκη 
 
 #: ../daemon/dbus/gkd-secret-change.c:92
 #, c-format
-msgid "An application wants to change the password for the '%s' keyring. Choose the new password you want to use for it."
+msgid ""
+"An application wants to change the password for the '%s' keyring. Choose the"
+" new password you want to use for it."
 msgstr "Μια εφαρμογή επιθυμεί να αλλάξει το κωδικό για την κλειδοθήκη '%s'. Επιλέξετε τον κωδικό που θέλετε να χρησιμοποιήσετε για αυτό."
 
 #: ../daemon/dbus/gkd-secret-change.c:111
 msgid "The original password was incorrect"
 msgstr "Ο αρχικός κωδικός ήταν λάθος"
 
-#: ../daemon/dbus/gkd-secret-create.c:78
+#: ../daemon/dbus/gkd-secret-create.c:83
 msgid "New Keyring Password"
 msgstr "Νέος κωδικός κλειδοθήκης"
 
-#: ../daemon/dbus/gkd-secret-create.c:79
+#: ../daemon/dbus/gkd-secret-create.c:84
 msgid "Choose password for new keyring"
 msgstr "Επιλέξτε κωδικό για νέα κλειδοθήκη"
 
-#: ../daemon/dbus/gkd-secret-create.c:81
+#: ../daemon/dbus/gkd-secret-create.c:86
 #, c-format
-msgid "An application wants to create a new keyring called '%s'. Choose the password you want to use for it."
-msgstr "Μια εφαρμογή επιθυμεί να δημιουργήσει μια νέα κλειδοθήκη με το όνομα '%s'. Επιλέξτε τον κωδικό που θέλετε να χρησιμοποιήσετε για αυτό."
+msgid ""
+"An application wants to create a new keyring called '%s'. Choose the "
+"password you want to use for it."
+msgstr "Μια εφαρμογή επιθυμεί να δημιουργήσει μια νέα κλειδοθήκη με το όνομα '%s'. Επιλέξετε τον κωδικό που θέλετε να χρησιμοποιήσετε για αυτό."
 
 #: ../daemon/mate-keyring-pkcs11.desktop.in.in.h:1
 msgid "Certificate and Key Storage"
@@ -67,57 +68,56 @@ msgstr "Αποθήκη πιστοποιητικών και κλειδιών"
 
 #: ../daemon/mate-keyring-pkcs11.desktop.in.in.h:2
 msgid "MATE Keyring: PKCS#11 Component"
-msgstr "Κλειδοθήκη MATE: Συνιστώσα PKCS#11"
+msgstr "MATE Keyring: Συστατικό PKCS#11"
 
 #: ../daemon/mate-keyring-secrets.desktop.in.in.h:1
-msgid "MATE Keyring: Secret Service"
-msgstr "Κλειδοθήκη MATE: Κρυφή υπηρεσία"
-
-#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
 msgid "Secret Storage Service"
 msgstr "Υπηρεσία κρυφής αποθήκευσης"
 
+#: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
+msgid "MATE Keyring: Secret Service"
+msgstr "MATE Keyring: Κρυφή υπηρεσία"
+
 #: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
-msgid "MATE Keyring: SSH Agent"
-msgstr "Κλειδοθήκη MATE: Πράκτορας (agent) SSH"
+msgid "SSH Key Agent"
+msgstr "SSH Key Agent"
 
 #: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
-msgid "SSH Key Agent"
-msgstr "Πράκτορας (agent) κλειδιού SSH"
+msgid "MATE Keyring: SSH Agent"
+msgstr "MATE Keyring: SSH Agent"
 
 #: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
-msgid "MATE Keyring: GPG Agent"
-msgstr "Κλειδοθήκη MATE: Πράκτορας (agent) GPG"
-
-#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
 msgid "GPG Password Agent"
 msgstr "Πρόγραμμα κωδικού GPG"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:104
-#: ../gcr/gcr-key-renderer.c:291
+#: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
+msgid "MATE Keyring: GPG Agent"
+msgstr "MATE Keyring: GPG Agent"
+
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:104 ../gcr/gcr-key-renderer.c:291
 #: ../gcr/gcr-key-renderer.c:296
 msgid "Unknown"
 msgstr "Άγνωστο"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:199
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:202
 #, c-format
 msgid "PGP Key: %s"
 msgstr "Κλειδί PGP: %s"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:348
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:349
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:354
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:355
 msgid "Enter Passphrase"
 msgstr "Εισάγετε την κωδική φράση"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:383
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:397
 msgid "Forget this password if idle for"
 msgstr "Να ξεχαστεί αυτός ο κωδικός αν είναι αδρανής για"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:384
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:398
 msgid "Forget this password after"
-msgstr "Να ξεχαστεί αυτός ο κωδικός μετά από"
+msgstr "Να λησμονηθεί αυτός ο κωδικός μετά"
 
-#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:385
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:399
 msgid "Forget this password when I log out"
 msgstr "Να ξεχαστεί αυτός ο κωδικός όταν αποσυνδεθώ"
 
@@ -136,7 +136,7 @@ msgstr "ID Χρήστη"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr "Διεύθυνση ηλεκτρονικού ταχυδρομείου"
+msgstr ""
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -166,8 +166,7 @@ msgstr "Όνομα, υποκοριστικό"
 msgid "Surname"
 msgstr "Επώνυμο"
 
-#: ../egg/egg-oid.c:69
-#: ../gcr/gcr-certificate-renderer.c:379
+#: ../egg/egg-oid.c:69 ../gcr/gcr-certificate-renderer.c:379
 msgid "Serial Number"
 msgstr "Σειριακός αριθμός"
 
@@ -223,8 +222,7 @@ msgstr "Προσδιοριστικό DN"
 msgid "Pseudonym"
 msgstr "Ψευδώνυμο"
 
-#: ../egg/egg-oid.c:98
-#: ../gcr/gcr-key-renderer.c:287
+#: ../egg/egg-oid.c:98 ../gcr/gcr-key-renderer.c:287
 msgid "RSA"
 msgstr "RSA"
 
@@ -240,8 +238,7 @@ msgstr "MD5 με RSA"
 msgid "SHA1 with RSA"
 msgstr "SHA1 με RSA"
 
-#: ../egg/egg-oid.c:107
-#: ../gcr/gcr-key-renderer.c:289
+#: ../egg/egg-oid.c:107 ../gcr/gcr-key-renderer.c:289
 msgid "DSA"
 msgstr "DSA"
 
@@ -259,8 +256,7 @@ msgstr "Απρόσμενο σφάλμα στο select() ανάγνωσης δε�
 msgid "Unexpected error in waitpid() (%s)"
 msgstr "Απρόσμενο σφάλμα στο waitpid() (%s)"
 
-#: ../gcr/gcr-certificate-renderer.c:82
-#: ../gcr/gcr-parser.c:201
+#: ../gcr/gcr-certificate-renderer.c:82 ../gcr/gcr-parser.c:201
 msgid "Certificate"
 msgstr "Πιστοποιητικό"
 
@@ -290,15 +286,15 @@ msgstr "Όχι"
 
 #: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr "Ταυτότητα"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr "Επαληθεύτηκε από"
+msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr "Λήγει"
+msgstr ""
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
@@ -356,8 +352,7 @@ msgstr "Παράμετροι κλειδιού"
 msgid "Key Size"
 msgstr "Μέγεθος κλειδιού"
 
-#: ../gcr/gcr-certificate-renderer.c:444
-#: ../gcr/gcr-key-renderer.c:271
+#: ../gcr/gcr-certificate-renderer.c:444 ../gcr/gcr-key-renderer.c:271
 #: ../gcr/gcr-parser.c:204
 msgid "Public Key"
 msgstr "Δημόσιο κλειδί"
@@ -369,49 +364,46 @@ msgstr "Αποτυπώματα"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr "Εισαγωγή πιστοποιητικών και κλειδιών"
+msgstr ""
 
 #: ../gcr/gcr-import-dialog.ui.h:2
-msgid "Import Into:"
-msgstr "Εισαγωγή στο:"
-
-#: ../gcr/gcr-import-dialog.ui.h:3
 msgid "Password:"
 msgstr "Κωδικός:"
 
+#: ../gcr/gcr-import-dialog.ui.h:3
+msgid "Import Into:"
+msgstr "Εισαγωγή στο:"
+
 #: ../gcr/gcr-unlock-options-widget.ui.h:1
 msgid "Automatically unlock this keyring whenever I'm logged in"
-msgstr "Αυτόματο ξεκλείδωμα αυτής της κλειδοθήκης κατά την είσοδό μου"
+msgstr "Αυτόματο ξεκλείδωμα αυτής της κλειδοθήκης κατά την είσοδο μου"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:2
+msgid "Lock this keyring when I log out"
+msgstr "Κλείδωμα αυτής της κλειδοθήκης όταν αποσυνδεθώ"
+
+#: ../gcr/gcr-unlock-options-widget.ui.h:3
 msgid "Lock this keyring after"
 msgstr "Κλείδωμα αυτής της κλειδοθήκης μετά από"
 
-#: ../gcr/gcr-unlock-options-widget.ui.h:3
+#: ../gcr/gcr-unlock-options-widget.ui.h:4
 msgid "Lock this keyring if idle for"
 msgstr "Κλείδωμα αυτής της κλειδοθήκης αν είναι αδρανές για"
-
-#: ../gcr/gcr-unlock-options-widget.ui.h:4
-msgid "Lock this keyring when I log out"
-msgstr "Κλείδωμα αυτής της κλειδοθήκης όταν αποσυνδεθώ"
 
 #. Translators: The 'minutes' from 'Lock this keyring if idle for x minutes'.
 #: ../gcr/gcr-unlock-options-widget.ui.h:6
 msgid "minutes"
 msgstr "λεπτά"
 
-#: ../gcr/gcr-importer.c:133
-#: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:701
+#: ../gcr/gcr-importer.c:133 ../pkcs11/wrap-layer/gkm-wrap-prompt.c:701
 msgid "Enter password to unlock the private key"
 msgstr "Εισάγετε κωδικό για το ξεκλείδωμα του ιδιωτικού κλειδιού"
 
-#: ../gcr/gcr-importer.c:135
-#: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:703
+#: ../gcr/gcr-importer.c:135 ../pkcs11/wrap-layer/gkm-wrap-prompt.c:703
 msgid "Enter password to unlock the certificate"
 msgstr "Εισάγετε κωδικό για το ξεκλείδωμα του πιστοποιητικού"
 
-#: ../gcr/gcr-importer.c:137
-#: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:707
+#: ../gcr/gcr-importer.c:137 ../pkcs11/wrap-layer/gkm-wrap-prompt.c:707
 msgid "Enter password to unlock"
 msgstr "Εισάγετε κωδικό για ξεκλείδωμα"
 
@@ -448,9 +440,7 @@ msgstr "Για να γίνει εισαγωγή του πιστοποιητικ�
 msgid "In order to import '%s', it must be unlocked"
 msgstr "Για να γίνει εισαγωγή του '%s', πρέπει να μην είναι κλειδωμένο"
 
-#: ../gcr/gcr-importer.c:254
-#: ../gcr/gcr-parser.c:1566
-#: ../gcr/gcr-parser.c:1757
+#: ../gcr/gcr-importer.c:254 ../gcr/gcr-parser.c:1566 ../gcr/gcr-parser.c:1757
 #: ../gck/gck-misc.c:98
 msgid "The operation was cancelled"
 msgstr "Η διεργασία ακυρώθηκε"
@@ -470,47 +460,47 @@ msgstr "Επιλέξτε τοποθεσία για την αποθήκευση �
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr "Κλειδί"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr "Ιδιωτικό κλειδί RSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr "Ιδιωτικό κλειδί DSA"
+msgstr ""
 
-#: ../gcr/gcr-key-renderer.c:264
-#: ../gcr/gcr-parser.c:198
+#: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
 msgstr "Ιδιωτικό κλειδί"
 
-#: ../gcr/gcr-key-renderer.c:267
-#: ../gcr/gcr-key-renderer.c:269
+#: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr "Δημόσιο κλειδί DSA"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
-msgid "%d bits"
-msgstr "%d bits"
+msgid "%d bit"
+msgid_plural "%d bits"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr "Ισχύς"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr "Αλγόριθμος"
+msgstr ""
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr "Μέγεθος"
+msgstr ""
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr "Αποτύπωμα"
+msgstr ""
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -524,21 +514,23 @@ msgstr "Αδυναμία ανάλυσης μη έγκυρων ή κατεστρ�
 msgid "The data is locked"
 msgstr "Τα δεδομένα είναι κλειδωμένα"
 
-#: ../gcr/gcr-trust.c:417
+#. Translators: A pinned certificate is an exception which
+#. trusts a given certificate explicitly for a purpose and
+#. communication with a certain peer.
+#: ../gcr/gcr-trust.c:420
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
-msgstr "Αδυναμία εύρεσης τοποθεσίας για την αποθήκευση του πιστοποιητικού"
+msgstr ""
 
-#: ../gck/gck-uri.c:78
-#: ../gck/gck-uri.c:135
-#: ../gck/gck-uri.c:170
+#: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
+#: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
-msgstr "Το URI έχει λανθασμένη σύνταξη. Η κωδικοποίηση του πεδίου '%s' είναι λανθασμένη."
+msgstr ""
 
-#: ../gck/gck-uri.c:195
+#: ../gck/gck-uri.c:287
 msgid "The URI has does not have the 'pkcs11' scheme."
-msgstr "Το URI δεν έχει το σχήμα 'pkcs11'"
+msgstr ""
 
 #: ../gck/gck-misc.c:101
 msgid "Insufficient memory available"
@@ -598,7 +590,7 @@ msgstr "Συνέβηκε ένα σφάλμα στη συσκευή"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr "Δεν υπάρχει επαρκής μνήμη στην συσκευή"
+msgstr ""
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
@@ -634,7 +626,7 @@ msgstr "Δεν χρειάζεται κλειδί"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr "Το κλειδί είναι διαφορετικό από πριν"
+msgstr ""
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
@@ -642,7 +634,7 @@ msgstr "Χρειάζεται ένα κλειδί"
 
 #: ../gck/gck-misc.c:151
 msgid "Cannot include the key in the digest"
-msgstr "Αδυναμία συμπερίληψης του κλειδιού στο digest"
+msgstr ""
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
@@ -786,7 +778,7 @@ msgstr "Ένας άλλος χρήστης είναι ήδη συνδεδεμέ�
 
 #: ../gck/gck-misc.c:223
 msgid "Too many users of different types are logged in"
-msgstr "Έχουν συνδεθεί πάρα πολλοί χρήστες διαφορετικού τύπου"
+msgstr ""
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
@@ -830,7 +822,7 @@ msgstr "Η αποθηκευμένη κατάσταση δεν είναι έγκ�
 
 #: ../gck/gck-misc.c:245
 msgid "The information is sensitive and cannot be revealed"
-msgstr "Οι πληροφορίες είναι ευαίσθητες και δεν είναι δυνατή η αποκάλυψή τους"
+msgstr "Οι πληροφορίες είναι ευαίσθητες και δεν είναι δυνατή η αποκάλυψη τους"
 
 #: ../gck/gck-misc.c:247
 msgid "The state cannot be saved"
@@ -888,11 +880,14 @@ msgid "Enter password to unlock your login keyring"
 msgstr "Εισαγωγή κωδικού για ξεκλείδωμα της κλειδοθήκης εισόδου"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:640
-msgid "The password you use to log in to your computer no longer matches that of your login keyring."
+msgid ""
+"The password you use to log in to your computer no longer matches that of "
+"your login keyring."
 msgstr "Ο κωδικός που χρησιμοποιείτε για να συνδεθείτε στον υπολογιστή σας δεν ταιριάζει πλέον με αυτό της κλειδοθήκης εισόδου."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:642
-msgid "The login keyring did not get unlocked when you logged into your computer."
+msgid ""
+"The login keyring did not get unlocked when you logged into your computer."
 msgstr "Η κλειδοθήκη εισόδου σας δεν ξεκλειδώθηκε όταν συνδεθήκατε σε αυτόν τον υπολογιστή."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:660
@@ -961,10 +956,13 @@ msgstr "Ξεκλείδωμα πιστοποιητικού/αποθήκης κλ�
 msgid "Enter password to unlock the certificate/key storage"
 msgstr "Εισάγετε κωδικό για το ξεκλείδωμα του πιστοποιητικού/της αποθήκης κλειδιών"
 
-#. TRANSLATORS: The storage is locked, and needs unlocking before the application can use it.
+#. TRANSLATORS: The storage is locked, and needs unlocking before the
+#. application can use it.
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:826
 #, c-format
-msgid "An application wants access to the certificate/key storage '%s', but it is locked"
+msgid ""
+"An application wants access to the certificate/key storage '%s', but it is "
+"locked"
 msgstr "Μια εφαρμογή επιθυμεί πρόσβαση στο πιστοποιητικό/αποθήκη κλειδιών '%s', αλλά αυτό είναι κλειδωμένο"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1132
@@ -973,11 +971,13 @@ msgstr "Απαιτείται νέος κωδικός"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1133
 msgid "New password required for secure storage"
-msgstr "Απαιτείται νέος κωδικός για την ασφαλή αποθήκευση"
+msgstr "Απαιτείται νέος κωδικός για την ασφαλή αποθήκη"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1135
 #, c-format
-msgid "In order to prepare '%s' for storage of certificates or keys, a password is required"
+msgid ""
+"In order to prepare '%s' for storage of certificates or keys, a password is "
+"required"
 msgstr "Απαιτείται κωδικός για την προετοιμασία του '%s' για αποθήκευση πιστοποιητικών ή κλειδιών"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1258
@@ -990,116 +990,79 @@ msgstr "Αλλαγή κωδικού για ασφαλή αποθήκευση"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1261
 #, c-format
-msgid "To change the password for '%s', the original and new passwords are required"
+msgid ""
+"To change the password for '%s', the original and new passwords are required"
 msgstr "Για να αλλάξετε τον κωδικό για '%s', απαιτούνται ο αρχικός και ο νέος κωδικός"
 
-#: ../ui/gku-prompt-tool.c:538
+#: ../tool/gkr-tool.c:102
+#, c-format
+msgid "usage: mate-keyring command [options]\n"
+msgstr ""
+
+#: ../tool/gkr-tool.c:104
+msgid "commands: "
+msgstr ""
+
+#. Translators: keep same length as translated message "commands: "
+#: ../tool/gkr-tool.c:108
+msgid "          "
+msgstr ""
+
+#: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
 msgstr "Αποθήκευση κωδικών χωρίς κρυπτογράφηση;"
 
-#: ../ui/gku-prompt-tool.c:539
-msgid "By choosing to use a blank password, your stored passwords will not be safely encrypted. They will be accessible by anyone with access to your files."
+#: ../ui/gku-prompt-tool.c:598
+msgid ""
+"By choosing to use a blank password, your stored passwords will not be "
+"safely encrypted. They will be accessible by anyone with access to your "
+"files."
 msgstr "Αν επιλέξετε την χρήση ενός κενού κωδικού, δεν θα κρυπτογραφηθούν με ασφάλεια οι αποθηκευμένοι σας κωδικοί. Θα είναι προσβάσιμοι στον καθένα που έχει πρόσβαση στα αρχεία σας."
 
-#: ../ui/gku-prompt-tool.c:546
+#: ../ui/gku-prompt-tool.c:605
 msgid "Use Unsafe Storage"
 msgstr "Χρήση μη ασφαλούς αποθήκευσης"
 
-#: ../ui/gku-prompt-tool.c:584
+#: ../ui/gku-prompt-tool.c:643
 msgid "Passwords do not match."
 msgstr "Οι κωδικοί δεν ταιριάζουν."
 
-#: ../ui/gku-prompt-tool.c:594
+#: ../ui/gku-prompt-tool.c:653
 msgid "Password cannot be blank"
 msgstr "Ο κωδικός δεν πρέπει να είναι κενός"
 
+#: ../ui/mate-keyring-prompt.desktop.in.in.h:1
+msgid "Keyring Access"
+msgstr ""
+
+#: ../ui/mate-keyring-prompt.desktop.in.in.h:2
+msgid "Unlock access to passwords and other secrets"
+msgstr ""
+
 #: ../ui/gku-prompt.ui.h:1
-msgid "New password strength"
-msgstr "Ισχύς νέου κωδικού"
-
-#: ../ui/gku-prompt.ui.h:2
-msgid "_Application:"
-msgstr "_Εφαρμογή:"
-
-#: ../ui/gku-prompt.ui.h:3
-msgid "_Confirm:"
-msgstr "_Επιβεβαίωση:"
-
-#: ../ui/gku-prompt.ui.h:4
-msgid "_Details:"
-msgstr "_Λεπτομέρειες:"
-
-#: ../ui/gku-prompt.ui.h:5
 msgid "_Name:"
 msgstr "Ό_νομα:"
 
-#: ../ui/gku-prompt.ui.h:6
+#: ../ui/gku-prompt.ui.h:2
 msgid "_Old Password:"
 msgstr "_Παλιός κωδικός:"
 
-#: ../ui/gku-prompt.ui.h:7
+#: ../ui/gku-prompt.ui.h:3
 msgid "_Password:"
 msgstr "_Κωδικός:"
 
-#~ msgid "Email"
-#~ msgstr "Ηλ. διεύθυνση"
+#: ../ui/gku-prompt.ui.h:4
+msgid "_Confirm:"
+msgstr "_Επιβεβαίωση:"
 
-#~ msgid "<i>Not Part of Certificate</i>"
-#~ msgstr "<i>Δεν περιέχεται στο πιστοποιητικό</i>"
+#: ../ui/gku-prompt.ui.h:5
+msgid "New password strength"
+msgstr "Ισχύς νέου κωδικού"
 
-#~ msgid "<i>unknown</i>"
-#~ msgstr "<i>άγνωστο</i>"
+#: ../ui/gku-prompt.ui.h:6
+msgid "_Application:"
+msgstr "_Εφαρμογή:"
 
-#~ msgid "<Not Part of Certificate>"
-#~ msgstr "<Δεν περιέχεται στο πιστοποιητικό>"
-
-#~ msgid "<b>Fingerprints</b>"
-#~ msgstr "<b>Αποτυπώματα</b>"
-
-#~ msgid "<b>Issued By</b>"
-#~ msgstr "<b>Εκδόθηκε από</b>"
-
-#~ msgid "<b>Issued To</b>"
-#~ msgstr "<b>Εκδόθηκε για</b>"
-
-#~ msgid "<b>This certificate has been verified for the following uses:</b>"
-#~ msgstr ""
-#~ "<b>Αυτό το πιστοποιητικό έχει επαληθευτεί για τις ακόλουθες χρήσεις:</b>"
-
-#~ msgid "<b>Validity</b>"
-#~ msgstr "<b>Ισχύς</b>"
-
-#~ msgid "Common Name (CN)"
-#~ msgstr "Όνομα, υποκοριστικό (CN)"
-
-#~ msgid "Email Recipient Certificate"
-#~ msgstr "Πιστοποιητικό παραλήπτη email"
-
-#~ msgid "Email Signer Certificate"
-#~ msgstr "Πιστοποιητικό υπογράφοντος email"
-
-#~ msgid "Issued On"
-#~ msgstr "Εκδόθηκε στις"
-
-#~ msgid "MD5 Fingerprint"
-#~ msgstr "Αποτύπωμα MD5"
-
-#~ msgid "Organization (O)"
-#~ msgstr "Οργανισμός (O)"
-
-#~ msgid "Organizational Unit (OU)"
-#~ msgstr "Μονάδα Οργανισμού (OU)"
-
-#~ msgid "SHA1 Fingerprint"
-#~ msgstr "Αποτύπωμα SHA1"
-
-#~ msgid "SSL Client Certificate"
-#~ msgstr "Πιστοποιητικό πελάτη SSL"
-
-#~ msgid "SSL Server Certificate"
-#~ msgstr "Πιστοποιητικό εξυπηρετητή SSL"
-
-#~ msgid "<span size='large' weight='bold'>Import Certificates and Keys</span>"
-#~ msgstr ""
-#~ "<span size='large' weight='bold'>Εισαγωγή πιστοποιητικών και κλειδιών</"
-#~ "span>"
+#: ../ui/gku-prompt.ui.h:7
+msgid "_Details:"
+msgstr "_Λεπτομέρειες:"
