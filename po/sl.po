@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Marko Šterman <marko.chamillionaire@gmail.com>, 2012.
 # Matic Žgur <mr.zgur@gmail.com>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2012-06-29 11:58+0200\n"
-"PO-Revision-Date: 2012-06-29 09:59+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"POT-Creation-Date: 2012-07-03 15:24+0200\n"
+"PO-Revision-Date: 2012-07-08 08:40+0000\n"
+"Last-Translator: Marko Šterman <marko.chamillionaire@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/projects/p/MATE/language/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -135,7 +136,7 @@ msgstr "Uporabnikov ID"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr ""
+msgstr "Email naslov"
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -285,7 +286,7 @@ msgstr "Ne"
 
 #: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr ""
+msgstr "Identiteta"
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
@@ -293,7 +294,7 @@ msgstr ""
 
 #: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr ""
+msgstr "Poteče"
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
@@ -363,7 +364,7 @@ msgstr "Prstni odtisi"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr ""
+msgstr "Uvozi certifikat in ključe"
 
 #: ../gcr/gcr-import-dialog.ui.h:2
 msgid "Password:"
@@ -459,15 +460,15 @@ msgstr "Izbor mesta za shranjevanje uvoženih potrdil in ključev"
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr ""
+msgstr "Ključ"
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr ""
+msgstr "Privatni RSA ključ"
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr ""
+msgstr "Privatni DSA ključ"
 
 #: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
@@ -475,33 +476,33 @@ msgstr "Osebni ključ"
 
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr ""
+msgstr "Javni DSA ključ"
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
 msgid "%d bit"
 msgid_plural "%d bits"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%d bit"
+msgstr[1] "%d bita"
+msgstr[2] "%d biti"
+msgstr[3] "%d biti"
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr ""
+msgstr "Moč"
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr ""
+msgstr "Algoritem"
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr ""
+msgstr "Velikost"
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr ""
+msgstr "Prstni odtis"
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -530,7 +531,7 @@ msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
 msgstr ""
 
 #: ../gck/gck-uri.c:287
-msgid "The URI has does not have the 'pkcs11' scheme."
+msgid "The URI does not have the 'pkcs11' scheme."
 msgstr ""
 
 #: ../gck/gck-misc.c:101
@@ -591,7 +592,7 @@ msgstr "Prišlo je do napake na napravi"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr ""
+msgstr "Ni zadostnega pomnilnika na napravi"
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
@@ -627,7 +628,7 @@ msgstr "Ključ ni zahtevan"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr ""
+msgstr "Ključ je drugačen, kot je bil prej"
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
@@ -779,7 +780,7 @@ msgstr "Drug uporabnik je že prijavljen"
 
 #: ../gck/gck-misc.c:223
 msgid "Too many users of different types are logged in"
-msgstr ""
+msgstr "Prijavljenih je preveč različnih uporabnikov"
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
@@ -1002,12 +1003,12 @@ msgstr ""
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
-msgstr ""
+msgstr "komande:  "
 
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
 msgid "          "
-msgstr ""
+msgstr "          "
 
 #: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
@@ -1038,7 +1039,7 @@ msgstr ""
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:2
 msgid "Unlock access to passwords and other secrets"
-msgstr ""
+msgstr "Odkleni dostop do gesel"
 
 #: ../ui/gku-prompt.ui.h:1
 msgid "_Name:"

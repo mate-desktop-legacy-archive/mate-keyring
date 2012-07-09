@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2012-06-29 11:58+0200\n"
-"PO-Revision-Date: 2012-06-29 09:59+0000\n"
+"POT-Creation-Date: 2012-07-03 15:24+0200\n"
+"PO-Revision-Date: 2012-07-03 13:24+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/MATE/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -142,7 +142,7 @@ msgstr "Идентификатор пользователя"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr ""
+msgstr "Адрес электронной почты"
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -292,15 +292,15 @@ msgstr "Нет"
 
 #: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr ""
+msgstr "Личность"
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr ""
+msgstr "Заверено"
 
 #: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr ""
+msgstr "Истекает"
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
@@ -370,7 +370,7 @@ msgstr "Отпечатки пальцев"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr ""
+msgstr "Импортировать сертификаты и ключи"
 
 #: ../gcr/gcr-import-dialog.ui.h:2
 msgid "Password:"
@@ -466,15 +466,15 @@ msgstr "Выберите место для хранения импортиров
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr ""
+msgstr "Ключ"
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr ""
+msgstr "Секретный RSA ключ"
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr ""
+msgstr "Секретный DSA ключ"
 
 #: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
@@ -482,32 +482,32 @@ msgstr "Секретный ключ"
 
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr ""
+msgstr "Публичный DSA ключ"
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
 msgid "%d bit"
 msgid_plural "%d bits"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%d часть"
+msgstr[1] "%d частей"
+msgstr[2] "%d частей"
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr ""
+msgstr "Сила"
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr ""
+msgstr "Алгоритм"
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr ""
+msgstr "Размер"
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr ""
+msgstr "Подпись"
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -527,16 +527,16 @@ msgstr "Данные заблокированы"
 #: ../gcr/gcr-trust.c:420
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
-msgstr ""
+msgstr "Не удаётся найти место для хранения закреплённого сертификата"
 
 #: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
 #: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
-msgstr ""
+msgstr "URI имеет неверный синтаксис. Кодировка поля '%s'  неверна."
 
 #: ../gck/gck-uri.c:287
-msgid "The URI has does not have the 'pkcs11' scheme."
+msgid "The URI does not have the 'pkcs11' scheme."
 msgstr ""
 
 #: ../gck/gck-misc.c:101
@@ -597,7 +597,7 @@ msgstr "На устройстве произошла ошибка"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr ""
+msgstr "Доступно недостаточно памяти на устройстве"
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
@@ -633,7 +633,7 @@ msgstr "Ключ не нужен"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr ""
+msgstr "Ключ отличается от предыдущего"
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
@@ -641,7 +641,7 @@ msgstr "Необходим ключ"
 
 #: ../gck/gck-misc.c:151
 msgid "Cannot include the key in the digest"
-msgstr ""
+msgstr "Не удалось включить ключ в дайджест"
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
@@ -785,7 +785,7 @@ msgstr "Другой пользователь уже вошёл"
 
 #: ../gck/gck-misc.c:223
 msgid "Too many users of different types are logged in"
-msgstr ""
+msgstr "Вошло слишком много пользователей различных типов"
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
@@ -1004,16 +1004,16 @@ msgstr "Чтобы изменить пароль для '%s', оригиналь
 #: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: mate-keyring command [options]\n"
-msgstr ""
+msgstr "использование: mate-keyring команда [опции]\n"
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
-msgstr ""
+msgstr "команды: "
 
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
 msgid "          "
-msgstr ""
+msgstr "          "
 
 #: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
@@ -1040,11 +1040,11 @@ msgstr "Пароль не может быть пустым"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:1
 msgid "Keyring Access"
-msgstr ""
+msgstr "Доступ к связке ключей"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:2
 msgid "Unlock access to passwords and other secrets"
-msgstr ""
+msgstr "Разблокировать доступ к паролям и другим секретам"
 
 #: ../ui/gku-prompt.ui.h:1
 msgid "_Name:"

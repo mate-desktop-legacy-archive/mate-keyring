@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2012-06-29 11:58+0200\n"
-"PO-Revision-Date: 2012-06-29 10:09+0000\n"
+"POT-Creation-Date: 2012-07-03 15:24+0200\n"
+"PO-Revision-Date: 2012-07-03 13:26+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/MATE/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -531,8 +531,8 @@ msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
 msgstr "L'URI ha una sintassi non valida. La codifica del campo '%s'non è valida."
 
 #: ../gck/gck-uri.c:287
-msgid "The URI has does not have the 'pkcs11' scheme."
-msgstr "L'URI non deve contenere lo schema 'pkcs11'."
+msgid "The URI does not have the 'pkcs11' scheme."
+msgstr "L'URI non ha lo schema 'pkcs11'."
 
 #: ../gck/gck-misc.c:101
 msgid "Insufficient memory available"
