@@ -3,7 +3,7 @@ Type=Application
 _Name=Certificate and Key Storage
 _Comment=MATE Keyring: PKCS#11 Component
 Exec=@VALGRIND_RUN@@BINDIR@/mate-keyring-daemon --start --components=pkcs11
-OnlyShowIn=MATE;LXDE;XFCE;
+OnlyShowIn=MATE;
 X-MATE-Autostart-Phase=Initialization
 X-MATE-AutoRestart=false
 X-MATE-Autostart-Notify=true
