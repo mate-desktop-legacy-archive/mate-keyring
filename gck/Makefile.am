@@ -57,6 +57,7 @@ libmategck_la_LIBADD = \
 	$(GOBJECT_LIBS) \
 	$(GTHREAD_LIBS) \
 	$(GIO_LIBS) \
+	$(GMODULE_LIBS) \
 	$(GLIB_LIBS)
 
 gck-marshal.h: gck-marshal.list $(GLIB_GENMARSHAL)
