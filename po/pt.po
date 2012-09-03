@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Carlos  <crolidge@gmail.com>, 2012.
 # Duarte Loreto <happyguy_pt@hotmail.com>, 2003, 2004, 2006, 2007, 2008, 2009, 2010.
+# Sérgio Marques <smarquespt@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
 "POT-Creation-Date: 2012-07-03 15:24+0200\n"
-"PO-Revision-Date: 2012-07-03 13:24+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"PO-Revision-Date: 2012-08-03 22:47+0000\n"
+"Last-Translator: Carlos <crolidge@gmail.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/projects/p/MATE/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
 #: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
@@ -135,7 +137,7 @@ msgstr "ID de Utilizador"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr ""
+msgstr "Endereço eletrónico"
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -285,15 +287,15 @@ msgstr "Não"
 
 #: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr ""
+msgstr "identidade"
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr ""
+msgstr "verificado por"
 
 #: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr ""
+msgstr "Termina em"
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
@@ -363,7 +365,7 @@ msgstr "Impressões Digitais"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr ""
+msgstr "Importar certificados e chaves"
 
 #: ../gcr/gcr-import-dialog.ui.h:2
 msgid "Password:"
@@ -459,15 +461,15 @@ msgstr "Seleccione uma localização para armazenar os certificados/chaves impor
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr ""
+msgstr "Chave"
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr ""
+msgstr "Chave privada RSA"
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr ""
+msgstr "Chave privada DSA"
 
 #: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
@@ -475,31 +477,31 @@ msgstr "Chave Privada"
 
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr ""
+msgstr "chave pública DSA"
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
 msgid "%d bit"
 msgid_plural "%d bits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d bit"
+msgstr[1] "%d bits"
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr ""
+msgstr "Segurança"
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr ""
+msgstr "Algoritmo"
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr ""
+msgstr "Tamanho"
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr ""
+msgstr "Identificador"
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -519,17 +521,17 @@ msgstr "Os dados estão trancados"
 #: ../gcr/gcr-trust.c:420
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
-msgstr ""
+msgstr "Não foi possível encontrar o local para guardar o certificado"
 
 #: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
 #: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
-msgstr ""
+msgstr "O URI tem uma sintaxe inválida. A codificação do campo %s é inválida."
 
 #: ../gck/gck-uri.c:287
 msgid "The URI does not have the 'pkcs11' scheme."
-msgstr ""
+msgstr "O URI não tem o esquema pkcs11"
 
 #: ../gck/gck-misc.c:101
 msgid "Insufficient memory available"
@@ -589,7 +591,7 @@ msgstr "Ocorreu um erro no dispositivo"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr ""
+msgstr "A memória disponível no dispositivo não é suficiente"
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
@@ -625,7 +627,7 @@ msgstr "Nenhuma chave é necessária"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr ""
+msgstr "A chave está diferente do que a anterior"
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
@@ -633,7 +635,7 @@ msgstr "É necessária uma chave"
 
 #: ../gck/gck-misc.c:151
 msgid "Cannot include the key in the digest"
-msgstr ""
+msgstr "Não pode incluir a chave no compêndio"
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
@@ -777,7 +779,7 @@ msgstr "Outro utilizador já iniciou uma sessão"
 
 #: ../gck/gck-misc.c:223
 msgid "Too many users of different types are logged in"
-msgstr ""
+msgstr "Demasiados utilizadores de diferentes tipos estão ligados"
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
@@ -996,16 +998,16 @@ msgstr "Para alterar a senha de '%s', são necessárias as senhas original e nov
 #: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: mate-keyring command [options]\n"
-msgstr ""
+msgstr "utilização: mate-keyring comando [opções]\n"
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
-msgstr ""
+msgstr "comandos: "
 
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
 msgid "          "
-msgstr ""
+msgstr "          "
 
 #: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
@@ -1032,11 +1034,11 @@ msgstr "A senha não pode ser vazia"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:1
 msgid "Keyring Access"
-msgstr ""
+msgstr "Acesso"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:2
 msgid "Unlock access to passwords and other secrets"
-msgstr ""
+msgstr "Desbloquear acesso a senhas e outros segredos"
 
 #: ../ui/gku-prompt.ui.h:1
 msgid "_Name:"
