@@ -440,19 +440,19 @@ if test "$ASN1PARSER" = "no" ; then
 fi
 
 # -------------------------------------------------------------------
-# libcap2
+# libcap-ng
 #
 
-AC_CHECK_LIB([cap], [cap_get_proc], have_libcap="yes", have_libcap="no")
+AC_CHECK_LIB([cap-ng], [capng_clear], have_libcapng="yes", have_libcapng="no")
 
-if test $have_libcap = yes; then
-   AC_DEFINE(HAVE_LIBCAP, 1, [Have libcap2 package, libcap library])
-   DAEMON_LIBS="$DAEMON_LIBS -lcap"
+if test $have_libcapng = yes; then
+   AC_DEFINE(HAVE_LIBCAPNG, 1, [Have libcap-ng package, libcap-ng library])
+   DAEMON_LIBS="$DAEMON_LIBS -lcap-ng"
 else
-   AC_MSG_WARN([libcap2 (or development headers) is not installed])
+   AC_MSG_WARN([libcap-ng (or development headers) is not installed])
 fi
 
-libcap_status=$have_libcap
+libcapng_status=$have_libcapng
 
 # --------------------------------------------------------------------
 # Debug mode
@@ -570,6 +570,24 @@ AM_CONDITIONAL([WITH_COVERAGE], [test "$enable_gcov" = "yes"])
 AC_SUBST(LCOV)
 AC_SUBST(GCOV)
 AC_SUBST(GENHTML)
+
+# ----------------------------------------------------------------------
+# selinux
+
+LIBSELINUX=""
+selinux_status="no"
+AC_ARG_ENABLE([selinux],
+        AC_HELP_STRING([--disable-selinux],[do not use SELinux]))
+if test "x$enable_selinux" != "xno"; then
+    AC_CHECK_LIB([selinux],[getfilecon],
+        [AC_CHECK_LIB([selinux],[setexeccon],
+            [AC_DEFINE([WITH_SELINUX], 1, [Defined if SE Linux support is compiled in])
+             LIBSELINUX="-lselinux"
+             selinux_status="yes"])
+        ])
+fi
+AC_SUBST(LIBSELINUX)
+AM_CONDITIONAL([HAVE_LIBSELINUX], [test ! -z "$LIBSELINUX"])
 
 # ----------------------------------------------------------------------
 # Valgrind
@@ -741,7 +759,8 @@ ui/tests/Makefile
 echo
 echo "OPTIONAL DEPENDENCIES"
 echo "  PAM:                  $pam_status"
-echo "  Linux capabilities:   $libcap_status"
+echo "  Linux capabilities:   $libcapng_status"
+echo "  SELinux:              $selinux_status"
 echo
 echo "CONFIGURATION"
 echo "  SSH Agent:            $ssh_status"
