@@ -537,7 +537,7 @@ get_unlock_options_from_prompt (GkmWrapPrompt *self, CK_ULONG_PTR n_options)
 static void
 set_unlock_options_on_prompt (GkmWrapPrompt *self, CK_ATTRIBUTE_PTR options, CK_ULONG n_options)
 {
-	const gchar *choice;
+	const gchar *choice = NULL;
 	gboolean have_ttl = FALSE;
 	gboolean bval;
 	gulong uval;
@@ -561,8 +561,9 @@ set_unlock_options_on_prompt (GkmWrapPrompt *self, CK_ATTRIBUTE_PTR options, CK_
 		have_ttl = TRUE;
 		ttl = uval;
 	}
-
-	gku_prompt_set_unlock_choice (GKU_PROMPT (self), choice);
+        
+        if (choice != NULL)
+	        gku_prompt_set_unlock_choice (GKU_PROMPT (self), choice);
 	if (have_ttl)
 		gku_prompt_set_unlock_ttl (GKU_PROMPT (self), ttl);
 }
