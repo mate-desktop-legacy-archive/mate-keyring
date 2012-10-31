@@ -40,7 +40,7 @@ egg_hkdf_perform (const gchar *hash_algo, gconstpointer input, gsize n_input,
 	gcry_md_hd_t md1, md2;
 	guint hash_len;
 	guchar i;
-	gint flags, algo;
+	gint algo;
 	gsize step, n_buffer;
 	guchar *at;
 	gcry_error_t gcry;
@@ -54,10 +54,8 @@ egg_hkdf_perform (const gchar *hash_algo, gconstpointer input, gsize n_input,
 
 	/* Buffer we need to for intermediate stuff */
 	if (gcry_is_secure (input)) {
-		flags = GCRY_MD_FLAG_SECURE;
 		buffer = gcry_malloc_secure (hash_len);
 	} else {
-		flags = 0;
 		buffer = gcry_malloc (hash_len);
 	}
 
