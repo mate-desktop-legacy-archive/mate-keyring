@@ -1,5 +1,5 @@
 <schemalist>
-	<schema id="org.mate.crypto.cache" path="/desktop/mate/crypto/cache/">
+	<schema id="org.mate.crypto.cache" path="/org/mate/desktop/crypto/cache/">
 		<key name="gpg-cache-method" type="s">
 			<default>'session'</default>
 			<summary>Cache Method</summary>
