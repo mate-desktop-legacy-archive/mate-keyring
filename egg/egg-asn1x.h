@@ -25,6 +25,7 @@
 #define EGG_ASN1X_H_
 
 #include <glib.h>
+#include <libtasn1.h>
 
 #ifndef HAVE_EGG_ALLOCATOR
 typedef void* (*EggAllocator) (void* p, gsize);
