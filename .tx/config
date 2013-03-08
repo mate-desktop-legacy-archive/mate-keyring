@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+ 
+[MATE.mate-keyring]
+file_filter = po/<lang>.po
+source_file = po/mate-keyring.pot
+source_lang = en
