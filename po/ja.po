@@ -997,7 +997,7 @@ msgstr "'%s' のパスワードを変更するには、元のパスワードと�
 #: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: mate-keyring command [options]\n"
-msgstr "usage: mate-keyring command [options]\\n"
+msgstr "usage: mate-keyring command [options]\n"
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
