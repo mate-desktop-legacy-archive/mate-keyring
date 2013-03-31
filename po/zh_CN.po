@@ -4,7 +4,10 @@
 # 
 # Translators:
 # Aron Xu <aronxu@gnome.org>, 2010.
+# Christopher Meng <cickumqt@gmail.com>, 2012.
+#   <damage3025@gmail.com>, 2012.
 # Eleanor Chen <chenyueg@gmail.com>, 2010.
+# lilei <lileiqx@163.com>, 2013.
 # Neo Willis <willis@linux.net>, 2003.
 # QA and Edited by Funda Wang <fundawang@linux.net.cn>, 2004.
 # Tao Wang <dancefire@gmail.com>, 2010.
@@ -16,14 +19,14 @@ msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
 "POT-Creation-Date: 2012-07-03 15:24+0200\n"
-"PO-Revision-Date: 2012-07-03 13:25+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-01-18 10:17+0000\n"
+"Last-Translator: lilei <lileiqx@163.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/MATE/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_CN\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
 #: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
@@ -142,7 +145,7 @@ msgstr "用户 ID"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr ""
+msgstr "电邮地址"
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -292,15 +295,15 @@ msgstr "否"
 
 #: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr ""
+msgstr "特征"
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr ""
+msgstr "复核"
 
 #: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr ""
+msgstr "到期"
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
@@ -370,7 +373,7 @@ msgstr "指纹"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr ""
+msgstr "导入证书和密钥"
 
 #: ../gcr/gcr-import-dialog.ui.h:2
 msgid "Password:"
@@ -466,15 +469,15 @@ msgstr "选择某个位置来保存导入的证书及密钥。"
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr ""
+msgstr "密钥"
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr ""
+msgstr "RSA 私钥"
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr ""
+msgstr "DSA 私钥"
 
 #: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
@@ -482,30 +485,30 @@ msgstr "私钥"
 
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr ""
+msgstr "DSA 公约"
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
 msgid "%d bit"
 msgid_plural "%d bits"
-msgstr[0] ""
+msgstr[0] "%d 比特"
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr ""
+msgstr "强度"
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr ""
+msgstr "算法"
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr ""
+msgstr "大小"
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr ""
+msgstr "指纹"
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -525,13 +528,13 @@ msgstr "数据已被锁定"
 #: ../gcr/gcr-trust.c:420
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
-msgstr ""
+msgstr "无法找到一个地方来存储固定证书"
 
 #: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
 #: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
-msgstr ""
+msgstr "URI无法解析。参数“%s”编码无效。"
 
 #: ../gck/gck-uri.c:287
 msgid "The URI does not have the 'pkcs11' scheme."
@@ -595,7 +598,7 @@ msgstr "在设备上发生一个错误"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr ""
+msgstr "可用内存不足"
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
@@ -631,7 +634,7 @@ msgstr "不需要密钥"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr ""
+msgstr "密匙和以前不同"
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
@@ -639,7 +642,7 @@ msgstr "需要一个密钥"
 
 #: ../gck/gck-misc.c:151
 msgid "Cannot include the key in the digest"
-msgstr ""
+msgstr "无法在摘要中包括该密钥"
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
@@ -1006,7 +1009,7 @@ msgstr ""
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
-msgstr ""
+msgstr "命令："
 
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
@@ -1038,7 +1041,7 @@ msgstr "密码不能为空"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:1
 msgid "Keyring Access"
-msgstr ""
+msgstr "密钥环访问"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:2
 msgid "Unlock access to passwords and other secrets"

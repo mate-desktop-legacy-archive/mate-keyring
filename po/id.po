@@ -5,19 +5,20 @@
 # Translators:
 # Andika Triwidada <andika@gmail.com>, 2010.
 # Dirgita <dirgitadevina@yahoo.co.id>, 2010.
+# ibnu daru aji <teratower8@gmail.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
 "POT-Creation-Date: 2012-07-03 15:24+0200\n"
-"PO-Revision-Date: 2012-07-03 13:24+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"PO-Revision-Date: 2013-03-12 10:46+0000\n"
+"Last-Translator: andjeng <teratower8@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/MATE/language/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: id\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
 #: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
@@ -136,7 +137,7 @@ msgstr "ID Pengguna"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr ""
+msgstr "Alamat Surel"
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -286,15 +287,15 @@ msgstr "Tidak"
 
 #: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr ""
+msgstr "Identitas"
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr ""
+msgstr "Diverifikasi oleh"
 
 #: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr ""
+msgstr "Kadaluarsa"
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
@@ -364,7 +365,7 @@ msgstr "Sidik Jari"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr ""
+msgstr "Impor Sertifikat dan Kunci"
 
 #: ../gcr/gcr-import-dialog.ui.h:2
 msgid "Password:"
@@ -460,15 +461,15 @@ msgstr "Pilih lokasi untuk menyimpan sertifikat/kunci yang diimpor."
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr ""
+msgstr "Kunci"
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr ""
+msgstr "Kunci RSA Privat"
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr ""
+msgstr "Kunci DSA Privat"
 
 #: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
@@ -476,30 +477,30 @@ msgstr "Kunci Pribadi"
 
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr ""
+msgstr "Kunci DSA Publik"
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
 msgid "%d bit"
 msgid_plural "%d bits"
-msgstr[0] ""
+msgstr[0] "%d bits"
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr ""
+msgstr "Kekuatan"
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr ""
+msgstr "Algoritma"
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr ""
+msgstr "Ukuran"
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr ""
+msgstr "Sidik Jari"
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -519,17 +520,17 @@ msgstr "Data dikunci"
 #: ../gcr/gcr-trust.c:420
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
-msgstr ""
+msgstr "Tidak dapat menemukan tempat untuk menyimpan sertifikat yang ditempel"
 
 #: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
 #: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
-msgstr ""
+msgstr "URI mempunyai sintaks yang tak valid. daerah '%s' tidak valid."
 
 #: ../gck/gck-uri.c:287
 msgid "The URI does not have the 'pkcs11' scheme."
-msgstr ""
+msgstr "URI tidak mempunyai skema 'pkcs11'."
 
 #: ../gck/gck-misc.c:101
 msgid "Insufficient memory available"
@@ -589,11 +590,11 @@ msgstr "Terjadi galat pada perangkat"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr ""
+msgstr "Tak tersedia cukup memori pada perangkat"
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
-msgstr ""
+msgstr "Perangkat dilepas"
 
 #: ../gck/gck-misc.c:133
 msgid "The encrypted data is not valid or unrecognized"
@@ -625,7 +626,7 @@ msgstr "Tak perlu kunci"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr ""
+msgstr "Kunci berbeda dengan sebelumnya"
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
@@ -633,7 +634,7 @@ msgstr "Perlu suatu kunci"
 
 #: ../gck/gck-misc.c:151
 msgid "Cannot include the key in the digest"
-msgstr ""
+msgstr "Tak bisa menyertakan kunci di digest"
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
@@ -777,7 +778,7 @@ msgstr "Pengguna lainnya sudah masuk"
 
 #: ../gck/gck-misc.c:223
 msgid "Too many users of different types are logged in"
-msgstr ""
+msgstr "Terlalu banyak pengguna dengan jenis berbeda telah log masuk"
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
@@ -996,16 +997,16 @@ msgstr "Untuk mengubah sandi bagi '%s', diperlukan sandi lama dan baru"
 #: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: mate-keyring command [options]\n"
-msgstr ""
+msgstr "kegunaan: perintah mate-keyring [opsi]\n"
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
-msgstr ""
+msgstr "perintah:"
 
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
 msgid "          "
-msgstr ""
+msgstr "__kosong__"
 
 #: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
@@ -1032,11 +1033,11 @@ msgstr "Sandi tak boleh kosong"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:1
 msgid "Keyring Access"
-msgstr ""
+msgstr "Akses Keyring"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:2
 msgid "Unlock access to passwords and other secrets"
-msgstr ""
+msgstr "Buka akses atas kata sandi dan rahasia lainnya"
 
 #: ../ui/gku-prompt.ui.h:1
 msgid "_Name:"

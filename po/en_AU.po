@@ -3,23 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Imants Liepiņš <imzzinator@gmail.com>, 2013.
-# Linux Centrs <info@linux.edu.lv>, 2006.
-# Peteris Krisjanis <pecisk@gmail.com>, 2010.
-# Raivis Dejus <orvils@gmail.com>, 2006.
+# Michael Findlay <keltoiboy@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
 "POT-Creation-Date: 2012-07-03 15:24+0200\n"
-"PO-Revision-Date: 2013-02-06 18:17+0000\n"
-"Last-Translator: Imants Liepiņš <imzzinator@gmail.com>\n"
-"Language-Team: Latvian (http://www.transifex.com/projects/p/MATE/language/lv/)\n"
+"PO-Revision-Date: 2012-10-03 10:31+0000\n"
+"Last-Translator: k3lt01 <keltoiboy@gmail.com>\n"
+"Language-Team: English (Australia) (http://www.transifex.com/projects/p/MATE/language/en_AU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lv\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"Language: en_AU\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
 #: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
@@ -27,202 +24,202 @@ msgstr ""
 #: ../pkcs11/wrap-layer/gkm-wrap-login.c:343
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:789
 msgid "Unnamed"
-msgstr "Nenosaukta"
+msgstr "Unnamed"
 
 #: ../daemon/dbus/gkd-secret-change.c:86
 msgid "Change Keyring Password"
-msgstr "Mainīt saišķa paroli"
+msgstr "Change Keyring Password"
 
 #: ../daemon/dbus/gkd-secret-change.c:88
 #, c-format
 msgid "Choose a new password for the '%s' keyring"
-msgstr "Izvēlieties jaunu paroli saišķim '%s'"
+msgstr "Choose a new password for the '%s' keyring"
 
 #: ../daemon/dbus/gkd-secret-change.c:92
 #, c-format
 msgid ""
 "An application wants to change the password for the '%s' keyring. Choose the"
 " new password you want to use for it."
-msgstr "Lietotne vēlas mainīt saišķa '%s' paroli. Lūdzu, izvēlieties jaunu paroli šim nolūkam."
+msgstr "An application wants to change the password for the '%s' keyring. Choose the new password you want to use for it."
 
 #: ../daemon/dbus/gkd-secret-change.c:111
 msgid "The original password was incorrect"
-msgstr "Oriģinālā parole bija nepareiza"
+msgstr "The original password was incorrect"
 
 #: ../daemon/dbus/gkd-secret-create.c:83
 msgid "New Keyring Password"
-msgstr "Saišķa jaunā parole"
+msgstr "New Keyring Password"
 
 #: ../daemon/dbus/gkd-secret-create.c:84
 msgid "Choose password for new keyring"
-msgstr "Izvēlieties jaunu paroli saišķim"
+msgstr "Choose password for new keyring"
 
 #: ../daemon/dbus/gkd-secret-create.c:86
 #, c-format
 msgid ""
 "An application wants to create a new keyring called '%s'. Choose the "
 "password you want to use for it."
-msgstr "Lietotne vēlas mainīt izveidot jaunu saišķi ar nosaukumu '%s'. Lūdzu, izvēlieties jaunu paroli šim nolūkam."
+msgstr "An application wants to create a new keyring called '%s'. Choose the password you want to use for it."
 
 #: ../daemon/mate-keyring-pkcs11.desktop.in.in.h:1
 msgid "Certificate and Key Storage"
-msgstr "Sertifikātu un atslēgu glabātava"
+msgstr "Certificate and Key Storage"
 
 #: ../daemon/mate-keyring-pkcs11.desktop.in.in.h:2
 msgid "MATE Keyring: PKCS#11 Component"
-msgstr "MATE Keyring: PKCS#11 komponente"
+msgstr "MATE Keyring: PKCS#11 Component"
 
 #: ../daemon/mate-keyring-secrets.desktop.in.in.h:1
 msgid "Secret Storage Service"
-msgstr "Slepenās glabātavas serviss"
+msgstr "Secret Storage Service"
 
 #: ../daemon/mate-keyring-secrets.desktop.in.in.h:2
 msgid "MATE Keyring: Secret Service"
-msgstr "MATE Keyring: slepenais serviss"
+msgstr "MATE Keyring: Secret Service"
 
 #: ../daemon/mate-keyring-ssh.desktop.in.in.h:1
 msgid "SSH Key Agent"
-msgstr "SSH atslēgu aģents"
+msgstr "SSH Key Agent"
 
 #: ../daemon/mate-keyring-ssh.desktop.in.in.h:2
 msgid "MATE Keyring: SSH Agent"
-msgstr "MATE Keyring: SSH aģents"
+msgstr "MATE Keyring: SSH Agent"
 
 #: ../daemon/mate-keyring-gpg.desktop.in.in.h:1
 msgid "GPG Password Agent"
-msgstr "GPG Paroles Aģents"
+msgstr "GPG Password Agent"
 
 #: ../daemon/mate-keyring-gpg.desktop.in.in.h:2
 msgid "MATE Keyring: GPG Agent"
-msgstr "MATE Atslēgsaišķis: GPG Aģents"
+msgstr "MATE Keyring: GPG Agent"
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:104 ../gcr/gcr-key-renderer.c:291
 #: ../gcr/gcr-key-renderer.c:296
 msgid "Unknown"
-msgstr "Nezināms"
+msgstr "Unknown"
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:202
 #, c-format
 msgid "PGP Key: %s"
-msgstr "PGP Atslēga: %s"
+msgstr "PGP Key: %s"
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:354
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:355
 msgid "Enter Passphrase"
-msgstr "Ievadiet paroli"
+msgstr "Enter Passphrase"
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:397
 msgid "Forget this password if idle for"
-msgstr "Aizmirst šo paroli, ja dīkstāvē ilgāk par "
+msgstr "Forget this password if idle for"
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:398
 msgid "Forget this password after"
-msgstr "Aizmirst šo paroli pēc"
+msgstr "Forget this password after"
 
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:399
 msgid "Forget this password when I log out"
-msgstr "Aizmirst šo paroli, ja es atsakos"
+msgstr "Forget this password when I log out"
 
 #. TRANSLATORS: This is the display label for the login keyring
 #: ../daemon/login/gkd-login.c:147
 msgid "Login"
-msgstr "Pieteikšanās"
+msgstr "Login"
 
 #: ../egg/egg-oid.c:41
 msgid "Domain Component"
-msgstr "Domēna komponente"
+msgstr "Domain Component"
 
 #: ../egg/egg-oid.c:43
 msgid "User ID"
-msgstr "Lietotāja ID"
+msgstr "User ID"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr "Elektroniskā pasta adrese"
+msgstr "Email Address"
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
-msgstr "Dzimšanas datums"
+msgstr "Date of Birth"
 
 #: ../egg/egg-oid.c:56
 msgid "Place of Birth"
-msgstr "Dzimšanas vieta"
+msgstr "Place of Birth"
 
 #: ../egg/egg-oid.c:58
 msgid "Gender"
-msgstr "Dzimums"
+msgstr "Gender"
 
 #: ../egg/egg-oid.c:60
 msgid "Country of Citizenship"
-msgstr "Pilsonības valsts"
+msgstr "Country of Citizenship"
 
 #: ../egg/egg-oid.c:62
 msgid "Country of Residence"
-msgstr "Dzīves vietas valsts"
+msgstr "Country of Residence"
 
 #: ../egg/egg-oid.c:65
 msgid "Common Name"
-msgstr "Pilnais vārds"
+msgstr "Common Name"
 
 #: ../egg/egg-oid.c:67
 msgid "Surname"
-msgstr "Uzvārds"
+msgstr "Surname"
 
 #: ../egg/egg-oid.c:69 ../gcr/gcr-certificate-renderer.c:379
 msgid "Serial Number"
-msgstr "Sērijas numurs"
+msgstr "Serial Number"
 
 #: ../egg/egg-oid.c:71
 msgid "Country"
-msgstr "Valsts"
+msgstr "Country"
 
 #: ../egg/egg-oid.c:73
 msgid "Locality"
-msgstr "Apgabals"
+msgstr "Locality"
 
 #: ../egg/egg-oid.c:75
 msgid "State"
-msgstr "Štats"
+msgstr "State"
 
 #: ../egg/egg-oid.c:77
 msgid "Street"
-msgstr "Iela"
+msgstr "Street"
 
 #: ../egg/egg-oid.c:79
 msgid "Organization"
-msgstr "Organizācija"
+msgstr "Organisation"
 
 #: ../egg/egg-oid.c:81
 msgid "Organizational Unit"
-msgstr "Ogranizācijas vienība"
+msgstr "Organisational Unit"
 
 #: ../egg/egg-oid.c:83
 msgid "Title"
-msgstr "Amats"
+msgstr "Title"
 
 #: ../egg/egg-oid.c:85
 msgid "Telephone Number"
-msgstr "Telefona numurs"
+msgstr "Telephone Number"
 
 #: ../egg/egg-oid.c:87
 msgid "Given Name"
-msgstr "Dotais vārds"
+msgstr "Given Name"
 
 #: ../egg/egg-oid.c:89
 msgid "Initials"
-msgstr "Iniciāļi"
+msgstr "Initials"
 
 #: ../egg/egg-oid.c:91
 msgid "Generation Qualifier"
-msgstr "Ģenerācijas identifikators"
+msgstr "Generation Qualifier"
 
 #: ../egg/egg-oid.c:93
 msgid "DN Qualifier"
-msgstr "DN identifikators"
+msgstr "DN Qualifier"
 
 #: ../egg/egg-oid.c:95
 msgid "Pseudonym"
-msgstr "Pseidonīms"
+msgstr "Pseudonym"
 
 #: ../egg/egg-oid.c:98 ../gcr/gcr-key-renderer.c:287
 msgid "RSA"
@@ -230,15 +227,15 @@ msgstr "RSA"
 
 #: ../egg/egg-oid.c:100
 msgid "MD2 with RSA"
-msgstr "MD2 ar RSA"
+msgstr "MD2 with RSA"
 
 #: ../egg/egg-oid.c:102
 msgid "MD5 with RSA"
-msgstr "MD5 ar RSA"
+msgstr "MD5 with RSA"
 
 #: ../egg/egg-oid.c:104
 msgid "SHA1 with RSA"
-msgstr "SHA1 ar RSA"
+msgstr "SHA1 with RSA"
 
 #: ../egg/egg-oid.c:107 ../gcr/gcr-key-renderer.c:289
 msgid "DSA"
@@ -246,276 +243,275 @@ msgstr "DSA"
 
 #: ../egg/egg-oid.c:109
 msgid "SHA1 with DSA"
-msgstr "SHA1 ar DSA"
+msgstr "SHA1 with DSA"
 
 #: ../egg/egg-spawn.c:273
 #, c-format
 msgid "Unexpected error in select() reading data from a child process (%s)"
-msgstr "Negaidīta kļūda select() lasot datus no bērna procesa (%s)"
+msgstr "Unexpected error in select() reading data from a child process (%s)"
 
 #: ../egg/egg-spawn.c:320
 #, c-format
 msgid "Unexpected error in waitpid() (%s)"
-msgstr "Negaidīta kļūda waitpid() (%s)"
+msgstr "Unexpected error in waitpid() (%s)"
 
 #: ../gcr/gcr-certificate-renderer.c:82 ../gcr/gcr-parser.c:201
 msgid "Certificate"
-msgstr "Sertifikāts"
+msgstr "Certificate"
 
 #: ../gcr/gcr-certificate-renderer.c:107
 msgid "Extension"
-msgstr "Paplašinājums"
+msgstr "Extension"
 
 #: ../gcr/gcr-certificate-renderer.c:112
 msgid "Identifier"
-msgstr "Identifikators"
+msgstr "Identifier"
 
 #: ../gcr/gcr-certificate-renderer.c:120
 msgid "Value"
-msgstr "Vērtība"
+msgstr "Value"
 
 #: ../gcr/gcr-certificate-renderer.c:126
 msgid "Critical"
-msgstr "Kritisks"
+msgstr "Critical"
 
 #: ../gcr/gcr-certificate-renderer.c:126
 msgid "Yes"
-msgstr "Jā"
+msgstr "Yes"
 
 #: ../gcr/gcr-certificate-renderer.c:126
 msgid "No"
-msgstr "Nē"
+msgstr "No"
 
 #: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr "Identitāte"
+msgstr "Identity"
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr ""
+msgstr "Verified by"
 
 #: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr ""
+msgstr "Expires"
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
 msgid "Subject Name"
-msgstr "Subjekta nosaukums"
+msgstr "Subject Name"
 
 #. The Issuer
 #: ../gcr/gcr-certificate-renderer.c:364
 msgid "Issuer Name"
-msgstr "Izsniedzēja nosaukums"
+msgstr "Issuer Name"
 
 #. The Issued Parameters
 #: ../gcr/gcr-certificate-renderer.c:368
 msgid "Issued Certificate"
-msgstr "Izsniegtais sertifikāts"
+msgstr "Issued Certificate"
 
 #: ../gcr/gcr-certificate-renderer.c:373
 msgid "Version"
-msgstr "Versija"
+msgstr "Version"
 
 #: ../gcr/gcr-certificate-renderer.c:387
 msgid "Not Valid Before"
-msgstr "Nav derīgs pirms"
+msgstr "Not Valid Before"
 
 #: ../gcr/gcr-certificate-renderer.c:392
 msgid "Not Valid After"
-msgstr "Nav derīgs pēc"
+msgstr "Not Valid After"
 
 #: ../gcr/gcr-certificate-renderer.c:401
 msgid "Signature Algorithm"
-msgstr "Paraksta algoritms"
+msgstr "Signature Algorithm"
 
 #: ../gcr/gcr-certificate-renderer.c:406
 msgid "Signature Parameters"
-msgstr "Paraksta parametri"
+msgstr "Signature Parameters"
 
 #: ../gcr/gcr-certificate-renderer.c:413
 msgid "Signature"
-msgstr "Paraksts"
+msgstr "Signature"
 
 #. Public Key Info
 #: ../gcr/gcr-certificate-renderer.c:418
 msgid "Public Key Info"
-msgstr "Informācija par publisko atslēgu"
+msgstr "Public Key Info"
 
 #: ../gcr/gcr-certificate-renderer.c:423
 msgid "Key Algorithm"
-msgstr "Atslēgas algoritms"
+msgstr "Key Algorithm"
 
 #: ../gcr/gcr-certificate-renderer.c:429
 msgid "Key Parameters"
-msgstr "Atslēgas parametri"
+msgstr "Key Parameters"
 
 #: ../gcr/gcr-certificate-renderer.c:436
 msgid "Key Size"
-msgstr "Atslēgas izmērs"
+msgstr "Key Size"
 
 #: ../gcr/gcr-certificate-renderer.c:444 ../gcr/gcr-key-renderer.c:271
 #: ../gcr/gcr-parser.c:204
 msgid "Public Key"
-msgstr "Publiskā atslēga"
+msgstr "Public Key"
 
 #. Fingerprints
 #: ../gcr/gcr-certificate-renderer.c:449
 msgid "Fingerprints"
-msgstr "Nospiedumi"
+msgstr "Fingerprints"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr ""
+msgstr "Import Certificates and Keys"
 
 #: ../gcr/gcr-import-dialog.ui.h:2
 msgid "Password:"
-msgstr "Parole:"
+msgstr "Password:"
 
 #: ../gcr/gcr-import-dialog.ui.h:3
 msgid "Import Into:"
-msgstr "Importēt:"
+msgstr "Import Into:"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:1
 msgid "Automatically unlock this keyring whenever I'm logged in"
-msgstr "Automātiski atslēgt šo saišķi tad, kad es ielogojos"
+msgstr "Automatically unlock this keyring whenever I'm logged in"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:2
 msgid "Lock this keyring when I log out"
-msgstr "Slēgt šo saišķi, kad es atsakos no sistēmas"
+msgstr "Lock this keyring when I log out"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:3
 msgid "Lock this keyring after"
-msgstr "Slēgt šo saišķi pēc"
+msgstr "Lock this keyring after"
 
 #: ../gcr/gcr-unlock-options-widget.ui.h:4
 msgid "Lock this keyring if idle for"
-msgstr "Slēgt šo saišķi, ja nekas nenotiek pēc"
+msgstr "Lock this keyring if idle for"
 
 #. Translators: The 'minutes' from 'Lock this keyring if idle for x minutes'.
 #: ../gcr/gcr-unlock-options-widget.ui.h:6
 msgid "minutes"
-msgstr "minūtes"
+msgstr "minutes"
 
 #: ../gcr/gcr-importer.c:133 ../pkcs11/wrap-layer/gkm-wrap-prompt.c:701
 msgid "Enter password to unlock the private key"
-msgstr "Ievadiet paroli, lai atslēgtu privāto atslēgu"
+msgstr "Enter password to unlock the private key"
 
 #: ../gcr/gcr-importer.c:135 ../pkcs11/wrap-layer/gkm-wrap-prompt.c:703
 msgid "Enter password to unlock the certificate"
-msgstr "Ievadiet paroli, lai atslēgtu sertifikātu"
+msgstr "Enter password to unlock the certificate"
 
 #: ../gcr/gcr-importer.c:137 ../pkcs11/wrap-layer/gkm-wrap-prompt.c:707
 msgid "Enter password to unlock"
-msgstr "Ievadiet paroli, lai atslēgtu"
+msgstr "Enter password to unlock"
 
 #. TRANSLATORS: The key is locked.
 #: ../gcr/gcr-importer.c:146
 msgid "In order to import the private key, it must be unlocked"
-msgstr "Lai importētu privāto atslēgu, tai jābūt atslēgtai"
+msgstr "In order to import the private key, it must be unlocked"
 
 #. TRANSLATORS: The certificate is locked.
 #: ../gcr/gcr-importer.c:149
 msgid "In order to import the certificate, it must be unlocked"
-msgstr "Lai importētu sertifikātu, tam jābūt atslēgtam"
+msgstr "In order to import the certificate, it must be unlocked"
 
 #. TRANSLATORS: The data is locked.
 #: ../gcr/gcr-importer.c:152
 msgid "In order to import the data, it must be unlocked"
-msgstr "Lai importētu datus, tiem jābūt atslēgtiem"
+msgstr "In order to import the data, it must be unlocked"
 
 #. TRANSLATORS: The key is locked.
 #: ../gcr/gcr-importer.c:157
 #, c-format
 msgid "In order to import the private key '%s', it must be unlocked"
-msgstr "Lai importētu privāto atslēgu '%s', tai jābūt atslēgtai"
+msgstr "In order to import the private key '%s', it must be unlocked"
 
 #. TRANSLATORS: The certificate is locked.
 #: ../gcr/gcr-importer.c:160
 #, c-format
 msgid "In order to import the certificate '%s', it must be unlocked"
-msgstr "Lai importētu sertifikātu '%s', tam jābūt atslēgtam"
+msgstr "In order to import the certificate '%s', it must be unlocked"
 
 #. TRANSLATORS: The object '%s' is locked.
 #: ../gcr/gcr-importer.c:163
 #, c-format
 msgid "In order to import '%s', it must be unlocked"
-msgstr "Lai importētu '%s', tam jābūt atslēgtam"
+msgstr "In order to import '%s', it must be unlocked"
 
 #: ../gcr/gcr-importer.c:254 ../gcr/gcr-parser.c:1566 ../gcr/gcr-parser.c:1757
 #: ../gck/gck-misc.c:98
 msgid "The operation was cancelled"
-msgstr "Darbība bija atcelta"
+msgstr "The operation was cancelled"
 
 #: ../gcr/gcr-importer.c:346
 #, c-format
 msgid "No location available to import to"
-msgstr "Nav pieejama vieta, uz kuru importēt"
+msgstr "No location available to import to"
 
 #: ../gcr/gcr-importer.c:495
 msgid "Import Certificates/Keys"
-msgstr "Importēt sertifikātus/atslēgas"
+msgstr "Import Certificates/Keys"
 
 #: ../gcr/gcr-importer.c:502
 msgid "Choose a location to store the imported certificates/keys."
-msgstr "Izvēlieties vietu, kur glabāt importētos sertifikātus un atslēgas."
+msgstr "Choose a location to store the imported certificates/keys."
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr "Atslēga"
+msgstr "Key"
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr ""
+msgstr "Private RSA Key"
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr ""
+msgstr "Private DSA Key"
 
 #: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
-msgstr "Privātā atslēga"
+msgstr "Private Key"
 
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr ""
+msgstr "Public DSA Key"
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
 msgid "%d bit"
 msgid_plural "%d bits"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%d bit"
+msgstr[1] "%d bits"
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr ""
+msgstr "Strength"
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr "Algoritms"
+msgstr "Algorithm"
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr "Izmērs"
+msgstr "Size"
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr ""
+msgstr "Fingerprint"
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
-msgstr "Neatpazīti vai neatbalstīti dati."
+msgstr "Unrecognised or unsupported data."
 
 #: ../gcr/gcr-parser.c:1572
 msgid "Could not parse invalid or corrupted data."
-msgstr "Neizdevās izparsēt nederīgus vai bojātus datus."
+msgstr "Could not parse invalid or corrupted data."
 
 #: ../gcr/gcr-parser.c:1575
 msgid "The data is locked"
-msgstr "Dati ir noslēgti"
+msgstr "The data is locked"
 
 #. Translators: A pinned certificate is an exception which
 #. trusts a given certificate explicitly for a purpose and
@@ -523,441 +519,441 @@ msgstr "Dati ir noslēgti"
 #: ../gcr/gcr-trust.c:420
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
-msgstr ""
+msgstr "Couldn't find a place to store the pinned certificate"
 
 #: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
 #: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
-msgstr ""
+msgstr "The URI has invalid syntax. The '%s' field encoding is invalid."
 
 #: ../gck/gck-uri.c:287
 msgid "The URI does not have the 'pkcs11' scheme."
-msgstr ""
+msgstr "The URI does not have the 'pkcs11' scheme."
 
 #: ../gck/gck-misc.c:101
 msgid "Insufficient memory available"
-msgstr "Nav pieejams pietiekami daudz atmiņas"
+msgstr "Insufficient memory available"
 
 #: ../gck/gck-misc.c:103
 msgid "The specified slot ID is not valid"
-msgstr "Norādītais slota ID nav derīgs"
+msgstr "The specified slot ID is not valid"
 
 #: ../gck/gck-misc.c:105
 msgid "Internal error"
-msgstr "Iekšēja kļūda"
+msgstr "Internal error"
 
 #: ../gck/gck-misc.c:107
 msgid "The operation failed"
-msgstr "Darbība neizdevās"
+msgstr "The operation failed"
 
 #: ../gck/gck-misc.c:109
 msgid "Invalid arguments"
-msgstr "Nederīgi argumenti"
+msgstr "Invalid arguments"
 
 #: ../gck/gck-misc.c:111
 msgid "The module cannot create needed threads"
-msgstr "Modulis neizdodas izveidot nepieciešamos pavedienus"
+msgstr "The module cannot create needed threads"
 
 #: ../gck/gck-misc.c:113
 msgid "The module cannot lock data properly"
-msgstr "Modulim neizdodas noslēgt datus korekti"
+msgstr "The module cannot lock data properly"
 
 #: ../gck/gck-misc.c:115
 msgid "The field is read-only"
-msgstr "Lauks ir tikai nolasāms"
+msgstr "The field is read-only"
 
 #: ../gck/gck-misc.c:117
 msgid "The field is sensitive and cannot be revealed"
-msgstr "Lauks ir jūtīgs un nevar tikt atklāts"
+msgstr "The field is sensitive and cannot be revealed"
 
 #: ../gck/gck-misc.c:119
 msgid "The field is invalid or does not exist"
-msgstr "Lauks nav derīgs, vai arī neeksistē"
+msgstr "The field is invalid or does not exist"
 
 #: ../gck/gck-misc.c:121
 msgid "Invalid value for field"
-msgstr "Nederīga vērtība laukam"
+msgstr "Invalid value for field"
 
 #: ../gck/gck-misc.c:123
 msgid "The data is not valid or unrecognized"
-msgstr "Dati nav derīgi, vai arī ir neatpazīti"
+msgstr "The data is not valid or unrecognised"
 
 #: ../gck/gck-misc.c:125
 msgid "The data is too long"
-msgstr "Dati ir pārāk gari"
+msgstr "The data is too long"
 
 #: ../gck/gck-misc.c:127
 msgid "An error occurred on the device"
-msgstr "Ierīcei gadījās kļūda"
+msgstr "An error occurred on the device"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr ""
+msgstr "Insufficient memory available on the device"
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
-msgstr "Ierīce tika izņemta vai atvienota"
+msgstr "The device was removed or unplugged"
 
 #: ../gck/gck-misc.c:133
 msgid "The encrypted data is not valid or unrecognized"
-msgstr "Šifrētie dati nav derīgi, vai arī ir neatpazīti"
+msgstr "The encrypted data is not valid or unrecognised"
 
 #: ../gck/gck-misc.c:135
 msgid "The encrypted data is too long"
-msgstr "Šifrētie dati ir par garu"
+msgstr "The encrypted data is too long"
 
 #: ../gck/gck-misc.c:137
 msgid "This operation is not supported"
-msgstr "Šī darbība nav atbalstīta"
+msgstr "This operation is not supported"
 
 #: ../gck/gck-misc.c:139
 msgid "The key is missing or invalid"
-msgstr "Atslēga nav atrodama, vai nav derīga"
+msgstr "The key is missing or invalid"
 
 #: ../gck/gck-misc.c:141
 msgid "The key is the wrong size"
-msgstr "Nepareiza izmēra atslēga"
+msgstr "The key is the wrong size"
 
 #: ../gck/gck-misc.c:143
 msgid "The key is of the wrong type"
-msgstr "Nepareiza tipa atslēga"
+msgstr "The key is of the wrong type"
 
 #: ../gck/gck-misc.c:145
 msgid "No key is needed"
-msgstr "Nav nepieciešama atslēga"
+msgstr "No key is needed"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr ""
+msgstr "The key is different than before"
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
-msgstr "Nepieciešama atslēga"
+msgstr "A key is needed"
 
 #: ../gck/gck-misc.c:151
 msgid "Cannot include the key in the digest"
-msgstr ""
+msgstr "Cannot include the key in the digest"
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
-msgstr "Šī darbība nevar tikt veikta ar šo atslēgu"
+msgstr "This operation cannot be done with this key"
 
 #: ../gck/gck-misc.c:155
 msgid "The key cannot be wrapped"
-msgstr "Atslēgu nevar ietīt"
+msgstr "The key cannot be wrapped"
 
 #: ../gck/gck-misc.c:157
 msgid "Cannot export this key"
-msgstr "Neizdodas eksportēt šo atslēgu"
+msgstr "Cannot export this key"
 
 #: ../gck/gck-misc.c:159
 msgid "The crypto mechanism is invalid or unrecognized"
-msgstr "Šifrēšanas mehānisms nav derīgs vai arī ir neatpazīts"
+msgstr "The crypto mechanism is invalid or unrecognised"
 
 #: ../gck/gck-misc.c:161
 msgid "The crypto mechanism has an invalid argument"
-msgstr "Šifrēšanas mehānismam ir nederīgs arguments"
+msgstr "The crypto mechanism has an invalid argument"
 
 #: ../gck/gck-misc.c:163
 msgid "The object is missing or invalid"
-msgstr "Objekts nav atrodams vai nav derīgs"
+msgstr "The object is missing or invalid"
 
 #: ../gck/gck-misc.c:165
 msgid "Another operation is already taking place"
-msgstr "Cita darbība jau notiek"
+msgstr "Another operation is already taking place"
 
 #: ../gck/gck-misc.c:167
 msgid "No operation is taking place"
-msgstr "Nenotiek nekāda darbība"
+msgstr "No operation is taking place"
 
 #: ../gck/gck-misc.c:169
 msgid "The password or PIN is incorrect"
-msgstr "Parole vai PIN ir nepareizs"
+msgstr "The password or PIN is incorrect"
 
 #: ../gck/gck-misc.c:171
 msgid "The password or PIN is invalid"
-msgstr "Parole vai PIN nav derīgs"
+msgstr "The password or PIN is invalid"
 
 #: ../gck/gck-misc.c:173
 msgid "The password or PIN is of an invalid length"
-msgstr "Parole vai PIN ir nepareiza garuma"
+msgstr "The password or PIN is of an invalid length"
 
 #: ../gck/gck-misc.c:175
 msgid "The password or PIN has expired"
-msgstr "Parole vai PIN beidzies derīguma termiņš"
+msgstr "The password or PIN has expired"
 
 #: ../gck/gck-misc.c:177
 msgid "The password or PIN is locked"
-msgstr "Parole vai PIN ir bloķēts"
+msgstr "The password or PIN is locked"
 
 #: ../gck/gck-misc.c:179
 msgid "The session is closed"
-msgstr "Sesija ir aizvērta"
+msgstr "The session is closed"
 
 #: ../gck/gck-misc.c:181
 msgid "Too many sessions are active"
-msgstr "Pārāk daudz aktīvu direktoriju"
+msgstr "Too many sessions are active"
 
 #: ../gck/gck-misc.c:183
 msgid "The session is invalid"
-msgstr "Sesija nav derīga"
+msgstr "The session is invalid"
 
 #: ../gck/gck-misc.c:185
 msgid "The session is read-only"
-msgstr "Sesija ar tikai nolasīšanas atbalstu"
+msgstr "The session is read-only"
 
 #: ../gck/gck-misc.c:187
 msgid "An open session exists"
-msgstr "Eksistē atvērta sesija"
+msgstr "An open session exists"
 
 #: ../gck/gck-misc.c:189
 msgid "A read-only session exists"
-msgstr "Eksistē sesija tikai ar lasīšanas atbalstu"
+msgstr "A read-only session exists"
 
 #: ../gck/gck-misc.c:191
 msgid "An administrator session exists"
-msgstr "Eksistē administratora sesija"
+msgstr "An administrator session exists"
 
 #: ../gck/gck-misc.c:193
 msgid "The signature is bad or corrupted"
-msgstr "Paraksts ir slikts vai bojāts"
+msgstr "The signature is bad or corrupted"
 
 #: ../gck/gck-misc.c:195
 msgid "The signature is unrecognized or corrupted"
-msgstr "Paraksts nav atpazīts vai ir bojāts"
+msgstr "The signature is unrecognised or corrupted"
 
 #: ../gck/gck-misc.c:197
 msgid "Certain required fields are missing"
-msgstr "Iztrūkst noteikti pieprasītie lauki"
+msgstr "Certain required fields are missing"
 
 #: ../gck/gck-misc.c:199
 msgid "Certain fields have invalid values"
-msgstr "Noteiktiem laukiem ir nederīgas vērtības"
+msgstr "Certain fields have invalid values"
 
 #: ../gck/gck-misc.c:201
 msgid "The device is not present or unplugged"
-msgstr "Ierīce nav pieejama vai tā ir izņemta"
+msgstr "The device is not present or unplugged"
 
 #: ../gck/gck-misc.c:203
 msgid "The device is invalid or unrecognizable"
-msgstr "Ierīce ir nederīga vai neatpazīstama"
+msgstr "The device is invalid or unrecognizable"
 
 #: ../gck/gck-misc.c:205
 msgid "The device is write protected"
-msgstr "Ierīce ir aizsargāta pret rakstīšanu"
+msgstr "The device is write protected"
 
 #: ../gck/gck-misc.c:207
 msgid "Cannot import because the key is invalid"
-msgstr "Neizdodas importēt nederīgas atslēgas dēļ"
+msgstr "Cannot import because the key is invalid"
 
 #: ../gck/gck-misc.c:209
 msgid "Cannot import because the key is of the wrong size"
-msgstr "Neizdodas improtēt nepareiza izmēra atslēgas dēļ"
+msgstr "Cannot import because the key is of the wrong size"
 
 #: ../gck/gck-misc.c:211
 msgid "Cannot import because the key is of the wrong type"
-msgstr "Neizdodas importēt nepareiza tipa atslēgas dēļ"
+msgstr "Cannot import because the key is of the wrong type"
 
 #: ../gck/gck-misc.c:213
 msgid "You are already logged in"
-msgstr "Jūs jau esat pieteikušies"
+msgstr "You are already logged in"
 
 #: ../gck/gck-misc.c:215
 msgid "No user has logged in"
-msgstr "Neviens lietotājs nav pieteicies"
+msgstr "No user has logged in"
 
 #: ../gck/gck-misc.c:217
 msgid "The user's password or PIN is not set"
-msgstr "Lietotāja parole vai PIN nav iestatīts"
+msgstr "The user's password or PIN is not set"
 
 #: ../gck/gck-misc.c:219
 msgid "The user is of an invalid type"
-msgstr "Nederīga veida lietotājs"
+msgstr "The user is of an invalid type"
 
 #: ../gck/gck-misc.c:221
 msgid "Another user is already logged in"
-msgstr "Cits lietotājs jau ir pieteicies"
+msgstr "Another user is already logged in"
 
 #: ../gck/gck-misc.c:223
 msgid "Too many users of different types are logged in"
-msgstr ""
+msgstr "Too many users of different types are logged in"
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
-msgstr "Nevar importēt nederīgu atslēgu"
+msgstr "Cannot import an invalid key"
 
 #: ../gck/gck-misc.c:227
 msgid "Cannot import a key of the wrong size"
-msgstr "Neizdodas importēt atslēgu ar nepareizu izmēru"
+msgstr "Cannot import a key of the wrong size"
 
 #: ../gck/gck-misc.c:229
 msgid "Cannot export because the key is invalid"
-msgstr "Neizdodas eksportēt, jo atslēga ir nederīga"
+msgstr "Cannot export because the key is invalid"
 
 #: ../gck/gck-misc.c:231
 msgid "Cannot export because the key is of the wrong size"
-msgstr "Neizdodas eksportēt, jo atslēga ir nepareiza izmēra"
+msgstr "Cannot export because the key is of the wrong size"
 
 #: ../gck/gck-misc.c:233
 msgid "Cannot export because the key is of the wrong type"
-msgstr "Neizdodas eksportēt, jo tā atslēga ir nepareiza veida"
+msgstr "Cannot export because the key is of the wrong type"
 
 #: ../gck/gck-misc.c:235
 msgid "Unable to initialize the random number generator"
-msgstr "Neizdevās inicializēt gadījuma skaitļu ģeneratoru"
+msgstr "Unable to initialise the random number generator"
 
 #: ../gck/gck-misc.c:237
 msgid "No random number generator available"
-msgstr "Gadījuma skaitļu ģenerators nav pieejams"
+msgstr "No random number generator available"
 
 #: ../gck/gck-misc.c:239
 msgid "The crypto mechanism has an invalid parameter"
-msgstr "Šifrēšanas mehānismam ir nederīgs parametrs"
+msgstr "The crypto mechanism has an invalid parameter"
 
 #: ../gck/gck-misc.c:241
 msgid "Not enough space to store the result"
-msgstr "Nav pietiekami vietas, lai saglabātu rezultātu"
+msgstr "Not enough space to store the result"
 
 #: ../gck/gck-misc.c:243
 msgid "The saved state is invalid"
-msgstr "Saglabātais stāvoklis ir nederīgs"
+msgstr "The saved state is invalid"
 
 #: ../gck/gck-misc.c:245
 msgid "The information is sensitive and cannot be revealed"
-msgstr "Informācija ir jūtīga un nevar tikt atklāta"
+msgstr "The information is sensitive and cannot be revealed"
 
 #: ../gck/gck-misc.c:247
 msgid "The state cannot be saved"
-msgstr "Stāvoklis nevar tikt saglabāts"
+msgstr "The state cannot be saved"
 
 #: ../gck/gck-misc.c:249
 msgid "The module has not been initialized"
-msgstr "Modulis nav inicializēts"
+msgstr "The module has not been initialised"
 
 #: ../gck/gck-misc.c:251
 msgid "The module has already been initialized"
-msgstr "Modulis jau ir inicializēts"
+msgstr "The module has already been initialised"
 
 #: ../gck/gck-misc.c:253
 msgid "Cannot lock data"
-msgstr "Nevar noslēgt datus"
+msgstr "Cannot lock data"
 
 #: ../gck/gck-misc.c:255
 msgid "The data cannot be locked"
-msgstr "Datus nevar noslēgt"
+msgstr "The data cannot be locked"
 
 #: ../gck/gck-misc.c:257
 msgid "The signature request was rejected by the user"
-msgstr "Parakstīšanas pieprasījums"
+msgstr "The signature request was rejected by the user"
 
 #: ../gck/gck-misc.c:261
 msgid "Unknown error"
-msgstr "Nezināma kļūda"
+msgstr "Unknown error"
 
 #: ../pkcs11/gkm/gkm-certificate.c:572
 msgid "Unnamed Certificate"
-msgstr "Nenosaukts sertifikāts"
+msgstr "Unnamed Certificate"
 
 #: ../pkcs11/ssh-store/gkm-ssh-private-key.c:339
 msgid "Couldn't parse public SSH key"
-msgstr "Neizdevās parsēt publisko SSH atslēgu"
+msgstr "Couldn't parse public SSH key"
 
 #. Get the label ready
 #: ../pkcs11/wrap-layer/gkm-wrap-login.c:343
 #, c-format
 msgid "Unlock password for: %s"
-msgstr "Atslēgšanas parole: %s"
+msgstr "Unlock password for: %s"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:90
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:801
 msgid "The unlock password was incorrect"
-msgstr "Atslēgšanas parole nebija pareiza"
+msgstr "The unlock password was incorrect"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:634
 msgid "Unlock Login Keyring"
-msgstr "Atbloķēt pieteikšanās saišķi"
+msgstr "Unlock Login Keyring"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:636
 msgid "Enter password to unlock your login keyring"
-msgstr "Ievadiet paroli, lai atslēgtu pieteikšanās atslēgsaišķi"
+msgstr "Enter password to unlock your login keyring"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:640
 msgid ""
 "The password you use to log in to your computer no longer matches that of "
 "your login keyring."
-msgstr "Parole, ko jūs izmantojat, lai pieteiktos jūsu datorā vairs nesakrīt ar jūsu pieteikšanās saišķa paroli."
+msgstr "The password you use to log in to your computer no longer matches that of your login keyring."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:642
 msgid ""
 "The login keyring did not get unlocked when you logged into your computer."
-msgstr "Pieteikšanās saišķis netika automātiski atbloķēts, kad jūs pieteicāties darbam jūsu datorā."
+msgstr "The login keyring did not get unlocked when you logged into your computer."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:660
 msgid "Unlock Keyring"
-msgstr "Atslēgt saišķi"
+msgstr "Unlock Keyring"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:662
 #, c-format
 msgid "Enter password for keyring '%s' to unlock"
-msgstr "Ievadiet paroli, lai atslēgtu saišķi '%s'"
+msgstr "Enter password for keyring '%s' to unlock"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:666
 #, c-format
 msgid "An application wants access to the keyring '%s', but it is locked"
-msgstr "Lietotne vēlas piekļūt saišķim '%s', bet tas ir slēgts"
+msgstr "An application wants access to the keyring '%s', but it is locked"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:686
 msgid "Unlock private key"
-msgstr "Atslēgt privāto atslēgu"
+msgstr "Unlock private key"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:688
 msgid "Unlock certificate"
-msgstr "Atslēgt sertifikātu"
+msgstr "Unlock certificate"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:690
 msgid "Unlock public key"
-msgstr "Atslēgt publisko atslēgu"
+msgstr "Unlock public key"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:692
 msgid "Unlock"
-msgstr "Atslēgt"
+msgstr "Unlock"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:705
 msgid "Enter password to unlock the public key"
-msgstr "Ievadiet paroli, lai atslēgtu publisko atslēgu"
+msgstr "Enter password to unlock the public key"
 
 #. TRANSLATORS: The private key is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:717
 #, c-format
 msgid "An application wants access to the private key '%s', but it is locked"
-msgstr "Lietotne vēlas piekļūt privātai atslēgai '%s', taču tā ir slēgta"
+msgstr "An application wants access to the private key '%s', but it is locked"
 
 #. TRANSLATORS: The certificate is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:720
 #, c-format
 msgid "An application wants access to the certificate '%s', but it is locked"
-msgstr "Lietotne vēlas piekļūt sertifikātam '%s', taču tas ir slēgts"
+msgstr "An application wants access to the certificate '%s', but it is locked"
 
 #. TRANSLATORS: The public key is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:723
 #, c-format
 msgid "An application wants access to the public key '%s', but it is locked"
-msgstr "Lietotne vēlas piekļūt publiskai atslēgai '%s', taču tā ir slēgta"
+msgstr "An application wants access to the public key '%s', but it is locked"
 
 #. TRANSLATORS: The object '%s' is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:726
 #, c-format
 msgid "An application wants access to '%s', but it is locked"
-msgstr "Lietotne vēlas piekļūt '%s', taču tas ir slēgts"
+msgstr "An application wants access to '%s', but it is locked"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:822
 msgid "Unlock certificate/key storage"
-msgstr "Atslēgt sertifikātu/atslēgu glabātavu"
+msgstr "Unlock certificate/key storage"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:823
 msgid "Enter password to unlock the certificate/key storage"
-msgstr "Ievadiet paroli, lai atslēgtu sertifikātu/atslēgu glabātuvi"
+msgstr "Enter password to unlock the certificate/key storage"
 
 #. TRANSLATORS: The storage is locked, and needs unlocking before the
 #. application can use it.
@@ -966,106 +962,106 @@ msgstr "Ievadiet paroli, lai atslēgtu sertifikātu/atslēgu glabātuvi"
 msgid ""
 "An application wants access to the certificate/key storage '%s', but it is "
 "locked"
-msgstr "Lietotne vēlas piekļūt sertifikātu/atslēgu glabātavu '%s', taču tas ir slēgts"
+msgstr "An application wants access to the certificate/key storage '%s', but it is locked"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1132
 msgid "New Password Required"
-msgstr "Nepieciešama jauna parole"
+msgstr "New Password Required"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1133
 msgid "New password required for secure storage"
-msgstr "Drošajai glabātavai nepieciešama jauna parole"
+msgstr "New password required for secure storage"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1135
 #, c-format
 msgid ""
 "In order to prepare '%s' for storage of certificates or keys, a password is "
 "required"
-msgstr "Lai izveidotu '%s' glabātavu sertifikātiem vai atslēgām, nepieciešama parole"
+msgstr "In order to prepare '%s' for storage of certificates or keys, a password is required"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1258
 msgid "Change Password"
-msgstr "Mainīt paroli"
+msgstr "Change Password"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1259
 msgid "Change password for secure storage"
-msgstr ""
+msgstr "Change password for secure storage"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1261
 #, c-format
 msgid ""
 "To change the password for '%s', the original and new passwords are required"
-msgstr "Lai nomainītu '%s' paroli, būs nepieciešamas tagadējā un jaunā paroles"
+msgstr "To change the password for '%s', the original and new passwords are required"
 
 #: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: mate-keyring command [options]\n"
-msgstr ""
+msgstr "usage: mate-keyring command [options]\n"
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
-msgstr ""
+msgstr "commands: "
 
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
 msgid "          "
-msgstr ""
+msgstr "          "
 
 #: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
-msgstr "Glabāt paroles nešifrētas?"
+msgstr "Store passwords unencrypted?"
 
 #: ../ui/gku-prompt-tool.c:598
 msgid ""
 "By choosing to use a blank password, your stored passwords will not be "
 "safely encrypted. They will be accessible by anyone with access to your "
 "files."
-msgstr "Izvēloties tukšu paroli, jūsu saglabātās paroles netiks droši šifrētas. Tās būs pieejamas ikvienam, kas varēs piekļūt jūsu failiem."
+msgstr "By choosing to use a blank password, your stored passwords will not be safely encrypted. They will be accessible by anyone with access to your files."
 
 #: ../ui/gku-prompt-tool.c:605
 msgid "Use Unsafe Storage"
-msgstr "Izmantot nedrošu glabātuvi"
+msgstr "Use Unsafe Storage"
 
 #: ../ui/gku-prompt-tool.c:643
 msgid "Passwords do not match."
-msgstr "Paroles nesakrīt."
+msgstr "Passwords do not match."
 
 #: ../ui/gku-prompt-tool.c:653
 msgid "Password cannot be blank"
-msgstr "Parole nedrīkst būt tukša"
+msgstr "Password cannot be blank"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:1
 msgid "Keyring Access"
-msgstr ""
+msgstr "Keyring Access"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:2
 msgid "Unlock access to passwords and other secrets"
-msgstr ""
+msgstr "Unlock access to passwords and other secrets"
 
 #: ../ui/gku-prompt.ui.h:1
 msgid "_Name:"
-msgstr "_Nosaukums:"
+msgstr "_Name:"
 
 #: ../ui/gku-prompt.ui.h:2
 msgid "_Old Password:"
-msgstr "_Iepriekšējā parole:"
+msgstr "_Old Password:"
 
 #: ../ui/gku-prompt.ui.h:3
 msgid "_Password:"
-msgstr "_Parole:"
+msgstr "_Password:"
 
 #: ../ui/gku-prompt.ui.h:4
 msgid "_Confirm:"
-msgstr "_Apstiprināšana:"
+msgstr "_Confirm:"
 
 #: ../ui/gku-prompt.ui.h:5
 msgid "New password strength"
-msgstr "Jaunās paroles spēks"
+msgstr "New password strength"
 
 #: ../ui/gku-prompt.ui.h:6
 msgid "_Application:"
-msgstr "_Lietotne:"
+msgstr "_Application:"
 
 #: ../ui/gku-prompt.ui.h:7
 msgid "_Details:"
-msgstr "_Detaļas:"
+msgstr "_Details:"

@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# ABE Tsunehiko <hallconnen2+transifex@gmail.com>, 2013.
 # Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2010.
 # Satoru SATOH <ss@gnome.gr.jp>, 2006.
 msgid ""
@@ -10,14 +11,14 @@ msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
 "POT-Creation-Date: 2012-07-03 15:24+0200\n"
-"PO-Revision-Date: 2012-07-03 13:25+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-03-15 02:18+0000\n"
+"Last-Translator: 読み専(先行量産型) <hallconnen2+transifex@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/MATE/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
 #: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
@@ -136,7 +137,7 @@ msgstr "ユーザ ID"
 
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
-msgstr ""
+msgstr "メールアドレス"
 
 #: ../egg/egg-oid.c:54
 msgid "Date of Birth"
@@ -286,15 +287,15 @@ msgstr "いいえ"
 
 #: ../gcr/gcr-certificate-renderer.c:339
 msgid "Identity"
-msgstr ""
+msgstr "アイデンティティ"
 
 #: ../gcr/gcr-certificate-renderer.c:343
 msgid "Verified by"
-msgstr ""
+msgstr "検証者"
 
 #: ../gcr/gcr-certificate-renderer.c:350
 msgid "Expires"
-msgstr ""
+msgstr "有効期限"
 
 #. The subject
 #: ../gcr/gcr-certificate-renderer.c:360
@@ -364,7 +365,7 @@ msgstr "指紋"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "Import Certificates and Keys"
-msgstr ""
+msgstr "証明書と鍵のインポート"
 
 #: ../gcr/gcr-import-dialog.ui.h:2
 msgid "Password:"
@@ -460,15 +461,15 @@ msgstr "インポートした証明書/鍵を保存する場所を選択して�
 
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
-msgstr ""
+msgstr "鍵"
 
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
-msgstr ""
+msgstr "RSA 秘密鍵"
 
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
-msgstr ""
+msgstr "DSA 秘密鍵"
 
 #: ../gcr/gcr-key-renderer.c:264 ../gcr/gcr-parser.c:198
 msgid "Private Key"
@@ -476,30 +477,30 @@ msgstr "秘密鍵"
 
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
-msgstr ""
+msgstr "DSA 公開鍵"
 
 #: ../gcr/gcr-key-renderer.c:278
 #, c-format
 msgid "%d bit"
 msgid_plural "%d bits"
-msgstr[0] ""
+msgstr[0] "%d ビット"
 
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
-msgstr ""
+msgstr "強度"
 
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
-msgstr ""
+msgstr "アルゴリズム"
 
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
-msgstr ""
+msgstr "サイズ"
 
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
-msgstr ""
+msgstr "指紋"
 
 #: ../gcr/gcr-parser.c:1569
 msgid "Unrecognized or unsupported data."
@@ -519,17 +520,17 @@ msgstr "データにはロックがかかっています"
 #: ../gcr/gcr-trust.c:420
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
-msgstr ""
+msgstr "証明書を格納する場所が見つかりません"
 
 #: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
 #: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
-msgstr ""
+msgstr "URI の構文が誤っています。'%s' フィールドの円コーディングが誤っています。"
 
 #: ../gck/gck-uri.c:287
 msgid "The URI does not have the 'pkcs11' scheme."
-msgstr ""
+msgstr "URI は 'pkcs11' スキームを含んでいません。"
 
 #: ../gck/gck-misc.c:101
 msgid "Insufficient memory available"
@@ -589,7 +590,7 @@ msgstr "デバイスでエラーが発生しました"
 
 #: ../gck/gck-misc.c:129
 msgid "Insufficient memory available on the device"
-msgstr ""
+msgstr "デバイス上で利用できるメモリが足りません"
 
 #: ../gck/gck-misc.c:131
 msgid "The device was removed or unplugged"
@@ -625,7 +626,7 @@ msgstr "鍵は必要ありません"
 
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
-msgstr ""
+msgstr "以前の鍵と同じではありません"
 
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
@@ -633,7 +634,7 @@ msgstr "鍵が必要です"
 
 #: ../gck/gck-misc.c:151
 msgid "Cannot include the key in the digest"
-msgstr ""
+msgstr "ダイジェストの中に鍵を含めることができません"
 
 #: ../gck/gck-misc.c:153
 msgid "This operation cannot be done with this key"
@@ -777,7 +778,7 @@ msgstr "別のユーザが既にログインしています"
 
 #: ../gck/gck-misc.c:223
 msgid "Too many users of different types are logged in"
-msgstr ""
+msgstr "いろいろな種類のユーザが大量にログインしています"
 
 #: ../gck/gck-misc.c:225
 msgid "Cannot import an invalid key"
@@ -996,16 +997,16 @@ msgstr "'%s' のパスワードを変更するには、元のパスワードと�
 #: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: mate-keyring command [options]\n"
-msgstr ""
+msgstr "usage: mate-keyring command [options]\\n"
 
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
-msgstr ""
+msgstr "コマンド:"
 
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
 msgid "          "
-msgstr ""
+msgstr " "
 
 #: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
@@ -1032,11 +1033,11 @@ msgstr "パスワードを空にしないでください"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:1
 msgid "Keyring Access"
-msgstr ""
+msgstr "キーリング・アクセス"
 
 #: ../ui/mate-keyring-prompt.desktop.in.in.h:2
 msgid "Unlock access to passwords and other secrets"
-msgstr ""
+msgstr "パスワードや機密データへのアクセスを許可する"
 
 #: ../ui/gku-prompt.ui.h:1
 msgid "_Name:"
