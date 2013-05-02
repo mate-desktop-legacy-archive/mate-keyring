@@ -23,6 +23,7 @@ SUBDIRS = \
 	$(TESTS_DIR) \
 	$(PAM_DIR) \
 	po \
+	man \
 	docs
 
 ACLOCAL_AMFLAGS = ${ACLOCAL_FLAGS}

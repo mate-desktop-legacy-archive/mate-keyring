@@ -696,6 +696,7 @@ daemon/dbus/tests/Makefile
 daemon/gpg-agent/Makefile
 daemon/login/Makefile
 daemon/ssh-agent/Makefile
+man/Makefile
 docs/Makefile
 docs/reference/Makefile
 docs/reference/gcr/Makefile

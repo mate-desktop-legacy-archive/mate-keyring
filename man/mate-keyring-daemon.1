@@ -1,0 +1,29 @@
+.TH "mate-keyring" "1" 
+.SH "NAME" 
+mate-keyring-daemon \(em  store passwords for use in MATE
+.SH "SYNOPSIS" 
+.PP 
+\fBmate-keyring\fR [\fB\-\-help\fP] [\fB\-\-start\fP] [\fB\-\-replace\fP] [\fB\-\-foreground\fP] [\fB\-\-daemonize\fP] [\fB\-\-login\fP] [\fB\-\-components=pkcs11,secrets,ssh,gpg\fP] [\fB\-\-control-directory\fP]
+.SH "DESCRIPTION" 
+.PP 
+\fBmate-keyring-daemon\fR stores passwords for use in the MATE desktop environment.
+.SH "OPTIONS" 
+.IP "\fB\-\-help\fP" 10 
+Display help 
+.IP "\fB\-\-start\fP" 10 
+Start a daemon or initialize and already running daemon.
+.IP "\fB\-\-replace\fP" 10 
+Replace the daemon for this desktop login environment.
+.IP "\fB\-\-foreground\fP" 10 
+Run in the foreground.
+.IP "\fB\-\-daemonize\fP" 10 
+Run as a daemon.
+.IP "\fB\-\-login\fP" 10 
+Run for a user login.  Read login password from stdin.
+.IP "\fB\-\-components=pkcs11,secrets,ssh,gpg\fP" 10 
+The optional components to run.
+.IP "\fB\-\-control-directory\fP" 10 
+The directory for sockets and control data.
+.SH "BUGS"
+If you find bugs in the \fBmate-keyring\fP program, please report them on:
+https://github.com/mate-desktop/mate-keyring/issues
