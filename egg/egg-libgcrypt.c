@@ -54,14 +54,17 @@ fatal_handler (gpointer unused, int unknown, const gchar *msg)
 static int
 glib_thread_mutex_init (void **lock)
 {
-	*lock = g_mutex_new ();
+        *lock = g_new0 (GMutex, 1);
+	g_mutex_init (*lock);
 	return 0;
 }
 
 static int 
 glib_thread_mutex_destroy (void **lock)
 {
-	g_mutex_free (*lock);
+        g_mutex_clear (*lock);
+	g_free (*lock);
+        *lock = NULL;
 	return 0;
 }
 
