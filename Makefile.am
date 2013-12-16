@@ -34,12 +34,6 @@ EXTRA_DIST = \
 	intltool-update.in \
 	HACKING
 
-DISTCHECK_CONFIGURE_FLAGS = \
-	--enable-gtk-doc \
-	--enable-tests \
-	--disable-debug \
-	--disable-gcov
-
 DISTCLEANFILES = \
 	intltool-extract \
 	intltool-merge \
