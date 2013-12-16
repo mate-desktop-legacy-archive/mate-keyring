@@ -1,5 +1,5 @@
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-I$(top_srcdir)/daemon/dbus \
 	-DSRCDIR=$(srcdir) \
 	$(DAEMON_CFLAGS) \

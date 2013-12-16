@@ -1,5 +1,5 @@
 
-INCLUDES= \
+AM_CPPFLAGS= \
 	-DPREFIX=\""$(prefix)"\" \
 	-DBINDIR=\""$(bindir)"\" \
 	-DLIBEXECDIR=\""$(libexecdir)"\" \

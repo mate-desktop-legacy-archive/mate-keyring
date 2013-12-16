@@ -2,7 +2,7 @@
 noinst_LTLIBRARIES = \
 	libgkm-wrap-layer.la
 
-INCLUDES = -I. \
+AM_CPPFLAGS = -I. \
 	-I$(top_srcdir) \
 	-I$(top_builddir) \
 	-I$(top_srcdir)/pkcs11

@@ -8,7 +8,7 @@ SUBDIRS = \
 bin_PROGRAMS= \
 	mate-keyring-daemon
 
-INCLUDES=	\
+AM_CPPFLAGS=	\
 	-DPREFIX=\""$(prefix)"\" 			\
 	-DBINDIR=\""$(bindir)"\" 			\
 	-DLIBEXECDIR=\""$(libexecdir)"\"		\

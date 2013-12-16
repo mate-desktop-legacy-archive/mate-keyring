@@ -2,7 +2,7 @@
 asn1-def-test.c: test.asn
 	$(ASN1PARSER) -o asn1-def-test.c $(srcdir)/test.asn
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-I$(top_srcdir)/egg \
 	-DSRCDIR=$(srcdir) \
 	$(GLIB_CFLAGS)

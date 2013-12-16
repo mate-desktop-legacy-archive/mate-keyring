@@ -7,7 +7,7 @@
 
 # ------------------------------------------------------------------------------
 
-INCLUDES=			\
+AM_CPPFLAGS=			\
 	-I$(top_srcdir) 	\
 	-I$(top_builddir) 	\
 	-I$(srcdir)/..		\
@@ -31,10 +31,10 @@ PREPROCESSED = \
 
 .c.i:
 	@echo "#include \"testing/testing.h\"" > test-suite.h
-	$(AM_V_GEN)$(CC) -E $(CFLAGS) $(INCLUDES)  -o $@ $<
+	$(AM_V_GEN)$(CC) -E $(CFLAGS) $(AM_CPPFLAGS)  -o $@ $<
 
 .i.o:
-	$(AM_V_GEN)$(CC) -c $(CFLAGS) $(INCLUDES) -o $@ $<
+	$(AM_V_GEN)$(CC) -c $(CFLAGS) $(AM_CPPFLAGS) -o $@ $<
 
 test-suite.c: $(PREPROCESSED) Makefile.am $(top_srcdir)/testing/testing-build.sh
 	sh $(top_srcdir)/testing/testing-build.sh -b test-suite $(PREPROCESSED)
