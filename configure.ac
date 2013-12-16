@@ -1,6 +1,7 @@
-AC_INIT(daemon/gkd-main.c)
+AC_INIT([mate-keyring], [1.6.0])
+AC_CONFIG_SRCDIR([daemon/gkd-main.c])
 
-AM_INIT_AUTOMAKE(mate-keyring, 1.6.0)
+AM_INIT_AUTOMAKE([1.9 no-dist-gzip dist-xz])
 AC_CONFIG_HEADERS(config.h)
 AC_CONFIG_MACRO_DIR([m4])
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
