@@ -26,7 +26,7 @@ SUBDIRS = \
 	man \
 	docs
 
-ACLOCAL_AMFLAGS = ${ACLOCAL_FLAGS}
+ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
 EXTRA_DIST = \
 	intltool-extract.in \
