@@ -17,7 +17,7 @@ incdir = $(includedir)/mate-gck
 inc_HEADERS = \
 	gck.h
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-I$(top_builddir) \
 	-I$(top_srcdir) \
 	$(GOBJECT_CFLAGS) \

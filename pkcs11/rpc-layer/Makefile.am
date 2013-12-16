@@ -5,7 +5,7 @@ noinst_LTLIBRARIES = \
 noinst_PROGRAMS = \
 	gkm-rpc-daemon-standalone
 
-INCLUDES = -I. \
+AM_CPPFLAGS = -I. \
 	-I$(top_srcdir) \
 	-I$(top_builddir)
 

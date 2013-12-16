@@ -1,7 +1,7 @@
 bin_PROGRAMS= \
 	mate-keyring@GCR_VERSION_SUFFIX@
 
-INCLUDES=	\
+AM_CPPFLAGS=	\
 	-I$(top_srcdir) \
 	-I$(top_builddir) \
 	$(GTK_CFLAGS) \

@@ -1,5 +1,5 @@
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-I$(top_srcdir) \
 	-DMATE_KEYRING_DAEMON=\""$(bindir)/mate-keyring-daemon"\" 
 

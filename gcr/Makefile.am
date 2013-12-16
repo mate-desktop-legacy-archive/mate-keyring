@@ -50,7 +50,7 @@ inc_HEADERS = \
 # ------------------------------------------------------------------
 # LIBRARY
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-I$(top_builddir) \
 	-I$(top_srcdir) \
 	$(GTK_CFLAGS) \

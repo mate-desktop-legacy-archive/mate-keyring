@@ -5,7 +5,7 @@ EXTRA_DIST = \
 	testing-build.sh \
 	testing.make
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-I$(top_srcdir) \
 	-I$(top_builddir) \
 	$(GTK_CFLAGS) \

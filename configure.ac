@@ -1,7 +1,9 @@
-AC_INIT(daemon/gkd-main.c)
+AC_INIT([mate-keyring], [1.6.0])
+AC_CONFIG_SRCDIR([daemon/gkd-main.c])
 
-AM_INIT_AUTOMAKE(mate-keyring, 1.6.0)
+AM_INIT_AUTOMAKE([1.9 no-dist-gzip dist-xz])
 AC_CONFIG_HEADERS(config.h)
+AC_CONFIG_MACRO_DIR([m4])
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
 dnl ****************************************************************************
@@ -62,7 +64,7 @@ AC_TYPE_SIZE_T
 AC_TYPE_UID_T
 
 GTK_DOC_CHECK(1.9)
-DISTCHECK_CONFIGURE_FLAGS="--enable-gtk-doc"
+DISTCHECK_CONFIGURE_FLAGS="--enable-gtk-doc --disable-gcov"
 AC_SUBST(DISTCHECK_CONFIGURE_FLAGS)
 
 PKG_CHECK_MODULES(GLIB, glib-2.0 >= 2.16.0)
