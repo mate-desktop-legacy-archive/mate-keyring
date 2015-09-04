@@ -30,11 +30,11 @@
 
 #include <string.h>
 
-#define SERVICE_SESSION_MANAGER	"org.mate.SessionManager"
-#define PATH_SESSION_MANAGER	"/org/mate/SessionManager"
-#define IFACE_SESSION_MANAGER   "org.mate.SessionManager"
-#define IFACE_SESSION_CLIENT    "org.mate.SessionManager.Client"
-#define IFACE_SESSION_PRIVATE   "org.mate.SessionManager.ClientPrivate"
+#define SERVICE_SESSION_MANAGER	"org.gnome.SessionManager"
+#define PATH_SESSION_MANAGER	"/org/gnome/SessionManager"
+#define IFACE_SESSION_MANAGER   "org.gnome.SessionManager"
+#define IFACE_SESSION_CLIENT    "org.gnome.SessionManager.Client"
+#define IFACE_SESSION_PRIVATE   "org.gnome.SessionManager.ClientPrivate"
 
 static gchar *client_session_path = NULL;
 static gchar *client_session_rule = NULL;
@@ -212,7 +212,7 @@ gkd_dbus_session_init (DBusConnection *conn)
 	 * These are fired specifically for us.
 	 */
 	client_session_rule = g_strdup_printf("type='signal',"
-	                                      "interface='org.mate.SessionManager.ClientPrivate',"
+	                                      "interface='org.gnome.SessionManager.ClientPrivate',"
 	                                      "path='%s'",
 	                                      client_session_path);
 	dbus_bus_add_match (conn, client_session_rule, &derr);

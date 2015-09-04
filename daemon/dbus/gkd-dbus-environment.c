@@ -30,9 +30,9 @@
 
 #include <string.h>
 
-#define SERVICE_SESSION_MANAGER	"org.mate.SessionManager"
-#define PATH_SESSION_MANAGER	"/org/mate/SessionManager"
-#define IFACE_SESSION_MANAGER   "org.mate.SessionManager"
+#define SERVICE_SESSION_MANAGER	"org.gnome.SessionManager"
+#define PATH_SESSION_MANAGER	"/org/gnome/SessionManager"
+#define IFACE_SESSION_MANAGER   "org.gnome.SessionManager"
 
 void
 gkd_dbus_environment_cleanup (DBusConnection *conn)
@@ -50,7 +50,7 @@ on_setenv_reply (DBusPendingCall *pending, void *user_data)
 	g_return_if_fail (reply);
 
 	if (dbus_set_error_from_message (&derr, reply)) {
-		if (!dbus_error_has_name (&derr, "org.mate.SessionManager.NotInInitialization"))
+		if (!dbus_error_has_name (&derr, "org.gnome.SessionManager.NotInInitialization"))
 			g_message ("couldn't set environment variable in session: %s", derr.message);
 		dbus_error_free (&derr);
 	}
